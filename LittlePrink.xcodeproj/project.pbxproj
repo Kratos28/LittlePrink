@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65094579285D9D1C0009FEAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* Extension.swift */; };
+		650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC2284C611C002B07AF /* WaterfallVC.swift */; };
+		650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC4284C69CE002B07AF /* WaterfallCell.swift */; };
+		650DBEC7284C7053002B07AF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC6284C7053002B07AF /* CollectionViewController.swift */; };
+		65399079282AB3DE002EB0E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65399078282AB3DE002EB0E8 /* AppDelegate.swift */; };
+		6539907B282AB3DE002EB0E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539907A282AB3DE002EB0E8 /* SceneDelegate.swift */; };
+		65399080282AB3DE002EB0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6539907E282AB3DE002EB0E8 /* Main.storyboard */; };
+		65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */; };
+		65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65399084282AB3E0002EB0E8 /* Assets.xcassets */; };
+		65399088282AB3E0002EB0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */; };
+		657901CC2843D140009AA37A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657901CB2843D140009AA37A /* HomeVC.swift */; };
+		657EB41A2845189A00E6E507 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EB4192845189A00E6E507 /* DiscoveryVC.swift */; };
+		657EB41C284518CF00E6E507 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EB41B284518CF00E6E507 /* NearByVC.swift */; };
+		657EB41E284518ED00E6E507 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EB41D284518ED00E6E507 /* FollowVC.swift */; };
+		659029BC286A046200720B03 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659029BB286A046200720B03 /* photoCell.swift */; };
+		659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7682853B80A001FAD27 /* Localizable.strings */; };
+		659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7702853BF66001FAD27 /* infoPlist.strings */; };
+		65C58239284665BF00B68027 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C58238284665BF00B68027 /* Constans.swift */; };
+		65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB08C32866E964009523A2 /* NoteEditVC.swift */; };
+		65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DE6B2855079500ED858E /* TabBarC.swift */; };
+		65DE81A6285A437A002F4541 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE81A5285A437A002F4541 /* PostVC.swift */; };
+		65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */; };
+		CF913235B1B5BDC1E98FE707 /* Pods_LittlePrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386924448731C16EC6CD740F /* Pods_LittlePrink.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
+		386924448731C16EC6CD740F /* Pods_LittlePrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
+		65094578285D9D1C0009FEAD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		650B72B228523C5B0079BF1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		650DBEC2284C611C002B07AF /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		650DBEC4284C69CE002B07AF /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		650DBEC6284C7053002B07AF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		65399075282AB3DE002EB0E8 /* LittlePrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65399078282AB3DE002EB0E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6539907A282AB3DE002EB0E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6539907F282AB3DE002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65399082282AB3DE002EB0E8 /* LittlePrink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePrink.xcdatamodel; sourceTree = "<group>"; };
+		65399084282AB3E0002EB0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65399087282AB3E0002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65399089282AB3E0002EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657901CB2843D140009AA37A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		657EB4192845189A00E6E507 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		657EB41B284518CF00E6E507 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		657EB41D284518ED00E6E507 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		659029BB286A046200720B03 /* photoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoCell.swift; sourceTree = "<group>"; };
+		659BE7692853B80A001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		659BE76B2853B98B001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659BE76F2853BF66001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
+		659BE7712853BF68001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		65C58238284665BF00B68027 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		65CB08C32866E964009523A2 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		65D7DE6B2855079500ED858E /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		65DE81A5285A437A002F4541 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocallzationTableViewController.swift; sourceTree = "<group>"; };
+		65F3C1002850FE5D001F9F5C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65399072282AB3DE002EB0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF913235B1B5BDC1E98FE707 /* Pods_LittlePrink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				386924448731C16EC6CD740F /* Pods_LittlePrink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65094577285D9CF90009FEAD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				65C58238284665BF00B68027 /* Constans.swift */,
+				65094578285D9D1C0009FEAD /* Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6539906C282AB3DE002EB0E8 = {
+			isa = PBXGroup;
+			children = (
+				65399077282AB3DE002EB0E8 /* LittlePrink */,
+				65399076282AB3DE002EB0E8 /* Products */,
+				D5F2379E957D28CA1D708B43 /* Pods */,
+				4D4E89BB37BB8129E3429C84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65399076282AB3DE002EB0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65399075282AB3DE002EB0E8 /* LittlePrink.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65399077282AB3DE002EB0E8 /* LittlePrink */ = {
+			isa = PBXGroup;
+			children = (
+				65094577285D9CF90009FEAD /* Common */,
+				65399078282AB3DE002EB0E8 /* AppDelegate.swift */,
+				6539907A282AB3DE002EB0E8 /* SceneDelegate.swift */,
+				657901CB2843D140009AA37A /* HomeVC.swift */,
+				657EB4192845189A00E6E507 /* DiscoveryVC.swift */,
+				657EB41B284518CF00E6E507 /* NearByVC.swift */,
+				657EB41D284518ED00E6E507 /* FollowVC.swift */,
+				650DBEC2284C611C002B07AF /* WaterfallVC.swift */,
+				65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */,
+				650DBEC4284C69CE002B07AF /* WaterfallCell.swift */,
+				650DBEC6284C7053002B07AF /* CollectionViewController.swift */,
+				65CB08C32866E964009523A2 /* NoteEditVC.swift */,
+				659029BB286A046200720B03 /* photoCell.swift */,
+				65D7DE6A2854FF9C00ED858E /* Resources */,
+				6539907E282AB3DE002EB0E8 /* Main.storyboard */,
+				65D7DE6B2855079500ED858E /* TabBarC.swift */,
+				65399084282AB3E0002EB0E8 /* Assets.xcassets */,
+				65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */,
+				65399089282AB3E0002EB0E8 /* Info.plist */,
+				65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */,
+				65DE81A5285A437A002F4541 /* PostVC.swift */,
+			);
+			path = LittlePrink;
+			sourceTree = "<group>";
+		};
+		65D7DE6A2854FF9C00ED858E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				659BE7702853BF66001FAD27 /* infoPlist.strings */,
+				659BE7682853B80A001FAD27 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5F2379E957D28CA1D708B43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */,
+				4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65399074282AB3DE002EB0E8 /* LittlePrink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6539908C282AB3E0002EB0E8 /* Build configuration list for PBXNativeTarget "LittlePrink" */;
+			buildPhases = (
+				7BCA8DEFF7B4EF8B5C62FBBC /* [CP] Check Pods Manifest.lock */,
+				65399071282AB3DE002EB0E8 /* Sources */,
+				65399072282AB3DE002EB0E8 /* Frameworks */,
+				65399073282AB3DE002EB0E8 /* Resources */,
+				FC99B49B26C951B7F2109C8D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LittlePrink;
+			productName = LittlePrink;
+			productReference = 65399075282AB3DE002EB0E8 /* LittlePrink.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6539906D282AB3DE002EB0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					65399074282AB3DE002EB0E8 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 65399070282AB3DE002EB0E8 /* Build configuration list for PBXProject "LittlePrink" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6539906C282AB3DE002EB0E8;
+			productRefGroup = 65399076282AB3DE002EB0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65399074282AB3DE002EB0E8 /* LittlePrink */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65399073282AB3DE002EB0E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65399088282AB3E0002EB0E8 /* LaunchScreen.storyboard in Resources */,
+				659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */,
+				65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */,
+				65399080282AB3DE002EB0E8 /* Main.storyboard in Resources */,
+				659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BCA8DEFF7B4EF8B5C62FBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePrink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC99B49B26C951B7F2109C8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePrink/Pods-LittlePrink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePrink/Pods-LittlePrink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePrink/Pods-LittlePrink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65399071282AB3DE002EB0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
+				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
+				657EB41A2845189A00E6E507 /* DiscoveryVC.swift in Sources */,
+				650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */,
+				659029BC286A046200720B03 /* photoCell.swift in Sources */,
+				650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */,
+				65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */,
+				65DE81A6285A437A002F4541 /* PostVC.swift in Sources */,
+				65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */,
+				657EB41C284518CF00E6E507 /* NearByVC.swift in Sources */,
+				65C58239284665BF00B68027 /* Constans.swift in Sources */,
+				65399079282AB3DE002EB0E8 /* AppDelegate.swift in Sources */,
+				65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */,
+				6539907B282AB3DE002EB0E8 /* SceneDelegate.swift in Sources */,
+				657901CC2843D140009AA37A /* HomeVC.swift in Sources */,
+				657EB41E284518ED00E6E507 /* FollowVC.swift in Sources */,
+				650DBEC7284C7053002B07AF /* CollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6539907E282AB3DE002EB0E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6539907F282AB3DE002EB0E8 /* Base */,
+				650B72B228523C5B0079BF1A /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65399087282AB3E0002EB0E8 /* Base */,
+				65F3C1002850FE5D001F9F5C /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		659BE7682853B80A001FAD27 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659BE7692853B80A001FAD27 /* zh-Hans */,
+				659BE76B2853B98B001FAD27 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		659BE7702853BF66001FAD27 /* infoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659BE76F2853BF66001FAD27 /* en */,
+				659BE7712853BF68001FAD27 /* zh-Hans */,
+			);
+			name = infoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6539908A282AB3E0002EB0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6539908B282AB3E0002EB0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6539908D282AB3E0002EB0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittlePrink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prink;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = k.LittlePrink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6539908E282AB3E0002EB0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittlePrink/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prink;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = k.LittlePrink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65399070282AB3DE002EB0E8 /* Build configuration list for PBXProject "LittlePrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6539908A282AB3E0002EB0E8 /* Debug */,
+				6539908B282AB3E0002EB0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6539908C282AB3E0002EB0E8 /* Build configuration list for PBXNativeTarget "LittlePrink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6539908D282AB3E0002EB0E8 /* Debug */,
+				6539908E282AB3E0002EB0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65399082282AB3DE002EB0E8 /* LittlePrink.xcdatamodel */,
+			);
+			currentVersion = 65399082282AB3DE002EB0E8 /* LittlePrink.xcdatamodel */;
+			path = LittlePrink.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6539906D282AB3DE002EB0E8 /* Project object */;
+}
