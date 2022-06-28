@@ -14,7 +14,6 @@ class NoteEditVC: UIViewController {
         UIImage(named: "1"),
         UIImage(named: "2"),
         UIImage(named: "3")
-
     ];
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -44,5 +43,31 @@ extension NoteEditVC:UICollectionViewDataSource
         return cell;
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+ 
     
+        
+        switch kind {
+            case UICollectionView.elementKindSectionFooter:
+            let photoFooter =    collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kphotoFooterID, for: indexPath) as! PhotoFooter;
+            
+            photoFooter.addPhotoBtn.addTarget(self, action: #selector(addPhoto), for: .touchUpInside);
+            return photoFooter;
+            
+        default:
+            fatalError("collectionView的footer出问题了");
+
+            
+        }
+    }
+    
+    
+    
+}
+
+extension NoteEditVC{
+    @objc private func addPhoto()
+    {
+        print("fafa");
+    }
 }

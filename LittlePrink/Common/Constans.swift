@@ -18,7 +18,7 @@ let kPhotoCellID = "PhotoCellID";
 // MARK: CellID
 let waterfallCellID = "waterfallCellID";
 let kWaterfallPadding :CGFloat =  4;
-
+let kphotoFooterID = "PhotoFooterID"
 
 //MARK: -业务逻辑相关
 let kchannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"]

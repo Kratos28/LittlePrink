@@ -24,6 +24,7 @@
 		659029BC286A046200720B03 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659029BB286A046200720B03 /* photoCell.swift */; };
 		659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7682853B80A001FAD27 /* Localizable.strings */; };
 		659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7702853BF66001FAD27 /* infoPlist.strings */; };
+		65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC4E23286B54E4003B51AC /* PhotoFooter.swift */; };
 		65C58239284665BF00B68027 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C58238284665BF00B68027 /* Constans.swift */; };
 		65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB08C32866E964009523A2 /* NoteEditVC.swift */; };
 		65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DE6B2855079500ED858E /* TabBarC.swift */; };
@@ -59,6 +60,7 @@
 		659BE76B2853B98B001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659BE76F2853BF66001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
 		659BE7712853BF68001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		65AC4E23286B54E4003B51AC /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		65C58238284665BF00B68027 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		65CB08C32866E964009523A2 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
 		65D7DE6B2855079500ED858E /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
@@ -128,8 +130,7 @@
 				65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */,
 				650DBEC4284C69CE002B07AF /* WaterfallCell.swift */,
 				650DBEC6284C7053002B07AF /* CollectionViewController.swift */,
-				65CB08C32866E964009523A2 /* NoteEditVC.swift */,
-				659029BB286A046200720B03 /* photoCell.swift */,
+				65AC4E25286B5979003B51AC /* NoteEdit */,
 				65D7DE6A2854FF9C00ED858E /* Resources */,
 				6539907E282AB3DE002EB0E8 /* Main.storyboard */,
 				65D7DE6B2855079500ED858E /* TabBarC.swift */,
@@ -141,6 +142,16 @@
 				0AC589E9286AFA5F00B00AE4 /* MyViewController.playground */,
 			);
 			path = LittlePrink;
+			sourceTree = "<group>";
+		};
+		65AC4E25286B5979003B51AC /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				65CB08C32866E964009523A2 /* NoteEditVC.swift */,
+				659029BB286A046200720B03 /* photoCell.swift */,
+				65AC4E23286B54E4003B51AC /* PhotoFooter.swift */,
+			);
+			path = NoteEdit;
 			sourceTree = "<group>";
 		};
 		65D7DE6A2854FF9C00ED858E /* Resources */ = {
@@ -290,6 +301,7 @@
 				65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */,
 				657EB41C284518CF00E6E507 /* NearByVC.swift in Sources */,
 				65C58239284665BF00B68027 /* Constans.swift in Sources */,
+				65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */,
 				65399079282AB3DE002EB0E8 /* AppDelegate.swift in Sources */,
 				65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */,
 				6539907B282AB3DE002EB0E8 /* SceneDelegate.swift in Sources */,
