@@ -25,3 +25,4 @@ let kchannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美�
 
 let kMaxPhotoCount = 9;
 let KMaxCameraZoomFactor = 5.0;
+let kSpacingBetweenItems = 2.0;
