@@ -6,6 +6,21 @@
 //
 
 import Foundation
+import UIKit
+
+
+extension UIView
+{
+    @IBInspectable  var  cornerRadius : CGFloat{
+        set{
+            self.layer.cornerRadius = newValue;
+        }
+        get{
+            return self.layer.cornerRadius;
+        }
+    }
+}
+
 
 extension Bundle{
     var appName :String {
@@ -20,3 +35,4 @@ extension Bundle{
 
     }
 }
+

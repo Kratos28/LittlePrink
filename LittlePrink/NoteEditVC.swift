@@ -9,11 +9,18 @@ import UIKit
 
 class NoteEditVC: UIViewController {
 
+    
+     let photos = [
+        UIImage(named: "1"),
+        UIImage(named: "2"),
+        UIImage(named: "3")
+
+    ];
+    
     @IBOutlet weak var photoCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 }
 
@@ -26,11 +33,15 @@ extension NoteEditVC:UICollectionViewDelegate
 extension NoteEditVC:UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0;
+        self.photos.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return nil;
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPhotoCellID, for: indexPath) as! photoCell
+        
+        cell.imageView.image = photos[indexPath.item];
+
+        return cell;
     }
     
     
