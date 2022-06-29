@@ -17,7 +17,7 @@ class CollectionViewController: UICollectionViewController {
 
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        
+        ///
     }
 
 
