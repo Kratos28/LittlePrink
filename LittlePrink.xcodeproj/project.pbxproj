@@ -24,6 +24,7 @@
 		659029BC286A046200720B03 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659029BB286A046200720B03 /* photoCell.swift */; };
 		659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7682853B80A001FAD27 /* Localizable.strings */; };
 		659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7702853BF66001FAD27 /* infoPlist.strings */; };
+		65A6DDA1286CA14F00DA1988 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A6DDA0286CA14F00DA1988 /* Test.m */; };
 		65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC4E23286B54E4003B51AC /* PhotoFooter.swift */; };
 		65C58239284665BF00B68027 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C58238284665BF00B68027 /* Constans.swift */; };
 		65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB08C32866E964009523A2 /* NoteEditVC.swift */; };
@@ -60,6 +61,9 @@
 		659BE76B2853B98B001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659BE76F2853BF66001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
 		659BE7712853BF68001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		65A6DD9E286CA14F00DA1988 /* LittlePrink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePrink-Bridging-Header.h"; sourceTree = "<group>"; };
+		65A6DD9F286CA14F00DA1988 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		65A6DDA0286CA14F00DA1988 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		65AC4E23286B54E4003B51AC /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		65C58238284665BF00B68027 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		65CB08C32866E964009523A2 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */,
 				650DBEC4284C69CE002B07AF /* WaterfallCell.swift */,
 				650DBEC6284C7053002B07AF /* CollectionViewController.swift */,
+				65A6DD9F286CA14F00DA1988 /* Test.h */,
+				65A6DDA0286CA14F00DA1988 /* Test.m */,
 				65AC4E25286B5979003B51AC /* NoteEdit */,
 				65D7DE6A2854FF9C00ED858E /* Resources */,
 				6539907E282AB3DE002EB0E8 /* Main.storyboard */,
@@ -140,6 +146,7 @@
 				65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */,
 				65DE81A5285A437A002F4541 /* PostVC.swift */,
 				0AC589E9286AFA5F00B00AE4 /* MyViewController.playground */,
+				65A6DD9E286CA14F00DA1988 /* LittlePrink-Bridging-Header.h */,
 			);
 			path = LittlePrink;
 			sourceTree = "<group>";
@@ -206,6 +213,7 @@
 				TargetAttributes = {
 					65399074282AB3DE002EB0E8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -292,6 +300,7 @@
 			files = (
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
+				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				657EB41A2845189A00E6E507 /* DiscoveryVC.swift in Sources */,
 				650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */,
 				659029BC286A046200720B03 /* photoCell.swift in Sources */,
@@ -475,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -499,6 +509,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = k.LittlePrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePrink/LittlePrink-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -534,6 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = k.LittlePrink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LittlePrink/LittlePrink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
