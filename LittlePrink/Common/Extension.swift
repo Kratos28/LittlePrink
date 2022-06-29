@@ -22,6 +22,18 @@ extension UIView
     
 }
 
+extension UIViewController {
+
+    //MARK: 提示框-自动隐藏
+    func showTextHUD(_ title:String,_ subtitle:String? = nil){
+        let hud =  MBProgressHUD.showAdded(to: view, animated: true);
+         hud.mode = .text;
+        hud.label.text = title;
+        hud.detailsLabel.text = subtitle;
+        hud.hide(animated: true, afterDelay: 2);
+    }
+}
+
 
 extension Bundle{
     var appName :String {

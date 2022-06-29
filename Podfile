@@ -6,4 +6,5 @@ pod 'XLPagerTabStrip', '~> 9.0'
 pod 'CHTCollectionViewWaterfallLayout/Swift'
 pod 'YPImagePicker'
 pod 'MBProgressHUD', '~>1.2.0'
+pod 'SKPhotoBrowser' 
 end

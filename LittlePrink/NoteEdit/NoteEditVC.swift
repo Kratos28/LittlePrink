@@ -7,13 +7,15 @@
 
 import UIKit
 import YPImagePicker
+import SKPhotoBrowser
+import MBProgressHUD
 class NoteEditVC: UIViewController {
 
     
      var photos = [
-        UIImage(named: "1"),
-        UIImage(named: "2"),
-        UIImage(named: "3")
+        UIImage(named: "1")!,
+        UIImage(named: "2")!,
+        UIImage(named: "3")!
     ];
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -28,9 +30,33 @@ class NoteEditVC: UIViewController {
 
 extension NoteEditVC:UICollectionViewDelegate
 {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+        var images =  [SKPhoto]();
+        
+        for photo in photos
+        {
+            images.append(SKPhoto.photoWithImage(photo));
+        }
+        
+        let browser = SKPhotoBrowser(photos:images,initialPageIndex: indexPath.item );
+        SKPhotoBrowserOptions.displayAction = false;
+        browser.delegate = self;
+        SKPhotoBrowserOptions.displayDeleteButton = true;
+        present(browser, animated: true);
+    }
 }
 
+/// MARK: - SKPhotoBrowserDelegate
+extension NoteEditVC:SKPhotoBrowserDelegate
+{
+    func removePhoto(_ browser: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
+        photos.remove(at: index);
+        photoCollectionView.reloadData();
+        reload();
+    }
+}
 extension NoteEditVC:UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -100,7 +126,7 @@ extension NoteEditVC{
         
     
         }else {
-            
+            self.showTextHUD("最多只能选择\(kMaxPhotoCount)张照片哦");
         }
     }
 }
