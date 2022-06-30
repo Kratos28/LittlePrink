@@ -20,7 +20,7 @@ class NoteEditVC: UIViewController {
     ];
 //    var videoURL :URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
     var videoURL :URL?
-
+    ////
     @IBOutlet weak var photoCollectionView: UICollectionView!
     var isVideo : Bool {videoURL != nil}
     
