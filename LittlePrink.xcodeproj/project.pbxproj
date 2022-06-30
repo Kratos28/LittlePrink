@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A299A0A286DC41C008B66E6 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0A299A09286DC41C008B66E6 /* testVideo.mp4 */; };
 		65094579285D9D1C0009FEAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* Extension.swift */; };
 		650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC2284C611C002B07AF /* WaterfallVC.swift */; };
 		650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC4284C69CE002B07AF /* WaterfallCell.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A299A09286DC41C008B66E6 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = "iOS14+Swift5.3仿小红书实战教程(素材)/10-UICollectionView实战(素材)/10-18素材/testVideo.mp4"; sourceTree = SOURCE_ROOT; };
 		0AC589E9286AFA5F00B00AE4 /* MyViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		386924448731C16EC6CD740F /* Pods_LittlePrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 		65399077282AB3DE002EB0E8 /* LittlePrink */ = {
 			isa = PBXGroup;
 			children = (
+				0A299A09286DC41C008B66E6 /* testVideo.mp4 */,
 				65094577285D9CF90009FEAD /* Common */,
 				65399078282AB3DE002EB0E8 /* AppDelegate.swift */,
 				6539907A282AB3DE002EB0E8 /* SceneDelegate.swift */,
@@ -246,6 +249,7 @@
 				65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */,
 				65399080282AB3DE002EB0E8 /* Main.storyboard in Resources */,
 				659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */,
+				0A299A0A286DC41C008B66E6 /* testVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +504,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +542,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

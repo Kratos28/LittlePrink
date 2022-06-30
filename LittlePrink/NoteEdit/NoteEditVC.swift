@@ -9,6 +9,7 @@ import UIKit
 import YPImagePicker
 import SKPhotoBrowser
 import MBProgressHUD
+import AVKit
 class NoteEditVC: UIViewController {
 
     
@@ -17,8 +18,11 @@ class NoteEditVC: UIViewController {
         UIImage(named: "2")!,
         UIImage(named: "3")!
     ];
-    
+//    var videoURL :URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
+    var videoURL :URL?
+
     @IBOutlet weak var photoCollectionView: UICollectionView!
+    var isVideo : Bool {videoURL != nil}
     
     var photoCount :Int {photos.count}
     override func viewDidLoad() {
@@ -32,19 +36,32 @@ extension NoteEditVC:UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
-        var images =  [SKPhoto]();
-        
-        for photo in photos
+        if isVideo
         {
-            images.append(SKPhoto.photoWithImage(photo));
+            let playerVC = AVPlayerViewController();
+            playerVC.player = AVPlayer(url: videoURL!);
+            
+            present(playerVC, animated:true) {
+                playerVC.player?.play();
+            };
+        }else
+        {
+            var images =  [SKPhoto]();
+            
+            for photo in photos
+            {
+                images.append(SKPhoto.photoWithImage(photo));
+            }
+            
+            let browser = SKPhotoBrowser(photos:images,initialPageIndex: indexPath.item );
+            SKPhotoBrowserOptions.displayAction = false;
+            browser.delegate = self;
+            SKPhotoBrowserOptions.displayDeleteButton = true;
+            present(browser, animated: true);
         }
         
-        let browser = SKPhotoBrowser(photos:images,initialPageIndex: indexPath.item );
-        SKPhotoBrowserOptions.displayAction = false;
-        browser.delegate = self;
-        SKPhotoBrowserOptions.displayDeleteButton = true;
-        present(browser, animated: true);
+        
+
     }
 }
 
