@@ -13,6 +13,7 @@ import AVKit
 class NoteEditVC: UIViewController {
 
     
+    
      var photos = [
         UIImage(named: "1")!,
         UIImage(named: "2")!,
@@ -27,7 +28,7 @@ class NoteEditVC: UIViewController {
     var photoCount :Int {photos.count}
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        photoCollectionView.dragInteractionEnabled = true;
     }
 }
 
