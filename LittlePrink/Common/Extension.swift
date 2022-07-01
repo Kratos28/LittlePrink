@@ -9,6 +9,13 @@ import Foundation
 import UIKit
 
 
+extension UITextField
+{
+    var unwarppedText:String {
+        text ?? ""
+    }
+}
+
 extension UIView
 {
     @IBInspectable  var  cornerRadius : CGFloat{
@@ -32,6 +39,16 @@ extension UIViewController {
         hud.detailsLabel.text = subtitle;
         hud.hide(animated: true, afterDelay: 2);
     }
+    
+    func hideKeyBoardWhenTappedAround(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))
+        tap.cancelsTouchesInView = false;
+        view.addGestureRecognizer(tap);
+    }
+    @objc func dismissKeyBoard(){
+        view.endEditing(true);
+    }
+    
 }
 
 
