@@ -262,7 +262,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkj-iY-XKR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="lkj-iY-XKR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKv-Ga-w8a">
@@ -341,14 +341,81 @@
                                                 <connections>
                                                     <outlet property="dataSource" destination="vkm-vS-hT2" id="jZk-ne-xez"/>
                                                     <outlet property="delegate" destination="vkm-vS-hT2" id="6y1-gG-TED"/>
+                                                    <outlet property="dragDelegate" destination="vkm-vS-hT2" id="Wuu-CH-bG8"/>
+                                                    <outlet property="dropDelegate" destination="vkm-vS-hT2" id="Y2W-R4-kqs"/>
                                                 </connections>
                                             </collectionView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="nB1-6c-0SZ">
+                                                <rect key="frame" x="16" y="122" width="382" height="285"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-kq-iHU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="38"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YLp-eA-CYH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAV-vF-RGz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                        <connections>
+                                                                            <action selector="TFEditChanged:" destination="vkm-vS-hT2" eventType="editingChanged" id="Ghl-9W-FQL"/>
+                                                                            <action selector="TFEditingBegin:" destination="vkm-vS-hT2" eventType="editingDidBegin" id="Jq3-wO-Nn8"/>
+                                                                            <action selector="TFEditingEnd:" destination="vkm-vS-hT2" eventType="editingDidEnd" id="20Y-4K-zUg"/>
+                                                                            <action selector="TFEndOnExit:" destination="vkm-vS-hT2" eventType="editingDidEndOnExit" id="t1F-p5-Bnt"/>
+                                                                            <outlet property="delegate" destination="vkm-vS-hT2" id="LKN-Mv-Esp"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-OS-gyk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-yy-gVV">
+                                                                <rect key="frame" x="0.0" y="37" width="382" height="1"/>
+                                                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="tgm-WS-TUR"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="mIA-iq-pSx">
+                                                        <rect key="frame" x="0.0" y="125" width="382" height="160"/>
+                                                        <subviews>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5eS-A6-WJ4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="130"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="130" id="JxR-tf-RZr"/>
+                                                                </constraints>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <color key="textColor" systemColor="labelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7i7-HT-Al7">
+                                                                <rect key="frame" x="0.0" y="159" width="382" height="1"/>
+                                                                <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="YaA-B8-bQ3"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="nB1-6c-0SZ" firstAttribute="top" secondItem="5cS-9W-Gj6" secondAttribute="bottom" constant="16" id="GgZ-BB-Tkp"/>
                                             <constraint firstItem="5cS-9W-Gj6" firstAttribute="top" secondItem="xKv-Ga-w8a" secondAttribute="top" constant="16" id="HVF-oQ-4mj"/>
                                             <constraint firstItem="5cS-9W-Gj6" firstAttribute="leading" secondItem="xKv-Ga-w8a" secondAttribute="leading" constant="16" id="Zda-eQ-223"/>
+                                            <constraint firstItem="nB1-6c-0SZ" firstAttribute="leading" secondItem="xKv-Ga-w8a" secondAttribute="leading" constant="16" id="byX-GX-BpJ"/>
                                             <constraint firstAttribute="trailing" secondItem="5cS-9W-Gj6" secondAttribute="trailing" constant="16" id="p4i-GP-FsD"/>
+                                            <constraint firstAttribute="trailing" secondItem="nB1-6c-0SZ" secondAttribute="trailing" constant="16" id="qLU-VR-I3W"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -375,6 +442,9 @@
                     </view>
                     <connections>
                         <outlet property="photoCollectionView" destination="5cS-9W-Gj6" id="hsd-6W-48F"/>
+                        <outlet property="textView" destination="5eS-A6-WJ4" id="VHK-hh-h2U"/>
+                        <outlet property="titleCountlabel" destination="2XH-OS-gyk" id="P48-Gi-a34"/>
+                        <outlet property="titleTextField" destination="lAV-vF-RGz" id="j6e-HQ-alz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTy-Tc-BBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -484,8 +554,14 @@
         <namedColor name="main">
             <color red="0.92900002002716064" green="0.34099999070167542" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
