@@ -84,11 +84,15 @@ extension NoteEditVC:UITextFieldDelegate
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         
-       if  range.location >= kMaxNoteTitleCount
+        
+        let isExceed = range.location >= kMaxNoteTitleCount || (textField.unwarppedText.count + string.count) > kMaxNoteTitleCount;
+    
+        if isExceed
         {
-           return false;
-       }
-        return true;
+            showTextHUD("标题最多输入\(kMaxNoteTitleCount)字");
+        }
+        print(isExceed);
+        return !isExceed;
     }
     
     
