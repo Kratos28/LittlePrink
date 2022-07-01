@@ -14,14 +14,12 @@ class NoteEditVC: UIViewController {
 
     
     
-    
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var titleCountlabel: UILabel!
-    var photos = [
+
+     var photos = [
         UIImage(named: "1")!,
-        UIImage(named: "2")!,
-        UIImage(named: "3")!
     ];
 //    var videoURL :URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
     var videoURL :URL?
@@ -35,6 +33,8 @@ class NoteEditVC: UIViewController {
         
         photoCollectionView.dragInteractionEnabled = true;
         self.hideKeyBoardWhenTappedAround();
+
+
 
         titleCountlabel.text = "\(kMaxNoteTitleCount)";
     }
