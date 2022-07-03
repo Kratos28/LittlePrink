@@ -57,6 +57,7 @@
 		65399084282AB3E0002EB0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65399087282AB3E0002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65399089282AB3E0002EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656D6A1E2871585B007FCAF8 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		657901CB2843D140009AA37A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		657EB4192845189A00E6E507 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		657EB41B284518CF00E6E507 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				65DE81A5285A437A002F4541 /* PostVC.swift */,
 				0AC589E9286AFA5F00B00AE4 /* MyViewController.playground */,
 				65A6DD9E286CA14F00DA1988 /* LittlePrink-Bridging-Header.h */,
+				656D6A1E2871585B007FCAF8 /* Location.gpx */,
 			);
 			path = LittlePrink;
 			sourceTree = "<group>";

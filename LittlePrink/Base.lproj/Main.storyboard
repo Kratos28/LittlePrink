@@ -357,7 +357,7 @@
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAV-vF-RGz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                                        <textInputTraits key="textInputTraits" returnKeyType="done" smartInsertDeleteType="no"/>
                                                                         <connections>
                                                                             <action selector="TFEditChanged:" destination="vkm-vS-hT2" eventType="editingChanged" id="Ghl-9W-FQL"/>
                                                                             <action selector="TFEditingBegin:" destination="vkm-vS-hT2" eventType="editingDidBegin" id="Jq3-wO-Nn8"/>
@@ -366,8 +366,8 @@
                                                                             <outlet property="delegate" destination="vkm-vS-hT2" id="LKN-Mv-Esp"/>
                                                                         </connections>
                                                                     </textField>
-                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-OS-gyk">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="21"/>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-OS-gyk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="16" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>

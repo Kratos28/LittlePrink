@@ -24,7 +24,8 @@ class NoteEditVC: UIViewController {
     var videoURL :URL?
     ////
     @IBOutlet weak var photoCollectionView: UICollectionView!
-    var isVideo : Bool {videoURL != nil}
+    var isVideo : Bool {videoURL
+        != nil}
     
     var photoCount :Int {photos.count}
     override func viewDidLoad() {
@@ -33,6 +34,8 @@ class NoteEditVC: UIViewController {
         photoCollectionView.dragInteractionEnabled = true;
         self.hideKeyBoardWhenTappedAround();
         titleCountlabel.text = "\(kMaxNoteTitleCount)";
+        textView.textContainerInset = .zero;
+        textView.textContainer.lineFragmentPadding = 0;
     }
     
     
@@ -49,6 +52,12 @@ class NoteEditVC: UIViewController {
         
     }
     @IBAction func TFEditChanged(_ sender: Any) {
+        
+        guard titleTextField.markedTextRange == nil else {return};
+        if titleTextField.unwarppedText.count > kMaxNoteTitleCount
+        {
+            titleTextField.text =  String(titleTextField.unwarppedText.prefix(kMaxNoteTitleCount));
+        }
         titleCountlabel.text = "\(kMaxNoteTitleCount - titleTextField.unwarppedText.count)"
     }
 }
