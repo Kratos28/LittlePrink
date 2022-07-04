@@ -31,11 +31,7 @@ class NoteEditVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        photoCollectionView.dragInteractionEnabled = true;
-        self.hideKeyBoardWhenTappedAround();
-        titleCountlabel.text = "\(kMaxNoteTitleCount)";
-        textView.textContainerInset = .zero;
-        textView.textContainer.lineFragmentPadding = 0;
+      
     }
     
     
