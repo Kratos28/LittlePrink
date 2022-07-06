@@ -20,7 +20,15 @@ extension NoteEditVC
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -lineFragmentPadding, bottom: 0, right: -lineFragmentPadding);
         
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing  = 6
-        textView.typingAttributes   = [NSAttributedString.Key.paragraphStyle:paragraphStyle]
+        paragraphStyle.lineSpacing  = 6;
+        let typingAttributes:[NSAttributedString.Key:Any] = [
+            .paragraphStyle:paragraphStyle,
+            .font:UIFont.systemFont(ofSize: 14),
+            .foregroundColor : UIColor.secondaryLabel
+            
+        ];
+        textView.typingAttributes   = typingAttributes;
+        textView.tintColorDidChange();
+        
     }
 }

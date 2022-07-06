@@ -356,6 +356,7 @@
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="填写标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAV-vF-RGz">
                                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="21"/>
+                                                                        <color key="tintColor" name="main"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits" returnKeyType="done" smartInsertDeleteType="no"/>
                                                                         <connections>
@@ -388,6 +389,7 @@
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="gewgw" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5eS-A6-WJ4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="130"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="tintColor" name="main"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="130" id="JxR-tf-RZr"/>
                                                                 </constraints>
