@@ -30,7 +30,7 @@ class NoteEditVC: UIViewController {
     var photoCount :Int {photos.count}
     override func viewDidLoad() {
         super.viewDidLoad();
-        
+        config();
       
     }
     

@@ -29,6 +29,8 @@ extension NoteEditVC
         ];
         textView.typingAttributes   = typingAttributes;
         textView.tintColorDidChange();
+        let   view = Bundle.main.loadNibNamed("TextViewIAView", owner: nil, options: nil)?.first as! TextViewIAView;
+        textView.inputAccessoryView = view;
         
     }
 }
