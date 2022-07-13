@@ -10,5 +10,6 @@ import UIKit
 class TextViewIAView: UIView {
 
  
-
+    @IBOutlet weak var doneBtn: UIButton!
+    
 }
