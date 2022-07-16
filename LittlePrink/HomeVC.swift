@@ -12,7 +12,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
         
-        settings.style.selectedBarBackgroundColor = UIColor(named: "main")!;
+        settings.style.selectedBarBackgroundColor = mainColor;
         settings.style.selectedBarHeight = 3;
         settings.style.buttonBarItemBackgroundColor = .clear
         settings.style.buttonBarItemTitleColor = .label;

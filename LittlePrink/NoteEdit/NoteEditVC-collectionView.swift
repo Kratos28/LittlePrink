@@ -103,11 +103,6 @@ extension NoteEditVC{
                 }
                 picker.dismiss(animated: true,completion: nil);
             }
-
-            
-            
-        
-    
         }else {
             self.showTextHUD("最多只能选择\(kMaxPhotoCount)张照片哦");
         }

@@ -13,10 +13,16 @@ let kWaterfallVCID = "WaterfallVCID";
 
 let kNoteEditVCID = "NoteEditVCID";
 let kPhotoCellID = "PhotoCellID";
+let ksubChannelCellID = "SubChannelCellID";
+
+// MARK: -资源文件
+let mainColor = UIColor(named: "main")!;
 
 
 // MARK: CellID
 let waterfallCellID = "waterfallCellID";
+let kChannelTableVCID = "ChannelTableViewVCID";
+
 let kWaterfallPadding :CGFloat =  4;
 let kphotoFooterID = "PhotoFooterID"
 
@@ -27,3 +33,22 @@ let kMaxPhotoCount = 9;
 let KMaxCameraZoomFactor = 5.0;
 let kSpacingBetweenItems = 2.0;
 let kMaxNoteTitleCount = 20;
+let kMaxNoteTextCount = 5;
+
+
+
+//话题
+let kAllSubChannels =
+[
+    ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"],
+    ["推荐","wefw","娱乐","才艺","美wew","白富wefwfw美","fefef","萌宠"],
+    ["3222","wefw","娱乐","才艺","美wew","白富wefwfw美","fefef","wefw"],
+    ["3222","wefw","egwgw","才艺","美wew","白富wefwfw美","fefef","wefw"],
+    ["3222","wefw","egwgw","才艺","美wew","fwe美","fefef","wefw"],
+    ["3222","wefw","egwgw","才艺","美wew","fwe美","fefef","wefw"],
+    ["3222","wefw","egwgw","才艺","美wew","fwe美","fefef","wefw"],
+    ["3222","wefw","egwgw","才艺","美wew","fwe美","fefef","wefw"]
+
+
+    
+]

@@ -26,8 +26,8 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var photoCollectionView: UICollectionView!
     var isVideo : Bool {videoURL
         != nil}
-    
     var photoCount :Int {photos.count}
+    var TextViewIAView: TextViewIAView{textView.inputAccessoryView as!TextViewIAView;}
     override func viewDidLoad() {
         super.viewDidLoad();
         config();
@@ -70,6 +70,16 @@ extension NoteEditVC:SKPhotoBrowserDelegate
     }
 }
 
+extension NoteEditVC:UITextViewDelegate
+{
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.markedTextRange == nil else {
+            return;
+        }
+        TextViewIAView.currentTextCount = textView.text.count;
+    }
+}
+
 
 extension NoteEditVC:UITextFieldDelegate
 {
@@ -92,7 +102,6 @@ extension NoteEditVC:UITextFieldDelegate
         {
             showTextHUD("标题最多输入\(kMaxNoteTitleCount)字");
         }
-        print(isExceed);
         return !isExceed;
     }
     
