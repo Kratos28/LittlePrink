@@ -14,11 +14,6 @@ class ChannelTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -36,6 +31,11 @@ class ChannelTableVC: UITableViewController {
         cell.textLabel?.text = "# \(subChannels[indexPath.row])";
         cell.textLabel?.font = .systemFont(ofSize: 15);
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ChannelVC = parent as! ChannelVC
+        ChannelVC.PVdelegate?.updateChannel(channel: channel, subChannel: subChannels[indexPath.row]);
+        dismiss(animated: false);
     }
     
 

@@ -56,9 +56,21 @@ class NoteEditVC: UIViewController {
         }
         titleCountlabel.text = "\(kMaxNoteTitleCount - titleTextField.unwarppedText.count)"
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let channelVC = segue.destination as? ChannelVC{
+            channelVC.PVdelegate = self;
+        }
+    }
 }
 
-
+extension NoteEditVC:ChannelVCDelegate
+{
+    func updateChannel(channel: String, subChannel: String) {
+        print(channel);
+        
+    }
+}
 
 /// MARK: - SKPhotoBrowserDelegate
 extension NoteEditVC:SKPhotoBrowserDelegate

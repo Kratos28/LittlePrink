@@ -90,8 +90,22 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-PZ-lxk">
-                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-PZ-lxk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dw-wh-7Pm">
+                                        <rect key="frame" x="87" y="350" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="width" secondItem="cOE-Ge-rT5" secondAttribute="width" multiplier="0.57971" id="69o-qR-bhd"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="trailing" secondItem="mOC-EZ-yHY" secondAttribute="trailing" constant="327" id="J7Z-ka-gv7"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="bottom" secondItem="mOC-EZ-yHY" secondAttribute="bottom" constant="478" id="NQD-r7-lut"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="leading" secondItem="mOC-EZ-yHY" secondAttribute="leading" constant="87" id="QKL-QG-YZs"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="height" secondItem="cOE-Ge-rT5" secondAttribute="height" multiplier="0.176552" id="boy-W3-2nx"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="top" secondItem="mOC-EZ-yHY" secondAttribute="top" constant="350" id="t4j-aW-EQc"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="mOC-EZ-yHY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="cOE-Ge-rT5"/>
                             </scrollView>
@@ -597,7 +611,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubChannelCellID" id="gUL-Ux-XA2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SubChannelCellID" id="gUL-Ux-XA2">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gUL-Ux-XA2" id="Ykn-aK-Au6">

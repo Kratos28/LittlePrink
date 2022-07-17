@@ -12,9 +12,11 @@ import XLPagerTabStrip
 
 class ChannelVC: ButtonBarPagerTabStripViewController {
 
+    var PVdelegate:ChannelVCDelegate?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         settings.style.selectedBarHeight = 2;
         settings.style.selectedBarBackgroundColor = mainColor;
         settings.style.buttonBarItemBackgroundColor = .clear;
