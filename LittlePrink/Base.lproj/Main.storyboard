@@ -94,17 +94,15 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dw-wh-7Pm">
-                                        <rect key="frame" x="87" y="350" width="240" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="width" secondItem="cOE-Ge-rT5" secondAttribute="width" multiplier="0.57971" id="69o-qR-bhd"/>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="trailing" secondItem="mOC-EZ-yHY" secondAttribute="trailing" constant="327" id="J7Z-ka-gv7"/>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="bottom" secondItem="mOC-EZ-yHY" secondAttribute="bottom" constant="478" id="NQD-r7-lut"/>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="leading" secondItem="mOC-EZ-yHY" secondAttribute="leading" constant="87" id="QKL-QG-YZs"/>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="height" secondItem="cOE-Ge-rT5" secondAttribute="height" multiplier="0.176552" id="boy-W3-2nx"/>
-                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="top" secondItem="mOC-EZ-yHY" secondAttribute="top" constant="350" id="t4j-aW-EQc"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="trailing" secondItem="mOC-EZ-yHY" secondAttribute="trailing" id="92A-mF-c3P"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="leading" secondItem="mOC-EZ-yHY" secondAttribute="leading" id="ZRm-CQ-Eu0"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="bottom" secondItem="mOC-EZ-yHY" secondAttribute="bottom" id="gI6-tA-Xtd"/>
+                                    <constraint firstItem="2dw-wh-7Pm" firstAttribute="top" secondItem="mOC-EZ-yHY" secondAttribute="top" id="vJX-3T-LA8"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="mOC-EZ-yHY"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="cOE-Ge-rT5"/>
@@ -116,10 +114,13 @@
                             <constraint firstItem="gRV-YP-rVZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IAm-tb-Tae"/>
                             <constraint firstItem="bUA-PZ-lxk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KSI-aI-Twi"/>
                             <constraint firstItem="bUA-PZ-lxk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LJF-Xi-5hn"/>
+                            <constraint firstItem="2dw-wh-7Pm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.57971" id="LKl-CG-Ugt"/>
                             <constraint firstItem="bUA-PZ-lxk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V8s-xd-IYy"/>
+                            <constraint firstItem="bUA-PZ-lxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="amY-nA-nN3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gRV-YP-rVZ" secondAttribute="trailing" id="i9S-rt-pVk"/>
                             <constraint firstItem="gRV-YP-rVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jRl-iQ-0o2"/>
                             <constraint firstItem="bUA-PZ-lxk" firstAttribute="top" secondItem="gRV-YP-rVZ" secondAttribute="bottom" id="ljk-If-00f"/>
+                            <constraint firstItem="2dw-wh-7Pm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.142857" id="sdb-NK-yX8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="CE6-YZ-aeZ"/>
