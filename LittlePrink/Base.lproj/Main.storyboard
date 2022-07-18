@@ -525,6 +525,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ChannelIcon" destination="pTn-Rm-r9m" id="GWw-vE-fVV"/>
+                        <outlet property="channelLabel" destination="pAl-Fx-ogS" id="PMe-p4-PXE"/>
+                        <outlet property="channelPlaceholderLabel" destination="bfN-pI-rDZ" id="10X-5s-UAA"/>
                         <outlet property="photoCollectionView" destination="5cS-9W-Gj6" id="hsd-6W-48F"/>
                         <outlet property="textView" destination="5eS-A6-WJ4" id="VHK-hh-h2U"/>
                         <outlet property="titleCountlabel" destination="2XH-OS-gyk" id="P48-Gi-a34"/>

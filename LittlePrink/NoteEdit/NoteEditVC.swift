@@ -17,12 +17,18 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var titleCountlabel: UILabel!
 
-     var photos = [
+    @IBOutlet weak var channelPlaceholderLabel: UILabel!
+    @IBOutlet weak var channelLabel: UILabel!
+    @IBOutlet weak var ChannelIcon: UIImageView!
+    var photos = [
         UIImage(named: "1")!,
     ];
 //    var videoURL :URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
     var videoURL :URL?
-    ////
+    
+    var channel = "";
+    var subChannel = "";
+    
     @IBOutlet weak var photoCollectionView: UICollectionView!
     var isVideo : Bool {videoURL
         != nil}
@@ -67,7 +73,13 @@ class NoteEditVC: UIViewController {
 extension NoteEditVC:ChannelVCDelegate
 {
     func updateChannel(channel: String, subChannel: String) {
-        print(channel);
+        self.channel = channel;
+        self.subChannel = subChannel;
+        
+        channelLabel.text = subChannel;
+        ChannelIcon.tintColor = blueColor;
+        channelLabel.textColor = blueColor;
+        channelPlaceholderLabel.isHidden = true;
         
     }
 }

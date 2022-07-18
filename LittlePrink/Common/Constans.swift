@@ -18,6 +18,7 @@ let ksubChannelCellID = "SubChannelCellID";
 // MARK: -资源文件
 let mainColor = UIColor(named: "main")!;
 
+let blueColor = UIColor(named: "blue")!;
 
 // MARK: CellID
 let waterfallCellID = "waterfallCellID";
