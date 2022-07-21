@@ -32,6 +32,7 @@
 		659029BC286A046200720B03 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659029BB286A046200720B03 /* photoCell.swift */; };
 		659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7682853B80A001FAD27 /* Localizable.strings */; };
 		659BE76E2853BF66001FAD27 /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7702853BF66001FAD27 /* infoPlist.strings */; };
+		659E215E28885B3800A93873 /* POIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E215D28885B3800A93873 /* POIVC.swift */; };
 		65A6DDA1286CA14F00DA1988 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A6DDA0286CA14F00DA1988 /* Test.m */; };
 		65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC4E23286B54E4003B51AC /* PhotoFooter.swift */; };
 		65C58239284665BF00B68027 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C58238284665BF00B68027 /* Constans.swift */; };
@@ -79,6 +80,7 @@
 		659BE76B2853B98B001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659BE76F2853BF66001FAD27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
 		659BE7712853BF68001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		659E215D28885B3800A93873 /* POIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIVC.swift; sourceTree = "<group>"; };
 		65A6DD9E286CA14F00DA1988 /* LittlePrink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePrink-Bridging-Header.h"; sourceTree = "<group>"; };
 		65A6DD9F286CA14F00DA1988 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		65A6DDA0286CA14F00DA1988 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				0A39CAE6286E9F6600FA3FF5 /* NoteEditVC-collectionView.swift */,
 				6532BD90287DD4240085B38C /* TextViewIAView.swift */,
 				6532BD8E287DD34E0085B38C /* TextViewIAView.xib */,
+				659E215D28885B3800A93873 /* POIVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,
+				659E215E28885B3800A93873 /* POIVC.swift in Sources */,
 				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
 				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				65DE778A288283FF00FFF6B5 /* ChannelVC.swift in Sources */,
