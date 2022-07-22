@@ -31,7 +31,7 @@ extension NoteEditVC
         textView.tintColorDidChange();
         let   view = Bundle.main.loadNibNamed("TextViewIAView", owner: nil, options: nil)?.first as! TextViewIAView;
         textView.inputAccessoryView = view;
-        (textView.inputAccessoryView as ! TextViewIAView).doneBtn.addTarget(self, action: #selector(resignTextView), for: .touchUpInside);
+        (textView.inputAccessoryView as! TextViewIAView).doneBtn.addTarget(self, action: #selector(resignTextView), for: .touchUpInside);
         
     }
 }
