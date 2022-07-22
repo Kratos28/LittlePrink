@@ -41,7 +41,7 @@ extension POIVC:UITableViewDataSource
 }
 
 
-extension POIVC:UITableViewController
+extension POIVC:UITableViewDelegate
 {
     
 }
