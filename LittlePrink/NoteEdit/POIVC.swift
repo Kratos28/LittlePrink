@@ -48,8 +48,14 @@ class POIVC: UIViewController {
             }
 
         
+            
+            if let location = location
+            {
+                print("location:",location);
+            }
             if let reGeocode = reGeocode {
-                
+                print("reGeocode:",reGeocode);
+
             }
         }
     }
