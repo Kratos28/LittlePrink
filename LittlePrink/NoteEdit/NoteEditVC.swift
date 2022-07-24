@@ -10,9 +10,11 @@ import YPImagePicker
 import SKPhotoBrowser
 import MBProgressHUD
 import AVKit
+import CoreLocation
 class NoteEditVC: UIViewController {
 
     
+     let locationManager  = CLLocationManager();
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var titleCountlabel: UILabel!

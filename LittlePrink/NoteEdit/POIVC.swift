@@ -6,25 +6,59 @@
 //
 
 import UIKit
+import CoreLocation
 
 class POIVC: UIViewController {
 
+    private let locationManager = AMapLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.locationTimeout = 5;
+        locationManager.reGeocodeTimeout = 5;
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+        
+        
+        
+        locationManager.requestLocation(withReGeocode: false) { location, reGeocode, error in
+            if let error = error {
+                let error = error as NSError
+            
+                if error.code == AMapLocationErrorCode.locateFailed.rawValue {
+                    
+                    
+                    return;
+                }else if error.code == AMapLocationErrorCode.reGeocodeFailed.rawValue
+                            || error.code == AMapLocationErrorCode.timeOut.rawValue
+                            || error.code == AMapLocationErrorCode.cannotFindHost.rawValue
+                            || error.code == AMapLocationErrorCode.badURL.rawValue
+                            || error.code == AMapLocationErrorCode.notConnectedToInternet.rawValue
+                            || error.code == AMapLocationErrorCode.cannotConnectToHost.rawValue
+                {
+                    
+                    
+                }else
+                {
+                    
+                }
+                
+                
+                
+            }
 
-        // Do any additional setup after loading the view.
+        
+            if let reGeocode = reGeocode {
+                
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+    
+    
 
 }
 extension POIVC:UITableViewDataSource
