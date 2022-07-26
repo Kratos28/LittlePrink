@@ -11,6 +11,10 @@ import CoreLocation
 class POIVC: UIViewController {
 
     private let locationManager = AMapLocationManager()
+    private var pois = [["不显示位置",""]];
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,7 @@ class POIVC: UIViewController {
         
         
         
-        locationManager.requestLocation(withReGeocode: false) { location, reGeocode, error in
+        locationManager.requestLocation(withReGeocode: false) {[weak self] location, reGeocode, error in
             if let error = error {
                 let error = error as NSError
             
@@ -37,7 +41,6 @@ class POIVC: UIViewController {
                             || error.code == AMapLocationErrorCode.cannotConnectToHost.rawValue
                 {
                     
-                    
                 }else
                 {
                     
@@ -47,7 +50,7 @@ class POIVC: UIViewController {
                 
             }
 
-        
+            guard let POIVC = self else{return};
             
             if let location = location
             {
@@ -55,7 +58,16 @@ class POIVC: UIViewController {
             }
             if let reGeocode = reGeocode {
                 print("reGeocode:",reGeocode);
-
+                guard let formattedAddress = reGeocode.formattedAddress,!formattedAddress.isEmpty else {return};
+                let province = reGeocode.province  == reGeocode.city ? "" :reGeocode.province!;
+                let currentPOI = [reGeocode.poiName!,
+                                  "\(province)\(reGeocode.city!)\(reGeocode.district!)\(reGeocode.street ?? "")\(reGeocode.number ?? "")"];
+                POIVC.pois.append(currentPOI);
+                
+                DispatchQueue.main.async {
+                    POIVC.tableView.reloadData();
+                }
+                
             }
         }
     }
@@ -70,11 +82,15 @@ class POIVC: UIViewController {
 extension POIVC:UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        pois.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell();
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: kPOICellID,for: indexPath) as! POICell;
+        let poi = pois[indexPath.row];
+        cell.poi = poi;
+        return cell;
     }
     
     

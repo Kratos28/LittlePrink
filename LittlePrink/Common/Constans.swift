@@ -19,7 +19,7 @@ let ksubChannelCellID = "SubChannelCellID";
 let mainColor = UIColor(named: "main")!;
 
 let blueColor = UIColor(named: "blue")!;
-
+let kPOICellID = "POICellID"
 // MARK: CellID
 let waterfallCellID = "waterfallCellID";
 let kChannelTableVCID = "ChannelTableViewVCID";

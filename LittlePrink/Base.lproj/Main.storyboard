@@ -600,17 +600,43 @@
                                     <constraint firstAttribute="height" constant="1" id="N4g-Ae-eGN"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hma-IJ-YIs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hma-IJ-YIs">
                                 <rect key="frame" x="0.0" y="105" width="414" height="791"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bS6-OP-yPa">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICellID" id="bS6-OP-yPa" customClass="POICell" customModule="LittlePrink" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bS6-OP-yPa" id="Nis-PE-6Wk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-zv-oBR">
+                                                    <rect key="frame" x="0.0" y="6" width="40" height="37"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-7p-2Lw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-s8-5kf">
+                                                            <rect key="frame" x="0.0" y="21" width="40" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wcN-zv-oBR" firstAttribute="leading" secondItem="Nis-PE-6Wk" secondAttribute="leading" id="H5f-hj-6H6"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="Nfk-s8-5kf" id="deV-4O-pHU"/>
+                                            <outlet property="titleLabel" destination="3Gu-7p-2Lw" id="AYX-x7-Weo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -634,6 +660,9 @@
                             <constraint firstItem="hma-IJ-YIs" firstAttribute="top" secondItem="oUA-j3-SpK" secondAttribute="bottom" id="spJ-zP-T2i"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="hma-IJ-YIs" id="PTX-Eb-bBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCp-8p-IIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
