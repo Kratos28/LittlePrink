@@ -31,6 +31,21 @@ extension UIView
 
 extension UIViewController {
 
+    
+    
+    func showLoadHUd(_ title :String? = nil)
+    {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true);
+        hud.label.text = title;
+        
+    }
+    func hideLoadHUD(){
+        DispatchQueue.main.async {
+            
+            MBProgressHUD.hide(for: self.view, animated: true);
+        }
+    }
+    
     //MARK: 提示框-自动隐藏
     func showTextHUD(_ title:String,_ subtitle:String? = nil){
         let hud =  MBProgressHUD.showAdded(to: view, animated: true);
