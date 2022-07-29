@@ -12,10 +12,14 @@ class POIVC: UIViewController {
 
     lazy var locationManager = AMapLocationManager()
      var pois = [["不显示位置",""]];
+    var latitude : CLLocationDegrees = 0.0;
+    var longitude : CLLocationDegrees = 0.0;
+    
+    
     lazy var mapSearch = AMapSearchAPI();
-    lazy private var aroundSearchRequest : AMapPOIAroundSearchRequest = {
+    lazy  var aroundSearchRequest : AMapPOIAroundSearchRequest = {
         let reqeust = AMapPOIAroundSearchRequest();
-        reqeust.location = AMapGeoPoint.location(withLatitude: CGFloat(39.990459), longitude: CGFloat(116.481476));
+        reqeust.location = AMapGeoPoint.location(withLatitude: latitude, longitude: longitude);
         return reqeust;
     }();
     
@@ -41,7 +45,23 @@ class POIVC: UIViewController {
 
 extension POIVC:AMapSearchDelegate
 {
-    
+    func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
+        
+         
+         
+        if response.count == 0
+        {
+            return;
+        }
+        
+        for poi in response.pois
+        {
+            let province = poi.province == poi.city ? "" :poi.province!;
+            let address = poi.district  ==  poi.address ? "":poi.address;
+            let poi = [poi.name, "\(province)\(poi.city!)\(poi.district!)\(address)"]
+        
+        }
+    }
 }
 extension POIVC:UITableViewDataSource
 {

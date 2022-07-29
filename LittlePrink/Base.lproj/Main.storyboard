@@ -635,7 +635,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressLabel" destination="Nfk-s8-5kf" id="deV-4O-pHU"/>
-                                            <outlet property="titleLabel" destination="3Gu-7p-2Lw" id="AYX-x7-Weo"/>
+                                            <outlet property="nameLabel" destination="3Gu-7p-2Lw" id="eIZ-My-84O"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

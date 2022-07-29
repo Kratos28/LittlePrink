@@ -46,6 +46,10 @@ extension POIVC
             if let location = location
             {
                 print("location:",location);
+                POIVC.latitude =  location.coordinate.latitude;
+                POIVC.longitude =  location.coordinate.longitude;
+                //检索周边POI
+                POIVC.mapSearch?.aMapPOIAroundSearch(POIVC.aroundSearchRequest);
             }
             if let reGeocode = reGeocode {
                 print("reGeocode:",reGeocode);
