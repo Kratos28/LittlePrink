@@ -591,7 +591,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="5BS-fQ-kJZ"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1vw-az-EVo" id="ckY-AN-qea"/>
+                                </connections>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-j3-SpK">
                                 <rect key="frame" x="20" y="104" width="374" height="1"/>
@@ -611,7 +614,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-zv-oBR">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wcN-zv-oBR">
                                                     <rect key="frame" x="0.0" y="6" width="40" height="37"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-7p-2Lw">
@@ -631,6 +634,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wcN-zv-oBR" firstAttribute="leading" secondItem="Nis-PE-6Wk" secondAttribute="leading" id="H5f-hj-6H6"/>
+                                                <constraint firstItem="wcN-zv-oBR" firstAttribute="top" secondItem="Nis-PE-6Wk" secondAttribute="top" constant="6" id="zTd-Jf-dQJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -661,6 +665,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="98G-ct-E5E" id="eL3-eV-WgL"/>
                         <outlet property="tableView" destination="hma-IJ-YIs" id="PTX-Eb-bBX"/>
                     </connections>
                 </viewController>

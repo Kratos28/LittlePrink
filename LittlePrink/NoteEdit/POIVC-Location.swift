@@ -15,7 +15,6 @@ extension POIVC
         
         locationManager.requestLocation(withReGeocode: false) {[weak self] location, reGeocode, error in
             guard let POIVC = self else{return};
-            POIVC.hideLoadHUD();
 
             if let error = error {
 
@@ -23,7 +22,8 @@ extension POIVC
             
                 if error.code == AMapLocationErrorCode.locateFailed.rawValue {
                     
-                    
+                    POIVC.hideLoadHUD();
+
                     return;
                 }else if error.code == AMapLocationErrorCode.reGeocodeFailed.rawValue
                             || error.code == AMapLocationErrorCode.timeOut.rawValue
@@ -32,7 +32,8 @@ extension POIVC
                             || error.code == AMapLocationErrorCode.notConnectedToInternet.rawValue
                             || error.code == AMapLocationErrorCode.cannotConnectToHost.rawValue
                 {
-                    
+                    POIVC.hideLoadHUD();
+                    return;
                 }else
                 {
                     
@@ -52,13 +53,13 @@ extension POIVC
                 POIVC.mapSearch?.aMapPOIAroundSearch(POIVC.aroundSearchRequest);
             }
             if let reGeocode = reGeocode {
-                print("reGeocode:",reGeocode);
-                guard let formattedAddress = reGeocode.formattedAddress,!formattedAddress.isEmpty else {return};
-                let province = reGeocode.province  == reGeocode.city ? "" :reGeocode.province!;
-                let currentPOI = [reGeocode.poiName!,
-                                  "\(province)\(reGeocode.city!)\(reGeocode.district!)\(reGeocode.street ?? "")\(reGeocode.number ?? "")"];
-                POIVC.pois.append(currentPOI);
                 
+                guard let formattedAddress = reGeocode.formattedAddress,!formattedAddress.isEmpty else {return};
+                let province = reGeocode.province  == reGeocode.city ? "" :reGeocode.province;
+                let currentPOI = [reGeocode.poiName ?? kNoPOIPH,
+                                  "\(province.unwrappedText)\(reGeocode.city.unwrappedText)\(reGeocode.district.unwrappedText)\(reGeocode.street.unwrappedText)\(reGeocode.number.unwrappedText)"];
+                POIVC.pois.append(currentPOI);
+                POIVC.aroundSearchPOIs.append(currentPOI);
                 DispatchQueue.main.async {
                     POIVC.tableView.reloadData();
                 }

@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 
+
+extension Optional where Wrapped == String {
+    var unwrappedText: String {self ?? ""}
+    
+}
 extension UITextField
 {
     var unwarppedText:String {
@@ -87,6 +92,14 @@ extension Bundle{
         }
         fatalError("加载\(type)类型的view失败");
         
+    }
+}
+
+extension String
+{
+    var isBlank:Bool
+    {
+        self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty;
     }
 }
 
