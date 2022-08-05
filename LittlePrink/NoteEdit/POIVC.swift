@@ -23,8 +23,10 @@ class POIVC: UIViewController {
     var longitude : CLLocationDegrees = 0.0;
     var keywords = "";
     var aroundSearchPOIs = kPOIsInitArr;
-    var pageCount  = 0;
+    var pageCount  = 1;
     var currentAroundPage = 1;
+    var currentKeywordsPage = 1;
+    
     @IBOutlet weak var searchBar: UISearchBar!
     lazy var mapSearch = AMapSearchAPI();
     lazy  var aroundSearchRequest : AMapPOIAroundSearchRequest = {
@@ -47,7 +49,6 @@ class POIVC: UIViewController {
         config();
         requestLoaction();
         
-        mapSearch?.delegate = self;
         
     }
     
@@ -59,40 +60,6 @@ class POIVC: UIViewController {
 
 }
 
-extension POIVC:AMapSearchDelegate
-{
-    func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
-        
-        let poiCount = response.count;
-        self.hideLoadHUD();
-        if poiCount == 0
-        {
-            return;
-        }
-        
-        for poi in response.pois
-        {
-            let province = poi.province == poi.city ? "" :poi.province;
-            let address = poi.district  ==  poi.address ? "":poi.address;
-            let poi = [poi.name ?? kNoPOIPH,
-                       "\(province.unwrappedText)\(poi.city.unwrappedText)\(poi.district.unwrappedText)\(address.unwrappedText)"]
-            pois.append(poi);
-            if request is AMapPOIAroundSearchRequest{
-                aroundSearchPOIs.append(poi);
-            }
-        }
-        if poiCount > kPOIOffset
-        {
-            pageCount  = poiCount / kPOIOffset + 1;
-            
-        }else
-        {
-            footer.endRefreshingWithNoMoreData();
-        }
-        
-        tableView.reloadData();
-    }
-}
 extension POIVC:UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,36 +83,18 @@ extension POIVC:UITableViewDelegate
     
 }
 
-
-extension POIVC: UISearchBarDelegate
+extension POIVC
 {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
-        
-        if searchText.isEmpty
+    func endRefreshing(_ currentPage : Int)
+    {
+        if currentPage < pageCount
         {
-            pois = aroundSearchPOIs;
-            tableView.reloadData();
+            footer.endRefreshing();
+        }else
+        {
+            footer.endRefreshingWithNoMoreData();
         }
-
     }
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.dismiss(animated: true);
-        
-        
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchText = searchBar.text,!searchText.isBlank else {return};
-        self.keywords = searchText;
-        pois.removeAll();
-        showLoadHUd();
-        keywordsSearchRequest.keywords = keywords;
-        mapSearch?.aMapPOIKeywordsSearch(keywordsSearchRequest);
-        
-
-        
-    }
-    
- 
 }
+
+

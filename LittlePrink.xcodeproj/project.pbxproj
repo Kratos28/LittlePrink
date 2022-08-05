@@ -31,6 +31,7 @@
 		658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E1E08286DF43F0099163E /* NoteEditVC-DragDrop.swift */; };
 		658E248E289042FE00DC0BC5 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E248D289042FE00DC0BC5 /* POICell.swift */; };
 		659029BC286A046200720B03 /* photoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659029BB286A046200720B03 /* photoCell.swift */; };
+		65915E07289D883200FDB849 /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65915E06289D883200FDB849 /* POIVC-KeywordsSearch.swift */; };
 		6598B23D2892E809005B8160 /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598B23C2892E809005B8160 /* POIVC-Config.swift */; };
 		6598B23F2892E88E005B8160 /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6598B23E2892E88E005B8160 /* POIVC-Location.swift */; };
 		659BE76A2853B80A001FAD27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659BE7682853B80A001FAD27 /* Localizable.strings */; };
@@ -80,6 +81,7 @@
 		658E1E08286DF43F0099163E /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		658E248D289042FE00DC0BC5 /* POICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
 		659029BB286A046200720B03 /* photoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoCell.swift; sourceTree = "<group>"; };
+		65915E06289D883200FDB849 /* POIVC-KeywordsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-KeywordsSearch.swift"; sourceTree = "<group>"; };
 		6598B23C2892E809005B8160 /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
 		6598B23E2892E88E005B8160 /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
 		659BE7692853B80A001FAD27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				659E215D28885B3800A93873 /* POIVC.swift */,
 				6598B23E2892E88E005B8160 /* POIVC-Location.swift */,
 				6598B23C2892E809005B8160 /* POIVC-Config.swift */,
+				65915E06289D883200FDB849 /* POIVC-KeywordsSearch.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,
 				659E215E28885B3800A93873 /* POIVC.swift in Sources */,
 				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
+				65915E07289D883200FDB849 /* POIVC-KeywordsSearch.swift in Sources */,
 				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				65DE778A288283FF00FFF6B5 /* ChannelVC.swift in Sources */,
 				6598B23F2892E88E005B8160 /* POIVC-Location.swift in Sources */,

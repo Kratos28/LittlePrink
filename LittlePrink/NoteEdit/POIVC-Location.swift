@@ -85,15 +85,6 @@ extension POIVC
     {
         currentAroundPage += 1;
         makeAroundSearch(currentAroundPage);
-        if currentAroundPage < pageCount
-        {
-            footer.endRefreshing();
-
-        }else
-        {
-            footer.endRefreshingWithNoMoreData();
-
-        }
-      
+        endRefreshing(currentAroundPage);
     }
 }
