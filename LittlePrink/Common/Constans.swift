@@ -58,3 +58,4 @@ let kAllSubChannels =
 let kNoPOIPH = "未知地址"
 let kPOIsInitArr = [["不显示位置",""]]
 let kPOIType = "汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务"
+let kPOIOffset = 20;

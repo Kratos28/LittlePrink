@@ -9,4 +9,5 @@ pod 'MBProgressHUD', '~>1.2.0'
 pod 'SKPhotoBrowser'
 pod 'AMapLocation'
 pod 'AMapSearch'
+pod 'MJRefresh'
 end

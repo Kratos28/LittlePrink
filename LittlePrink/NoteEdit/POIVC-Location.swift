@@ -50,7 +50,9 @@ extension POIVC
                 POIVC.latitude =  location.coordinate.latitude;
                 POIVC.longitude =  location.coordinate.longitude;
                 //检索周边POI
-                POIVC.mapSearch?.aMapPOIAroundSearch(POIVC.aroundSearchRequest);
+                POIVC.footer.setRefreshingTarget(POIVC, refreshingAction: #selector(POIVC.aroundSearchPullToRefresh))
+                
+                POIVC.makeAroundSearch();
             }
             if let reGeocode = reGeocode {
                 
@@ -67,5 +69,31 @@ extension POIVC
             }
         }
 
+    }
+}
+extension POIVC
+{
+    func makeAroundSearch(_ page :Int = 1)
+    {
+        aroundSearchRequest.page =  page;
+        mapSearch?.aMapPOIAroundSearch(aroundSearchRequest)
+    }
+}
+extension POIVC
+{
+    @objc private func aroundSearchPullToRefresh()
+    {
+        currentAroundPage += 1;
+        makeAroundSearch(currentAroundPage);
+        if currentAroundPage < pageCount
+        {
+            footer.endRefreshing();
+
+        }else
+        {
+            footer.endRefreshingWithNoMoreData();
+
+        }
+      
     }
 }

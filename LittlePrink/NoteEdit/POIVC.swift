@@ -9,25 +9,30 @@ import UIKit
 import CoreLocation
 
 class POIVC: UIViewController {
-    
+    lazy var footer = MJRefreshAutoNormalFooter();
     lazy var locationManager = AMapLocationManager()
     var pois = kPOIsInitArr;
     lazy var keywordsSearchRequest : AMapPOIKeywordsSearchRequest  = {
         let request = AMapPOIKeywordsSearchRequest();
         request.requireExtension = true;
+        
+        request.offset = kPOIOffset
         return request;
     }();
     var latitude : CLLocationDegrees = 0.0;
     var longitude : CLLocationDegrees = 0.0;
     var keywords = "";
     var aroundSearchPOIs = kPOIsInitArr;
+    var pageCount  = 0;
+    var currentAroundPage = 1;
     @IBOutlet weak var searchBar: UISearchBar!
     lazy var mapSearch = AMapSearchAPI();
     lazy  var aroundSearchRequest : AMapPOIAroundSearchRequest = {
         let reqeust = AMapPOIAroundSearchRequest();
         reqeust.location = AMapGeoPoint.location(withLatitude: latitude, longitude: longitude);
-//        reqeust.types = kPOIType;
+        reqeust.types = kPOIType;
         reqeust.requireExtension = true;
+        reqeust.offset = kPOIOffset
         
         return reqeust;
     }();
@@ -58,9 +63,9 @@ extension POIVC:AMapSearchDelegate
 {
     func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
         
-         
+        let poiCount = response.count;
         self.hideLoadHUD();
-        if response.count == 0
+        if poiCount == 0
         {
             return;
         }
@@ -76,6 +81,15 @@ extension POIVC:AMapSearchDelegate
                 aroundSearchPOIs.append(poi);
             }
         }
+        if poiCount > kPOIOffset
+        {
+            pageCount  = poiCount / kPOIOffset + 1;
+            
+        }else
+        {
+            footer.endRefreshingWithNoMoreData();
+        }
+        
         tableView.reloadData();
     }
 }
@@ -94,7 +108,7 @@ extension POIVC:UITableViewDataSource
     }
     
     
-}
+}   
 
 
 extension POIVC:UITableViewDelegate
@@ -128,6 +142,7 @@ extension POIVC: UISearchBarDelegate
         showLoadHUd();
         keywordsSearchRequest.keywords = keywords;
         mapSearch?.aMapPOIKeywordsSearch(keywordsSearchRequest);
+        
 
         
     }
