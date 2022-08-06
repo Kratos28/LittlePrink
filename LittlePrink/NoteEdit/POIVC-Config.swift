@@ -16,7 +16,6 @@ extension POIVC{
         locationManager.reGeocodeTimeout = 5;
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
         tableView.mj_footer = footer;
-         
-            
+        
     }
 }

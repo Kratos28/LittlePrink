@@ -50,7 +50,7 @@ extension POIVC
                 POIVC.latitude =  location.coordinate.latitude;
                 POIVC.longitude =  location.coordinate.longitude;
                 //检索周边POI
-                POIVC.footer.setRefreshingTarget(POIVC, refreshingAction: #selector(POIVC.aroundSearchPullToRefresh))
+                POIVC.setAroundSearchFooter();
                 
                 POIVC.makeAroundSearch();
             }
@@ -77,6 +77,12 @@ extension POIVC
     {
         aroundSearchRequest.page =  page;
         mapSearch?.aMapPOIAroundSearch(aroundSearchRequest)
+    }
+    func setAroundSearchFooter()
+    {
+        footer.resetNoMoreData();
+        footer.setRefreshingTarget(self, refreshingAction: #selector(aroundSearchPullToRefresh))
+
     }
 }
 extension POIVC

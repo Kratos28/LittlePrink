@@ -17,6 +17,8 @@ extension POIVC: UISearchBarDelegate
         if searchText.isEmpty
         {
             pois = aroundSearchPOIs;
+            setAroundSearchFooter();
+            
             tableView.reloadData();
         }
 
@@ -31,15 +33,14 @@ extension POIVC: UISearchBarDelegate
         guard let searchText = searchBar.text,!searchText.isBlank else {return};
         self.keywords = searchText;
         pois.removeAll();
+        currentKeywordsPage = 1;
         footer.setRefreshingTarget(self, refreshingAction: #selector(keywordsSearchPullRefresh))
         showLoadHUd();
-
         makeKeywordsSearch(keywords)
         
-        
-
-        
     }
+    
+    
  
 }
 
@@ -92,7 +93,13 @@ extension POIVC
         keywordsSearchRequest.page = page;
         mapSearch?.aMapPOIKeywordsSearch(keywordsSearchRequest);
     }
+    
+    func setKeywordsSearchFooter(){
+        footer.resetNoMoreData();
+        footer.setRefreshingTarget(self, refreshingAction: #selector(keywordsSearchPullRefresh))
+    }
 
+    
 }
 
 
@@ -103,7 +110,7 @@ extension POIVC
     {
         currentKeywordsPage += 1;
         makeKeywordsSearch(keywords, currentKeywordsPage);
-        endRefreshing(currentKeywordsPage;)
+        endRefreshing(currentKeywordsPage);
     }
 
 }
