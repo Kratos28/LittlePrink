@@ -80,7 +80,9 @@ extension POIVC:UITableViewDataSource
 
 extension POIVC:UITableViewDelegate
 {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension POIVC

@@ -34,7 +34,8 @@ extension POIVC: UISearchBarDelegate
         self.keywords = searchText;
         pois.removeAll();
         currentKeywordsPage = 1;
-        footer.setRefreshingTarget(self, refreshingAction: #selector(keywordsSearchPullRefresh))
+
+        setKeywordsSearchFooter();
         showLoadHUd();
         makeKeywordsSearch(keywords)
         
