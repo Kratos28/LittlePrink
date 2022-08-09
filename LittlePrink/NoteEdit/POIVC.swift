@@ -9,6 +9,9 @@ import UIKit
 import CoreLocation
 
 class POIVC: UIViewController {
+    
+    var delegate :POIVCDelegate?
+    var poiName  = "";
     lazy var footer = MJRefreshAutoNormalFooter();
     lazy var locationManager = AMapLocationManager()
     var pois = kPOIsInitArr;
@@ -71,6 +74,11 @@ extension POIVC:UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: kPOICellID,for: indexPath) as! POICell;
         let poi = pois[indexPath.row];
         cell.poi = poi;
+        if poi[0] == poiName
+        {
+            cell.accessoryType = .checkmark;
+            
+        }
         return cell;
     }
     
@@ -81,7 +89,11 @@ extension POIVC:UITableViewDataSource
 extension POIVC:UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)!;
+        cell.accessoryType = .checkmark;
+        delegate?.updatePOIName(pois[indexPath.row][0]);
         
+        dismiss(animated: true);
     }
 }
 

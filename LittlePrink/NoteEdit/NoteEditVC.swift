@@ -19,6 +19,12 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var titleCountlabel: UILabel!
 
+    
+    @IBOutlet weak var poiNameLabel: UILabel!
+    
+    @IBOutlet weak var poiNameIcon: UIImageView!
+    
+    
     @IBOutlet weak var channelPlaceholderLabel: UILabel!
     @IBOutlet weak var channelLabel: UILabel!
     @IBOutlet weak var ChannelIcon: UIImageView!
@@ -30,6 +36,8 @@ class NoteEditVC: UIViewController {
     
     var channel = "";
     var subChannel = "";
+    var poiName = "";
+    
     
     @IBOutlet weak var photoCollectionView: UICollectionView!
     var isVideo : Bool {videoURL
@@ -68,6 +76,10 @@ class NoteEditVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let channelVC = segue.destination as? ChannelVC{
             channelVC.PVdelegate = self;
+        } else if let poiVC = segue.destination as? POIVC
+        {
+            poiVC.delegate = self;
+            poiVC.poiName = poiName;
         }
     }
 }
@@ -75,16 +87,43 @@ class NoteEditVC: UIViewController {
 extension NoteEditVC:ChannelVCDelegate
 {
     func updateChannel(channel: String, subChannel: String) {
+        
         self.channel = channel;
         self.subChannel = subChannel;
         
-        channelLabel.text = subChannel;
         ChannelIcon.tintColor = blueColor;
+        channelLabel.text = subChannel;
         channelLabel.textColor = blueColor;
         channelPlaceholderLabel.isHidden = true;
         
     }
 }
+extension NoteEditVC: POIVCDelegate {
+    
+    func updatePOIName( _ poiName: String)
+    {
+        
+        if poiName == kPOIsInitArr[0][0]
+        {
+            self.poiName = "";
+            self.poiNameIcon.tintColor = .label;
+            poiNameLabel.text = "添加地点";
+            poiNameLabel.textColor = .label;
+            
+            
+        }else
+        {
+            self.poiName = poiName;
+            self.poiNameIcon.tintColor = blueColor;
+            self.poiNameLabel.text = poiName;
+            self.poiNameLabel.textColor = blueColor;
+
+        }
+        
+        
+    }
+}
+
 
 /// MARK: - SKPhotoBrowserDelegate
 extension NoteEditVC:SKPhotoBrowserDelegate

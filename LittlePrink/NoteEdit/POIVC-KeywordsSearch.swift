@@ -18,7 +18,6 @@ extension POIVC: UISearchBarDelegate
         {
             pois = aroundSearchPOIs;
             setAroundSearchFooter();
-            
             tableView.reloadData();
         }
 
@@ -34,7 +33,6 @@ extension POIVC: UISearchBarDelegate
         self.keywords = searchText;
         pois.removeAll();
         currentKeywordsPage = 1;
-
         setKeywordsSearchFooter();
         showLoadHUd();
         makeKeywordsSearch(keywords)

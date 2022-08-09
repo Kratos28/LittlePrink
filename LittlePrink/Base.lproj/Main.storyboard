@@ -559,6 +559,8 @@
                         <outlet property="channelLabel" destination="pAl-Fx-ogS" id="PMe-p4-PXE"/>
                         <outlet property="channelPlaceholderLabel" destination="bfN-pI-rDZ" id="10X-5s-UAA"/>
                         <outlet property="photoCollectionView" destination="5cS-9W-Gj6" id="hsd-6W-48F"/>
+                        <outlet property="poiNameIcon" destination="Tow-eH-lf8" id="JyB-zD-BVl"/>
+                        <outlet property="poiNameLabel" destination="WXA-wN-rAg" id="tu8-Wc-KkQ"/>
                         <outlet property="textView" destination="5eS-A6-WJ4" id="VHK-hh-h2U"/>
                         <outlet property="titleCountlabel" destination="2XH-OS-gyk" id="P48-Gi-a34"/>
                         <outlet property="titleTextField" destination="lAV-vF-RGz" id="j6e-HQ-alz"/>
@@ -607,7 +609,7 @@
                                 <rect key="frame" x="0.0" y="105" width="414" height="791"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICellID" id="bS6-OP-yPa" customClass="POICell" customModule="LittlePrink" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICellID" id="bS6-OP-yPa" customClass="POICell" customModule="LittlePrink" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bS6-OP-yPa" id="Nis-PE-6Wk">
