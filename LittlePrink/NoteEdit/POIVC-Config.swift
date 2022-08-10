@@ -16,6 +16,9 @@ extension POIVC{
         locationManager.reGeocodeTimeout = 5;
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
         tableView.mj_footer = footer;
-        
+         if let  cancelButton = searchBar.value(forKey: "cancelButton") as? UIButton
+        {
+             cancelButton.isEnabled = true;
+         }
     }
 }
