@@ -51,7 +51,16 @@ class NoteEditVC: UIViewController {
     }
     
     
+    @IBAction func saveDratNote(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+        let context = appDelegate.persistentContainer.viewContext;
+        let DratNote =  DraftNote(context:context);
+        
+        
+    }
     
+    @IBAction func postNote(_ sender: Any) {
+    }
     
     @IBAction func TFEditingBegin(_ sender: UITextField) {
         titleCountlabel.isHidden = false;

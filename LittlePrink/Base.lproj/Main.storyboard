@@ -543,13 +543,44 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="647-XX-p0v"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="zAE-p2-8n0"/>
                             </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9od-Rj-pOM">
+                                <rect key="frame" x="16" y="818" width="382" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-8s-qXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="存草稿">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveDratNote:" destination="vkm-vS-hT2" eventType="touchUpInside" id="DPa-t1-dU6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWL-u1-MjB">
+                                        <rect key="frame" x="56" y="0.0" width="326" height="44"/>
+                                        <color key="backgroundColor" name="main"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="发布笔记"/>
+                                        <connections>
+                                            <action selector="postNote:" destination="vkm-vS-hT2" eventType="touchUpInside" id="aX5-iW-Eh8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aWF-1D-OSY"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qfo-CR-CZX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Qfo-CR-CZX" firstAttribute="trailing" secondItem="9od-Rj-pOM" secondAttribute="trailing" constant="16" id="KG5-OE-Lhk"/>
                             <constraint firstItem="lkj-iY-XKR" firstAttribute="leading" secondItem="wlr-Pv-kzI" secondAttribute="leading" id="Mmk-ls-PTF"/>
                             <constraint firstItem="lkj-iY-XKR" firstAttribute="top" secondItem="wlr-Pv-kzI" secondAttribute="top" id="Ue1-Vh-knG"/>
+                            <constraint firstItem="9od-Rj-pOM" firstAttribute="leading" secondItem="Qfo-CR-CZX" secondAttribute="leading" constant="16" id="XPc-YR-eW7"/>
+                            <constraint firstItem="Qfo-CR-CZX" firstAttribute="bottom" secondItem="9od-Rj-pOM" secondAttribute="bottom" id="cgO-ht-P5a"/>
                             <constraint firstAttribute="trailing" secondItem="lkj-iY-XKR" secondAttribute="trailing" id="q6b-yW-nGD"/>
                             <constraint firstAttribute="bottom" secondItem="lkj-iY-XKR" secondAttribute="bottom" id="xQ1-AG-4cK"/>
                         </constraints>
@@ -869,6 +900,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="speaker.wave.2.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="main">
             <color red="0.92900002002716064" green="0.34099999070167542" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
