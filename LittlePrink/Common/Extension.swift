@@ -19,6 +19,21 @@ extension UITextField
     var unwarppedText:String {
         text ?? ""
     }
+    var exactText:String
+    {
+        unwarppedText.isBlank ? "" : unwarppedText;
+    }
+}
+
+extension UITextView
+{
+    var unwarppedText:String {
+        text ?? ""
+    }
+    var exactText:String
+    {
+        unwarppedText.isBlank ? "" : unwarppedText;
+    }
 }
 
 extension UIView

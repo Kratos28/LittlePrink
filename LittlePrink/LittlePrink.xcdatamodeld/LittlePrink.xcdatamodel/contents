@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DraftNote" representedClassName="DraftNote" syncable="YES" codeGenerationType="class">
         <attribute name="channel" optional="YES" attributeType="String"/>
+        <attribute name="coverPhoto" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="poiName" optional="YES" attributeType="String"/>
         <attribute name="subchannel" optional="YES" attributeType="String"/>
         <attribute name="text" optional="YES" attributeType="String"/>
@@ -9,6 +10,6 @@
         <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="DraftNote" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="DraftNote" positionX="-63" positionY="-18" width="128" height="134"/>
     </elements>
 </model>

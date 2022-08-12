@@ -47,15 +47,33 @@ class NoteEditVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         config();
-      
+//        NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
+//        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0];
+        do {
+            try FileManager.default.removeItem(atPath: "\(NSHomeDirectory())/Library/SplashBoard");
+        } catch  {
+            print(error);
+        }
     }
     
     
     @IBAction func saveDratNote(_ sender: Any) {
+        guard TextViewIAView.textCountLabel.text!.count  < kMaxNoteTextCount else
+        {
+            showLoadHUd("正文最多输入");
+            return;
+        }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate;
         let context = appDelegate.persistentContainer.viewContext;
-        let DratNote =  DraftNote(context:context);
-        
+        let dratNote =  DraftNote(context:context);
+        dratNote.title = titleTextField.exactText;
+        dratNote.coverPhoto = photos[0].pngData();
+        dratNote.text = textView.exactText;
+        dratNote.channel =  channel;
+        dratNote.subchannel  = subChannel;
+        dratNote.poiName = poiName;
+        dratNote.updatedAt = Date();
+        appDelegate.saveContext();
         
     }
     
@@ -84,6 +102,7 @@ class NoteEditVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let channelVC = segue.destination as? ChannelVC{
+            view.endEditing(true);
             channelVC.PVdelegate = self;
         } else if let poiVC = segue.destination as? POIVC
         {
