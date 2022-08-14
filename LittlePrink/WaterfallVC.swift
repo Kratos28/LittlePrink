@@ -15,6 +15,7 @@ class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfal
     
 
     var channel = "";
+    var isMyDraft = true;
     override func viewDidLoad() {
         super.viewDidLoad()
        let layout =  self.collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
@@ -42,16 +43,21 @@ class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfal
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: waterfallCellID, for: indexPath) as! WaterfallCell
-        
-        print(cell.imageview1);
-        if let image =  cell.imageview1
+        if isMyDraft
         {
-            image.image = UIImage(named: "\(indexPath.item + 1)");
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDratNoteWaterfallCellID, for: indexPath) as! DratNoteWaterfallCell;
+            
+            return cell
+
+        }else
+        {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: waterfallCellID, for: indexPath) as!     WaterfallCell
+            cell.imageview1.image = UIImage(named: "\(indexPath.item + 1)");
+            return cell
+
         }
         
     
-        return cell
     }
 
     // MARK: UICollectionViewDelegate

@@ -79,7 +79,7 @@ class NoteEditVC: UIViewController {
          }
         }
         dratNote.photos =   try? JSONEncoder().encode(photos);
-        
+        dratNote.isVideo = isVideo;
         dratNote.text = textView.exactText;
         dratNote.channel =  channel;
         dratNote.subchannel  = subChannel;

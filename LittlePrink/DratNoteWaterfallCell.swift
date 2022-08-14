@@ -17,6 +17,18 @@ class DratNoteWaterfallCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var isVideoImageView: UIImageView!
+    
+    var draftNote: DraftNote?
+    {
+        didSet
+        {
+            guard let draftNote = draftNote else {return };
+            imageView.image =  UIImage(data: draftNote.coverPhoto )
+            let title = draftNote.title!;
+            titleLabel.text = title.isEmpty ? "无题" : title;
+            isVideoImageView.isHidden = !draftNote.isVideo;
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

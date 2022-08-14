@@ -40,6 +40,16 @@ extension UIImage
         
     }
     
+    convenience init?(_ data:Data?) {
+        if let  unwarppedData = data
+        {
+            self.init(data: unwarppedData)
+        }else
+        {
+            return nil;
+        }
+    }
+    
 }
 
 extension UITextView
