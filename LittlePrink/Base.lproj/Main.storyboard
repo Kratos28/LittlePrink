@@ -830,6 +830,80 @@
                                     <outlet property="imageview1" destination="Whv-KX-dH2" id="d5b-Vo-xhy"/>
                                 </connections>
                             </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="DratNoteWaterfallCellID" id="mED-EO-zAR" customClass="DratNoteWaterfallCell" customModule="LittlePrink" customModuleProvider="target">
+                                <rect key="frame" x="33.5" y="317" width="347" height="428"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jas-hE-P5f">
+                                    <rect key="frame" x="0.0" y="0.0" width="347" height="428"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="801-YN-DVu">
+                                            <rect key="frame" x="0.0" y="0.0" width="347" height="373.5"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Pq1-t4-zPn">
+                                            <rect key="frame" x="0.0" y="373.5" width="347" height="54.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天天气不错" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-Lz-Fwy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="347" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wzC-78-RoG">
+                                                    <rect key="frame" x="0.0" y="32.5" width="347" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08-08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-Xj-699">
+                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xl-KM-0DO">
+                                                            <rect key="frame" x="307.5" y="0.0" width="39.5" height="22"/>
+                                                            <color key="tintColor" systemColor="labelColor"/>
+                                                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="trash" catalog="system"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-Gw-aTi">
+                                            <rect key="frame" x="307" y="16.5" width="24" height="23"/>
+                                            <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="6Pf-d2-hy0"/>
+                                                <constraint firstAttribute="width" constant="24" id="blt-pB-CDM"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pq1-t4-zPn" firstAttribute="leading" secondItem="jas-hE-P5f" secondAttribute="leading" id="6f1-1d-fdO"/>
+                                        <constraint firstAttribute="trailing" secondItem="801-YN-DVu" secondAttribute="trailing" id="74a-kt-8Du"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pq1-t4-zPn" secondAttribute="trailing" id="8wS-gW-phM"/>
+                                        <constraint firstItem="Pq1-t4-zPn" firstAttribute="top" secondItem="801-YN-DVu" secondAttribute="bottom" id="ASo-oQ-vKH"/>
+                                        <constraint firstItem="801-YN-DVu" firstAttribute="top" secondItem="jas-hE-P5f" secondAttribute="top" id="CB8-zc-MUk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Pq1-t4-zPn" secondAttribute="bottom" id="PfK-3r-JfQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="bVY-Gw-aTi" secondAttribute="trailing" constant="16" id="QLv-Ak-Sge"/>
+                                        <constraint firstItem="bVY-Gw-aTi" firstAttribute="top" secondItem="jas-hE-P5f" secondAttribute="top" constant="16" id="gSO-yH-akT"/>
+                                        <constraint firstItem="801-YN-DVu" firstAttribute="leading" secondItem="jas-hE-P5f" secondAttribute="leading" id="jV6-6t-zdZ"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="347" height="428"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dateLabel" destination="fg5-Xj-699" id="LBU-9z-jLW"/>
+                                    <outlet property="deleteBtn" destination="9Xl-KM-0DO" id="ySN-cw-wvr"/>
+                                    <outlet property="imageView" destination="801-YN-DVu" id="bo8-cm-b1t"/>
+                                    <outlet property="isVideoImageView" destination="bVY-Gw-aTi" id="pbT-Wh-Ole"/>
+                                    <outlet property="titleLabel" destination="V2d-Lz-Fwy" id="fzp-5v-AlH"/>
+                                </connections>
+                            </collectionViewCell>
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="9dm-ZE-cpB" id="tpL-iL-r6u"/>
@@ -897,9 +971,11 @@
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="speaker.wave.2.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

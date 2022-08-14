@@ -23,6 +23,7 @@
 		65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */; };
 		65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65399084282AB3E0002EB0E8 /* Assets.xcassets */; };
 		65399088282AB3E0002EB0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */; };
+		65401A5328A8D7F000C4D07F /* DratNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */; };
 		6572918328828BE400371CC2 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572918228828BE400371CC2 /* ChannelTableVC.swift */; };
 		657901CC2843D140009AA37A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657901CB2843D140009AA37A /* HomeVC.swift */; };
 		657EB41A2845189A00E6E507 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EB4192845189A00E6E507 /* DiscoveryVC.swift */; };
@@ -72,6 +73,7 @@
 		65399084282AB3E0002EB0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65399087282AB3E0002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65399089282AB3E0002EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DratNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		656D6A1E2871585B007FCAF8 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		6572918228828BE400371CC2 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		657901CB2843D140009AA37A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				650DBEC2284C611C002B07AF /* WaterfallVC.swift */,
 				65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */,
 				650DBEC4284C69CE002B07AF /* WaterfallCell.swift */,
+				65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */,
 				650DBEC6284C7053002B07AF /* CollectionViewController.swift */,
 				65DE7789288283FF00FFF6B5 /* ChannelVC.swift */,
 				6572918228828BE400371CC2 /* ChannelTableVC.swift */,
@@ -369,6 +372,7 @@
 				6532BD91287DD4240085B38C /* TextViewIAView.swift in Sources */,
 				65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */,
 				65399079282AB3DE002EB0E8 /* AppDelegate.swift in Sources */,
+				65401A5328A8D7F000C4D07F /* DratNoteWaterfallCell.swift in Sources */,
 				65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */,
 				0A39CAE7286E9F6600FA3FF5 /* NoteEditVC-collectionView.swift in Sources */,
 				6539907B282AB3DE002EB0E8 /* SceneDelegate.swift in Sources */,

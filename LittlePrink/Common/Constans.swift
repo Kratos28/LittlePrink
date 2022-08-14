@@ -22,6 +22,9 @@ let blueColor = UIColor(named: "blue")!;
 let kPOICellID = "POICellID"
 // MARK: CellID
 let waterfallCellID = "waterfallCellID";
+
+let kDratNoteWaterfallCellID = "DratNoteWaterfallCellID";
+
 let kChannelTableVCID = "ChannelTableViewVCID";
 
 let kWaterfallPadding :CGFloat =  4;

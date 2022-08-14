@@ -31,8 +31,8 @@ class NoteEditVC: UIViewController {
     var photos = [
         UIImage(named: "1")!,
     ];
-//    var videoURL :URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
-    var videoURL :URL?
+        var videoURL :URL?
+//    var videoURL :URL? = Bundle.main.url(forResource: "testVideo", withExtension: "mp4");
     
     var channel = "";
     var subChannel = "";
@@ -49,11 +49,7 @@ class NoteEditVC: UIViewController {
         config();
 //        NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
 //        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0];
-        do {
-            try FileManager.default.removeItem(atPath: "\(NSHomeDirectory())/Library/SplashBoard");
-        } catch  {
-            print(error);
-        }
+        
     }
     
     
@@ -66,8 +62,24 @@ class NoteEditVC: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate;
         let context = appDelegate.persistentContainer.viewContext;
         let dratNote =  DraftNote(context:context);
+        if isVideo
+        {
+            dratNote.video = try? Data(contentsOf: videoURL!);
+        }
+        
         dratNote.title = titleTextField.exactText;
-        dratNote.coverPhoto = photos[0].pngData();
+        dratNote.coverPhoto = photos[0].jpeg(.high);
+        var photos:[Data] = [];
+        for photo in self.photos
+        {
+         if let  photoData =  photo.pngData()
+         {
+             photos.append(photoData)
+
+         }
+        }
+        dratNote.photos =   try? JSONEncoder().encode(photos);
+        
         dratNote.text = textView.exactText;
         dratNote.channel =  channel;
         dratNote.subchannel  = subChannel;
