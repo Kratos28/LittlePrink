@@ -100,8 +100,8 @@ class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfal
 extension WaterfallVC
 {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellW = (UIScreen.main.bounds.width - kWaterfallPadding * 3) / 2;
        return UIImage(named: "\(indexPath.item + 1)")!.size;
-        
     }
 
 }

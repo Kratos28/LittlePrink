@@ -11,10 +11,9 @@ import CoreData
 
 extension WaterfallVC
 {
+    
     func getDraftNotes()
     {
-        
-        
         let request = DraftNote.fetchRequest() as NSFetchRequest<DraftNote>;
 //        request.fetchLimit =  20;
 //        request.fetchOffset = 0;
@@ -22,8 +21,11 @@ extension WaterfallVC
         let sortDescriptors = NSSortDescriptor(key: "updateAt", ascending: true);
         let sortDescriptors2 = NSSortDescriptor(key: "title", ascending: true);
         request.sortDescriptors = [sortDescriptors,sortDescriptors2];
+        request.propertiesToFetch = ["coverPhoto","title","updatedAt","isVideo"];
         let draftNote =  try! context.fetch(request);
-        self.draftNotes = draftNote;
+        print(draftNote[0].text!);
+        print(draftNote);
         
+        self.draftNotes = draftNote;
     }
 }
