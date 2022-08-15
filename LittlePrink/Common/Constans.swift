@@ -14,7 +14,7 @@ let kWaterfallVCID = "WaterfallVCID";
 let kNoteEditVCID = "NoteEditVCID";
 let kPhotoCellID = "PhotoCellID";
 let ksubChannelCellID = "SubChannelCellID";
-
+let imagePH = UIImage(named: "imagePH")!;
 // MARK: -资源文件
 let mainColor = UIColor(named: "main")!;
 
@@ -29,6 +29,12 @@ let kChannelTableVCID = "ChannelTableViewVCID";
 
 let kWaterfallPadding :CGFloat =  4;
 let kphotoFooterID = "PhotoFooterID"
+
+
+//MARK: -coreData
+let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+let context = appDelegate.persistentContainer.viewContext;
+
 
 //MARK: -业务逻辑相关
 let kchannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"]

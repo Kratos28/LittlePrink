@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import DateToolsSwift
 
 
 extension Optional where Wrapped == String {
@@ -50,6 +50,38 @@ extension UIImage
         }
     }
     
+}
+
+extension Date
+{
+    var formattedDate: String
+    {
+        let currentYear =  Date().year;
+        
+        if self.year == currentYear{
+           if isToday
+            {
+               if  minutesAgo > 10
+               {
+                   return "今天 \(format(with: "HH:mm"))";
+               }else
+               {
+                   return timeAgoSinceNow;
+               }
+               
+           }else if isYesterday{
+               return "昨天 \(format(with: "HH:mm"))";
+           }else{
+               return (format(with: "MM-dd"));
+           }
+        }else if year < currentYear
+        {
+            return format(with: "yyyy-MM-dd");
+        }else
+        {
+            return "明年暂时用不到";
+        }
+    }
 }
 
 extension UITextView

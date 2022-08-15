@@ -13,18 +13,13 @@ import XLPagerTabStrip
 
 class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfallLayout {
     
-
+    var draftNotes : [DraftNote] = [];
     var channel = "";
     var isMyDraft = true;
     override func viewDidLoad() {
         super.viewDidLoad()
-       let layout =  self.collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
-        layout.columnCount = 2;
-        layout.minimumColumnSpacing = kWaterfallPadding
-        layout.minimumInteritemSpacing = kWaterfallPadding;
-        layout.sectionInset = UIEdgeInsets(top: 0, left: kWaterfallPadding, bottom: kWaterfallPadding, right: kWaterfallPadding);
-        
-        
+        self.config();
+        self.getDraftNotes();
     }
 
 
@@ -39,14 +34,22 @@ class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfal
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 13
+        if isMyDraft
+        {
+            return draftNotes.count;
+        }else
+        {
+            return 13;
+
+        }
+        
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if isMyDraft
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDratNoteWaterfallCellID, for: indexPath) as! DratNoteWaterfallCell;
-            
+            cell.draftNote = draftNotes[indexPath.item];
             return cell
 
         }else

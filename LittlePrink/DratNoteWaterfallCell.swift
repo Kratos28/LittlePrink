@@ -23,16 +23,15 @@ class DratNoteWaterfallCell: UICollectionViewCell {
         didSet
         {
             guard let draftNote = draftNote else {return };
-            imageView.image =  UIImage(data: draftNote.coverPhoto )
+            imageView.image =  UIImage(data: draftNote.coverPhoto!) ?? imagePH;
             let title = draftNote.title!;
             titleLabel.text = title.isEmpty ? "无题" : title;
+            dateLabel.text = draftNote.updatedAt?.formattedDate;
             isVideoImageView.isHidden = !draftNote.isVideo;
+            
         }
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+
 
 
 }
