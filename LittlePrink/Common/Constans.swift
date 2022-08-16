@@ -11,6 +11,9 @@ let kNearByVCID = "NearByVCID";
 let kFollowVCID = "FollowVCID";
 let kWaterfallVCID = "WaterfallVCID";
 
+let kDraftNoteWaterfallCellBottomViewH : CGFloat = 84;
+
+let screenRect = UIScreen.main.bounds;
 let kNoteEditVCID = "NoteEditVCID";
 let kPhotoCellID = "PhotoCellID";
 let ksubChannelCellID = "SubChannelCellID";
