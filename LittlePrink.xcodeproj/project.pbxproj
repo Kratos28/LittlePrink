@@ -13,6 +13,9 @@
 		0A3E335528AA563B00D0936E /* WaterfallVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E335428AA563B00D0936E /* WaterfallVC-Config.swift */; };
 		0A4702F928AB43E4002E684D /* WaterfallVC-DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4702F828AB43E4002E684D /* WaterfallVC-DataSource.swift */; };
 		0A4702FB28AB4D39002E684D /* WaterfallVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4702FA28AB4D39002E684D /* WaterfallVC-Delegate.swift */; };
+		0A4702FF28AB98F5002E684D /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4702FE28AB98F5002E684D /* NoteEditVC-Helper.swift */; };
+		0A47030128AB9C21002E684D /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47030028AB9C21002E684D /* NoteEditVC-UI.swift */; };
+		0A47030328ABB918002E684D /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47030228ABB918002E684D /* NoteEditVC-DraftNote.swift */; };
 		65094579285D9D1C0009FEAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* Extension.swift */; };
 		650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC2284C611C002B07AF /* WaterfallVC.swift */; };
 		650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC4284C69CE002B07AF /* WaterfallCell.swift */; };
@@ -60,6 +63,9 @@
 		0A3E335428AA563B00D0936E /* WaterfallVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Config.swift"; sourceTree = "<group>"; };
 		0A4702F828AB43E4002E684D /* WaterfallVC-DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-DataSource.swift"; sourceTree = "<group>"; };
 		0A4702FA28AB4D39002E684D /* WaterfallVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Delegate.swift"; sourceTree = "<group>"; };
+		0A4702FE28AB98F5002E684D /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
+		0A47030028AB9C21002E684D /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
+		0A47030228ABB918002E684D /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
 		0AC589E9286AFA5F00B00AE4 /* MyViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		386924448731C16EC6CD740F /* Pods_LittlePrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				65CB08C32866E964009523A2 /* NoteEditVC.swift */,
+				0A47030028AB9C21002E684D /* NoteEditVC-UI.swift */,
+				0A4702FE28AB98F5002E684D /* NoteEditVC-Helper.swift */,
+				0A47030228ABB918002E684D /* NoteEditVC-DraftNote.swift */,
 				653101C32873407800702796 /* NoteEditVC-Config.swift */,
 				658E1E08286DF43F0099163E /* NoteEditVC-DragDrop.swift */,
 				659029BB286A046200720B03 /* photoCell.swift */,
@@ -359,13 +368,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4702FF28AB98F5002E684D /* NoteEditVC-Helper.swift in Sources */,
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,
 				659E215E28885B3800A93873 /* POIVC.swift in Sources */,
 				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
+				0A47030328ABB918002E684D /* NoteEditVC-DraftNote.swift in Sources */,
 				65915E07289D883200FDB849 /* POIVC-KeywordsSearch.swift in Sources */,
 				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				0A3E335328AA55E700D0936E /* WaterfallVC-LoadData.swift in Sources */,
+				0A47030128AB9C21002E684D /* NoteEditVC-UI.swift in Sources */,
 				65DE778A288283FF00FFF6B5 /* ChannelVC.swift in Sources */,
 				6598B23F2892E88E005B8160 /* POIVC-Location.swift in Sources */,
 				653101C42873407800702796 /* NoteEditVC-Config.swift in Sources */,

@@ -17,7 +17,12 @@ extension WaterfallVC
                let photos =  photoDataArr.map {
                     UIImage($0) ?? imagePH
                 }
-                
+               let videoURL =  FileManager.default.save(draftNote.video, to: "video", as: "\(UUID().uuidString).mp4")
+                let vc =  storyboard!.instantiateViewController(identifier: kNoteEditVCID) as! NoteEditVC;
+                vc.draftNote = draftNote;
+                vc.photos = photos;
+                vc.videoURL = videoURL;
+                navigationController?.pushViewController(vc, animated: true);
                 
             }else
             {

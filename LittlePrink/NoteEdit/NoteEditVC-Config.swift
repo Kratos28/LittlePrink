@@ -18,7 +18,6 @@ extension NoteEditVC
         textView.textContainer.lineFragmentPadding = 0;
         let lineFragmentPadding = textView.textContainer.lineFragmentPadding
         textView.textContainerInset = UIEdgeInsets(top: 0, left: -lineFragmentPadding, bottom: 0, right: -lineFragmentPadding);
-        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing  = 6;
         let typingAttributes:[NSAttributedString.Key:Any] = [

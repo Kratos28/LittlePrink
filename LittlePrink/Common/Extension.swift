@@ -183,20 +183,20 @@ extension String
 
 extension FileManager
 {
-    func save(_ data: Data?,to dirName:String,as fileName :String) -> URL
+    func save(_ data: Data?,to dirName:String,as fileName :String) -> URL?
     {
-        guard let data = data else{fatalError("写入的data为nil");};
+        guard let data = data else{ return nil;};
         let dirUrl =  URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(dirName, isDirectory: true);
         if !fileExists(atPath: dirUrl.path){
             guard let _ =  try? createDirectory(at: dirUrl, withIntermediateDirectories: true)else {
-                fatalError("创建文佳佳失败");
+                return nil;
             }
         }
         let fileUrl =  dirUrl.appendingPathComponent(fileName);
         if fileExists(atPath: fileUrl.path)
         {
             guard let _  = try? data.write(to: fileUrl) else {
-                fatalError("创建文佳佳失败");
+                return nil;
             }
         }
         

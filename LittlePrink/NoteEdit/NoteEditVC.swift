@@ -13,7 +13,7 @@ import AVKit
 import CoreLocation
 class NoteEditVC: UIViewController {
 
-    
+    var draftNote: DraftNote?
      let locationManager  = CLLocationManager();
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
@@ -46,7 +46,12 @@ class NoteEditVC: UIViewController {
     var TextViewIAView: TextViewIAView{textView.inputAccessoryView as!TextViewIAView;}
     override func viewDidLoad() {
         super.viewDidLoad();
+        
+        
         config();
+        
+        setUI();
+
 //        NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0];
 //        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0];
         
@@ -54,42 +59,20 @@ class NoteEditVC: UIViewController {
     
     
     @IBAction func saveDratNote(_ sender: Any) {
-        guard TextViewIAView.textCountLabel.text!.count  < kMaxNoteTextCount else
-        {
-            showLoadHUd("正文最多输入");
-            return;
-        }
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate;
-        let context = appDelegate.persistentContainer.viewContext;
-        let dratNote =  DraftNote(context:context);
-        if isVideo
-        {
-            dratNote.video = try? Data(contentsOf: videoURL!);
-        }
-        
-        dratNote.title = titleTextField.exactText;
-        dratNote.coverPhoto = photos[0].jpeg(.high);
-        var photos:[Data] = [];
-        for photo in self.photos
-        {
-         if let  photoData =  photo.pngData()
-         {
-             photos.append(photoData)
+        self.validateNote();
 
-         }
+        if let dratNote  = self.draftNote{
+            updateDraftNote(dratNote: dratNote);
+        }else
+        {
+            createDraftNote();
         }
-        dratNote.photos =   try? JSONEncoder().encode(photos);
-        dratNote.isVideo = isVideo;
-        dratNote.text = textView.exactText;
-        dratNote.channel =  channel;
-        dratNote.subchannel  = subChannel;
-        dratNote.poiName = poiName;
-        dratNote.updatedAt = Date();
-        appDelegate.saveContext();
         
+       
     }
     
     @IBAction func postNote(_ sender: Any) {
+        self.validateNote();
     }
     
     @IBAction func TFEditingBegin(_ sender: UITextField) {
@@ -103,13 +86,7 @@ class NoteEditVC: UIViewController {
         
     }
     @IBAction func TFEditChanged(_ sender: Any) {
-        
-        guard titleTextField.markedTextRange == nil else {return};
-        if titleTextField.unwarppedText.count > kMaxNoteTitleCount
-        {
-            titleTextField.text =  String(titleTextField.unwarppedText.prefix(kMaxNoteTitleCount));
-        }
-        titleCountlabel.text = "\(kMaxNoteTitleCount - titleTextField.unwarppedText.count)"
+        handeleTFEditChanged();
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -130,11 +107,7 @@ extension NoteEditVC:ChannelVCDelegate
         
         self.channel = channel;
         self.subChannel = subChannel;
-        
-        ChannelIcon.tintColor = blueColor;
-        channelLabel.text = subChannel;
-        channelLabel.textColor = blueColor;
-        channelPlaceholderLabel.isHidden = true;
+        updateChannelUI()
         
     }
 }
@@ -146,20 +119,14 @@ extension NoteEditVC: POIVCDelegate {
         if poiName == kPOIsInitArr[0][0]
         {
             self.poiName = "";
-            self.poiNameIcon.tintColor = .label;
-            poiNameLabel.text = "添加地点";
-            poiNameLabel.textColor = .label;
-            
+        
             
         }else
         {
             self.poiName = poiName;
-            self.poiNameIcon.tintColor = blueColor;
-            self.poiNameLabel.text = poiName;
-            self.poiNameLabel.textColor = blueColor;
-
+            
         }
-        
+        updatePOINameUI();
         
     }
 }
