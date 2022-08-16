@@ -14,6 +14,7 @@ import CoreLocation
 class NoteEditVC: UIViewController {
 
     var draftNote: DraftNote?
+    var updateDraftNoteFinished : (()->())?
      let locationManager  = CLLocationManager();
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var titleTextField: UITextField!

@@ -22,13 +22,16 @@ extension WaterfallVC
                 vc.draftNote = draftNote;
                 vc.photos = photos;
                 vc.videoURL = videoURL;
+                vc.updateDraftNoteFinished = {
+                    self.getDraftNotes();
+                    self.collectionView.reloadData();
+                };
                 navigationController?.pushViewController(vc, animated: true);
                 
             }else
             {
                 showTextHUD("加载草稿失败");
             }
-            
         }else
         {
             

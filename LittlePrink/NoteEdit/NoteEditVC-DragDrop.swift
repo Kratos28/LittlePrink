@@ -23,7 +23,6 @@ extension NoteEditVC:UICollectionViewDropDelegate
     
     func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
 
-        
         if collectionView.hasActiveDrag{
             return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
             

@@ -32,7 +32,8 @@ extension NoteEditVC
             handlePhotos(dratNote);
         }
         handleOthers(dratNote: dratNote);
-    
+        updateDraftNoteFinished?();
+        navigationController?.popViewController(animated: true);
     }
 }
 
