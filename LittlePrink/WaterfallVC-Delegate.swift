@@ -12,7 +12,8 @@ extension WaterfallVC
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if isMyDraft{
             let draftNote =  draftNotes[indexPath.item];
-            if let photosData = draftNote.photos,let photoDataArr = try? JSONDecoder().decode([Data].self, from: photosData)
+            if let photosData = draftNote.photos,
+               let photoDataArr = try? JSONDecoder().decode([Data].self, from: photosData)
             {
                let photos =  photoDataArr.map {
                     UIImage($0) ?? imagePH
