@@ -52,6 +52,7 @@
 		65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DE6B2855079500ED858E /* TabBarC.swift */; };
 		65DE778A288283FF00FFF6B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE7789288283FF00FFF6B5 /* ChannelVC.swift */; };
 		65DE81A6285A437A002F4541 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE81A5285A437A002F4541 /* PostVC.swift */; };
+		65F35C6B28AEA50A00D10CEF /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F35C6A28AEA50A00D10CEF /* MeVC.swift */; };
 		65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */; };
 		CF913235B1B5BDC1E98FE707 /* Pods_LittlePrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386924448731C16EC6CD740F /* Pods_LittlePrink.framework */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,7 @@
 		65D7DE6B2855079500ED858E /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		65DE7789288283FF00FFF6B5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		65DE81A5285A437A002F4541 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		65F35C6A28AEA50A00D10CEF /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocallzationTableViewController.swift; sourceTree = "<group>"; };
 		65F3C1002850FE5D001F9F5C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +187,7 @@
 				65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */,
 				650DBEC4284C69CE002B07AF /* WaterfallCell.swift */,
 				65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */,
+				65F35C6A28AEA50A00D10CEF /* MeVC.swift */,
 				650DBEC6284C7053002B07AF /* CollectionViewController.swift */,
 				65DE7789288283FF00FFF6B5 /* ChannelVC.swift */,
 				6572918228828BE400371CC2 /* ChannelTableVC.swift */,
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F35C6B28AEA50A00D10CEF /* MeVC.swift in Sources */,
 				0A4702FF28AB98F5002E684D /* NoteEditVC-Helper.swift in Sources */,
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,

@@ -28,7 +28,6 @@ extension WaterfallVC
                     self.collectionView.reloadData();
                 };
                 navigationController?.pushViewController(vc, animated: true);
-                
             }else
             {
                 showTextHUD("加载草稿失败");

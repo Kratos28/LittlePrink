@@ -945,10 +945,10 @@
             </objects>
             <point key="canvasLocation" x="1502.8985507246377" y="-2259.375"/>
         </scene>
-        <!--View Controller-->
+        <!--MeVC-->
         <scene sceneID="P63-oW-GPU">
             <objects>
-                <viewController id="qze-ch-rKk" sceneMemberID="viewController">
+                <viewController id="qze-ch-rKk" customClass="MeVC" customModule="LittlePrink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UZ9-5V-dkE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
