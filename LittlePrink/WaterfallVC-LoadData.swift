@@ -22,10 +22,19 @@ extension WaterfallVC
         let sortDescriptors2 = NSSortDescriptor(key: "title", ascending: true);
         request.sortDescriptors = [sortDescriptors,sortDescriptors2];
         request.propertiesToFetch = ["coverPhoto","title","updatedAt","isVideo"];
-        let draftNote =  try! context.fetch(request);
-        print(draftNote[0].text!);
-        print(draftNote);
+        showLoadHUd();
+        backgroundContext.perform {
+           if  let draftNote =  try? backgroundContext.fetch(request)
+            {
+               self.draftNotes = draftNote;
+               DispatchQueue.main.async {
+                   self.collectionView.reloadData();
+               }
+           }
+            self.hideLoadHUD();
+        }
         
-        self.draftNotes = draftNote;
+
+        
     }
 }

@@ -75,6 +75,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+    func saveBackgroundContext(){
+        if backgroundContext.hasChanges {
+            do {
+                try backgroundContext.save();
+            } catch {
+                fatalError("后台存储数据失败");
+            }
+        }
+    }
 
 }
 extension AppDelegate

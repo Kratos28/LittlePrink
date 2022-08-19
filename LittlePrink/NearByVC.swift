@@ -12,7 +12,7 @@ class NearByVC: UIViewController ,IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     

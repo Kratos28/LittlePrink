@@ -53,15 +53,21 @@ extension WaterfallVC
 {
     func deleteDraftNote(_ index : Int)
     {
-        let draftNote =  self.draftNotes[index];
-
         
-        context.delete(draftNote);
-        appDelegate.saveContext();
-        self.draftNotes.remove(at: index);
-        self.collectionView.performBatchUpdates {
-            self.collectionView.deleteItems(at: [IndexPath(item: index, section: 0)]);
+        backgroundContext.perform {
+            let draftNote =  self.draftNotes[index];
+            backgroundContext.delete(draftNote);
+            appDelegate.saveBackgroundContext();
+            self.draftNotes.remove(at: index);
+     
+            DispatchQueue.main.async {
+                self.collectionView.performBatchUpdates {
+                    self.collectionView.deleteItems(at: [IndexPath(item: index, section: 0)]);
+                }
+                self.showTextHUD("删除草稿成功");
+            }
         }
+    
     }
 }
 

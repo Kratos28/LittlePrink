@@ -22,6 +22,7 @@ class WaterfallVC: UICollectionViewController ,CHTCollectionViewDelegateWaterfal
         self.getDraftNotes();
     }
 
+    
 
 
 

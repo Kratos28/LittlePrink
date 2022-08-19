@@ -11,29 +11,41 @@ extension NoteEditVC
 {
     func createDraftNote()
     {
-        let dratNote =  DraftNote(context:context);
-        
-        if isVideo
-        {
-            dratNote.video = try? Data(contentsOf: videoURL!);
-        }
-        
-        handlePhotos(dratNote);
+        backgroundContext.perform {
+            let dratNote =  DraftNote(context:backgroundContext);
+            
+            if self.isVideo
+            {
+                dratNote.video = try? Data(contentsOf: self.videoURL!);
+            }
+            
+            self.handlePhotos(dratNote);
 
-        dratNote.isVideo = isVideo;
-        handleOthers(dratNote: dratNote);
+            dratNote.isVideo = self.isVideo;
+            self.handleOthers(dratNote: dratNote);
+            DispatchQueue.main.async {
+                self.showTextHUD("保存草稿成功");
+            }
+        }
+
 
         
     }
     
     func updateDraftNote(dratNote : DraftNote){
-        
-        if !isVideo{
-            handlePhotos(dratNote);
+        backgroundContext.perform {
+            if !self.isVideo{
+                self.handlePhotos(dratNote);
+            }
+            self.handleOthers(dratNote: dratNote);
+            self.updateDraftNoteFinished?();
+            
+            DispatchQueue.main.async {
+                self.updateDraftNoteFinished?();
+            }
         }
-        handleOthers(dratNote: dratNote);
-        updateDraftNoteFinished?();
         navigationController?.popViewController(animated: true);
+
     }
 }
 
@@ -56,13 +68,17 @@ extension NoteEditVC
     }
     
     private func handleOthers( dratNote: DraftNote){
-        dratNote.title = titleTextField.exactText;
-        dratNote.text = textView.exactText;
+        DispatchQueue.main.async {
+            dratNote.title = self.titleTextField.exactText;
+            dratNote.text = self.textView.exactText;
+        }
+        
+  
         dratNote.channel =  channel;
         dratNote.subchannel  = subChannel;
         dratNote.poiName = poiName;
         dratNote.updatedAt = Date();
-        appDelegate.saveContext();
+        appDelegate.saveBackgroundContext();
 
     }
     

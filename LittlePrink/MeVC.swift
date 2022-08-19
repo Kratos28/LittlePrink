@@ -15,7 +15,7 @@ class MeVC: UIViewController {
         if #available(iOS 14.0, *) {
             navigationItem.backButtonDisplayMode = .minimal
         } else {
-            // Fallback on earlier versions
+            
         };
     }
     
