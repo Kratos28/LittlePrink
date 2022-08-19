@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import DateToolsSwift
+import AVFoundation
 
 
 extension Optional where Wrapped == String {
@@ -129,8 +130,13 @@ extension UIViewController {
     }
     
     //MARK: 提示框-自动隐藏
-    func showTextHUD(_ title:String,_ subtitle:String? = nil){
-        let hud =  MBProgressHUD.showAdded(to: view, animated: true);
+    func showTextHUD(_ title:String,_ inCurrentView:Bool = true, _ subtitle:String? = nil){
+        var viewToShow :UIView = view!
+        if !inCurrentView
+        {
+            viewToShow = UIApplication.shared.windows.last!
+        }
+        let hud =  MBProgressHUD.showAdded(to: viewToShow, animated: true);
          hud.mode = .text;
         hud.label.text = title;
         hud.detailsLabel.text = subtitle;
@@ -181,6 +187,22 @@ extension String
 }
 
 
+
+extension URL{
+    var thumbnail:UIImage{
+        let asset = AVAsset(url: self);
+        let assetImgGenerate = AVAssetImageGenerator(asset: asset);
+        assetImgGenerate.appliesPreferredTrackTransform = true;
+        let time = CMTimeMakeWithSeconds(1.0, preferredTimescale: 600);
+        do {
+          let img =   try assetImgGenerate.copyCGImage(at: time, actualTime: nil);
+            let thumbnail = UIImage(cgImage: img);
+            return thumbnail;
+        } catch  {
+            return imagePH;
+        }
+    }
+}
 extension FileManager
 {
     func save(_ data: Data?,to dirName:String,as fileName :String) -> URL?

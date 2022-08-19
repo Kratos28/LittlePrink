@@ -24,7 +24,7 @@ extension NoteEditVC
             dratNote.isVideo = self.isVideo;
             self.handleOthers(dratNote: dratNote);
             DispatchQueue.main.async {
-                self.showTextHUD("保存草稿成功");
+                self.showTextHUD("保存草稿成功",false);
             }
         }
         dismiss(animated: true);
@@ -70,14 +70,11 @@ extension NoteEditVC
             dratNote.title = self.titleTextField.exactText;
             dratNote.text = self.textView.exactText;
         }
-        
-  
         dratNote.channel =  channel;
         dratNote.subchannel  = subChannel;
         dratNote.poiName = poiName;
         dratNote.updatedAt = Date();
         appDelegate.saveBackgroundContext();
-
     }
     
 }

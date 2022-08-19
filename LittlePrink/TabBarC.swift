@@ -43,12 +43,10 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             config.video.minimumTimeLimit = 3.0;
             config.video.trimmerMaxDuration = 60.0;
             config.video.trimmerMinDuration = 3.0;
-        
-            
+            config.showsVideoTrimmer = false;
             config.gallery.hidesRemoveButton = false;
             let picker = YPImagePicker(configuration: config);
             picker.didFinishPicking {[unowned picker] items, cancelled in
-                
                 if cancelled{
                     picker.dismiss(animated: true);
                 }else
@@ -60,9 +58,11 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                         case let .photo(photo):
                             print(photo);
                             photos.append(photo.image);
-                        case .video(let video):
-                            photos.append(video.thumbnail);
-                            videoURL = video.url;
+                        case .video:
+                            
+                           let url =  URL(fileURLWithPath: "",relativeTo: FileManager.default.temporaryDirectory);
+                            photos.append(url.thumbnail);
+                            videoURL = url
                         }
                     }
                     let vc = self.storyboard!.instantiateViewController(withIdentifier: kNoteEditVCID) as! NoteEditVC;
@@ -71,9 +71,7 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                     picker.pushViewController(vc, animated: true)
                 }
             }
-            
             present(picker, animated: true)
-            
             return false;
         }
         return true;
