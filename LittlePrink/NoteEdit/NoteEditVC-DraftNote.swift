@@ -27,9 +27,7 @@ extension NoteEditVC
                 self.showTextHUD("保存草稿成功");
             }
         }
-
-
-        
+        dismiss(animated: true);
     }
     
     func updateDraftNote(dratNote : DraftNote){
