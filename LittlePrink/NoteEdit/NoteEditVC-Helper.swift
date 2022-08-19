@@ -8,19 +8,20 @@
 import Foundation
 
 extension NoteEditVC{
-    func validateNote()
+    func isValidateNote()->Bool
     {
         
         guard !photos.isEmpty else{
             showLoadHUd("至少学要传一张图片");
-            return;
+            return false;
         }
         
         guard TextViewIAView.textCountLabel.text!.count  < kMaxNoteTextCount else
         {
             showLoadHUd("正文最多输入");
-            return;
+            return false;
         }
+        return true;
     }
     
     func handeleTFEditChanged()

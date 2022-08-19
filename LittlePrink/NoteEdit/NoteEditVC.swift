@@ -60,7 +60,10 @@ class NoteEditVC: UIViewController {
     
     
     @IBAction func saveDratNote(_ sender: Any) {
-        self.validateNote();
+      guard  self.isValidateNote() else
+        {
+          return;
+      }
 
         if let dratNote  = self.draftNote{
             updateDraftNote(dratNote: dratNote);
@@ -73,7 +76,10 @@ class NoteEditVC: UIViewController {
     }
     
     @IBAction func postNote(_ sender: Any) {
-        self.validateNote();
+        guard  self.isValidateNote() else
+        {
+            return;
+        }
     }
     
     @IBAction func TFEditingBegin(_ sender: UITextField) {
