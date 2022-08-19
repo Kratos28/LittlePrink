@@ -53,6 +53,8 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
         
                 }
                 
+                
+                
                 for item in items {
                     switch item {
                     case let .photo(photo):
@@ -62,8 +64,9 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                         print(video);
                     }
                 }
+                let vc = self.storyboard!.instantiateViewController(withIdentifier: kNoteEditVCID) as! NoteEditVC;
                 
-                picker.dismiss(animated: true,completion: nil);
+                picker.pushViewController(vc, animated: true)
             }
             
             present(picker, animated: true)
