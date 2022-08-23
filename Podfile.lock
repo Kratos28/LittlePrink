@@ -6,6 +6,9 @@ PODS:
     - AMapFoundation (~> 1.6.9)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
   - DateToolsSwift (5.0.0)
+  - JCore (3.2.3)
+  - JVerification (2.7.9):
+    - JCore (>= 2.1.6)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - PryntTrimmerView (4.0.2)
@@ -21,6 +24,7 @@ DEPENDENCIES:
   - AMapSearch
   - CHTCollectionViewWaterfallLayout/Swift
   - DateToolsSwift
+  - JVerification
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
   - SKPhotoBrowser
@@ -34,6 +38,8 @@ SPEC REPOS:
     - AMapSearch
     - CHTCollectionViewWaterfallLayout
     - DateToolsSwift
+    - JCore
+    - JVerification
     - MBProgressHUD
     - MJRefresh
     - PryntTrimmerView
@@ -48,6 +54,8 @@ SPEC CHECKSUMS:
   AMapSearch: b461cdf25b39cdca8957017de2f376cd1ac5da85
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
+  JCore: 9b3cb5b6163d4da6d9dfe95652316f09e5bf8140
+  JVerification: ad51b437b0e6d536117171a4ebab9a727cea78b8
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
@@ -56,6 +64,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 18a3b7a2b88d69fa4212e3ec7cf7247e29b1a61f
+PODFILE CHECKSUM: 0874a6b16dfb24a587803fd01c2f632695fff9f1
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
