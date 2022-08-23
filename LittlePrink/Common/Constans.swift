@@ -48,8 +48,8 @@ let KMaxCameraZoomFactor = 5.0;
 let kSpacingBetweenItems = 2.0;
 let kMaxNoteTitleCount = 20;
 let kMaxNoteTextCount = 5;
-
-
+let kAMapapiKey = "";
+let kJAppKey = "";
 
 //话题
 let kAllSubChannels =

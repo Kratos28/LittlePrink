@@ -3,3 +3,4 @@
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import "MJRefresh.h"
+#import "JVERIFICATIONService.h"

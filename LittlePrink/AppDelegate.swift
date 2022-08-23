@@ -96,7 +96,6 @@ extension AppDelegate
         AMapServices.shared().enableHTTPS = true;
         AMapServices.shared().apiKey = "";
         
-        
         UINavigationBar.appearance().tintColor = .label;
     }
 }
