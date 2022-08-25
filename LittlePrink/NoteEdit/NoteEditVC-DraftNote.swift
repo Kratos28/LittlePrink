@@ -20,7 +20,6 @@ extension NoteEditVC
             }
             
             self.handlePhotos(dratNote);
-
             dratNote.isVideo = self.isVideo;
             self.handleOthers(dratNote: dratNote);
             DispatchQueue.main.async {

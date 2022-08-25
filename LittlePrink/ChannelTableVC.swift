@@ -12,15 +12,9 @@ class ChannelTableVC: UITableViewController {
     var channel = "";
     var subChannels : [String] = [];
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad();
     }
-
-    // MARK: - Table view data source
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return subChannels.count
     }
 
