@@ -44,6 +44,14 @@ extension LoginVC
     private func setLocalLoginUI()
     {
         let config = JVUIConfig();
+        config.prefersStatusBarHidden = true;
+        config.navTransparent = true;
+        config.navText = NSAttributedString(string: "");
+        
+//        let logoConstrainX = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.super, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0);
+        
+        let logoConstrainY = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.super, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1/7, constant: 0);
+        config.logoConstraints = [logoConstrainY!];
         JVERIFICATIONService.customUI(with: config);
     }
     
