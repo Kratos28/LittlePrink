@@ -48,9 +48,30 @@ extension LoginVC
         config.navTransparent = true;
         config.navText = NSAttributedString(string: "");
         
-        
         let logoConstrainY = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.super, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1/7, constant: 0);
         config.logoConstraints = [logoConstrainY!];
+        
+        let numberConstrainY  = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.super, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 35);
+        config.numberConstraints = [numberConstrainY!];
+        
+        
+        let sloganConstrainY =   JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.number, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 35);
+        config.sloganConstraints = [sloganConstrainY!];
+
+        
+        config.logBtnText = "同一协议并一键登录";
+        config.logBtnImgs = [
+            UIImage(named: "localLoginBtn-nor")!,
+            UIImage(named: "localLoginBtn-nor")!,
+            UIImage(named: "localLoginBtn-hig")!
+        ];
+        
+        
+        let logBtnConstrainY = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.number, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 50)
+        
+        
+        config.logBtnConstraints = [logBtnConstrainY!];
+
         JVERIFICATIONService.customUI(with: config);
     }
     
