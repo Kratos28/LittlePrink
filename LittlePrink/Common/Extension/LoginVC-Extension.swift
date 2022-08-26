@@ -8,6 +8,7 @@
 import Foundation
 import AdSupport
 import UIKit
+import Alamofire
 extension UIViewController
 {
     @objc func localLogin(){
@@ -31,6 +32,7 @@ extension UIViewController
                 }
             }else
             {
+                
                 self.hideLoadHUD();
                 self.presentCodeLoginVC();
             }
@@ -48,9 +50,9 @@ extension UIViewController
         
         JVERIFICATIONService.getAuthorizationWith(self, hide: true, animated: true, timeout: 5*1000) { (result) in
             
-                if let  result = result ,let token = result["loginToken"] {
+                if let  result = result ,let token = result["loginToken"] as? String {
                     JVERIFICATIONService.clearPreLoginCache();
-                    
+//                    self.getEncryptedPhoneNum(token);
                     print(token);
                 }else
                 {
@@ -174,6 +176,28 @@ extension UIViewController
                 otherloginBtn.centerYAnchor.constraint(equalTo: custtomView.centerYAnchor,constant: 170),
                 otherloginBtn.widthAnchor.constraint(equalToConstant: 279)
             ]);
+        }
+    }
+}
+
+extension UIViewController
+{
+    struct LocalLoginRes :Decodable {
+        let phone : String
+    }
+    
+    func getEncryptedPhoneNum(_ loginToken:String)
+    {
+        let header: HTTPHeaders = [
+            .authorization(username: kJAppKey, password: ""),
+            
+        ]
+        let parameters = ["loginToken":loginToken]
+        AF.request("https://api.verification.jpush.cn/v1/web/loginTokenVerify", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of:LocalLoginRes.self) { response in
+            if let localLoginRes = response.value {
+                print(localLoginRes.phone);
+            }
+            
         }
     }
 }

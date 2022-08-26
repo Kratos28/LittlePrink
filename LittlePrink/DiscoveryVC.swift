@@ -22,7 +22,6 @@ class DiscoveryVC: ButtonBarPagerTabStripViewController,IndicatorInfoProvider {
             guard changeCurrentIndex == true else { return }
             oldCell?.label.textColor = .secondaryLabel;
             newCell?.label.textColor = .label;
-            
         }
 
         // Do any additional setup after loading the view.

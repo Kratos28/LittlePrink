@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.6.1)
   - AMapFoundation (1.6.9)
   - AMapLocation (2.8.0):
     - AMapFoundation (~> 1.6.9)
@@ -20,6 +21,7 @@ PODS:
     - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - AMapLocation
   - AMapSearch
   - CHTCollectionViewWaterfallLayout/Swift
@@ -33,6 +35,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
     - AMapFoundation
     - AMapLocation
     - AMapSearch
@@ -49,6 +52,7 @@ SPEC REPOS:
     - YPImagePicker
 
 SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   AMapFoundation: 8d8ecbb0b2e9ce5487995360d26c885d94642bfd
   AMapLocation: 5ef44a1117be7dc541cb7a7d43d03c5ee91e4387
   AMapSearch: b461cdf25b39cdca8957017de2f376cd1ac5da85
@@ -64,6 +68,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 0874a6b16dfb24a587803fd01c2f632695fff9f1
+PODFILE CHECKSUM: da93df14a58b9c4a3466ef17bffc7ad3eb0a776f
 
 COCOAPODS: 1.11.3
