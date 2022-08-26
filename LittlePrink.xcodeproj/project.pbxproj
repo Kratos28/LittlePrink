@@ -56,6 +56,7 @@
 		65DE81A6285A437A002F4541 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE81A5285A437A002F4541 /* PostVC.swift */; };
 		65F35C6B28AEA50A00D10CEF /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F35C6A28AEA50A00D10CEF /* MeVC.swift */; };
 		65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */; };
+		65F7773F28B91782008B7749 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7773E28B91782008B7749 /* LoginVC.swift */; };
 		CF913235B1B5BDC1E98FE707 /* Pods_LittlePrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386924448731C16EC6CD740F /* Pods_LittlePrink.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		65F35C6A28AEA50A00D10CEF /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocallzationTableViewController.swift; sourceTree = "<group>"; };
 		65F3C1002850FE5D001F9F5C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		65F7773E28B91782008B7749 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,10 +186,11 @@
 		65399077282AB3DE002EB0E8 /* LittlePrink */ = {
 			isa = PBXGroup;
 			children = (
-				653C013328B51F830046E430 /* Login */,
+				65F7773D28B91782008B7749 /* Login */,
 				0A299A09286DC41C008B66E6 /* testVideo.mp4 */,
 				65094577285D9CF90009FEAD /* Common */,
 				65399078282AB3DE002EB0E8 /* AppDelegate.swift */,
+				653C013428B51FAD0046E430 /* LoginVC.swift */,
 				6539907A282AB3DE002EB0E8 /* SceneDelegate.swift */,
 				657901CB2843D140009AA37A /* HomeVC.swift */,
 				657EB4192845189A00E6E507 /* DiscoveryVC.swift */,
@@ -223,14 +226,6 @@
 			path = LittlePrink;
 			sourceTree = "<group>";
 		};
-		653C013328B51F830046E430 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				653C013428B51FAD0046E430 /* LoginVC.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		65AC4E25286B5979003B51AC /* NoteEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +256,14 @@
 				659BE7682853B80A001FAD27 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		65F7773D28B91782008B7749 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				65F7773E28B91782008B7749 /* LoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D5F2379E957D28CA1D708B43 /* Pods */ = {
@@ -435,6 +438,7 @@
 				657901CC2843D140009AA37A /* HomeVC.swift in Sources */,
 				657EB41E284518ED00E6E507 /* FollowVC.swift in Sources */,
 				650DBEC7284C7053002B07AF /* CollectionViewController.swift in Sources */,
+				65F7773F28B91782008B7749 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
