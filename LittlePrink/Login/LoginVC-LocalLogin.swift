@@ -114,7 +114,6 @@ extension LoginVC
                 otherloginBtn.centerYAnchor.constraint(equalTo: custtomView.centerYAnchor,constant: 170),
                 otherloginBtn.widthAnchor.constraint(equalToConstant: 279)
             ]);
-            
         }
     }
 
