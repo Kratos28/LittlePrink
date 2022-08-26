@@ -32,7 +32,7 @@ let kChannelTableVCID = "ChannelTableViewVCID";
 
 let kWaterfallPadding :CGFloat =  4;
 let kphotoFooterID = "PhotoFooterID"
-
+let kloginNavID = "LoginNavID";
 
 //MARK: -coreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate;
@@ -42,6 +42,9 @@ let backgroundContext = persistentContainer.newBackgroundContext();
 
 //MARK: -业务逻辑相关
 let kchannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"]
+
+
+
 
 let kMaxPhotoCount = 9;
 let KMaxCameraZoomFactor = 5.0;

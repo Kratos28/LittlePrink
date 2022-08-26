@@ -7,14 +7,14 @@
 
 import Foundation
 import AdSupport
-extension LoginVC
+import UIKit
+extension UIViewController
 {
     @objc func localLogin(){
         let adString = ASIdentifierManager.shared().advertisingIdentifier.uuidString;
         showLoadHUd();
         let config = JVAuthConfig();
         config.appKey = kJAppKey;
-
         config.advertisingId = adString;
         config.authBlock = { _  in
             if JVERIFICATIONService.isSetupClient(){
@@ -24,22 +24,80 @@ extension LoginVC
                         //预取号成功
                         self.setLocalLoginUI();
                         self.presentLocalLoginVC();
-               
-
                     }else
                     {
-                        self.presentLocalLoginVC();
+                        self.presentCodeLoginVC();
                     }
                 }
             }else
             {
                 self.hideLoadHUD();
-                self.presentLocalLoginVC();
+                self.presentCodeLoginVC();
             }
         };
         JVERIFICATIONService.setup(with: config);
     }
     
+
+
+    
+
+    
+    private func presentLocalLoginVC()
+    {
+        
+        JVERIFICATIONService.getAuthorizationWith(self, hide: true, animated: true, timeout: 5*1000) { (result) in
+            
+                if let  result = result ,let token = result["loginToken"] {
+                    JVERIFICATIONService.clearPreLoginCache();
+
+                }else
+                {
+                    self.otherLogin();
+                }
+            
+        } actionBlock: { type, content in
+            if let content = content{
+                print("一键登录,\(type),content=\(content)");
+            }
+        }
+    }
+    
+}
+
+extension UIViewController
+{
+    
+    func presentCodeLoginVC()
+    {
+        let mainSB =  UIStoryboard(name: "Main", bundle: nil);
+        let LoginNaviC = mainSB.instantiateViewController(identifier: kloginNavID);
+        LoginNaviC.modalPresentationStyle = .fullScreen;
+        self.present(LoginNaviC, animated: true);
+    }
+}
+
+extension UIViewController
+{
+    @objc private func otherLogin()
+    {
+        JVERIFICATIONService.dismissLoginController(animated: true, completion: {
+            self.presentCodeLoginVC();
+        });
+    }
+    
+    
+    
+    
+    @objc private func dismiisLocalVC()
+    {
+        JVERIFICATIONService.dismissLoginController(animated: true, completion: nil);
+    }
+}
+
+
+extension UIViewController
+{
     
     private func setLocalLoginUI()
     {
@@ -47,7 +105,8 @@ extension LoginVC
         config.prefersStatusBarHidden = true;
         config.navTransparent = true;
         config.navText = NSAttributedString(string: " ");
-        
+        config.navReturnHidden = true;
+        config.navControl = UIBarButtonItem(title: "关闭", style:.plain , target: self, action: #selector(dismiisLocalVC))
         
         let constrainX = JVLayoutConstraint(attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, to: JVLayoutItem.super, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1/7, constant: 0)!;
         
@@ -116,33 +175,4 @@ extension LoginVC
             ]);
         }
     }
-
-    
-    @objc private func otherLogin()
-    {
-        
-    }
-    
-    private func presentLocalLoginVC()
-    {
-        
-        JVERIFICATIONService.getAuthorizationWith(self, hide: true, animated: true, timeout: 5*1000) { (result) in
-            JVERIFICATIONService.clearPreLoginCache();
-            
-                if let  result = result ,let token = result["loginToken"] {
-                    
-                }
-            
-            
-        } actionBlock: { type, content in
-            if let content = content{
-                print("一键登录,\(type),content=\(content)");
-            }
-        }
-    }
-    
-    
-    
-   
 }
-

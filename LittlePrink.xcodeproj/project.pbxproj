@@ -16,7 +16,7 @@
 		0A4702FF28AB98F5002E684D /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4702FE28AB98F5002E684D /* NoteEditVC-Helper.swift */; };
 		0A47030128AB9C21002E684D /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47030028AB9C21002E684D /* NoteEditVC-UI.swift */; };
 		0A47030328ABB918002E684D /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47030228ABB918002E684D /* NoteEditVC-DraftNote.swift */; };
-		65094579285D9D1C0009FEAD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* Extension.swift */; };
+		65094579285D9D1C0009FEAD /* System-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* System-Extension.swift */; };
 		650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC2284C611C002B07AF /* WaterfallVC.swift */; };
 		650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC4284C69CE002B07AF /* WaterfallCell.swift */; };
 		650DBEC7284C7053002B07AF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC6284C7053002B07AF /* CollectionViewController.swift */; };
@@ -31,7 +31,7 @@
 		65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65399084282AB3E0002EB0E8 /* Assets.xcassets */; };
 		65399088282AB3E0002EB0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */; };
 		653C013528B51FAD0046E430 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C013428B51FAD0046E430 /* LoginVC.swift */; };
-		653C013728B522210046E430 /* LoginVC-LocalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C013628B522210046E430 /* LoginVC-LocalLogin.swift */; };
+		653C013728B522210046E430 /* LoginVC-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C013628B522210046E430 /* LoginVC-Extension.swift */; };
 		65401A5328A8D7F000C4D07F /* DratNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */; };
 		6572918328828BE400371CC2 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572918228828BE400371CC2 /* ChannelTableVC.swift */; };
 		657901CC2843D140009AA37A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657901CB2843D140009AA37A /* HomeVC.swift */; };
@@ -73,7 +73,7 @@
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		386924448731C16EC6CD740F /* Pods_LittlePrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
-		65094578285D9D1C0009FEAD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		65094578285D9D1C0009FEAD /* System-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System-Extension.swift"; sourceTree = "<group>"; };
 		650B72B228523C5B0079BF1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		650DBEC2284C611C002B07AF /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		650DBEC4284C69CE002B07AF /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		65399087282AB3E0002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65399089282AB3E0002EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653C013428B51FAD0046E430 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = LittlePrink/LoginVC.swift; sourceTree = SOURCE_ROOT; };
-		653C013628B522210046E430 /* LoginVC-LocalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC-LocalLogin.swift"; sourceTree = "<group>"; };
+		653C013628B522210046E430 /* LoginVC-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC-Extension.swift"; sourceTree = "<group>"; };
 		65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DratNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		656D6A1E2871585B007FCAF8 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		6572918228828BE400371CC2 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
@@ -136,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A05887C28B8CB5F00FC339A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				653C013628B522210046E430 /* LoginVC-Extension.swift */,
+				65094578285D9D1C0009FEAD /* System-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +156,8 @@
 		65094577285D9CF90009FEAD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0A05887C28B8CB5F00FC339A /* Extension */,
 				65C58238284665BF00B68027 /* Constans.swift */,
-				65094578285D9D1C0009FEAD /* Extension.swift */,
 				6533D1992884443900865B85 /* Protocols.swift */,
 			);
 			path = Common;
@@ -218,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				653C013428B51FAD0046E430 /* LoginVC.swift */,
-				653C013628B522210046E430 /* LoginVC-LocalLogin.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -390,10 +398,10 @@
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,
 				659E215E28885B3800A93873 /* POIVC.swift in Sources */,
-				65094579285D9D1C0009FEAD /* Extension.swift in Sources */,
+				65094579285D9D1C0009FEAD /* System-Extension.swift in Sources */,
 				0A47030328ABB918002E684D /* NoteEditVC-DraftNote.swift in Sources */,
 				65915E07289D883200FDB849 /* POIVC-KeywordsSearch.swift in Sources */,
-				653C013728B522210046E430 /* LoginVC-LocalLogin.swift in Sources */,
+				653C013728B522210046E430 /* LoginVC-Extension.swift in Sources */,
 				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				0A3E335328AA55E700D0936E /* WaterfallVC-LoadData.swift in Sources */,
 				0A47030128AB9C21002E684D /* NoteEditVC-UI.swift in Sources */,
