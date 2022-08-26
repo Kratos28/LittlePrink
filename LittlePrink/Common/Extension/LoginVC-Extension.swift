@@ -50,7 +50,8 @@ extension UIViewController
             
                 if let  result = result ,let token = result["loginToken"] {
                     JVERIFICATIONService.clearPreLoginCache();
-
+                    
+                    print(token);
                 }else
                 {
                     self.otherLogin();
