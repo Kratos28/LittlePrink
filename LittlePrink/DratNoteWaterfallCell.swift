@@ -28,8 +28,8 @@ class DratNoteWaterfallCell: UICollectionViewCell {
             titleLabel.text = title.isEmpty ? "无题" : title;
             dateLabel.text = draftNote.updatedAt?.formattedDate;
             isVideoImageView.isHidden = !draftNote.isVideo;
-            
         }
+        
     }
 
 

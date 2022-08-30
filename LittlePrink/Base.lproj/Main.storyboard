@@ -1417,10 +1417,10 @@
             </objects>
             <point key="canvasLocation" x="2024.6376811594205" y="517.63392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Social LoginVC-->
         <scene sceneID="Q4j-Xd-MPY">
             <objects>
-                <viewController id="fhM-yI-FIZ" sceneMemberID="viewController">
+                <viewController id="fhM-yI-FIZ" customClass="SocialLoginVC" customModule="LittlePrink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3q2-wO-HFd">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
