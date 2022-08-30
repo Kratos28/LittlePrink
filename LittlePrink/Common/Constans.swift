@@ -53,7 +53,8 @@ let kMaxNoteTitleCount = 20;
 let kMaxNoteTextCount = 5;
 let kAMapapiKey = "";
 let kJAppKey = "";
-
+let kAliPayAppID = "2021002125697028";
+let kAliPayPID = "2088002401295380";
 //话题
 let kAllSubChannels =
 [
