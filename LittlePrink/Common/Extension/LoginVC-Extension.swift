@@ -191,7 +191,7 @@ extension UIViewController
         let header: HTTPHeaders = [
             .authorization(username: kJAppKey, password: ""),
             
-        ]
+        ];
         let parameters = ["loginToken":loginToken]
         AF.request("https://api.verification.jpush.cn/v1/web/loginTokenVerify", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of:LocalLoginRes.self) { response in
             if let localLoginRes = response.value {

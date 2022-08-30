@@ -26,13 +26,13 @@ class ChannelTableVC: UITableViewController {
         cell.textLabel?.font = .systemFont(ofSize: 15);
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let ChannelVC = parent as! ChannelVC
         ChannelVC.PVdelegate?.updateChannel(channel: channel, subChannel: subChannels[indexPath.row]);
         dismiss(animated: false);
     }
     
-
     
 }
 extension ChannelTableVC :IndicatorInfoProvider
