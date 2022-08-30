@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - AlipaySDK-iOS (15.8.11)
   - AMapFoundation (1.6.9)
   - AMapLocation (2.8.0):
     - AMapFoundation (~> 1.6.9)
@@ -22,6 +23,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - AlipaySDK-iOS
   - AMapLocation
   - AMapSearch
   - CHTCollectionViewWaterfallLayout/Swift
@@ -36,6 +38,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
+    - AlipaySDK-iOS
     - AMapFoundation
     - AMapLocation
     - AMapSearch
@@ -53,13 +56,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AlipaySDK-iOS: a07b6eafa847a5b29acb6c150ea16d9792d5d167
   AMapFoundation: 8d8ecbb0b2e9ce5487995360d26c885d94642bfd
   AMapLocation: 5ef44a1117be7dc541cb7a7d43d03c5ee91e4387
   AMapSearch: b461cdf25b39cdca8957017de2f376cd1ac5da85
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   JCore: 9b3cb5b6163d4da6d9dfe95652316f09e5bf8140
-  JVerification: ad51b437b0e6d536117171a4ebab9a727cea78b8
+  JVerification: 446637aca893d08e112f29d6eea4bfc88c507101
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
@@ -68,6 +72,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: da93df14a58b9c4a3466ef17bffc7ad3eb0a776f
+PODFILE CHECKSUM: 66f6c771cfdf2e15f6f2c0671dbd5bea05350854
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2
