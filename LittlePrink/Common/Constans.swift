@@ -55,6 +55,7 @@ let kAMapapiKey = "";
 let kJAppKey = "";
 let kAliPayAppID = "2021002125697028";
 let kAliPayPID = "2088002401295380";
+let kAppScheme = "LittlePrink";
 //话题
 let kAllSubChannels =
 [
