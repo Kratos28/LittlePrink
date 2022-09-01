@@ -36,7 +36,7 @@ class SocialLoginVC: UIViewController {
                     if subRes.hasPrefix("auth_code")
                     {
                         print("authCode = \(suffix)");
-                        let parameters = [
+                        var  parameters = [
                             "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
                             "method":"alipay.system.oauth.token",
                             "app_id":kAliPayPID,
@@ -46,7 +46,13 @@ class SocialLoginVC: UIViewController {
                             "grant_type":"authorization_code",
                             "code":String(suffix)
                         ];
-                        AF.request("https://openapi.alipay.com/gateway.do", parameters: parameters)
+                        
+                       let urlparameters = parameters.map { "\($0)=\($1)"}.sorted().joined(separator: "&");
+                        guard let signer =  APRSASigner(privateKey: "支付宝创建的私钥"),let signedStr   = signer.sign(urlparameters, withRSA2: true) else {return;}
+                        parameters["sign"] = signedStr.removingPercentEncoding ?? signedStr;
+                        AF.request("https://openapi.alipay.com/gateway.do", parameters: parameters).responseJSON { res in
+                            print(res);
+                        }
                         
                     }
                 }
