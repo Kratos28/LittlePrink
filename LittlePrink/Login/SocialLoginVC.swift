@@ -46,12 +46,29 @@ class SocialLoginVC: UIViewController {
                             "grant_type":"authorization_code",
                             "code":String(suffix)
                         ];
-                        
-                       let urlparameters = parameters.map { "\($0)=\($1)"}.sorted().joined(separator: "&");
-                        guard let signer =  APRSASigner(privateKey: "支付宝创建的私钥"),let signedStr   = signer.sign(urlparameters, withRSA2: true) else {return;}
-                        parameters["sign"] = signedStr.removingPercentEncoding ?? signedStr;
-                        AF.request("https://openapi.alipay.com/gateway.do", parameters: parameters).responseJSON { res in
-                            print(res);
+              
+                        AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: TokenResponse.self) { reponse in
+                            if let tokenResponse = reponse.value{
+                                let accessToken =   tokenResponse.alipay_system_oauth_token_response.access_token;
+                                let  parameters : [String:String] =  [
+                                    "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
+                                    "method":"alipay.user.info.share",
+                                    "app_id":kAliPayPID,
+                                    "sign_type":"RSA2",
+                                    "version":"1.0",
+                                    "charset":"utf-8",
+                                    "auth_token":accessToken
+                                ]
+                                
+                                AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: InfoShareReponse.self) { response in
+                                    if let  infoShareReponse = response.value {
+                                        let info = infoShareReponse.alipay_user_info_share_response;
+                                        
+                                    }
+                                }
+                                 
+                            }
+                            
                         }
                         
                     }
@@ -59,6 +76,43 @@ class SocialLoginVC: UIViewController {
                 
             }
         };
+        
+        
+    }
+}
+
+
+extension SocialLoginVC{
+    struct TokenResponse:Decodable {
+        let alipay_system_oauth_token_response : TokenResponseInfo
+        struct TokenResponseInfo :Decodable {
+            let access_token:String
+        }
+    }
+    
+    
+    struct InfoShareReponse:Decodable {
+        let alipay_user_info_share_response : InfoShareReponseInfo
+        struct InfoShareReponseInfo :Decodable{
+            let avatar:String
+            let nick_name : String
+            let gender :String
+            let province:String
+            let city:String
+        }
+    }
+}
+
+extension SocialLoginVC{
+    private func signedParameters(_ parameters: [String:String]) -> [String:String]
+    {
+        
+        var signedParameters = parameters;
+        
+       let urlparameters = parameters.map { "\($0)=\($1)"}.sorted().joined(separator: "&");
+        guard let signer =  APRSASigner(privateKey: "支付宝创建的私钥"),let signedStr   = signer.sign(urlparameters, withRSA2: true) else {fatalError("sfsdfsdfds")};
+        signedParameters["sign"] = signedStr.removingPercentEncoding ?? signedStr;
+        return parameters;
         
         
     }
