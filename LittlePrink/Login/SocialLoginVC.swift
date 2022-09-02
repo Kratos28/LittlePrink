@@ -35,42 +35,7 @@ class SocialLoginVC: UIViewController {
                     print(prefix);
                     if subRes.hasPrefix("auth_code")
                     {
-                        print("authCode = \(suffix)");
-                        var  parameters = [
-                            "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
-                            "method":"alipay.system.oauth.token",
-                            "app_id":kAliPayPID,
-                            "sign_type":"RSA2",
-                            "version":"1.0",
-                            "charset":"utf-8",
-                            "grant_type":"authorization_code",
-                            "code":String(suffix)
-                        ];
-              
-                        AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: TokenResponse.self) { reponse in
-                            if let tokenResponse = reponse.value{
-                                let accessToken =   tokenResponse.alipay_system_oauth_token_response.access_token;
-                                let  parameters : [String:String] =  [
-                                    "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
-                                    "method":"alipay.user.info.share",
-                                    "app_id":kAliPayPID,
-                                    "sign_type":"RSA2",
-                                    "version":"1.0",
-                                    "charset":"utf-8",
-                                    "auth_token":accessToken
-                                ]
-                                
-                                AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: InfoShareReponse.self) { response in
-                                    if let  infoShareReponse = response.value {
-                                        let info = infoShareReponse.alipay_user_info_share_response;
-                                        
-                                    }
-                                }
-                                 
-                            }
-                            
-                        }
-                        
+                        self.getToken(String(suffix));
                     }
                 }
                 
@@ -81,7 +46,53 @@ class SocialLoginVC: UIViewController {
     }
 }
 
-
+extension SocialLoginVC
+{
+    private func getToken(_ authCode :String)
+    {
+        
+            print("authCode = \(authCode)");
+            var  parameters = [
+                "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
+                "method":"alipay.system.oauth.token",
+                "app_id":kAliPayPID,
+                "sign_type":"RSA2",
+                "version":"1.0",
+                "charset":"utf-8",
+                "grant_type":"authorization_code",
+                "code":String(authCode)
+            ];
+  
+            AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: TokenResponse.self) { reponse in
+                if let tokenResponse = reponse.value{
+                    let accessToken =  tokenResponse.alipay_system_oauth_token_response.access_token;
+              
+                    self.getINfo(accessToken)
+                }
+                
+            }
+            
+    }
+    private func getINfo(_ accessToken :String){
+        let  parameters : [String:String] =  [
+            "timestamp":Date().format(with: "yyyy-MM-dd HH:mm:ss"),
+            "method":"alipay.user.info.share",
+            "app_id":kAliPayPID,
+            "sign_type":"RSA2",
+            "version":"1.0",
+            "charset":"utf-8",
+            "auth_token":accessToken
+        ]
+        
+        AF.request("https://openapi.alipay.com/gateway.do", parameters: self.signedParameters(parameters)).responseDecodable(of: InfoShareReponse.self) { response in
+            if let  infoShareReponse = response.value {
+                let info = infoShareReponse.alipay_user_info_share_response;
+                
+            }
+        }
+    }
+    
+}
 extension SocialLoginVC{
     struct TokenResponse:Decodable {
         let alipay_system_oauth_token_response : TokenResponseInfo
