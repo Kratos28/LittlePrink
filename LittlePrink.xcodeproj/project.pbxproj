@@ -56,6 +56,7 @@
 		65AC4E24286B54E4003B51AC /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC4E23286B54E4003B51AC /* PhotoFooter.swift */; };
 		65C58239284665BF00B68027 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C58238284665BF00B68027 /* Constans.swift */; };
 		65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB08C32866E964009523A2 /* NoteEditVC.swift */; };
+		65D1167D28C3534000291546 /* SocialLoginVC-Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1167C28C3534000291546 /* SocialLoginVC-Apple.swift */; };
 		65D7DE6C2855079500ED858E /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7DE6B2855079500ED858E /* TabBarC.swift */; };
 		65DE778A288283FF00FFF6B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE7789288283FF00FFF6B5 /* ChannelVC.swift */; };
 		65DE81A6285A437A002F4541 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE81A5285A437A002F4541 /* PostVC.swift */; };
@@ -204,6 +205,8 @@
 		65AC4E23286B54E4003B51AC /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		65C58238284665BF00B68027 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		65CB08C32866E964009523A2 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		65D1167B28C34E8500291546 /* LittlePrink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LittlePrink.entitlements; sourceTree = "<group>"; };
+		65D1167C28C3534000291546 /* SocialLoginVC-Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Apple.swift"; sourceTree = "<group>"; };
 		65D7DE6B2855079500ED858E /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		65DE7789288283FF00FFF6B5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		65DE81A5285A437A002F4541 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
@@ -380,6 +383,7 @@
 		65399077282AB3DE002EB0E8 /* LittlePrink */ = {
 			isa = PBXGroup;
 			children = (
+				65D1167B28C34E8500291546 /* LittlePrink.entitlements */,
 				65F7773D28B91782008B7749 /* Login */,
 				0A299A09286DC41C008B66E6 /* testVideo.mp4 */,
 				65094577285D9CF90009FEAD /* Common */,
@@ -456,6 +460,7 @@
 			children = (
 				0A90A9A328BE1CA800C08E26 /* SocialLoginVC.swift */,
 				0A90A9A528BE1CF600C08E26 /* SocialLoginVC-Alipay.swift */,
+				65D1167C28C3534000291546 /* SocialLoginVC-Apple.swift */,
 				65F7773E28B91782008B7749 /* LoginVC.swift */,
 			);
 			path = Login;
@@ -610,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F35C6B28AEA50A00D10CEF /* MeVC.swift in Sources */,
+				65D1167D28C3534000291546 /* SocialLoginVC-Apple.swift in Sources */,
 				0A4702FF28AB98F5002E684D /* NoteEditVC-Helper.swift in Sources */,
 				65CB08C42866E964009523A2 /* NoteEditVC.swift in Sources */,
 				658E1E09286DF43F0099163E /* NoteEditVC-DragDrop.swift in Sources */,
@@ -823,6 +829,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LittlePrink/LittlePrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XQ89XT8BW;
@@ -886,6 +893,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LittlePrink/LittlePrink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XQ89XT8BW;
