@@ -44,7 +44,8 @@ let backgroundContext = persistentContainer.newBackgroundContext();
 let kchannels = ["推荐","旅行","娱乐","才艺","美妆","白富美","美食","萌宠"]
 
 
-
+let kNameFromAppleID = "nameFromAppleID";
+let kEmailFromAppleID = "emailFromAppleID";
 
 let kMaxPhotoCount = 9;
 let KMaxCameraZoomFactor = 5.0;

@@ -16,9 +16,32 @@ extension SocialLoginVC : ASAuthorizationControllerDelegate
         case let appleIDCredential as ASAuthorizationAppleIDCredential:
             let userID = appleIDCredential.user;
             let  status = appleIDCredential.realUserStatus;
-            let familyName = appleIDCredential.fullName?.familyName
-           let givenName =  appleIDCredential.fullName?.givenName;
-            let email = appleIDCredential.email;
+            print(String(decoding:appleIDCredential.identityToken!, as: UTF8.self));
+            var name = "";
+            
+            if appleIDCredential.fullName?.familyName != nil || appleIDCredential.fullName?.givenName != nil
+            {
+                let familyName =  appleIDCredential.fullName!.familyName;
+                let givenName = appleIDCredential.fullName!.givenName;
+                 name = "\(familyName)\(givenName)";
+                UserDefaults.standard.setValue(name, forKey: kNameFromAppleID);
+            }else
+            {
+                name = UserDefaults.standard.string(forKey: kNameFromAppleID) ?? "";
+            }
+            
+            
+            var email = "";
+            if let unwrappedEmail = appleIDCredential.email
+            {
+                email = unwrappedEmail;
+                UserDefaults.standard.setValue(email, forKey: kEmailFromAppleID);
+            }else
+            {
+                email =  UserDefaults.standard.string(forKey: kEmailFromAppleID) ?? "";
+            }
+            guard let identityToken = appleIDCredential.identityToken,
+                  let  authorizationCode = appleIDCredential.authorizationCode else {return};
             
             
         case let appleIDCredential as  ASPasswordCredential:
