@@ -14,4 +14,5 @@ pod 'DateToolsSwift'
 pod 'JVerification'
 pod 'Alamofire', '~>5.2'
 pod 'AlipaySDK-iOS'
+pod 'LeanCloud'
 end

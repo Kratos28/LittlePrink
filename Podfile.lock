@@ -8,14 +8,26 @@ PODS:
     - AMapFoundation (~> 1.6.9)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
   - DateToolsSwift (5.0.0)
+  - GRDB.swift (5.11.0):
+    - GRDB.swift/standard (= 5.11.0)
+  - GRDB.swift/standard (5.11.0)
   - JCore (3.2.3)
   - JVerification (2.7.9):
     - JCore (>= 2.1.6)
+  - LeanCloud (17.9.2):
+    - LeanCloud/RTM (= 17.9.2)
+  - LeanCloud/Foundation (17.9.2):
+    - Alamofire (~> 5.4)
+  - LeanCloud/RTM (17.9.2):
+    - GRDB.swift (~> 5.8)
+    - LeanCloud/Foundation (= 17.9.2)
+    - SwiftProtobuf (~> 1.17)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - PryntTrimmerView (4.0.2)
   - SKPhotoBrowser (7.0.0)
   - SteviaLayout (4.7.3)
+  - SwiftProtobuf (1.20.1)
   - XLPagerTabStrip (9.0.0)
   - YPImagePicker (4.5.0):
     - PryntTrimmerView (~> 4.0.2)
@@ -29,6 +41,7 @@ DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout/Swift
   - DateToolsSwift
   - JVerification
+  - LeanCloud
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
   - SKPhotoBrowser
@@ -44,13 +57,16 @@ SPEC REPOS:
     - AMapSearch
     - CHTCollectionViewWaterfallLayout
     - DateToolsSwift
+    - GRDB.swift
     - JCore
     - JVerification
+    - LeanCloud
     - MBProgressHUD
     - MJRefresh
     - PryntTrimmerView
     - SKPhotoBrowser
     - SteviaLayout
+    - SwiftProtobuf
     - XLPagerTabStrip
     - YPImagePicker
 
@@ -62,16 +78,19 @@ SPEC CHECKSUMS:
   AMapSearch: b461cdf25b39cdca8957017de2f376cd1ac5da85
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
+  GRDB.swift: 9a33d9680cd3c870c82f48a6cbc73d3cfbb235eb
   JCore: 9b3cb5b6163d4da6d9dfe95652316f09e5bf8140
   JVerification: 446637aca893d08e112f29d6eea4bfc88c507101
+  LeanCloud: a2b78da1d4a36a89a2af71d345e19cdd9da8e762
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SwiftProtobuf: e40a7684079620e84ba522dbaeab0cddb0ec7ffd
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 66f6c771cfdf2e15f6f2c0671dbd5bea05350854
+PODFILE CHECKSUM: cb7614fb6ce2f3e587f2ac2c0c6175aefde7a710
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

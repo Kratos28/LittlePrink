@@ -80,8 +80,6 @@ extension SocialLoginVC{
                 print("用户已经登录，展示登录后的UI页面");
             case .revoked:
                 print("用户已从设置里面退出登录或用其他的AppleID进行登录了");
-            case .authorized:
-                print("用户已登录");
             case .notFound:
                 print("无此用户");
              default:
