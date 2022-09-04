@@ -44,8 +44,12 @@ extension SocialLoginVC : ASAuthorizationControllerDelegate
                   let  authorizationCode = appleIDCredential.authorizationCode else {return};
             
             
-        case let appleIDCredential as  ASPasswordCredential:
-            print("");
+            
+            
+        case let passwordCredential as  ASPasswordCredential:
+            let _ = passwordCredential.user;
+            let _ = passwordCredential.password;
+            
         default:
             break;
         }
@@ -63,4 +67,29 @@ extension SocialLoginVC: ASAuthorizationControllerPresentationContextProviding
         view.window!;
     }
   
+}
+
+
+extension SocialLoginVC{
+    func checkSignInWithAppleState(with userID:String){
+        let appleIDProvider = ASAuthorizationAppleIDProvider();
+        appleIDProvider.getCredentialState(forUserID: userID) { credentialState, error in
+            switch credentialState{
+                
+            case .authorized:
+                print("用户已经登录，展示登录后的UI页面");
+            case .revoked:
+                print("用户已从设置里面退出登录或用其他的AppleID进行登录了");
+            case .authorized:
+                print("用户已登录");
+            case .notFound:
+                print("无此用户");
+             default:
+                break;
+                
+            }
+            
+            
+        }
+    }
 }
