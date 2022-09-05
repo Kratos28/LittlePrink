@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import LeanCloud
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -97,5 +98,14 @@ extension AppDelegate
         AMapServices.shared().apiKey = "";
         
         UINavigationBar.appearance().tintColor = .label;
+        
+        
+        LCApplication.logLevel = .off;
+        do{
+            try LCApplication.default.set(id: kLCAppID, key: kLCAppKey,serverURL: kLCServerURL);
+        }catch
+        {
+            print(error);
+        }
     }
 }

@@ -78,3 +78,8 @@ let kNoPOIPH = "未知地址"
 let kPOIsInitArr = [["不显示位置",""]]
 let kPOIType = "汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务|汽车服务"
 let kPOIOffset = 20;
+
+
+let kLCAppID = "13268331128";
+let kLCAppKey = "KtkqHFYTksVwhWhgaoCZi8H1";
+let kLCServerURL = "https://ed2jrtd9.lc-cn-n1-shared.com";
