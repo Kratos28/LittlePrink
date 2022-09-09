@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="-607" y="1210"/>
         </scene>
-        <!--View Controller-->
+        <!--Code LoginVC-->
         <scene sceneID="iyo-tx-GCp">
             <objects>
-                <viewController id="uxn-Ku-NU2" sceneMemberID="viewController">
+                <viewController id="uxn-Ku-NU2" customClass="CodeLoginVC" customModule="LittlePrink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u5W-PP-W43">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,10 @@
                                         <state key="normal">
                                             <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dismiss:" destination="S80-Us-3Ux" eventType="touchUpInside" id="9Ow-ry-l8C"/>
+                                            <action selector="dismiss:" destination="uxn-Ku-NU2" eventType="touchUpInside" id="Q9M-RG-S9q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqQ-Sz-4VI">
                                         <rect key="frame" x="288" y="0.0" width="94" height="22"/>
@@ -228,6 +232,9 @@
                                                         <state key="normal" title="获取验证码">
                                                             <color key="titleColor" systemColor="linkColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="getAuthCode:" destination="uxn-Ku-NU2" eventType="touchUpInside" id="DC8-Ms-zwu"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -266,6 +273,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login:" destination="uxn-Ku-NU2" eventType="touchUpInside" id="UVb-Vc-5wH"/>
+                                </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeO-QT-yiu">
                                 <rect key="frame" x="16" y="734" width="382" height="88"/>
@@ -300,15 +310,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="62I-cw-A7X"/>
+                    <connections>
+                        <outlet property="authCodeTF" destination="q1u-Eh-Wla" id="Y0y-aj-lKi"/>
+                        <outlet property="getAuthCodeBtn" destination="wNS-60-pc4" id="qWs-Qw-Cfg"/>
+                        <outlet property="loginBtn" destination="mn2-Eh-hY4" id="Ixd-Id-nKU"/>
+                        <outlet property="phoneNumTF" destination="8lc-x5-tfN" id="6Wt-Jf-dyp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcp-n5-PLU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="S80-Us-3Ux" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1502.8985507246377" y="972.32142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Password LoginVC-->
         <scene sceneID="0To-Kz-8eb">
             <objects>
-                <viewController id="AAW-dj-Yhv" sceneMemberID="viewController">
+                <viewController id="AAW-dj-Yhv" customClass="PasswordLoginVC" customModule="LittlePrink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SJS-lV-Xmj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,6 +350,9 @@
                                         <state key="normal" title="验证码登录">
                                             <color key="titleColor" systemColor="secondaryLabelColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backtoCodeLoginVC:" destination="AAW-dj-Yhv" eventType="touchUpInside" id="uR8-x6-OnG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1485,8 +1505,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ufT-Is-RQo"/>
-        <segue reference="Cgi-WU-TTX"/>
+        <segue reference="Ngr-6j-2g9"/>
+        <segue reference="3ic-p3-Ypo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2" width="1080" height="1439"/>
