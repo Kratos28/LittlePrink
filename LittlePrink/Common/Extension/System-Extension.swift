@@ -15,6 +15,22 @@ extension Optional where Wrapped == String {
     var unwrappedText: String {self ?? ""}
     
 }
+
+extension UIButton{
+    
+    func setToEnabled()
+    {
+        isEnabled = false;
+        backgroundColor = mainColor;
+    }
+
+    func setToDisabled()
+    {
+        isEnabled = false;
+        backgroundColor = mainLightColor;
+    }
+}
+
 extension UITextField
 {
     var unwarppedText:String {

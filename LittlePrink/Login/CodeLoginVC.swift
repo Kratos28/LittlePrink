@@ -18,8 +18,16 @@ class CodeLoginVC: UIViewController {
 
         
         hideKeyBoardWhenTappedAround();
+        loginBtn.setToDisabled();
         // Do any additional setup after loading the view.
     }
+  
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        self.phoneNumTF.becomeFirstResponder();
+    }
+    
     
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true);
@@ -28,7 +36,7 @@ class CodeLoginVC: UIViewController {
 
     @IBAction func getAuthCode(_ sender: Any) {
     }
-    
+      
     @IBAction func login(_ sender: Any) {
     }
 }
