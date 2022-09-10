@@ -84,3 +84,7 @@ let kLCAppID = "13268331128";
 let kLCAppKey = "KtkqHFYTksVwhWhgaoCZi8H1";
 let kLCServerURL = "https://ed2jrtd9.lc-cn-n1-shared.com";
 let mainLightColor = UIColor(named: "main-light")
+
+
+//正则
+let kPhoneRegEX = "^1\\d{10}$"

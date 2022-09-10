@@ -13,6 +13,9 @@ class CodeLoginVC: UIViewController {
     @IBOutlet weak var getAuthCodeBtn: UIButton!
     @IBOutlet weak var authCodeTF: UITextField!
     @IBOutlet weak var phoneNumTF: UITextField!
+    var phoneNumStr : String {
+        phoneNumTF.unwarppedText;
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,9 @@ class CodeLoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
   
+    @IBAction func TFEditingChanged(_ sender: Any) {
+        getAuthCodeBtn.isHidden = phoneNumStr.isPhoneNum
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);

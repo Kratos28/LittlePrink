@@ -200,8 +200,30 @@ extension String
     {
         self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty;
     }
+    var isPhoneNum :Bool
+    {
+        Int(self) != nil && NSRegularExpression(kPhoneRegEX).matches(self);
+    }
 }
 
+
+extension NSRegularExpression{
+    convenience init(_ pattern :String) {
+        do {
+            try self.init(pattern);
+        } catch
+        {
+            fatalError("非法的正则表达式");
+        }
+    }
+    
+    
+    func matches(_ string :String) ->Bool
+    {
+        let range = NSRange(location: 0, length: string.utf16.count)
+        return firstMatch(in: string, options: [], range: range) != nil;
+    }
+}
 
 
 extension URL{
