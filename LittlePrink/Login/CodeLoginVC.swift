@@ -41,8 +41,26 @@ class CodeLoginVC: UIViewController {
     
 
     @IBAction func getAuthCode(_ sender: Any) {
+        
+        getAuthCodeBtn.isEnabled = false;
+        getAuthCodeBtn.setTitle("重新发送\(60)", for: .disabled);
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(<#T##@objc method#>), userInfo: nil, repeats: true);
     }
       
+    @objc 
+    
     @IBAction func login(_ sender: Any) {
+    }
+}
+extension CodeLoginVC :UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var limit = textField == phoneNumTF ? 11 : 6;
+        let isExceed = range.location >= limit || (textField.unwarppedText.count + string.count ) > limit
+        if isExceed
+        {
+            showTextHUD("最多只能\(limit)");
+        }
+        return !isExceed;
     }
 }
