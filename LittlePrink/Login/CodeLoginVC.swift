@@ -29,7 +29,7 @@ class CodeLoginVC: UIViewController {
     }
   
     @IBAction func TFEditingChanged(_ sender: Any) {
-        let s  = phoneNumStr.isPhoneNum;
+        let s  = phoneNumStr.isPhoneNum && getAuthCodeBtn.isEnabled
         getAuthCodeBtn.isHidden = !s;
         
     }
@@ -49,6 +49,7 @@ class CodeLoginVC: UIViewController {
         
         getAuthCodeBtn.isEnabled = false;
         setAuthCodeBtnDisabledText();
+        getAuthCodeBtn.becomeFirstResponder();
         getAuthCodeBtn.setTitle("重新发送\(timeRemain)", for: .disabled);
        timer =  Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeAuthCodeBtnText), userInfo: nil, repeats: true);
     }
@@ -85,6 +86,7 @@ extension CodeLoginVC
             timeRemain = totalTime;
             getAuthCodeBtn.isEnabled = true;
             getAuthCodeBtn.setTitle("发送验证码", for: .normal);
+            getAuthCodeBtn.isHidden = !phoneNumStr.isPhoneNum;
         }
     }
 }
@@ -96,5 +98,6 @@ extension CodeLoginVC
     func setAuthCodeBtnDisabledText()
     {
         getAuthCodeBtn.setTitle("重新发送\(timeRemain)", for: .disabled);
+        
     }
 }

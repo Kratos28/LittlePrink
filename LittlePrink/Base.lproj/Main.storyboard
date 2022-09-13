@@ -239,6 +239,9 @@
                                                         <state key="normal" title="获取验证码">
                                                             <color key="titleColor" systemColor="linkColor"/>
                                                         </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" systemColor="placeholderTextColor"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="getAuthCode:" destination="uxn-Ku-NU2" eventType="touchUpInside" id="DC8-Ms-zwu"/>
                                                         </connections>
@@ -1545,6 +1548,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
