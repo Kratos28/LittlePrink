@@ -7,12 +7,15 @@
 
 import UIKit
 
+let totalTime = 60;
 class CodeLoginVC: UIViewController {
 
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var getAuthCodeBtn: UIButton!
     @IBOutlet weak var authCodeTF: UITextField!
     @IBOutlet weak var phoneNumTF: UITextField!
+    lazy var timer = Timer();
+    var timeRemain = totalTime;
     var phoneNumStr : String {
         phoneNumTF.unwarppedText;
     }
@@ -26,7 +29,9 @@ class CodeLoginVC: UIViewController {
     }
   
     @IBAction func TFEditingChanged(_ sender: Any) {
-        getAuthCodeBtn.isHidden = phoneNumStr.isPhoneNum
+        let s  = phoneNumStr.isPhoneNum;
+        getAuthCodeBtn.isHidden = !s;
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,13 +48,14 @@ class CodeLoginVC: UIViewController {
     @IBAction func getAuthCode(_ sender: Any) {
         
         getAuthCodeBtn.isEnabled = false;
-        getAuthCodeBtn.setTitle("重新发送\(60)", for: .disabled);
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(<#T##@objc method#>), userInfo: nil, repeats: true);
+        setAuthCodeBtnDisabledText();
+        getAuthCodeBtn.setTitle("重新发送\(timeRemain)", for: .disabled);
+       timer =  Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeAuthCodeBtnText), userInfo: nil, repeats: true);
     }
       
-    @objc 
     
     @IBAction func login(_ sender: Any) {
+        
     }
 }
 extension CodeLoginVC :UITextFieldDelegate{
@@ -60,7 +66,35 @@ extension CodeLoginVC :UITextFieldDelegate{
         if isExceed
         {
             showTextHUD("最多只能\(limit)");
+            
         }
+        
+        print(isExceed);
         return !isExceed;
+    }
+}
+
+extension CodeLoginVC
+{
+   @objc func changeAuthCodeBtnText()
+    {
+        timeRemain -= 1;
+        setAuthCodeBtnDisabledText();
+        if timeRemain == 0 {
+            timer.invalidate();
+            timeRemain = totalTime;
+            getAuthCodeBtn.isEnabled = true;
+            getAuthCodeBtn.setTitle("发送验证码", for: .normal);
+        }
+    }
+}
+
+
+
+extension CodeLoginVC
+{
+    func setAuthCodeBtnDisabledText()
+    {
+        getAuthCodeBtn.setTitle("重新发送\(timeRemain)", for: .disabled);
     }
 }

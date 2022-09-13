@@ -202,7 +202,7 @@ extension String
     }
     var isPhoneNum :Bool
     {
-        Int(self) != nil && NSRegularExpression(kPhoneRegEX).matches(self);
+       return Int(self) != nil && NSRegularExpression(kPhoneRegEX).matches(self);
     }
 }
 
@@ -210,12 +210,15 @@ extension String
 extension NSRegularExpression{
     convenience init(_ pattern :String) {
         do {
-            try self.init(pattern);
+           try self.init(pattern: pattern);
+        
         } catch
         {
             fatalError("非法的正则表达式");
         }
     }
+    
+    
     
     
     func matches(_ string :String) ->Bool
