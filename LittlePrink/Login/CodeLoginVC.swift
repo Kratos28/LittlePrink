@@ -72,7 +72,6 @@ class CodeLoginVC: UIViewController {
         let variables: LCDictionary = [
             "ttl": LCNumber(5),         // 验证码有效时间为 10 分钟
             "name": LCString("小粉书"), // 应用名称
-        
         ]
         LCSMSClient.requestShortMessage(
             mobilePhoneNumber: phoneNumStr,
@@ -81,8 +80,8 @@ class CodeLoginVC: UIViewController {
             variables: variables)     // 控制台配置好的短信签名名称
         { (result) in
             if case let .failure(error: error)  = result{
-               
-                print(  error.reason)
+                print(error.reason);
+                
             }
         }
         
@@ -90,6 +89,23 @@ class CodeLoginVC: UIViewController {
       
     
     @IBAction func login(_ sender: UIButton) {
+        
+        view.endEditing(true);
+        showLoadHUd();
+        LCUser.signUpOrLogIn(mobilePhoneNumber: phoneNumStr, verificationCode: authCodeStr) { result in
+            self.hideLoadHUD();
+            switch result{
+            case let .success(object: result):
+                print(result);
+            case let .failure(error: error):
+                print(error);
+                
+                DispatchQueue.main.async {
+                    self.showTextHUD("登录失败",true , error.reason);
+                }
+            }
+        }
+        
         
     }
 }
