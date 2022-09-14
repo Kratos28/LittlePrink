@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import LeanCloud
 let totalTime = 60;
 class CodeLoginVC: UIViewController {
 
@@ -67,7 +67,25 @@ class CodeLoginVC: UIViewController {
         setAuthCodeBtnDisabledText();
         getAuthCodeBtn.becomeFirstResponder();
         getAuthCodeBtn.setTitle("重新发送\(timeRemain)", for: .disabled);
-       timer =  Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeAuthCodeBtnText), userInfo: nil, repeats: true);
+        timer =  Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeAuthCodeBtnText), userInfo: nil, repeats: true);
+        
+        let variables: LCDictionary = [
+            "ttl": LCNumber(5),         // 验证码有效时间为 10 分钟
+            "name": LCString("小粉书"), // 应用名称
+        
+        ]
+        LCSMSClient.requestShortMessage(
+            mobilePhoneNumber: phoneNumStr,
+            templateName: "Register_Notice", // 控制台配置好的模板名称
+            signatureName: "小粉书",
+            variables: variables)     // 控制台配置好的短信签名名称
+        { (result) in
+            if case let .failure(error: error)  = result{
+               
+                print(  error.reason)
+            }
+        }
+        
     }
       
     
