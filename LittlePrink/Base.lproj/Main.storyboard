@@ -228,7 +228,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1u-Eh-Wla">
                                                         <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="one-time-code"/>
                                                         <connections>
                                                             <action selector="TFEditingChanged:" destination="uxn-Ku-NU2" eventType="editingChanged" id="GOF-dA-hU1"/>
                                                             <outlet property="delegate" destination="uxn-Ku-NU2" id="mmz-BW-xzN"/>

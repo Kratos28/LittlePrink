@@ -190,7 +190,6 @@ extension Bundle{
             return view
         }
         fatalError("加载\(type)类型的view失败");
-        
     }
 }
 

@@ -71,7 +71,7 @@ class CodeLoginVC: UIViewController {
     }
       
     
-    @IBAction func login(_ sender: Any) {
+    @IBAction func login(_ sender: UIButton) {
         
     }
 }
@@ -83,7 +83,7 @@ extension CodeLoginVC :UITextFieldDelegate{
         if isExceed
         {
             showTextHUD("最多只能\(limit)");
-            
+            return false;
         }
         
         return !isExceed;
