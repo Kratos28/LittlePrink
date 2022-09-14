@@ -158,7 +158,6 @@ extension UIViewController {
         hud.detailsLabel.text = subtitle;
         hud.hide(animated: true, afterDelay: 2);
     }
-    
     func hideKeyBoardWhenTappedAround(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))
         tap.cancelsTouchesInView = false;
