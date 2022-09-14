@@ -204,6 +204,9 @@ extension String
     {
        return Int(self) != nil && NSRegularExpression(kPhoneRegEX).matches(self);
     }
+    var isAuthCode: Bool{
+        Int(self) != nil && NSRegularExpression(kAuthCodeRegEx).matches(self);
+    }
 }
 
 

@@ -14,6 +14,9 @@ class CodeLoginVC: UIViewController {
     @IBOutlet weak var getAuthCodeBtn: UIButton!
     @IBOutlet weak var authCodeTF: UITextField!
     @IBOutlet weak var phoneNumTF: UITextField!
+    var authCodeStr : String {
+        authCodeTF.unwarppedText;
+    }
     lazy var timer = Timer();
     var timeRemain = totalTime;
     var phoneNumStr : String {
@@ -28,9 +31,22 @@ class CodeLoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
   
-    @IBAction func TFEditingChanged(_ sender: Any) {
-        let s  = phoneNumStr.isPhoneNum && getAuthCodeBtn.isEnabled
-        getAuthCodeBtn.isHidden = !s;
+    @IBAction func TFEditingChanged(_ sender: UITextField) {
+        
+        
+        if sender == phoneNumTF
+        {
+            getAuthCodeBtn.isHidden = !phoneNumStr.isPhoneNum && getAuthCodeBtn.isEnabled;
+        }
+        
+        if phoneNumStr.isPhoneNum && authCodeStr.isAuthCode
+        {
+            loginBtn.setToEnabled();
+        }else
+        {
+            loginBtn.setToDisabled();
+        }
+
         
     }
     
@@ -70,10 +86,25 @@ extension CodeLoginVC :UITextFieldDelegate{
             
         }
         
-        print(isExceed);
         return !isExceed;
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == phoneNumTF
+        {
+            authCodeTF.becomeFirstResponder();
+        } else
+        {
+            if loginBtn.isEnabled
+            {
+                login(loginBtn);
+            }
+        }
+        
+        return true;
+    }
 }
+
 
 extension CodeLoginVC
 {

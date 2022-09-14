@@ -230,6 +230,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <connections>
+                                                            <action selector="TFEditingChanged:" destination="uxn-Ku-NU2" eventType="editingChanged" id="GOF-dA-hU1"/>
                                                             <outlet property="delegate" destination="uxn-Ku-NU2" id="mmz-BW-xzN"/>
                                                         </connections>
                                                     </textField>
