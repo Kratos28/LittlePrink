@@ -205,6 +205,13 @@ extension String
     var isAuthCode: Bool{
         Int(self) != nil && NSRegularExpression(kAuthCodeRegEx).matches(self);
     }
+    
+    static func randomString(_ length : Int) -> String
+    {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHJKLWMG123456789";
+        let  xx = (0..<length).map{_ in letters.randomElement()!}
+        return String(xx);
+    }
 }
 
 

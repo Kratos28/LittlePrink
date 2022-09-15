@@ -24,8 +24,6 @@ class CodeLoginVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         hideKeyBoardWhenTappedAround();
         loginBtn.setToDisabled();
         // Do any additional setup after loading the view.
@@ -94,8 +92,25 @@ class CodeLoginVC: UIViewController {
         LCUser.signUpOrLogIn(mobilePhoneNumber: phoneNumStr, verificationCode: authCodeStr) { result in
             self.hideLoadHUD();
             switch result{
-            case let .success(object: result):
-                print(result);
+            case let .success(object: user):
+                
+                let randomNickName  = "小粉薯\(String.randomString(6))";
+                do {
+                    try  user.set(kNickName, value: "randomNickName");
+                 
+                    
+                } catch {
+                    
+                    print("给字段赋值失败");
+                    return;
+                }
+                
+                user.save { result in
+                    if case . success = result {
+                        
+                    }
+                }
+                
             case let .failure(error: error):
                 print(error);
                 

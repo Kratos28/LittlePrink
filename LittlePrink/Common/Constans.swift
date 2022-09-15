@@ -89,3 +89,8 @@ let mainLightColor = UIColor(named: "main-light")
 //正则
 let kPhoneRegEX = "^1\\d{10}$"
 let kAuthCodeRegEx = "^\\d{6}$";
+
+
+//User
+let kNickName = "nickname";
+
