@@ -100,7 +100,6 @@ class CodeLoginVC: UIViewController {
                  
                     
                 } catch {
-                    
                     print("给字段赋值失败");
                     return;
                 }
