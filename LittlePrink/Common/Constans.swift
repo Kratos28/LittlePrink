@@ -94,3 +94,4 @@ let kAuthCodeRegEx = "^\\d{6}$";
 //User
 let kNickName = "nickname";
 
+let kAvatarCol = "avatar";

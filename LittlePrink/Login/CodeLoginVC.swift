@@ -95,12 +95,49 @@ class CodeLoginVC: UIViewController {
             case let .success(object: user):
                 
                 let randomNickName  = "小粉薯\(String.randomString(6))";
+                
+                let randomAvatar = UIImage(named:"avatarPH\(Int.random(in: 1...4))")!;
+                if let avatarData = randomAvatar.pngData(){
+                    let avatarFile =  LCFile(payload: .data(data: avatarData));
+                    avatarFile.mimeType = "image/jpeg";
+                    avatarFile.save { result in
+                        switch result {
+                            case .success:
+                            
+                            if let value = avatarFile.objectId?.value
+                            {
+                                print("文件保存完成");
+                                do {
+                                    try user.set(kAvatarCol, value:avatarFile);
+                                    user.save { result in
+                                        switch result {
+                                        case .success:
+                                            break;
+                                        case .failure(error: let error ):
+                                            break;
+                                      
+                                        }
+                                    }
+                                } catch{
+                                    print("给User字段赋值失败");
+                                }
+                                
+                            }
+                            
+                        case .failure(let error):
+                            print("保存文件失败");
+                        }
+
+                    }
+                  
+                }
+                
                 do {
                     try  user.set(kNickName, value: "randomNickName");
                  
                     
                 } catch {
-                    print("给字段赋值失败");
+                    print("给User字段赋值失败");
                     return;
                 }
                 
