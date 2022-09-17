@@ -24,6 +24,7 @@
 		0A60956A28BF421600A29A98 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951A28BF421600A29A98 /* libssl.a */; };
 		0A90A9A428BE1CA800C08E26 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90A9A328BE1CA800C08E26 /* SocialLoginVC.swift */; };
 		0A90A9A628BE1CF600C08E26 /* SocialLoginVC-Alipay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90A9A528BE1CF600C08E26 /* SocialLoginVC-Alipay.swift */; };
+		650516E028D5932000CE67B4 /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650516DF28D5932000CE67B4 /* LC-Extensions.swift */; };
 		65094579285D9D1C0009FEAD /* System-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65094578285D9D1C0009FEAD /* System-Extension.swift */; };
 		650DBEC3284C611C002B07AF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC2284C611C002B07AF /* WaterfallVC.swift */; };
 		650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650DBEC4284C69CE002B07AF /* WaterfallCell.swift */; };
@@ -167,6 +168,7 @@
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		386924448731C16EC6CD740F /* Pods_LittlePrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
+		650516DF28D5932000CE67B4 /* LC-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
 		65094578285D9D1C0009FEAD /* System-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "System-Extension.swift"; sourceTree = "<group>"; };
 		650B72B228523C5B0079BF1A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		650DBEC2284C611C002B07AF /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			children = (
 				653C013628B522210046E430 /* LoginVC-Extension.swift */,
 				65094578285D9D1C0009FEAD /* System-Extension.swift */,
+				650516DF28D5932000CE67B4 /* LC-Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				6533D19A2884443900865B85 /* Protocols.swift in Sources */,
 				0A90A9A428BE1CA800C08E26 /* SocialLoginVC.swift in Sources */,
 				0A2307B728CB261B0058AC6F /* CodeLoginVC.swift in Sources */,
+				650516E028D5932000CE67B4 /* LC-Extensions.swift in Sources */,
 				650DBEC5284C69CE002B07AF /* WaterfallCell.swift in Sources */,
 				65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */,
 				6598B23D2892E809005B8160 /* POIVC-Config.swift in Sources */,
