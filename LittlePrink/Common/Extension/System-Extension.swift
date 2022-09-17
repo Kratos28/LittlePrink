@@ -158,6 +158,15 @@ extension UIViewController {
         hud.detailsLabel.text = subtitle;
         hud.hide(animated: true, afterDelay: 2);
     }
+    func showTextHUD(_ title:String,in view:UIView, _ subtitle:String? = nil)
+    {
+        let hud =  MBProgressHUD.showAdded(to: view, animated: true);
+         hud.mode = .text;
+        hud.label.text = title;
+        hud.detailsLabel.text = subtitle;
+        hud.hide(animated: true, afterDelay: 2);
+    }
+    
     func hideKeyBoardWhenTappedAround(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))
         tap.cancelsTouchesInView = false;

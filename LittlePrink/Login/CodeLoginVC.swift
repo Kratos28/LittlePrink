@@ -94,28 +94,8 @@ class CodeLoginVC: UIViewController {
             case let .success(object: user):
                 
                 let randomNickName  = "小粉薯\(String.randomString(6))";
-                let randomAvatar = UIImage(named:"avatarPH\(Int.random(in: 1...4))")!;
-                if let avatarData = randomAvatar.pngData(){
-                    let avatarFile =  LCFile(payload: .data(data: avatarData));
-                    avatarFile.mimeType = "image/jpeg";
-                    avatarFile.save(to: user, as: kAvatarCol);
-                }
-                
-                do {
-                    try  user.set(kNickName, value: "randomNickName");
-                    
-                    
-                } catch {
-                    print("给User字段赋值失败");
-                    return;
-                }
-                
-                user.save { result in
-                    if case . success = result {
-                        
-                    }
-                }
-                
+        
+                self.configAfterLogin(user, randomNickName);
             case let .failure(error: error):
                 print(error);
                 

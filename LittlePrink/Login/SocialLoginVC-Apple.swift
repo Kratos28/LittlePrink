@@ -41,13 +41,14 @@ extension SocialLoginVC : ASAuthorizationControllerDelegate
             {
                 email =  UserDefaults.standard.string(forKey: kEmailFromAppleID) ?? "";
             }
+            
             guard let identityToken = appleIDCredential.identityToken,
                   let  authorizationCode = appleIDCredential.authorizationCode else {return};
             
             
             
             let appleData: [String:Any] = [
-                "uid":"",
+                "uid":userID,
                 "identity_token":String(decoding: identityToken, as: UTF8.self),
                 "code" :String(decoding: authorizationCode, as: UTF8.self)
             ];
@@ -57,10 +58,11 @@ extension SocialLoginVC : ASAuthorizationControllerDelegate
                 
                 switch result {
                 case .success:
-                    
+                    assert(user.objectId != nil,"");
+                    self.configAfterLogin(user, name, email);
                     break;
                 case . failure(error: let error):
-                    print(error);
+                    self.showTextHUD("登录失败", in: self.parent!.view, error.reason);
                     break;
                 default:
                     break;

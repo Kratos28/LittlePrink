@@ -39,7 +39,7 @@
 		65399083282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65399081282AB3DE002EB0E8 /* LittlePrink.xcdatamodeld */; };
 		65399085282AB3E0002EB0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65399084282AB3E0002EB0E8 /* Assets.xcassets */; };
 		65399088282AB3E0002EB0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65399086282AB3E0002EB0E8 /* LaunchScreen.storyboard */; };
-		653C013728B522210046E430 /* LoginVC-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C013628B522210046E430 /* LoginVC-Extension.swift */; };
+		653C013728B522210046E430 /* LocalLogin-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C013628B522210046E430 /* LocalLogin-Extension.swift */; };
 		65401A5328A8D7F000C4D07F /* DratNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */; };
 		6572918328828BE400371CC2 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6572918228828BE400371CC2 /* ChannelTableVC.swift */; };
 		657901CC2843D140009AA37A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657901CB2843D140009AA37A /* HomeVC.swift */; };
@@ -65,6 +65,7 @@
 		65DE81A6285A437A002F4541 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE81A5285A437A002F4541 /* PostVC.swift */; };
 		65F35C6B28AEA50A00D10CEF /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F35C6A28AEA50A00D10CEF /* MeVC.swift */; };
 		65F3C0FE2850FD52001F9F5C /* LocallzationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */; };
+		65F59A6D28D62E070095F861 /* login-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F59A6C28D62E070095F861 /* login-Extension.swift */; };
 		65F7773F28B91782008B7749 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F7773E28B91782008B7749 /* LoginVC.swift */; };
 		CF913235B1B5BDC1E98FE707 /* Pods_LittlePrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386924448731C16EC6CD740F /* Pods_LittlePrink.framework */; };
 /* End PBXBuildFile section */
@@ -186,7 +187,7 @@
 		65399084282AB3E0002EB0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65399087282AB3E0002EB0E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65399089282AB3E0002EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		653C013628B522210046E430 /* LoginVC-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginVC-Extension.swift"; sourceTree = "<group>"; };
+		653C013628B522210046E430 /* LocalLogin-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extension.swift"; sourceTree = "<group>"; };
 		65401A5228A8D7F000C4D07F /* DratNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DratNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		656D6A1E2871585B007FCAF8 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		6572918228828BE400371CC2 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		65F35C6A28AEA50A00D10CEF /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		65F3C0FD2850FD52001F9F5C /* LocallzationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocallzationTableViewController.swift; sourceTree = "<group>"; };
 		65F3C1002850FE5D001F9F5C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		65F59A6C28D62E070095F861 /* login-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "login-Extension.swift"; sourceTree = "<group>"; };
 		65F7773E28B91782008B7749 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,7 +241,8 @@
 		0A05887C28B8CB5F00FC339A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				653C013628B522210046E430 /* LoginVC-Extension.swift */,
+				653C013628B522210046E430 /* LocalLogin-Extension.swift */,
+				65F59A6C28D62E070095F861 /* login-Extension.swift */,
 				65094578285D9D1C0009FEAD /* System-Extension.swift */,
 				650516DF28D5932000CE67B4 /* LC-Extensions.swift */,
 			);
@@ -632,7 +635,8 @@
 				65094579285D9D1C0009FEAD /* System-Extension.swift in Sources */,
 				0A47030328ABB918002E684D /* NoteEditVC-DraftNote.swift in Sources */,
 				65915E07289D883200FDB849 /* POIVC-KeywordsSearch.swift in Sources */,
-				653C013728B522210046E430 /* LoginVC-Extension.swift in Sources */,
+				65F59A6D28D62E070095F861 /* login-Extension.swift in Sources */,
+				653C013728B522210046E430 /* LocalLogin-Extension.swift in Sources */,
 				65A6DDA1286CA14F00DA1988 /* Test.m in Sources */,
 				0A3E335328AA55E700D0936E /* WaterfallVC-LoadData.swift in Sources */,
 				0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */,
