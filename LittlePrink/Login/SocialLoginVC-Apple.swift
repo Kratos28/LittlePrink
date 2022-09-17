@@ -7,6 +7,7 @@
 
 import Foundation
 import AuthenticationServices
+import LeanCloud
 extension SocialLoginVC : ASAuthorizationControllerDelegate
 {
     
@@ -43,6 +44,29 @@ extension SocialLoginVC : ASAuthorizationControllerDelegate
             guard let identityToken = appleIDCredential.identityToken,
                   let  authorizationCode = appleIDCredential.authorizationCode else {return};
             
+            
+            
+            let appleData: [String:Any] = [
+                "uid":"",
+                "identity_token":String(decoding: identityToken, as: UTF8.self),
+                "code" :String(decoding: authorizationCode, as: UTF8.self)
+            ];
+            let user = LCUser();
+            user.logIn(authData: appleData, platform: .apple){
+                (result) in
+                
+                switch result {
+                case .success:
+                    
+                    break;
+                case . failure(error: let error):
+                    print(error);
+                    break;
+                default:
+                    break;
+                }
+                
+            }
             
             
             
@@ -91,3 +115,4 @@ extension SocialLoginVC{
         }
     }
 }
+ 
