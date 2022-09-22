@@ -11,6 +11,7 @@ import SKPhotoBrowser
 import MBProgressHUD
 import AVKit
 import CoreLocation
+import LeanCloud
 class NoteEditVC: UIViewController {
 
     var draftNote: DraftNote?
@@ -29,9 +30,7 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var channelPlaceholderLabel: UILabel!
     @IBOutlet weak var channelLabel: UILabel!
     @IBOutlet weak var ChannelIcon: UIImageView!
-    var photos = [
-        UIImage(named: "1")!,
-    ];
+    var photos : [UIImage] = [];
         var videoURL :URL?
 //    var videoURL :URL? = Bundle.main.url(forResource: "testVideo", withExtension: "mp4");
     
@@ -79,6 +78,21 @@ class NoteEditVC: UIViewController {
         guard  self.isValidateNote() else
         {
             return;
+        }
+        
+        do {
+          let note =   LCObject(className: knoteTable);
+            try note.set(kTitleCol, value: titleTextField.exactText);
+            try note.set(kTextCol, value: textView.exactText);
+            try note.set(kChannelCol, value: channel.isEmpty ? "推荐" : channel);
+            try note.set(kSubChannelCol, value: subChannel);
+            try note.set(kPOINameCol, value: poiName);
+            note.save { res in
+                
+            }
+        }catch
+        {
+            print("存笔记进云端失败: \(error)");
         }
     }
     

@@ -90,8 +90,19 @@ let mainLightColor = UIColor(named: "main-light")
 let kPhoneRegEX = "^1\\d{10}$"
 let kAuthCodeRegEx = "^\\d{6}$";
 
+let knoteTable = "Note";
 
 //User
 let kNickName = "nickname";
-
 let kAvatarCol = "avatar";
+
+//Note表
+let kCoverPhotoCol = "coverPhoto";
+let kPhotoCol = "photos";
+let kVideoCol = "video";
+let kTitleCol = "title";
+let kTextCol =  "text";
+let kChannelCol = "channel";
+let kSubChannelCol = "subChannel";
+let kPOINameCol = "poiName";
+let kIsVideoCol = "isVideo";
