@@ -96,6 +96,15 @@ let knoteTable = "Note";
 let kNickName = "nickname";
 let kAvatarCol = "avatar";
 
+
+//全局函数
+func largeIcon(_ iconName: String,with color :UIColor = .label) ->UIImage
+{
+    let config = UIImage.SymbolConfiguration(scale: .large);
+    let icon = UIImage(systemName: iconName ,withConfiguration: config)!;
+    return icon.withTintColor(color);
+}
+
 //Note表
 let kCoverPhotoCol = "coverPhoto";
 let kPhotoCol = "photos";
@@ -106,3 +115,6 @@ let kChannelCol = "channel";
 let kSubChannelCol = "subChannel";
 let kPOINameCol = "poiName";
 let kIsVideoCol = "isVideo";
+
+
+

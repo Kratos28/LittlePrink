@@ -10,6 +10,8 @@ extension NoteEditVC
 {
     func setUI()
     {
+        let icon =  largeIcon("info.circle");
+        navigationItem.rightBarButtonItem =  UIBarButtonItem(image:icon,style: .plain, target: self, action: #selector(showPopup));
         setDraftNoteEditUI();
     }
 
@@ -56,5 +58,13 @@ extension NoteEditVC
 
         }
             
+    }
+}
+
+extension NoteEditVC
+{
+    @objc func showPopup()
+    {
+        
     }
 }
