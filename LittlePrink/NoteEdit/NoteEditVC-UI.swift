@@ -6,12 +6,12 @@
 //
 
 import Foundation
+import PopupDialog
 extension NoteEditVC
 {
     func setUI()
     {
-        let icon =  largeIcon("info.circle");
-        navigationItem.rightBarButtonItem =  UIBarButtonItem(image:icon,style: .plain, target: self, action: #selector(showPopup));
+        self.addPopup();
         setDraftNoteEditUI();
     }
 
@@ -63,8 +63,41 @@ extension NoteEditVC
 
 extension NoteEditVC
 {
+    func addPopup()
+    {
+        let icon =  largeIcon("info.circle");
+        navigationItem.rightBarButtonItem =  UIBarButtonItem(image:icon,style: .plain, target: self, action: #selector(showPopup));
+        let pv = PopupDialogDefaultView.appearance();
+        pv.titleColor = .label;
+        pv.messageFont = .systemFont(ofSize: 13);
+        pv.messageColor = .secondaryLabel;
+        pv.messageTextAlignment = .natural;
+        
+        let cb = CancelButton.appearance();
+        cb.titleColor = .label;
+        cb.separatorColor = mainColor;
+        
+        let pcv = PopupDialogContainerView.appearance();
+        pcv.backgroundColor = .secondarySystemBackground;
+        pcv.cornerRadius = CGFloat(10);
+        
+    }
+}
+
+extension NoteEditVC
+{
     @objc func showPopup()
     {
+        let title = "发布小提示";
+        let message =
+        """
+         dsfsdfsdfdsfsdfdsfdsfdsfdsfsd
+         dsfsdfsdfdsfsdfdsfdsfdsfdsfsd
+        """;
+        let popup = PopupDialog(title:title, message:message, transitionStyle: .zoomIn);
+        let btn = CancelButton(title: "知道了", action: nil);
+        popup.addButton(btn);
+        present(popup, animated: false);
         
     }
 }
