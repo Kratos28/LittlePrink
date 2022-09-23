@@ -77,6 +77,7 @@ extension NoteEditVC
         cb.titleColor = .label;
         cb.separatorColor = mainColor;
         
+        
         let pcv = PopupDialogContainerView.appearance();
         pcv.backgroundColor = .secondarySystemBackground;
         pcv.cornerRadius = CGFloat(10);
