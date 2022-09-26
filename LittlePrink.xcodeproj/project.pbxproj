@@ -1191,7 +1191,7 @@
 					"\"${PROJECT_DIR}/AliPay\"",
 				);
 				INFOPLIST_FILE = LittlePrink/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Prink;
+				INFOPLIST_KEY_CFBundleDisplayName = Prink1;
 				INFOPLIST_KEY_NSCameraUsageDescription = fff;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = fggg;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = jjjjj;
@@ -1255,7 +1255,7 @@
 					"\"${PROJECT_DIR}/AliPay\"",
 				);
 				INFOPLIST_FILE = LittlePrink/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Prink;
+				INFOPLIST_KEY_CFBundleDisplayName = Prink1;
 				INFOPLIST_KEY_NSCameraUsageDescription = fff;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = fggg;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = jjjjj;
