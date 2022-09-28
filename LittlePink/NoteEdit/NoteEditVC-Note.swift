@@ -32,10 +32,12 @@ extension NoteEditVC{
             var photoPaths: [Int: String] = [:]
             for (index, eachPhoto) in photos.enumerated(){
                 if let eachPhotoData = eachPhoto.jpeg(.high){
+                    
                     let photo = LCFile(payload: .data(data: eachPhotoData))
                     photoGroup.enter()
                     photo.save { res in
                         //print("photo文件保存成功/失败")
+                        
                         if case .success = res, let path = photo.url?.stringValue{
                             photoPaths[index] = path
                         }
@@ -54,7 +56,6 @@ extension NoteEditVC{
                 //print(sortedDic)
                 //[(key: 1, value: "aa"), (key: 2, value: "bb"), (key: 3, value: "cc"), (key: 4, value: "dd")]
                 let photoPathsArr = photoPaths.sorted(by: <).map{ $0.value }
-                
                 do{
                     try note.set(kPhotosCol, value: photoPathsArr)
                     note.save { _ in
@@ -150,11 +151,11 @@ extension NoteEditVC{
                 }
                 
                 let photoGroup = DispatchGroup()
-                var photoPaths: [Int: String] = [:]
+                var photoPaths: [Int: String] = [:];
                 for (index, eachPhoto) in photos.enumerated(){
                     if let eachPhotoData = eachPhoto.jpeg(.high){
                         let photo = LCFile(payload: .data(data: eachPhotoData))
-                        photoGroup.enter()
+                        photoGroup.enter();
                         photo.save { res in
                             //print("photo文件保存成功/失败")
                             if case .success = res, let path = photo.url?.stringValue{
