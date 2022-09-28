@@ -11,26 +11,30 @@ PODS:
   - DateToolsSwift (5.0.0)
   - DynamicBlurView (4.1.0)
   - FaveButton (3.2.1)
-  - GRDB.swift (5.11.0):
-    - GRDB.swift/standard (= 5.11.0)
-  - GRDB.swift/standard (5.11.0)
+  - GRDB.swift (5.26.1):
+    - GRDB.swift/standard (= 5.26.1)
+  - GRDB.swift/standard (5.26.1)
   - GrowingTextView (0.7.2)
   - Hero (1.6.2)
   - ImageSlideshow (1.9.2):
     - ImageSlideshow/Core (= 1.9.2)
   - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
   - JCore (3.2.5)
   - JVerification (2.9.3):
     - JCore (>= 2.1.6)
-  - Kingfisher (6.0.0)
-  - LeanCloud (17.9.2):
-    - LeanCloud/RTM (= 17.9.2)
-  - LeanCloud/Foundation (17.9.2):
+  - Kingfisher (6.3.1)
+  - KMPlaceholderTextView (1.4.0)
+  - LeanCloud (17.10.1):
+    - LeanCloud/RTM (= 17.10.1)
+  - LeanCloud/Foundation (17.10.1):
     - Alamofire (~> 5.4)
-  - LeanCloud/RTM (17.9.2):
-    - GRDB.swift (~> 5.8)
-    - LeanCloud/Foundation (= 17.9.2)
-    - SwiftProtobuf (~> 1.17)
+  - LeanCloud/RTM (17.10.1):
+    - GRDB.swift (~> 5.12)
+    - LeanCloud/Foundation (= 17.10.1)
+    - SwiftProtobuf (~> 1.18)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.5)
   - PopupDialog (1.1.1):
@@ -41,9 +45,9 @@ PODS:
   - SteviaLayout (4.7.3)
   - SwiftProtobuf (1.20.1)
   - XLPagerTabStrip (9.0.0)
-  - YPImagePicker (4.5.0):
-    - PryntTrimmerView (~> 4.0.2)
-    - SteviaLayout (~> 4.7.3)
+  - YPImagePicker (5.2.1):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 4.7.3)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
@@ -54,15 +58,17 @@ DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout/Swift
   - DateToolsSwift
   - FaveButton
-  - GrowingTextView
+  - GrowingTextView (= 0.7.2)
   - Hero
-  - ImageSlideshow
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/Kingfisher
   - JVerification
-  - Kingfisher (= 6.0.0)
+  - Kingfisher (~> 6.0)
+  - KMPlaceholderTextView (~> 1.4.0)
   - LeanCloud
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
-  - PopupDialog (~> 1.1.1)
+  - PopupDialog (~> 1.1)
   - SegementSlide (= 3.0.1)
   - SKPhotoBrowser
   - XLPagerTabStrip (~> 9.0)
@@ -87,6 +93,7 @@ SPEC REPOS:
     - JCore
     - JVerification
     - Kingfisher
+    - KMPlaceholderTextView
     - LeanCloud
     - MBProgressHUD
     - MJRefresh
@@ -110,14 +117,15 @@ SPEC CHECKSUMS:
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   FaveButton: 93cfebf6030336fa7653fad2068c3152ed668b39
-  GRDB.swift: 9a33d9680cd3c870c82f48a6cbc73d3cfbb235eb
+  GRDB.swift: e98cd55ec99dea5da99355d588149063e4cfa0eb
   GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
   Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
   ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
   JCore: 4c9febdfdb1a5675ab361bc1f06c0905391d7b23
   JVerification: ff081af51f076b20b6eb94aed4d879419e698583
-  Kingfisher: 13f6e68c928eb50439b5cb2ea75d6035018438ea
-  LeanCloud: a2b78da1d4a36a89a2af71d345e19cdd9da8e762
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  LeanCloud: e6de4b8129ab68be7f70a9b77c4304f71c5a1a2c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
@@ -127,8 +135,8 @@ SPEC CHECKSUMS:
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwiftProtobuf: e40a7684079620e84ba522dbaeab0cddb0ec7ffd
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
-  YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
+  YPImagePicker: f36043210c10b0783034eb1947d6e06e31c461e4
 
-PODFILE CHECKSUM: 568f9972f54dc0dc030ac6be326f2985089dfc51
+PODFILE CHECKSUM: 81898900e362238b224344e598e337bad26e92da
 
 COCOAPODS: 1.11.3

@@ -26,13 +26,12 @@ extension NoteEditVC{
             // MARK: 多个文件的存储
             //存为[LCFile]类型最后会变成[Pointer]类型(里面无path,不方便之后的取操作),需存为以下类型:
             //["https://1.jpg", "https://2.jpg", "https://3.jpg"]
-            
             let photoGroup = DispatchGroup()
             //1.把所有文件存进云端
-            var photoPaths: [Int: String] = [:]
+            var photoPaths: [Int: String] = [:];
+        
             for (index, eachPhoto) in photos.enumerated(){
                 if let eachPhotoData = eachPhoto.jpeg(.high){
-                    
                     let photo = LCFile(payload: .data(data: eachPhotoData))
                     photoGroup.enter()
                     photo.save { res in
@@ -89,6 +88,7 @@ extension NoteEditVC{
             
             noteGroup.enter()
             note.save { _ in
+    
                 //print("存储一般数据字段成功/失败")
                 noteGroup.leave()
             }

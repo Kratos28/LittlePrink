@@ -175,7 +175,7 @@ extension Database {
             .contains { $0.lowercased() == name }
     }
     
-    /// The primary key for table named `tableName`, in the main or temp schema.
+    /// The primary key for table named `tableName`.
     ///
     /// All tables have a primary key, even when it is not explicit. When a
     /// table has no explicit primary key, the result is the hidden
@@ -197,6 +197,12 @@ extension Database {
         
         if let primaryKey = schemaCache[table.schemaID].primaryKey(table.name) {
             return primaryKey.value
+        }
+        
+        if try !tableExists(table) {
+            // Views, CTEs, etc.
+            schemaCache[table.schemaID].set(primaryKey: .missing, forTable: table.name)
+            return nil
         }
         
         // https://www.sqlite.org/pragma.html
@@ -288,23 +294,21 @@ extension Database {
     private func tableHasRowID(_ table: TableIdentifier) throws -> Bool {
         // Not need to cache the result, because this information feeds
         // `PrimaryKeyInfo`, which is cached.
-        do {
-            // Use a distinctive alias so that we better understand in the
-            // future why this query appears in the error log.
-            // https://github.com/groue/GRDB.swift/issues/945#issuecomment-804896196
-            //
-            // TODO: find a way to know if a table is WITHOUT ROWID without
-            // generating an error.
-            _ = try makeStatement(sql: """
-                SELECT rowid AS checkWithoutRowidOptimization FROM \(table.quotedDatabaseIdentifier)
-                """)
-            return true
-        } catch DatabaseError.SQLITE_ERROR {
-            return false
-        }
+        //
+        // Use a distinctive alias so that we better understand in the
+        // future why this query appears in the error log.
+        // https://github.com/groue/GRDB.swift/issues/945#issuecomment-804896196
+        //
+        // We don't use `try makeStatement(sql:)` in order to avoid throwing an
+        // error (this annoys users who set a breakpoint on Swift errors).
+        let sql = "SELECT rowid AS checkWithoutRowidOptimization FROM \(table.quotedDatabaseIdentifier)"
+        var statement: SQLiteStatement? = nil
+        let code = sqlite3_prepare_v2(sqliteConnection, sql, -1, &statement, nil)
+        defer { sqlite3_finalize(statement) }
+        return code == SQLITE_OK
     }
     
-    /// The indexes on table named `tableName`, in the main or temp schema.
+    /// The indexes on table named `tableName`.
     ///
     /// Only indexes on columns are returned. Indexes on expressions are
     /// not returned.
@@ -385,7 +389,7 @@ extension Database {
         try columnsForUniqueKey(Array(columns), in: tableName) != nil
     }
     
-    /// The foreign keys defined on table named `tableName`, in the main or temp schema.
+    /// The foreign keys defined on table named `tableName`.
     ///
     /// - throws: A DatabaseError if table does not exist.
     public func foreignKeys(on tableName: String) throws -> [ForeignKeyInfo] {
@@ -404,6 +408,7 @@ extension Database {
         }
         
         var rawForeignKeys: [(
+            id: Int,
             destinationTable: String,
             mapping: [(origin: String, destination: String?, seq: Int)])] = []
         var previousId: Int? = nil
@@ -424,7 +429,7 @@ extension Database {
                     .append((origin: origin, destination: destination, seq: seq))
             } else {
                 let mapping = [(origin: origin, destination: destination, seq: seq)]
-                rawForeignKeys.append((destinationTable: table, mapping: mapping))
+                rawForeignKeys.append((id: id, destinationTable: table, mapping: mapping))
                 previousId = id
             }
         }
@@ -438,7 +443,7 @@ extension Database {
             }
         }
         
-        let foreignKeys = try rawForeignKeys.map { (destinationTable, columnMapping) -> ForeignKeyInfo in
+        let foreignKeys = try rawForeignKeys.map { (id, destinationTable, columnMapping) -> ForeignKeyInfo in
             let orderedMapping = columnMapping
                 .sorted { $0.seq < $1.seq }
                 .map { (origin: $0.origin, destination: $0 .destination) }
@@ -454,11 +459,50 @@ extension Database {
                     (origin: origin, destination: destination!)
                 }
             }
-            return ForeignKeyInfo(destinationTable: destinationTable, mapping: completeMapping)
+            return ForeignKeyInfo(id: id, destinationTable: destinationTable, mapping: completeMapping)
         }
         
         schemaCache[table.schemaID].set(foreignKeys: .value(foreignKeys), forTable: table.name)
         return foreignKeys
+    }
+    
+    /// Returns a cursor over foreign key violations in the database.
+    public func foreignKeyViolations() throws -> RecordCursor<ForeignKeyViolation> {
+        try ForeignKeyViolation.fetchCursor(self, sql: "PRAGMA foreign_key_check")
+    }
+    
+    /// Returns a cursor over foreign key violations in the table.
+    public func foreignKeyViolations(in tableName: String) throws -> RecordCursor<ForeignKeyViolation> {
+        for schemaIdentifier in try schemaIdentifiers() {
+            if try exists(type: .table, name: tableName, in: schemaIdentifier) {
+                return try foreignKeyViolations(in: TableIdentifier(schemaID: schemaIdentifier, name: tableName))
+            }
+        }
+        throw DatabaseError.noSuchTable(tableName)
+    }
+    
+    /// Throws a DatabaseError of extended code `SQLITE_CONSTRAINT_FOREIGNKEY`
+    /// if there exists a foreign key violation in the database.
+    public func checkForeignKeys() throws {
+        try checkForeignKeys(from: foreignKeyViolations())
+    }
+    
+    /// Throws a DatabaseError of extended code `SQLITE_CONSTRAINT_FOREIGNKEY`
+    /// if there exists a foreign key violation in the table.
+    public func checkForeignKeys(in tableName: String) throws {
+        try checkForeignKeys(from: foreignKeyViolations(in: tableName))
+    }
+    
+    private func foreignKeyViolations(in table: TableIdentifier) throws -> RecordCursor<ForeignKeyViolation> {
+        try ForeignKeyViolation.fetchCursor(self, sql: """
+            PRAGMA \(table.schemaID.sql).foreign_key_check(\(table.name.quotedDatabaseIdentifier))
+            """)
+    }
+    
+    private func checkForeignKeys(from violations: RecordCursor<ForeignKeyViolation>) throws {
+        if let violation = try violations.next() {
+            throw violation.databaseError(self)
+        }
     }
     
     /// Returns the actual name of the database table, in the main or temp
@@ -486,7 +530,7 @@ extension Database {
 
 extension Database {
     
-    /// The columns in the table named `tableName`, in the main or temp schema.
+    /// The columns in the table, or view, named `tableName`.
     ///
     /// - throws: A DatabaseError if table does not exist.
     public func columns(in tableName: String) throws -> [ColumnInfo] {
@@ -582,7 +626,7 @@ extension Database {
     }
     
     /// If there exists a unique key on columns, return the columns
-    /// ordered as the matching index (or primay key). Case of returned columns
+    /// ordered as the matching index (or primary key). Case of returned columns
     /// is not guaranteed.
     func columnsForUniqueKey<T: Sequence>(
         _ columns: T,
@@ -617,6 +661,29 @@ extension Database {
         }
         return nil
     }
+    
+    /// Returns the columns to check for NULL in order to check if the row exist.
+    ///
+    /// The returned array is never empty.
+    func existenceCheckColumns(in tableName: String) throws -> [String] {
+        if try tableExists(tableName) {
+            // Table: only check the primary key columns for existence
+            let primaryKey = try self.primaryKey(tableName)
+            if let rowIDColumn = primaryKey.rowIDColumn {
+                // Prefer the user-provided name of the rowid
+                return [rowIDColumn]
+            } else if primaryKey.tableHasRowID {
+                // Prefer the rowid
+                return [Column.rowID.name]
+            } else {
+                // WITHOUT ROWID table: use primary key columns
+                return primaryKey.columns
+            }
+        } else {
+            // View: check all columns for existence
+            return try columns(in: tableName).map(\.name)
+        }
+    }
 }
 
 /// A column of a database table.
@@ -650,6 +717,9 @@ public struct ColumnInfo: FetchableRecord {
     public let name: String
     
     /// The column data type
+    ///
+    /// The casing of this string depends on the SQLite version: make sure you
+    /// process this string in a case-insensitive way.
     public let type: String
     
     /// True if and only if the column is constrained to be not null.
@@ -722,6 +792,89 @@ public struct IndexInfo {
         self.name = name
         self.columns = columns
         self.isUnique = unique
+    }
+}
+
+/// A foreign key violation produced by PRAGMA foreign_key_check
+///
+/// See <https://www.sqlite.org/pragma.html#pragma_foreign_key_check>
+public struct ForeignKeyViolation: FetchableRecord, CustomStringConvertible {
+    /// The name of the table that contains the `REFERENCES` clause
+    public var originTable: String
+    
+    /// The rowid of the row that contains the invalid `REFERENCES` clause, or
+    /// nil if the origin table is a `WITHOUT ROWID` table.
+    public var originRowID: Int64?
+    
+    /// The name of the table that is referred to.
+    public var destinationTable: String
+    
+    /// The id of the specific foreign key constraint that failed. This id
+    /// matches `ForeignKeyInfo.id`. See `Database.foreignKeys(on:)` for more
+    /// information.
+    public var foreignKeyId: Int
+    
+    public init(row: Row) {
+        originTable = row[0]
+        originRowID = row[1]
+        destinationTable = row[2]
+        foreignKeyId = row[3]
+    }
+    
+    public var description: String {
+        if let originRowID = originRowID {
+            return """
+                FOREIGN KEY constraint violation - from \(originTable) to \(destinationTable), \
+                in rowid \(originRowID)
+                """
+        } else {
+            return """
+                FOREIGN KEY constraint violation - from \(originTable) to \(destinationTable)
+                """
+        }
+    }
+    
+    /// Returns a precise description of the foreign key violation.
+    ///
+    /// For example: 'FOREIGN KEY constraint violation - from player(teamId) to team(id),
+    /// in [id:1 teamId:2 name:"O'Brien" score: 1000]'
+    public func failureDescription(_ db: Database) throws -> String {
+        // Grab detailed information, if possible, for better error message
+        let originRow = try originRowID.flatMap { rowid in
+            try Row.fetchOne(db, sql: "SELECT * FROM \(originTable.quotedDatabaseIdentifier) WHERE rowid = \(rowid)")
+        }
+        let foreignKey = try db.foreignKeys(on: originTable).first(where: { foreignKey in
+            foreignKey.id == foreignKeyId
+        })
+        
+        var description: String
+        if let foreignKey = foreignKey {
+            description = """
+                FOREIGN KEY constraint violation - \
+                from \(originTable)(\(foreignKey.originColumns.joined(separator: ", "))) \
+                to \(destinationTable)(\(foreignKey.destinationColumns.joined(separator: ", ")))
+                """
+        } else {
+            description = "FOREIGN KEY constraint violation - from \(originTable) to \(destinationTable)"
+        }
+        
+        if let originRow = originRow {
+            description += ", in \(String(describing: originRow))"
+        } else if let originRowID = originRowID {
+            description += ", in rowid \(originRowID)"
+        }
+        
+        return description
+    }
+    
+    /// Returns a DatabaseError of extended code `SQLITE_CONSTRAINT_FOREIGNKEY`
+    public func databaseError(_ db: Database) -> DatabaseError {
+        // Grab detailed information, if possible, for better error message.
+        // If detailed information is not available, fallback to plain description.
+        let message = (try? failureDescription(db)) ?? String(describing: self)
+        return DatabaseError(
+            resultCode: .SQLITE_CONSTRAINT_FOREIGNKEY,
+            message: message)
     }
 }
 
@@ -861,6 +1014,9 @@ public struct PrimaryKeyInfo {
 /// You get foreign keys from table names, with the
 /// `foreignKeys(on:)` method.
 public struct ForeignKeyInfo {
+    /// The first column in the output of the `foreign_key_list` pragma
+    public var id: Int
+    
     /// The name of the destination table
     public let destinationTable: String
     
@@ -890,9 +1046,9 @@ struct SchemaInfo: Equatable {
     
     /// - parameter masterTable: "sqlite_master" or "sqlite_temp_master"
     init(_ db: Database, masterTableName: String) throws { // swiftlint:disable:this inclusive_language
-        objects = try Set(SchemaObject.fetchCursor(db, sql: """
+        objects = try SchemaObject.fetchSet(db, sql: """
             SELECT type, name, tbl_name, sql FROM \(masterTableName)
-            """))
+            """)
     }
     
     /// All names for a given type

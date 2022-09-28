@@ -14,6 +14,9 @@ public class ValueObservationScheduler {
         impl.schedule(action)
     }
     
+    /// Returns whether the initial value should be immediately notified.
+    ///
+    /// If true, then this method was called on the main thread.
     func immediateInitialValue() -> Bool {
         impl.immediateInitialValue()
     }
@@ -59,10 +62,22 @@ public class ValueObservationScheduler {
     /// - important: this scheduler requires that the observation is started
     ///  from the main queue. A fatal error is raised otherwise.
     public static let immediate = ValueObservationScheduler(impl: ImmediateImpl())
+    
+    func scheduleInitial(_ action: @escaping () -> Void) {
+        if immediateInitialValue() {
+            action()
+        } else {
+            schedule(action)
+        }
+    }
 }
 
 private protocol ValueObservationSchedulerImpl {
     func schedule(_ action: @escaping () -> Void)
+    
+    /// Returns whether the initial value should be immediately notified.
+    ///
+    /// If true, then this method was called on the main thread.
     func immediateInitialValue() -> Bool
 }
 

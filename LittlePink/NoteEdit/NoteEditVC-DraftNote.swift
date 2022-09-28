@@ -56,6 +56,7 @@ extension NoteEditVC{
             }
         }
         draftNote.photos = try? JSONEncoder().encode(photos)
+        
     }
     private func handleOthers(_ draftNote: DraftNote){
         
