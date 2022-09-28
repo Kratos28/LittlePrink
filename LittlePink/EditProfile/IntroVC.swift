@@ -21,9 +21,7 @@ class IntroVC: UIViewController {
         countLabel.text = "\(kMaxIntroCount)"
     }
     @IBAction func done(_ sender: Any) {
-        
         delegate?.updateIntro(textView.exactText)
-
         dismiss(animated: true)
     }
 }

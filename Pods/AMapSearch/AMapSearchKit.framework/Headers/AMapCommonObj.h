@@ -117,12 +117,36 @@
 
 ///POI室内地图信息
 @interface AMapIndoorData : AMapSearchObject
-///楼层，为0时为POI本身
+/// 是否有室内地图标志 1为有 0为没有 @since 9.4.0
+@property (nonatomic, assign) NSInteger indoorMap;
+///楼层索引，一般会用数字表示，例如8。indoorMap为0时不返回
 @property (nonatomic, assign) NSInteger floor;
-///楼层名称
+///所在楼层，一般会带有字母，例如F8。indoorMap为0时不返回
 @property (nonatomic, copy)   NSString  *floorName;
-///建筑物ID
+///如果当前POI为建筑物类POI，则cpid为自身POI ID；如果当前POI为商铺类POI，则cpid为其所在建筑物的POI ID。indoorMap为0时不返回
 @property (nonatomic, copy)   NSString  *pid;
+@end
+
+///POI商圈信息 @since 9.4.0
+@interface AMapBusinessData : AMapSearchObject
+///POI所属商圈
+@property (nonatomic, copy)   NSString *businessArea;
+///POI今日营业时间，如 08:30-17:30 08:30-09:00 12:00-13:30 09:00-13:00
+@property (nonatomic, copy)   NSString *opentimeToday;
+///POI营业时间描述，如 周一至周五:08:30-17:30(延时服务时间:08:30-09:00；12:00-13:30)；周六延时服务时间:09:00-13:00(法定节假日除外)
+@property (nonatomic, copy)   NSString *opentimeWeek;
+///POI的联系电话
+@property (nonatomic, copy)   NSString  *tel;
+///POI特色内容，目前仅在美食POI下返回
+@property (nonatomic, copy)   NSString  *tag;
+///POI评分，目前仅在餐饮、酒店、景点、影院类POI下返回
+@property (nonatomic, copy)   NSString  *rating;
+///POI人均消费，目前仅在餐饮、酒店、景点、影院类POI下返回
+@property (nonatomic, copy)   NSString  *cost;
+///停车场类型（地下、地面、路边），目前仅在停车场类POI下返回
+@property (nonatomic, copy)   NSString  *parkingType;
+///POI的别名，无别名时不返回
+@property (nonatomic, copy)   NSString  *alias;
 @end
 
 ///子POI
@@ -141,6 +165,8 @@
 @property (nonatomic, assign) NSInteger     distance;
 ///子POI类型
 @property (nonatomic, copy)   NSString     *subtype;
+///子POI分类编码 @since 9.4.0
+@property (nonatomic, copy)   NSString     *typeCode;
 @end
 
 ///沿途POI
@@ -198,6 +224,8 @@
 @property (nonatomic, copy)   NSString     *district;
 ///区域编码
 @property (nonatomic, copy)   NSString     *adcode;
+///POI对应的导航引导点坐标 @since 9.4.0
+@property (nonatomic, copy)   NSString     *naviPOIId;
 ///地理格ID
 @property (nonatomic, copy)   NSString     *gridcode;
 ///入口经纬度
@@ -216,7 +244,8 @@
 @property (nonatomic, strong) NSArray<AMapSubPOI *> *subPOIs;
 ///图片列表
 @property (nonatomic, strong) NSArray<AMapImage *> *images;
-
+///所在商圈 @since 9.4.0
+@property (nonatomic, strong) AMapBusinessData *businessData;
 ///扩展信息只有在ID查询时有效
 @property (nonatomic, strong) AMapPOIExtension *extensionInfo;
 @end
@@ -433,6 +462,9 @@
 @property (nonatomic, strong) NSArray<AMapBusStop *> *viaBusStops; 
 ///预计行驶时间（单位：秒）
 @property (nonatomic, assign) NSInteger duration;
+///此段途径公交站数
+@property (nonatomic, assign) NSInteger viaNum;
+
 @end
 
 #pragma mark - 行政区划
@@ -455,6 +487,23 @@
 @end
 
 #pragma mark - 路径规划
+///公交方案详细导航动作指令
+@interface AMapTransitNavi : AMapSearchObject
+///导航主要动作指令
+@property (nonatomic, copy)   NSString     *action;
+///导航辅助动作指令
+@property (nonatomic, copy)   NSString     *assistantAction;
+///算路结果中存在的道路类型：
+/*
+ *0，普通道路 1，人行横道 3，地下通道 4，过街天桥
+ *5，地铁通道 6，公园 7，广场 8，扶梯 9，直梯
+ *10，索道 11，空中通道 12，建筑物穿越通道
+ *13，行人通道 14，游船路线 15，观光车路线 16，滑道
+ *18，扩路 19，道路附属连接线 20，阶梯 21，斜坡
+ *22，桥 23，隧道 30，轮渡
+ */
+@property (nonatomic, copy)   NSString     *walkType;
+@end
 
 ///实时路况信息
 @interface AMapTMC : AMapSearchObject
@@ -484,6 +533,8 @@
 @property (nonatomic, copy)   NSString  *action; 
 ///导航辅助动作
 @property (nonatomic, copy)   NSString  *assistantAction; 
+///道路类型
+@property (nonatomic, assign) NSInteger  walkType;
 ///此段收费（单位：元）
 @property (nonatomic, assign) CGFloat    tolls; 
 ///收费路段长度（单位：米）
@@ -585,7 +636,11 @@
 ///起点名称
 @property (nonatomic, copy)   NSString     *sname; 
 ///终点名称
-@property (nonatomic, copy)   NSString     *tname; 
+@property (nonatomic, copy)   NSString     *tname;
+///打车预计花费金额 @singce 9.4.0
+@property (nonatomic, copy)   NSString     *price;
+///线路点集合，通过show_fields控制返回与否 @singce 9.4.0
+@property (nonatomic, copy)   NSString     *polyline;
 @end
 
 ///火车站
@@ -667,17 +722,17 @@
 ///公交方案
 @interface AMapTransit : AMapSearchObject
 ///此公交方案价格（单位：元）
-@property (nonatomic, assign) CGFloat    cost; 
+@property (nonatomic, assign) CGFloat    cost;
 ///此换乘方案预期时间（单位：秒）
 @property (nonatomic, assign) NSInteger  duration; 
 ///是否是夜班车
-@property (nonatomic, assign) BOOL       nightflag; 
+@property (nonatomic, assign) BOOL       nightflag;
 ///此方案总步行距离（单位：米）
-@property (nonatomic, assign) NSInteger  walkingDistance; 
+@property (nonatomic, assign) NSInteger  walkingDistance;
 ///换乘路段 AMapSegment 数组
 @property (nonatomic, strong) NSArray<AMapSegment *> *segments; 
 ///当前方案的总距离
-@property (nonatomic, assign) NSInteger  distance; 
+@property (nonatomic, assign) NSInteger  distance;
 @end
 
 ///路径规划信息
@@ -691,7 +746,11 @@
 ///步行、骑行、驾车方案列表 AMapPath 数组
 @property (nonatomic, strong) NSArray<AMapPath *> *paths; 
 ///公交换乘方案列表 AMapTransit 数组
-@property (nonatomic, strong) NSArray<AMapTransit *> *transits; 
+@property (nonatomic, strong) NSArray<AMapTransit *> *transits;
+///详细导航动作指令 since 9.4.0
+@property (nonatomic, strong) AMapTransitNavi *transitNavi;
+///分路段坐标点串，两点间用“,”分隔 since 9.4.0
+@property (nonatomic, copy)   NSString     *polyline;
 @end
 
 ///距离测量结果

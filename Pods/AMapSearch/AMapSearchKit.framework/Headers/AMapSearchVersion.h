@@ -12,8 +12,8 @@
 #ifndef AMapSearchVersion_h
 #define AMapSearchVersion_h
 
-#define AMapSearchVersionNumber                90200
-#define AMapSearchMinRequiredFoundationVersion 10609
+#define AMapSearchVersionNumber                90400
+#define AMapSearchMinRequiredFoundationVersion 10700
 
 // 依赖库版本检测
 #if AMapFoundationVersionNumber < AMapSearchMinRequiredFoundationVersion

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define JVER_VERSION_NUMBER 2.7.9
+#define JVER_VERSION_NUMBER 2.9.3
 
 
 /**
@@ -86,6 +86,7 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
 
 /*----------------------------------------授权页面-----------------------------------*/
 
+#pragma mark --导航栏
 
 //MARK:导航栏*************
 /**运营商类型*/
@@ -123,7 +124,7 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
 @property (nonatomic,assign) BOOL prefersStatusBarHidden;
 
 
-
+#pragma mark --图片设置
 
 //MARK:图片设置************
 /**授权界面背景图片*/
@@ -145,6 +146,8 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
 /**LOGO图片隐藏*/
 @property (nonatomic,assign) BOOL logoHidden;
 
+#pragma mark -- 登录按钮
+
 //MARK:登录按钮************
 
 /**登录按钮文本*/
@@ -165,6 +168,8 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
  */
 @property (nonatomic,copy) NSArray *logBtnImgs;
 
+#pragma mark -- 号码框设置
+
 //MARK:号码框设置************
 
 /**手机号码字体颜色*/
@@ -180,8 +185,10 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
 /*号码栏 横屏布局,横屏时优先级高于numberConstraints*/
 @property (nonatomic, copy) NSArray <JVLayoutConstraint*>* numberHorizontalConstraints;
 
-//MARK:隐私条款************
 
+#pragma mark -- 隐私条款
+
+//MARK:隐私条款************
 /**复选框未选中时图片*/
 @property (nonatomic,strong) UIImage *uncheckedImg;
 /**复选框选中时图片*/
@@ -290,6 +297,7 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
 @property (nonatomic,copy) void(^customLoadingViewBlock)(UIView * View);
 
 
+#pragma mark -- 弹窗样式设置
 
 /*弹窗样式设置*/
 /*是否弹窗，默认no*/
@@ -325,6 +333,8 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
  注意:当授权页为弹框样式时,参数无效，屏幕方向由当前视图控制器控制 */
 @property (nonatomic, assign) UIInterfaceOrientation orientation;
 
+#pragma mark -- 协议页导航栏设置
+
 /**协议页导航栏背景颜色*/
 @property (nonatomic, strong) UIColor *agreementNavBackgroundColor;
 /*授权页点击运营商默认协议，进入协议页时, 协议页自定义导航栏标题*/
@@ -355,11 +365,8 @@ typedef NS_ENUM(NSInteger,JVVerAlignment){
  2、用户点击授权页关闭按钮，关闭授权页
  */
 @property (nonatomic, assign) BOOL dismissAnimationFlag;
+
 @end
-
-
-
-
 
 DEPRECATED_MSG_ATTRIBUTE("Please use JVUIConfig") @interface JVMobileUIConfig : JVUIConfig
 @end
@@ -368,9 +375,90 @@ DEPRECATED_MSG_ATTRIBUTE("Please use JVUIConfig") @interface JVUnicomUIConfig : 
 DEPRECATED_MSG_ATTRIBUTE("Please use JVUIConfig") @interface JVTelecomUIConfig : JVUIConfig
 @end
 
+/// 行为检-验证界面样式(User interface style)  2.9.0+生效
+typedef NS_ENUM(NSInteger, JVUserInterfaceStyle) {
+    /** 跟随系统样式(Follow system) */
+    JVUserInterfaceStyleSystem = 0,
+    /** 普通样式(Light) */
+    JVUserInterfaceStyleLight,
+    /** 暗黑样式(Dark) */
+    JVUserInterfaceStyleDark,
+    /** 默认样式(Default) */
+    JVUserInterfaceStyleDefault = JVUserInterfaceStyleLight
+};
+
+/// 行为检-验证展示方式(Display style) 2.9.0+生效
+typedef NS_ENUM(NSInteger, JVDisplayStyle) {
+    /** 居中展示(Center) */
+    JVDisplayStyleCenter = 0,
+    /** 底部展示(Bottom) */
+    JVDisplayStyleBottom,
+    /** 默认展示(Default) */
+    JVDisplayStyleDefault = JVDisplayStyleCenter,
+};
+
+/**
+ JVCaptchaScene  行为检的使用场景
+ - JVCaptchaSceneRandom: 不设置场景，随机
+ - JVCaptchaSceneRegister:  注册
+ - JVCaptchaSceneLogin: 登录
+ */
+
+typedef NS_ENUM(NSUInteger, JVCaptchaScene) {
+    JVCaptchaSceneRandom = 0,
+    JVCaptchaSceneRegister,
+    JVCaptchaSceneLogin
+};
 
 
+#pragma mark -- 行为检弹窗样式配置
 
+@interface JVCaptchaConfig : NSObject
+/// 行为检的使用场景，默认 JVCaptchaSceneRandom。
+/// Usage scenarios of Captcha, default is JVCaptchaSceneRandom.
+@property (nonatomic, assign) JVCaptchaScene captchaScene;
+
+/// 远程访问静态资源时的协议，默认 @“https”。
+/// Protocol for remote access to static resources, default is @ “https”.
+@property (nullable, nonatomic, strong) NSString *captchaProtocol;
+
+/// 静态服务地址，默认为空。
+@property (nullable, nonatomic, strong) NSArray<NSString *> *captchaStaticServers DEPRECATED_MSG_ATTRIBUTE("No longer available.");
+
+/// 接口服务地址，默认为空。
+@property (nullable, nonatomic, strong) NSArray<NSString *> *captchaApiServers DEPRECATED_MSG_ATTRIBUTE("No longer available.");
+
+/// 界面样式，默认 `JVUserInterfaceStyleLight`。
+/// User interface style, which is white by default.
+@property (nonatomic, assign) JVUserInterfaceStyle captchaUserInterfaceStyle;
+
+/// 界面的展示方式，默认 `JVDisplayStyleCenter`。
+/// The display style, which is centered by default.
+@property (nonatomic, assign) JVDisplayStyle captchaDisplayStyle;
+
+/// 背景颜色，默认透明
+/// Defines color for captcha background. Default is transparent.
+@property (nonatomic, strong) UIColor *captchaBackgroundColor;
+
+/// 点击背景的交互，默认开启。
+/// Determines whether the background is able to interact,
+/// which is disable by default.
+@property (nonatomic, assign) BOOL captchaBackgroundUserInteractionEnable;
+
+/// 语言，默认跟随系统。
+/// 如果系统为不支持的语言，则为中文简体。
+/// 指定语言请参考文档中的语言短码清单（ISO 639-2 标准）。
+/// Defines Language for captcha, which is same as system language by default.
+/// Display in English, if not supported.
+/// Please refer to the language short code(ISO 639-2 standard) for setting the language.
+@property (nonatomic, strong) NSString *captchaLanguage;
+
+/// 额外的参数, 默认为空。参数将被组装后提交到验证服务。
+/// Additional parameter, which is empty by default.
+/// Parameters will be assembled and submitted to the captcha server.
+@property (nullable, nonatomic, strong) NSMutableDictionary *captchaAdditionalParameter;
+
+@end
 
 
 @interface JVAuthConfig : NSObject
@@ -485,6 +573,17 @@ DEPRECATED_MSG_ATTRIBUTE("Please use JVUIConfig") @interface JVTelecomUIConfig :
 */
 + (void)dismissLoginControllerAnimated: (BOOL)flag completion: (void (^)(void))completion;
 
+#pragma mark -- 行为检
+/**
+ 行为检测，第一轮安全校验
+ @param timeout 超时。单位毫秒，合法范围是(0,30000]，默认值为10000。此参数同时作用于拉起安全校验页面时的超时处理
+ @param completion 第一轮安全校验结果，需要根据第一轮安全校验结果结合后台第二轮校验，完成全流程安全校验
+ @parm  actionBlock 授权页事件触发回调。 type事件类型，content事件描述。详细见文档
+ */
++ (void)getCaptchaControllerWithTimeout:(NSTimeInterval)timeout
+                            completion:(void (^)(NSDictionary *result))completion
+                           actionBlock:(void(^)(NSInteger type, NSString *content))actionBlock;
+
 /*!
  * @abstract 设置是否打印sdk产生的Debug级log信息, 默认为NO(不打印log)
  *
@@ -519,6 +618,12 @@ DEPRECATED_MSG_ATTRIBUTE("Please use JVUIConfig") @interface JVTelecomUIConfig :
  @param customViewsBlk 添加自定义视图block
 */
 + (void)customUIWithConfig:(JVUIConfig *)UIConfig customViews:(void(^)(UIView *customAreaView))customViewsBlk;
+
+/**
+ 自定义行为检参数
+ @param captchaConfig 自定义UI设置。仅使用JVCaptchaConfig类型对象
+ */
++ (void)customCaptchaWithConfig:(JVCaptchaConfig *)captchaConfig;
 
 /**
  *  获取短信验证码 （最小间隔时间内只能调用一次）

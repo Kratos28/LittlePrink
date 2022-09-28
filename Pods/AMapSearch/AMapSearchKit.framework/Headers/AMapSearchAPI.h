@@ -130,12 +130,6 @@
 - (void)AMapDistrictSearch:(AMapDistrictSearchRequest *)request;
 
 /**
- * @brief 驾车路径规划查询接口
- * @param request 查询选项。具体属性字段请参考 AMapDrivingRouteSearchRequest 类。
- */
-- (void)AMapDrivingRouteSearch:(AMapDrivingRouteSearchRequest *)request __attribute__((deprecated("已废弃, from 9.2.0，该功能不再维护，请升级算路V2.0接口 AMapDrivingV2RouteSearch")));
-
-/**
  * @brief 驾车路径规划V2.0查询接口
  * @param request 查询选项。具体属性字段请参考 AMapDrivingCalRouteSearchRequest 类。
  */

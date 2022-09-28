@@ -1,20 +1,28 @@
 PODS:
-  - Alamofire (5.6.1)
+  - ActionSheetPicker-3.0 (2.7.1)
+  - Alamofire (5.6.2)
   - AlipaySDK-iOS (15.8.11)
-  - AMapFoundation (1.6.9)
-  - AMapLocation (2.8.0):
-    - AMapFoundation (~> 1.6.9)
-  - AMapSearch (9.2.0):
-    - AMapFoundation (~> 1.6.9)
+  - AMapFoundation (1.7.0)
+  - AMapLocation (2.9.0):
+    - AMapFoundation (>= 1.7.0)
+  - AMapSearch (9.4.0):
+    - AMapFoundation (>= 1.7.0)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
   - DateToolsSwift (5.0.0)
   - DynamicBlurView (4.1.0)
+  - FaveButton (3.2.1)
   - GRDB.swift (5.11.0):
     - GRDB.swift/standard (= 5.11.0)
   - GRDB.swift/standard (5.11.0)
-  - JCore (3.2.3)
-  - JVerification (2.7.9):
+  - GrowingTextView (0.7.2)
+  - Hero (1.6.2)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - JCore (3.2.5)
+  - JVerification (2.9.3):
     - JCore (>= 2.1.6)
+  - Kingfisher (6.0.0)
   - LeanCloud (17.9.2):
     - LeanCloud/RTM (= 17.9.2)
   - LeanCloud/Foundation (17.9.2):
@@ -28,7 +36,8 @@ PODS:
   - PopupDialog (1.1.1):
     - DynamicBlurView (~> 4.0)
   - PryntTrimmerView (4.0.2)
-  - SKPhotoBrowser (7.0.0)
+  - SegementSlide (3.0.1)
+  - SKPhotoBrowser (7.1.0)
   - SteviaLayout (4.7.3)
   - SwiftProtobuf (1.20.1)
   - XLPagerTabStrip (9.0.0)
@@ -37,23 +46,31 @@ PODS:
     - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - Alamofire (~> 5.2)
   - AlipaySDK-iOS
   - AMapLocation
   - AMapSearch
   - CHTCollectionViewWaterfallLayout/Swift
   - DateToolsSwift
+  - FaveButton
+  - GrowingTextView
+  - Hero
+  - ImageSlideshow
   - JVerification
+  - Kingfisher (= 6.0.0)
   - LeanCloud
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
   - PopupDialog (~> 1.1.1)
+  - SegementSlide (= 3.0.1)
   - SKPhotoBrowser
   - XLPagerTabStrip (~> 9.0)
   - YPImagePicker
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
     - Alamofire
     - AlipaySDK-iOS
     - AMapFoundation
@@ -62,14 +79,20 @@ SPEC REPOS:
     - CHTCollectionViewWaterfallLayout
     - DateToolsSwift
     - DynamicBlurView
+    - FaveButton
     - GRDB.swift
+    - GrowingTextView
+    - Hero
+    - ImageSlideshow
     - JCore
     - JVerification
+    - Kingfisher
     - LeanCloud
     - MBProgressHUD
     - MJRefresh
     - PopupDialog
     - PryntTrimmerView
+    - SegementSlide
     - SKPhotoBrowser
     - SteviaLayout
     - SwiftProtobuf
@@ -77,28 +100,35 @@ SPEC REPOS:
     - YPImagePicker
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   AlipaySDK-iOS: a07b6eafa847a5b29acb6c150ea16d9792d5d167
-  AMapFoundation: 8d8ecbb0b2e9ce5487995360d26c885d94642bfd
-  AMapLocation: 5ef44a1117be7dc541cb7a7d43d03c5ee91e4387
-  AMapSearch: b461cdf25b39cdca8957017de2f376cd1ac5da85
+  AMapFoundation: c14fcebd8e4267c593bd2e25067ac86b0ce64aba
+  AMapLocation: f5eb11e11c62f0f599f80b578eec8a1f70deb985
+  AMapSearch: 8222912b82117557f3739132bb13fad8e2d19073
   CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  FaveButton: 93cfebf6030336fa7653fad2068c3152ed668b39
   GRDB.swift: 9a33d9680cd3c870c82f48a6cbc73d3cfbb235eb
-  JCore: 9b3cb5b6163d4da6d9dfe95652316f09e5bf8140
-  JVerification: 446637aca893d08e112f29d6eea4bfc88c507101
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  Hero: c69009dbc9e2f0472e081adc644dba05fcedae72
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  JCore: 4c9febdfdb1a5675ab361bc1f06c0905391d7b23
+  JVerification: ff081af51f076b20b6eb94aed4d879419e698583
+  Kingfisher: 13f6e68c928eb50439b5cb2ea75d6035018438ea
   LeanCloud: a2b78da1d4a36a89a2af71d345e19cdd9da8e762
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
-  SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
+  SegementSlide: 83b56ffb66b9c0edc4e4f2a74229309c62915db3
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SwiftProtobuf: e40a7684079620e84ba522dbaeab0cddb0ec7ffd
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 57174ce9eeb64c73493134f338d5ec74f2a962ed
+PODFILE CHECKSUM: 568f9972f54dc0dc030ac6be326f2985089dfc51
 
 COCOAPODS: 1.11.3

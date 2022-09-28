@@ -66,14 +66,14 @@ class NoteEditVC: UIViewController {
     
     @IBAction func postNote(_ sender: Any) {
         guard isValidateNote() else { return }
-        
         if let draftNote = draftNote{//发布草稿笔记
             postDraftNote(draftNote)
         }else if let note = note{//更新笔记
-            updateNote(note)
+            updateNote(note);
         }else{//发布新笔记
-            createNote()            
+            createNote();
         }
+        
     }
     
     

@@ -3,7 +3,7 @@
 //  QuickLogin
 //
 //  Created by bitlib on 2020/10/1.
-//  SDKVERSION @"1.0.4"
+//  SDKVERSION @"2.0.7.2"
 
 #import <Foundation/Foundation.h>
 @class WKCustomModel;

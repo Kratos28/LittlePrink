@@ -20,6 +20,9 @@ typedef NS_ENUM(NSInteger, AMapRoutePOISearchType)
     AMapRoutePOISearchTypeToilet             = 3,   ///< 厕所
     AMapRoutePOISearchTypeGasAirStation      = 4,   ///< 加气站
     AMapRoutePOISearchTypeParkStation        = 5,   ///< 服务区
+    AMapRoutePOISearchTypeChargingPile       = 6,   ///< 充电桩
+    AMapRoutePOISearchTypeFood               = 7,   ///< 美食
+    AMapRoutePOISearchTypeHotel              = 8,   ///< 酒店
 };
 
 ///天气查询类型
@@ -74,6 +77,48 @@ typedef NS_ENUM(NSUInteger, AMapDrivingRouteShowFieldType)
     AMapDrivingRouteShowFieldTypeAll      = ~0UL,   ///< 返回所有扩展信息
 };
 
+///步行路线规划返回结果控制 @since 9.4.0
+typedef NS_ENUM(NSUInteger, AMapWalkingRouteShowFieldType)
+{
+    AMapWalkingRouteShowFieldTypeNone     = 0 << 0, ///< 不返回扩展信息
+    AMapWalkingRouteShowFieldTypeCost     = 1 << 0, ///< 返回方案所需时间及费用成本
+    AMapWalkingRouteShowFieldTypeNavi     = 1 << 1, ///< 返回详细导航动作指令
+    AMapWalkingRouteShowFieldTypePolyline = 1 << 2, ///< 返回分路段坐标点串，两点间用“,”分隔
+    AMapWalkingRouteShowFieldTypeAll      = ~0UL,   ///< 返回所有扩展信息
+};
+
+///公交车路线规划返回结果控制 @since 9.4.0
+typedef NS_OPTIONS(NSUInteger, AMapTransitRouteShowFieldsType)
+{
+    AMapTransitRouteShowFieldsTypeNone     = 1 << 0, ///< 不返回扩展信息
+    AMapTransitRouteShowFieldsTypeCost     = 1 << 1, ///< 返回方案所需时间及费用成本
+    AMapTransitRouteShowFieldsTypeNavi     = 1 << 2, ///< 返回详细导航动作指令
+    AMapTransitRouteShowFieldsTypePolyline = 1 << 3, ///< 返回分路段坐标点串，两点间用“,”分隔
+    AMapTransitRouteShowFieldsTypeAll      = ~0UL,   ///< 返回所有扩展信息
+};
+
+///骑行路线规划返回结果控制 @since 9.4.0
+typedef NS_OPTIONS(NSUInteger, AMapRidingRouteShowFieldsType)
+{
+    AMapRidingRouteShowFieldsTypeNone     = 1 << 0, ///< 不返回扩展信息
+    AMapRidingRouteShowFieldsTypeCost     = 1 << 1, ///< 返回方案所需时间及费用成本
+    AMapRidingRouteShowFieldsTypeNavi     = 1 << 2, ///< 返回详细导航动作指令
+    AMapRidingRouteShowFieldsTypePolyline = 1 << 3, ///< 返回分路段坐标点串，两点间用“,”分隔
+    AMapRidingRouteShowFieldsTypeAll      = ~0UL,   ///< 返回所有扩展信息
+};
+
+/// 搜索POI返回结果控制 @since 9.4.0
+typedef NS_OPTIONS(NSUInteger, AMapPOISearchShowFieldsType)
+{
+    AMapPOISearchShowFieldsTypeNone          = 1 << 0, ///< 不返回扩展信息
+    AMapPOISearchShowFieldsTypeChildren      = 1 << 1, ///< 返回子POI信息
+    AMapPOISearchShowFieldsTypeBusiness      = 1 << 2, ///< 返回商业信息
+    AMapPOISearchShowFieldsTypeIndoor        = 1 << 3, ///< 返回室内相关信息
+    AMapPOISearchShowFieldsTypeNavi          = 1 << 4, ///< 返回导航位置相关信息
+    AMapPOISearchShowFieldsTypePhotos        = 1 << 5, ///< 返回poi图片相关信息
+    AMapPOISearchShowFieldsTypeAll           = ~0UL,   ///< 返回所有扩展信息
+};
+
 ///距离测量类型 @since 7.7.0
 typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 {
@@ -90,21 +135,17 @@ typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 @property (nonatomic, copy)   NSString  *types;
 ///排序规则, 0-距离排序；1-综合排序, 默认0
 @property (nonatomic, assign) NSInteger  sortrule;
-///每页记录数, 范围1-25, [default = 20]
+///每页记录数, 范围1-25, [default = 10]
 @property (nonatomic, assign) NSInteger  offset;
 ///当前页数, 范围1-100, [default = 1]
 @property (nonatomic, assign) NSInteger  page;
-///建筑物POI编号，传入建筑物POI之后，则只在该建筑物之内进行搜索（since 4.5.0）
-@property (nonatomic, copy) NSString *building;
-///是否返回扩展信息，默认为 NO。
-@property (nonatomic, assign) BOOL requireExtension;
-///是否返回子POI，默认为 NO。
-@property (nonatomic, assign) BOOL requireSubPOIs;
+///设置需要返回的扩展信息，默认为AMapPOISearchShowFieldsTypeNone，只返回基础信息字段
+@property (nonatomic, assign) AMapPOISearchShowFieldsType  showFieldsType;
 @end
 
 ///POI ID搜索请求
 @interface AMapPOIIDSearchRequest : AMapPOISearchBaseRequest
-///POI全局唯一ID
+///poi唯一标识，最多可以传入10个id，多个id之间用“|”分隔。必填
 @property (nonatomic, copy) NSString *uid; 
 @end
 
@@ -123,24 +164,21 @@ typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 
 ///POI周边搜索
 @interface AMapPOIAroundSearchRequest : AMapPOISearchBaseRequest
-///查询关键字，多个关键字用“|”分割
+///查询关键字，多个关键字用“|”分割。可选
 @property (nonatomic, copy)   NSString     *keywords; 
 ///中心点坐标
 @property (nonatomic, copy)   AMapGeoPoint *location; 
-///查询半径，范围：0-50000，单位：米 [default = 1500]
+///查询半径，范围：0-50000，单位：米 [default = 3000]
 @property (nonatomic, assign) NSInteger     radius;
 ///查询城市，可选值：cityname（中文或中文全拼）、citycode、adcode。注：当用户指定的经纬度和city出现冲突，若范围内有用户指定city的数据，则返回相关数据，否则返回为空。（since 5.7.0）
 @property (nonatomic, copy)   NSString     *city;
-///是否对结果进行人工干预，如火车站，原因为poi较为特殊，结果存在人工干预，干预结果优先，所以距离优先的排序未生效,默认为YES (since 7.4.0)
-@property (nonatomic, assign) BOOL special;
-
 @end
 
 ///POI多边形搜索
 @interface AMapPOIPolygonSearchRequest : AMapPOISearchBaseRequest
-///查询关键字，多个关键字用“|”分割
+///查询关键字，多个关键字用“|”分割。可选
 @property (nonatomic, copy) NSString       *keywords; 
-///多边形
+///多边形区域，多个坐标对集合，坐标对用"|"分割。多边形为矩形时，可传入左上右下两顶点坐标对；其他情况下首尾坐标对需相同。必填
 @property (nonatomic, copy) AMapGeoPolygon *polygon; 
 @end
 
@@ -151,7 +189,7 @@ typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 ///关键字建议列表和城市建议列表
 @property (nonatomic, strong) AMapSuggestion *suggestion; 
 ///POI结果，AMapPOI 数组
-@property (nonatomic, strong) NSArray<AMapPOI *> *pois; 
+@property (nonatomic, strong) NSArray<AMapPOI *> *pois;
 @end
 
 #pragma mark - AMapPOIRouteSearchRequest
@@ -346,7 +384,7 @@ typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 @property (nonatomic, copy) AMapGeoPoint *destination; 
 @end
 
-#pragma mark - AMapDrivingRouteSearchRequest
+#pragma mark - AMapDrivingCalRouteSearchRequest
 
 ///驾车路径规划2.0
 @interface AMapDrivingCalRouteSearchRequest : AMapRouteSearchBaseRequest
@@ -398,95 +436,72 @@ typedef NS_ENUM(NSInteger, AMapDistanceSearchType)
 
 @end
 
-#pragma mark - AMapDrivingRouteSearchRequest
-
-///驾车路径规划
-@interface AMapDrivingRouteSearchRequest : AMapRouteSearchBaseRequest
-
-/**
- 驾车导航策略，默认策略为0。
-    0，速度优先（时间)；1，费用优先（不走收费路段的最快道路）；2，距离优先；3，不走快速路；4，躲避拥堵；
-    5，多策略（同时使用速度优先、费用优先、距离优先三个策略计算路径），其中必须说明，就算使用三个策略算路，会根据路况不固定的返回一至三条路径规划信息；
-    6，不走高速；7，不走高速且避免收费；8，躲避收费和拥堵；9，不走高速且躲避收费和拥堵；
-    10，多备选，时间最短，距离最短，躲避拥堵（考虑路况）；
-    11，多备选，时间最短，距离最短；
-    12，多备选，躲避拥堵（考虑路况）；
-    13，多备选，不走高速；
-    14，多备选，费用优先；
-    15，多备选，躲避拥堵，不走高速（考虑路况）；
-    16，多备选，费用有限，不走高速；
-    17，多备选，躲避拥堵，费用优先（考虑路况）；
-    18，多备选，躲避拥堵，不走高速，费用优先（考虑路况）；
-    19，多备选，高速优先；
-    20，多备选，高速优先，躲避拥堵（考虑路况）
- */
-@property (nonatomic, assign) NSInteger strategy;
-///途经点 AMapGeoPoint 数组，目前最多支持6个途经点
-@property (nonatomic, copy) NSArray<AMapGeoPoint *> *waypoints;
-///避让区域 AMapGeoPolygon 数组，目前最多支持100个避让区域，每个区域16个点
-@property (nonatomic, copy) NSArray<AMapGeoPolygon *> *avoidpolygons;
-///避让道路名
-@property (nonatomic, copy) NSString *avoidroad;
-///出发点 POI ID
-@property (nonatomic, copy) NSString *originId;
-///目的地 POI ID
-@property (nonatomic, copy) NSString *destinationId;
-///出发点POI类型编码
-@property (nonatomic, copy) NSString *origintype;
-///目的地POI类型编码
-@property (nonatomic, copy) NSString *destinationtype;
-///是否返回扩展信息，默认为 NO
-@property (nonatomic, assign) BOOL requireExtension;
-///车牌省份，用汉字填入车牌省份缩写。用于判断是否限行
-@property (nonatomic, copy) NSString *plateProvince;
-///车牌详情,填入除省份及标点之外的字母和数字（需大写）。用于判断是否限行。
-@property (nonatomic, copy) NSString *plateNumber;
-///使用轮渡,0使用1不使用,默认为0使用
-@property (nonatomic, assign) NSInteger ferry;
-/**
- 驾车路径规划车辆类型，默认策略为0。
- 0：普通汽车(默认值);
- 1：纯电动车;
- 2：插电混动车
- */
-@property (nonatomic, assign) NSInteger cartype;
-///规避道路类型,默认为AMapDrivingRouteExcludeTypeNone，仅海外生效
-@property (nonatomic, assign) AMapDrivingRouteExcludeType exclude;
-
-@end
-
 #pragma mark - AMapWalkingRouteSearchRequest
 
 ///步行路径规划
 @interface AMapWalkingRouteSearchRequest : AMapRouteSearchBaseRequest
 ///是否提供备选步行方案([default = 0])0-只提供一条步行方案; 1-提供备选步行方案(有可能无备选方案)
 @property (nonatomic, assign) NSInteger multipath __attribute__((deprecated("已废弃, from 5.0.0")));
+
+///是否需要室内算路. 0 : 不需要 (默认值); 1 : 需要
+@property (nonatomic, assign) NSInteger isindoor;
+///返回路线条数, 0: 默认返回一条路线方案; 1 : 多备选路线中第一条路线;  2 : 多备选路线中前两条路线; 3 : 多备选路线中三条路线
+@property (nonatomic, assign) NSInteger alternativeRoute;
+///设置需要返回的扩展信息，默认为AMapPOISearchShowFieldsTypeNone，只返回基础信息字段
+@property (nonatomic, assign) AMapWalkingRouteShowFieldType showFieldsType;
 @end
 
 #pragma mark - AMapTransitRouteSearchRequest
 
 ///公交路径规划
 @interface AMapTransitRouteSearchRequest : AMapRouteSearchBaseRequest
-///公交换乘策略([default = 0])\n 0-最快捷模式；\n 1-最经济模式；\n 2-最少换乘模式；\n 3-最少步行模式；\n 4-最舒适模式；\n 5-不乘地铁模式
+///公交换乘策略([default = 0])
+/*
+0：推荐模式，综合权重，同高德APP默认
+1：最经济模式，票价最低
+2：最少换乘模式，换乘次数少
+3：最少步行模式，尽可能减少步行距离
+4：最舒适模式，尽可能乘坐空调车
+5：不乘地铁模式，不乘坐地铁路线
+6：地铁图模式，起终点都是地铁站（地铁图模式下originpoi及destinationpoi为必填项）
+7：地铁优先模式，步行距离不超过4KM
+8：时间短模式，方案花费总时间最少
+ */
 @property (nonatomic, assign) NSInteger strategy; 
-///城市, 必填
-@property (nonatomic, copy)   NSString *city; 
-///目的城市, 跨城时需要填写，否则会出错
+///起点所在城市, 必填. 仅支持citycode
+@property (nonatomic, copy)   NSString *city;
+///目的地所在城市, 必填. 仅支持citycode，与city相同时代表同城，不同时代表跨城
 @property (nonatomic, copy)   NSString *destinationCity; 
 ///是否包含夜班车，默认为 NO
-@property (nonatomic, assign) BOOL nightflag; 
-///是否返回扩展信息，默认为 NO
-@property (nonatomic, assign) BOOL requireExtension;
+@property (nonatomic, assign) BOOL nightflag;
+///起点POI ID
+@property (nonatomic, copy)   NSString *originPOI;
+///目的地POI ID
+@property (nonatomic, copy)   NSString *destinationPOI;
+///起点所在行政区域编码
+@property (nonatomic, copy)   NSString *adcode;
+///终点所在行政区域编码
+@property (nonatomic, copy)   NSString *destinationAdcode;
+///返回方案条数 可传入1-10的阿拉伯数字，代表返回的不同条数。默认值：5
+@property (nonatomic, assign) NSInteger alternativeRoute;
+/// 是否返回所有地铁出入口，默认为NO
+@property (nonatomic, assign) BOOL multiExport;
+/// 最大换乘次数 0：直达 1：最多换乘1次 2：最多换乘2次 3：最多换乘3次 4：最多换乘4次。默认值：4
+@property (nonatomic, assign) NSInteger maxTrans;
+///请求日期 例如:2013-10-28
+@property (nonatomic, copy)   NSString *date;
+///请求时间 例如:9-54
+@property (nonatomic, copy)   NSString *time;
+///返回结果控制
+@property (nonatomic, assign) AMapTransitRouteShowFieldsType showFieldsType;
 @end
 
 #pragma mark - AMapRidingRouteSearchRequest
 
 ///骑行路径规划
 @interface AMapRidingRouteSearchRequest : AMapRouteSearchBaseRequest
-///路径方案类型([default = 0])\n 0-推荐路线及最快路线综合\n 1-推荐路线\n 2-最快路线
-@property (nonatomic, assign) NSInteger type __attribute__((deprecated("已废弃, from 5.0.0")));
-///是否返回扩展信息，默认为 NO （since 7.6.0）
-@property (nonatomic, assign) BOOL requireExtension;
+///返回结果控制
+@property (nonatomic, assign) AMapRidingRouteShowFieldsType showFieldsType;
 @end
 
 ///路径规划返回

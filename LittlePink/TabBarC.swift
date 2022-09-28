@@ -88,7 +88,6 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                 }
                 alert.addAction(action1)
                 alert.addAction(action2)
-                
                 present(alert, animated: true, completion: nil)
             }
             
