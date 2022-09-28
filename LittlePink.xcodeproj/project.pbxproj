@@ -1194,7 +1194,7 @@
 					"\"${PODS_ROOT}/Headers/Public/JVerification\"",
 					"\"${PROJECT_DIR}/AliPay\"",
 				);
-				INFOPLIST_FILE = LittlePrink/Info.plist;
+				INFOPLIST_FILE = LittlePink/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Prink1;
 				INFOPLIST_KEY_NSCameraUsageDescription = fff;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = fggg;
@@ -1258,7 +1258,7 @@
 					"\"${PODS_ROOT}/Headers/Public/JVerification\"",
 					"\"${PROJECT_DIR}/AliPay\"",
 				);
-				INFOPLIST_FILE = LittlePrink/Info.plist;
+				INFOPLIST_FILE = LittlePink/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Prink1;
 				INFOPLIST_KEY_NSCameraUsageDescription = fff;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = fggg;
