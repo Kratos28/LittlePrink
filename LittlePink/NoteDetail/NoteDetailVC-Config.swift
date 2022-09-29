@@ -14,14 +14,14 @@ extension NoteDetailVC{
     func config(){
         
         //imageSlideshow
-        imageSlideshow.zoomEnabled = true
-        imageSlideshow.circular = false
-        imageSlideshow.contentScaleMode = .scaleAspectFill
-        imageSlideshow.activityIndicator = DefaultActivityIndicator()
-        let pageControl = UIPageControl()
-        pageControl.pageIndicatorTintColor = .systemGray
-        pageControl.currentPageIndicatorTintColor = mainColor
-        imageSlideshow.pageIndicator = pageControl
+        imageSlideshow.zoomEnabled = true;
+        imageSlideshow.circular = false;
+        imageSlideshow.contentScaleMode = .scaleAspectFill;
+        imageSlideshow.activityIndicator = DefaultActivityIndicator();
+        let pageControl = UIPageControl();
+        pageControl.pageIndicatorTintColor = .systemGray;
+        pageControl.currentPageIndicatorTintColor = mainColor;
+        imageSlideshow.pageIndicator = pageControl;
         
         //因FaveButton的封装,用户未登录时点击按钮也会变色,故需提前拦截
         if LCApplication.default.currentUser == nil{

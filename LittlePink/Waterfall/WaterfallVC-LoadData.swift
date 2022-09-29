@@ -33,13 +33,13 @@ extension WaterfallVC{
         //指定字段--提高性能
         //访问的某个draftNote下面的属性若已在propertiesToFetch中指定,则访问此属性不会触发Fault,访问其他属性会触发Fault
         request.propertiesToFetch = ["coverPhoto", "title", "updatedAt", "isVideo"]
-        
+        //现在是18时34分你有个提醒，胡穗田出门戴口罩
         showLoadHUD()
         backgroundContext.perform {
             if let draftNotes = try? backgroundContext.fetch(request){
                 self.draftNotes = draftNotes
                 DispatchQueue.main.async {
-                    self.collectionView.reloadData()
+                    self.collectionView.reloadData();
                 }
             }
             self.hideLoadHUD()
