@@ -37,7 +37,6 @@ class POIVC: UIViewController {
     //var pois = [Array(repeating: "", count: 2)]
     var pois = kPOIsInitArr
     var aroundSearchedPOIs = kPOIsInitArr //完全同步copy周边的pois数组，用于简化逻辑
-    
     var latitude = 0.0
     var longitude = 0.0
     var keywords = ""

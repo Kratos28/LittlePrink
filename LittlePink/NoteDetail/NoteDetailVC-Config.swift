@@ -26,7 +26,7 @@ extension NoteDetailVC{
         //因FaveButton的封装,用户未登录时点击按钮也会变色,故需提前拦截
         if LCApplication.default.currentUser == nil{
             likeBtn.setToNormal()
-            favBtn.setToNormal()
+            favBtn.setToNormal();
         }
         
         //评论的textView

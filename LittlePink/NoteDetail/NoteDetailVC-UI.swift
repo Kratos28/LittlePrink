@@ -12,14 +12,13 @@ import ImageSlideshow
 extension NoteDetailVC{
     func setUI(){
         followBtn.makeCapsule(mainColor)
-        
         if isReadMyNote{
             followBtn.isHidden = true
             shareOrMoreBtn.setImage(UIImage(systemName: "ellipsis"), for: .normal)
         }
         
-        showNote()
-        showLike()
+        showNote();
+        showLike();
     }
     
     func showNote(_ isUpdatingNote: Bool = false){

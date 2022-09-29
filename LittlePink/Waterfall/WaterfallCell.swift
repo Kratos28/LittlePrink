@@ -15,9 +15,7 @@ class WaterfallCell: UICollectionViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var likebtn: UIButton!
-    
     var isMyselfLike = false
-    
     var likeCount = 0{
         didSet{
             likebtn.setTitle(likeCount.formattedStr, for: .normal)

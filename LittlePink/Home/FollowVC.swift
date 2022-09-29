@@ -26,8 +26,7 @@ class FollowVC: UIViewController, IndicatorInfoProvider {
 //1.子类没有'无初始值的自有属性'时,直接重写父类的init--见CVCell
 
 class ColorBtn: UIButton{
-    var color: UIColor
-    
+    var color: UIColor    
     //2.子类有'无初始值的自有属性'时,需定义自己的init,在这个init里面先给自己的属性赋值,再super.init
     init(frame: CGRect, color: UIColor){
         self.color = color

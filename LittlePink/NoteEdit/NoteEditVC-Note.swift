@@ -29,16 +29,16 @@ extension NoteEditVC{
             let photoGroup = DispatchGroup()
             //1.把所有文件存进云端
             var photoPaths: [Int: String] = [:];
-        
+            
+            
             for (index, eachPhoto) in photos.enumerated(){
                 if let eachPhotoData = eachPhoto.jpeg(.high){
                     let photo = LCFile(payload: .data(data: eachPhotoData))
                     photoGroup.enter()
                     photo.save { res in
                         //print("photo文件保存成功/失败")
-                        
                         if case .success = res, let path = photo.url?.stringValue{
-                            photoPaths[index] = path
+                            photoPaths[index] = path;
                         }
                         photoGroup.leave()
                     }
@@ -84,13 +84,11 @@ extension NoteEditVC{
             
             //笔记的作者
             let author = LCApplication.default.currentUser!
-            try note.set(kAuthorCol, value: author)
-            
+            try note.set(kAuthorCol, value: author);
             noteGroup.enter()
             note.save { _ in
-    
                 //print("存储一般数据字段成功/失败")
-                noteGroup.leave()
+                noteGroup.leave();
             }
             
             
@@ -199,7 +197,6 @@ extension NoteEditVC{
                 //print("存储一般数据字段成功/失败")
                 noteGroup.leave()
             }
-            
             
             noteGroup.notify(queue: .main) {
                 //print("笔记内容全部存储结束")
