@@ -11,121 +11,70 @@
 		0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951628BF421600A29A98 /* openssl_wrapper.m */; };
 		0A60956928BF421600A29A98 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951928BF421600A29A98 /* APRSASigner.m */; };
 		0A60956A28BF421600A29A98 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951A28BF421600A29A98 /* libssl.a */; };
-		65D0C21D28E1FAD2004C6FCA /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C18C28E1FAD1004C6FCA /* EditProfileTableVC.swift */; };
-		65D0C21E28E1FAD2004C6FCA /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C18D28E1FAD1004C6FCA /* IntroVC.swift */; };
-		65D0C21F28E1FAD2004C6FCA /* EditProfileTableVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C18E28E1FAD1004C6FCA /* EditProfileTableVC-UI.swift */; };
-		65D0C22028E1FAD2004C6FCA /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C18F28E1FAD1004C6FCA /* EditProfileTableVC-PHPickerVCDelegate.swift */; };
-		65D0C22128E1FAD2004C6FCA /* EditProfileTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19028E1FAD1004C6FCA /* EditProfileTableVC-Delegate.swift */; };
-		65D0C22228E1FAD2004C6FCA /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C19128E1FAD1004C6FCA /* LaunchScreen.strings */; };
-		65D0C22328E1FAD2004C6FCA /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C19328E1FAD1004C6FCA /* Main.strings */; };
-		65D0C22428E1FAD2004C6FCA /* NearByVC-GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19628E1FAD1004C6FCA /* NearByVC-GCD.swift */; };
-		65D0C22528E1FAD2004C6FCA /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19728E1FAD1004C6FCA /* DiscoveryVC.swift */; };
-		65D0C22628E1FAD2004C6FCA /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19828E1FAD1004C6FCA /* FollowVC.swift */; };
-		65D0C22728E1FAD2004C6FCA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19928E1FAD1004C6FCA /* HomeVC.swift */; };
-		65D0C22828E1FAD2004C6FCA /* WaterfallVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19B28E1FAD1004C6FCA /* WaterfallVC-Config.swift */; };
-		65D0C22928E1FAD2004C6FCA /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19C28E1FAD1004C6FCA /* WaterfallCell.swift */; };
-		65D0C22A28E1FAD2004C6FCA /* WaterfallCell-Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19D28E1FAD1004C6FCA /* WaterfallCell-Like.swift */; };
-		65D0C22B28E1FAD2004C6FCA /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19E28E1FAD1004C6FCA /* WaterfallVC.swift */; };
-		65D0C22C28E1FAD2004C6FCA /* DraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C19F28E1FAD1004C6FCA /* DraftNoteWaterfallCell.swift */; };
-		65D0C22D28E1FAD2004C6FCA /* WaterfallVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1A028E1FAD1004C6FCA /* WaterfallVC-Delegate.swift */; };
-		65D0C22E28E1FAD2004C6FCA /* WaterfallVC-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1A128E1FAD1004C6FCA /* WaterfallVC-Layout.swift */; };
-		65D0C22F28E1FAD2004C6FCA /* MyDraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1A228E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.swift */; };
-		65D0C23028E1FAD2004C6FCA /* WaterfallVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1A328E1FAD1004C6FCA /* WaterfallVC-LoadData.swift */; };
-		65D0C23128E1FAD2004C6FCA /* WaterfallVC-DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1A428E1FAD1004C6FCA /* WaterfallVC-DataSource.swift */; };
-		65D0C23228E1FAD2004C6FCA /* MyDraftNoteWaterfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1A528E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.xib */; };
-		65D0C23328E1FAD2004C6FCA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1A728E1FAD1004C6FCA /* Localizable.strings */; };
-		65D0C23428E1FAD2004C6FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1A928E1FAD1004C6FCA /* InfoPlist.strings */; };
-		65D0C23528E1FAD2004C6FCA /* imagePH.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1AC28E1FAD1004C6FCA /* imagePH.png */; };
-		65D0C23628E1FAD2004C6FCA /* avatarPH.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1AD28E1FAD1004C6FCA /* avatarPH.jpeg */; };
-		65D0C23728E1FAD2004C6FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1AE28E1FAD1004C6FCA /* Assets.xcassets */; };
-		65D0C23828E1FAD2004C6FCA /* LocalizationTableVCDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1B128E1FAD1004C6FCA /* LocalizationTableVCDemo.swift */; };
-		65D0C23928E1FAD2004C6FCA /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1B428E1FAD1004C6FCA /* PostVC.swift */; };
-		65D0C23A28E1FAD2004C6FCA /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1B728E1FAD1004C6FCA /* TabBarC.swift */; };
-		65D0C23B28E1FAD2004C6FCA /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1B928E1FAD1004C6FCA /* NoteDetailVC.swift */; };
-		65D0C23C28E1FAD2004C6FCA /* NoteDetailVC-EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1BA28E1FAD1004C6FCA /* NoteDetailVC-EditNote.swift */; };
-		65D0C23D28E1FAD2004C6FCA /* NoteDetailVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1BB28E1FAD1004C6FCA /* NoteDetailVC-LoadData.swift */; };
-		65D0C23E28E1FAD2004C6FCA /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1BC28E1FAD1004C6FCA /* CommentSectionFooterView.swift */; };
-		65D0C23F28E1FAD2004C6FCA /* NoteDetailVC-Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1BD28E1FAD1004C6FCA /* NoteDetailVC-Fav.swift */; };
-		65D0C24028E1FAD2004C6FCA /* NoteDetailVC-TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1BE28E1FAD1004C6FCA /* NoteDetailVC-TVDelegate.swift */; };
-		65D0C24128E1FAD2004C6FCA /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1BF28E1FAD1004C6FCA /* CommentView.xib */; };
-		65D0C24228E1FAD2004C6FCA /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C028E1FAD1004C6FCA /* NoteDetailVC-PostReply.swift */; };
-		65D0C24328E1FAD2004C6FCA /* NoteDetailVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C128E1FAD1004C6FCA /* NoteDetailVC-Helper.swift */; };
-		65D0C24428E1FAD2004C6FCA /* NoteDetailVC-Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C228E1FAD1004C6FCA /* NoteDetailVC-Like.swift */; };
-		65D0C24528E1FAD2004C6FCA /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C328E1FAD1004C6FCA /* ReplyCell.swift */; };
-		65D0C24628E1FAD2004C6FCA /* NoteDetailVC-DelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C428E1FAD1004C6FCA /* NoteDetailVC-DelNote.swift */; };
-		65D0C24728E1FAD2004C6FCA /* NoteDetailVC-DelReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C528E1FAD1004C6FCA /* NoteDetailVC-DelReply.swift */; };
-		65D0C24828E1FAD2004C6FCA /* NoteDetailVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C628E1FAD1004C6FCA /* NoteDetailVC-UI.swift */; };
-		65D0C24928E1FAD2004C6FCA /* NoteDetailVC-MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C728E1FAD1004C6FCA /* NoteDetailVC-MeVC.swift */; };
-		65D0C24A28E1FAD2004C6FCA /* NoteDetailVC-ShareOrMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C828E1FAD1004C6FCA /* NoteDetailVC-ShareOrMore.swift */; };
-		65D0C24B28E1FAD2004C6FCA /* NoteDetailVC-PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1C928E1FAD1004C6FCA /* NoteDetailVC-PostComment.swift */; };
-		65D0C24C28E1FAD2004C6FCA /* NoteDetailVC-DelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1CA28E1FAD2004C6FCA /* NoteDetailVC-DelComment.swift */; };
-		65D0C24D28E1FAD2004C6FCA /* NoteDetailVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1CB28E1FAD2004C6FCA /* NoteDetailVC-Config.swift */; };
-		65D0C24E28E1FAD2004C6FCA /* NoteDetailVC-TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1CC28E1FAD2004C6FCA /* NoteDetailVC-TVDataSource.swift */; };
-		65D0C24F28E1FAD2004C6FCA /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1CD28E1FAD2004C6FCA /* CommentView.swift */; };
-		65D0C25028E1FAD2004C6FCA /* ExpandableReplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1CF28E1FAD2004C6FCA /* ExpandableReplies.swift */; };
-		65D0C25128E1FAD2004C6FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1D128E1FAD2004C6FCA /* LaunchScreen.storyboard */; };
-		65D0C25228E1FAD2004C6FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1D328E1FAD2004C6FCA /* Main.storyboard */; };
-		65D0C25328E1FAD2004C6FCA /* Other-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1D628E1FAD2004C6FCA /* Other-Extensions.swift */; };
-		65D0C25428E1FAD2004C6FCA /* LocalLogin-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1D728E1FAD2004C6FCA /* LocalLogin-Extensions.swift */; };
-		65D0C25528E1FAD2004C6FCA /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1D828E1FAD2004C6FCA /* Login-Extensions.swift */; };
-		65D0C25628E1FAD2004C6FCA /* UIView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1D928E1FAD2004C6FCA /* UIView-Extensions.swift */; };
-		65D0C25728E1FAD2004C6FCA /* VC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1DA28E1FAD2004C6FCA /* VC-Extensions.swift */; };
-		65D0C25828E1FAD2004C6FCA /* Basic-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1DB28E1FAD2004C6FCA /* Basic-Extensions.swift */; };
-		65D0C25928E1FAD2004C6FCA /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1DC28E1FAD2004C6FCA /* LC-Extensions.swift */; };
-		65D0C25A28E1FAD2004C6FCA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1DE28E1FAD2004C6FCA /* Constants.swift */; };
-		65D0C25B28E1FAD2004C6FCA /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1DF28E1FAD2004C6FCA /* CustomViews.swift */; };
-		65D0C25C28E1FAD2004C6FCA /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E028E1FAD2004C6FCA /* CustomClasses.swift */; };
-		65D0C25D28E1FAD2004C6FCA /* Global-Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E128E1FAD2004C6FCA /* Global-Functions.swift */; };
-		65D0C25E28E1FAD2004C6FCA /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E228E1FAD2004C6FCA /* Protocols.swift */; };
-		65D0C25F28E1FAD2004C6FCA /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E428E1FAD2004C6FCA /* MeHeaderView.swift */; };
-		65D0C26028E1FAD2004C6FCA /* MeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C1E528E1FAD2004C6FCA /* MeHeaderView.xib */; };
-		65D0C26128E1FAD2004C6FCA /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E628E1FAD2004C6FCA /* LoginAndMeParentVC.swift */; };
-		65D0C26228E1FAD2004C6FCA /* MeVC-SettingOrChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E728E1FAD2004C6FCA /* MeVC-SettingOrChat.swift */; };
-		65D0C26328E1FAD2004C6FCA /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E828E1FAD2004C6FCA /* MeVC.swift */; };
-		65D0C26428E1FAD2004C6FCA /* MeVC-HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1E928E1FAD2004C6FCA /* MeVC-HeaderView.swift */; };
-		65D0C26528E1FAD2004C6FCA /* MeVC-EditIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1EA28E1FAD2004C6FCA /* MeVC-EditIntro.swift */; };
-		65D0C26628E1FAD2004C6FCA /* MeVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1EB28E1FAD2004C6FCA /* MeVC-Delegate.swift */; };
-		65D0C26728E1FAD2004C6FCA /* MeVC-BackOrDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1EC28E1FAD2004C6FCA /* MeVC-BackOrDrawer.swift */; };
-		65D0C26828E1FAD2004C6FCA /* MeVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1ED28E1FAD2004C6FCA /* MeVC-Config.swift */; };
-		65D0C26928E1FAD2004C6FCA /* MeVC-EditOrFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1EE28E1FAD2004C6FCA /* MeVC-EditOrFollow.swift */; };
-		65D0C26A28E1FAD2004C6FCA /* MeVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1EF28E1FAD2004C6FCA /* MeVC-UI.swift */; };
-		65D0C26B28E1FAD2004C6FCA /* AppDelegate-Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F028E1FAD2004C6FCA /* AppDelegate-Push.swift */; };
-		65D0C26C28E1FAD2004C6FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F228E1FAD2004C6FCA /* AppDelegate.swift */; };
-		65D0C26D28E1FAD2004C6FCA /* DarkModeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F428E1FAD2004C6FCA /* DarkModeTableVC.swift */; };
-		65D0C26E28E1FAD2004C6FCA /* NotificationTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F528E1FAD2004C6FCA /* NotificationTableVC.swift */; };
-		65D0C26F28E1FAD2004C6FCA /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F628E1FAD2004C6FCA /* SettingTableVC.swift */; };
-		65D0C27028E1FAD2004C6FCA /* SettingTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F728E1FAD2004C6FCA /* SettingTableVC-Delegate.swift */; };
-		65D0C27128E1FAD2004C6FCA /* AccountTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1F928E1FAD2004C6FCA /* AccountTableVC-Delegate.swift */; };
-		65D0C27228E1FAD2004C6FCA /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1FA28E1FAD2004C6FCA /* AccountTableVC.swift */; };
-		65D0C27328E1FAD2004C6FCA /* PasswordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1FB28E1FAD2004C6FCA /* PasswordTableVC.swift */; };
-		65D0C27428E1FAD2004C6FCA /* SocialLoginVC-Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1FD28E1FAD2004C6FCA /* SocialLoginVC-Apple.swift */; };
-		65D0C27528E1FAD2004C6FCA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1FE28E1FAD2004C6FCA /* LoginVC.swift */; };
-		65D0C27628E1FAD2004C6FCA /* CodeLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C1FF28E1FAD2004C6FCA /* CodeLoginVC.swift */; };
-		65D0C27728E1FAD2004C6FCA /* PasswordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20028E1FAD2004C6FCA /* PasswordLoginVC.swift */; };
-		65D0C27828E1FAD2004C6FCA /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20128E1FAD2004C6FCA /* SocialLoginVC.swift */; };
-		65D0C27928E1FAD2004C6FCA /* SocialLoginVC-Alipay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20228E1FAD2004C6FCA /* SocialLoginVC-Alipay.swift */; };
-		65D0C27B28E1FAD2004C6FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20428E1FAD2004C6FCA /* SceneDelegate.swift */; };
-		65D0C27C28E1FAD2004C6FCA /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20628E1FAD2004C6FCA /* NoteEditVC-DragDrop.swift */; };
-		65D0C27D28E1FAD2004C6FCA /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20728E1FAD2004C6FCA /* POICell.swift */; };
-		65D0C27E28E1FAD2004C6FCA /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20828E1FAD2004C6FCA /* NoteEditVC-DraftNote.swift */; };
-		65D0C27F28E1FAD2004C6FCA /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20928E1FAD2004C6FCA /* ChannelVC.swift */; };
-		65D0C28028E1FAD2004C6FCA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20A28E1FAD2004C6FCA /* PhotoCell.swift */; };
-		65D0C28128E1FAD2004C6FCA /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20B28E1FAD2004C6FCA /* NoteEditVC-Helper.swift */; };
-		65D0C28228E1FAD2004C6FCA /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20C28E1FAD2004C6FCA /* POIVC-Location.swift */; };
-		65D0C28328E1FAD2004C6FCA /* POIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20D28E1FAD2004C6FCA /* POIVC.swift */; };
-		65D0C28428E1FAD2004C6FCA /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20E28E1FAD2004C6FCA /* NoteEditVC-CollectionView.swift */; };
-		65D0C28528E1FAD2004C6FCA /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C20F28E1FAD2004C6FCA /* ChannelTableVC.swift */; };
-		65D0C28628E1FAD2004C6FCA /* NoteEditVC-Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21028E1FAD2004C6FCA /* NoteEditVC-Note.swift */; };
-		65D0C28728E1FAD2004C6FCA /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21128E1FAD2004C6FCA /* POIVC-Config.swift */; };
-		65D0C28828E1FAD2004C6FCA /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21228E1FAD2004C6FCA /* NoteEditVC-Config.swift */; };
-		65D0C28928E1FAD2004C6FCA /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C21328E1FAD2004C6FCA /* TextViewIAView.xib */; };
-		65D0C28A28E1FAD3004C6FCA /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21428E1FAD2004C6FCA /* TextViewIAView.swift */; };
-		65D0C28B28E1FAD3004C6FCA /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21528E1FAD2004C6FCA /* NoteEditVC.swift */; };
-		65D0C28C28E1FAD3004C6FCA /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21628E1FAD2004C6FCA /* NoteEditVC-UI.swift */; };
-		65D0C28D28E1FAD3004C6FCA /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21728E1FAD2004C6FCA /* PhotoFooter.swift */; };
-		65D0C28E28E1FAD3004C6FCA /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21828E1FAD2004C6FCA /* POIVC-KeywordsSearch.swift */; };
-		65D0C28F28E1FAD3004C6FCA /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65D0C21928E1FAD2004C6FCA /* TV.mp4 */; };
-		65D0C29028E1FAD3004C6FCA /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65D0C21A28E1FAD2004C6FCA /* LittlePink.xcdatamodeld */; };
+		0AF466EE28E6CB6400CD4C33 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */; };
+		0AF466EF28E6CB6400CD4C33 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669528E6CB6400CD4C33 /* Main.strings */; };
+		0AF466F028E6CB6400CD4C33 /* NearByVC-GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669828E6CB6400CD4C33 /* NearByVC-GCD.swift */; };
+		0AF466F128E6CB6400CD4C33 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669928E6CB6400CD4C33 /* DiscoveryVC.swift */; };
+		0AF466F228E6CB6400CD4C33 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669A28E6CB6400CD4C33 /* FollowVC.swift */; };
+		0AF466F328E6CB6400CD4C33 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669B28E6CB6400CD4C33 /* HomeVC.swift */; };
+		0AF466F428E6CB6400CD4C33 /* WaterfallVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669D28E6CB6400CD4C33 /* WaterfallVC-Config.swift */; };
+		0AF466F528E6CB6400CD4C33 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669E28E6CB6400CD4C33 /* WaterfallCell.swift */; };
+		0AF466F628E6CB6400CD4C33 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669F28E6CB6400CD4C33 /* WaterfallVC.swift */; };
+		0AF466F728E6CB6500CD4C33 /* DraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466A028E6CB6400CD4C33 /* DraftNoteWaterfallCell.swift */; };
+		0AF466F828E6CB6500CD4C33 /* WaterfallVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466A128E6CB6400CD4C33 /* WaterfallVC-Delegate.swift */; };
+		0AF466F928E6CB6500CD4C33 /* WaterfallVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466A228E6CB6400CD4C33 /* WaterfallVC-LoadData.swift */; };
+		0AF466FA28E6CB6500CD4C33 /* WaterfallVC-DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466A328E6CB6400CD4C33 /* WaterfallVC-DataSource.swift */; };
+		0AF466FB28E6CB6500CD4C33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466A528E6CB6400CD4C33 /* Localizable.strings */; };
+		0AF466FC28E6CB6500CD4C33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466A728E6CB6400CD4C33 /* InfoPlist.strings */; };
+		0AF466FD28E6CB6500CD4C33 /* imagePH.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466AA28E6CB6400CD4C33 /* imagePH.png */; };
+		0AF466FE28E6CB6500CD4C33 /* avatarPH.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466AB28E6CB6400CD4C33 /* avatarPH.jpeg */; };
+		0AF466FF28E6CB6500CD4C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */; };
+		0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */; };
+		0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466B228E6CB6400CD4C33 /* PostVC.swift */; };
+		0AF4670228E6CB6500CD4C33 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466B528E6CB6400CD4C33 /* TabBarC.swift */; };
+		0AF4670328E6CB6500CD4C33 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */; };
+		0AF4670428E6CB6500CD4C33 /* NoteDetailVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */; };
+		0AF4670528E6CB6500CD4C33 /* NoteDetailVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */; };
+		0AF4670628E6CB6500CD4C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */; };
+		0AF4670728E6CB6500CD4C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466BD28E6CB6400CD4C33 /* Main.storyboard */; };
+		0AF4670828E6CB6500CD4C33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C028E6CB6400CD4C33 /* Constants.swift */; };
+		0AF4670928E6CB6500CD4C33 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C128E6CB6400CD4C33 /* CustomViews.swift */; };
+		0AF4670A28E6CB6500CD4C33 /* LocalLogin-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C328E6CB6400CD4C33 /* LocalLogin-Extensions.swift */; };
+		0AF4670B28E6CB6500CD4C33 /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C428E6CB6400CD4C33 /* Login-Extensions.swift */; };
+		0AF4670C28E6CB6500CD4C33 /* System-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C528E6CB6400CD4C33 /* System-Extensions.swift */; };
+		0AF4670D28E6CB6500CD4C33 /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C628E6CB6400CD4C33 /* LC-Extensions.swift */; };
+		0AF4670E28E6CB6500CD4C33 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C728E6CB6400CD4C33 /* Protocols.swift */; };
+		0AF4670F28E6CB6500CD4C33 /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466C928E6CB6400CD4C33 /* LoginAndMeParentVC.swift */; };
+		0AF4671028E6CB6500CD4C33 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466CA28E6CB6400CD4C33 /* MeVC.swift */; };
+		0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466CC28E6CB6400CD4C33 /* AppDelegate.swift */; };
+		0AF4671228E6CB6500CD4C33 /* SocialLoginVC-Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466CE28E6CB6400CD4C33 /* SocialLoginVC-Apple.swift */; };
+		0AF4671328E6CB6500CD4C33 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466CF28E6CB6400CD4C33 /* LoginVC.swift */; };
+		0AF4671428E6CB6500CD4C33 /* CodeLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D028E6CB6400CD4C33 /* CodeLoginVC.swift */; };
+		0AF4671528E6CB6500CD4C33 /* PasswordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D128E6CB6400CD4C33 /* PasswordLoginVC.swift */; };
+		0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D228E6CB6400CD4C33 /* SocialLoginVC.swift */; };
+		0AF4671728E6CB6500CD4C33 /* SocialLoginVC-Alipay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D328E6CB6400CD4C33 /* SocialLoginVC-Alipay.swift */; };
+		0AF4671928E6CB6500CD4C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D528E6CB6400CD4C33 /* SceneDelegate.swift */; };
+		0AF4671A28E6CB6500CD4C33 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D728E6CB6400CD4C33 /* NoteEditVC-DragDrop.swift */; };
+		0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D828E6CB6400CD4C33 /* POICell.swift */; };
+		0AF4671C28E6CB6500CD4C33 /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466D928E6CB6400CD4C33 /* NoteEditVC-DraftNote.swift */; };
+		0AF4671D28E6CB6500CD4C33 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DA28E6CB6400CD4C33 /* ChannelVC.swift */; };
+		0AF4671E28E6CB6500CD4C33 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DB28E6CB6400CD4C33 /* PhotoCell.swift */; };
+		0AF4671F28E6CB6500CD4C33 /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DC28E6CB6400CD4C33 /* NoteEditVC-Helper.swift */; };
+		0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DD28E6CB6400CD4C33 /* POIVC-Location.swift */; };
+		0AF4672128E6CB6500CD4C33 /* POIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DE28E6CB6400CD4C33 /* POIVC.swift */; };
+		0AF4672228E6CB6500CD4C33 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466DF28E6CB6400CD4C33 /* NoteEditVC-CollectionView.swift */; };
+		0AF4672328E6CB6500CD4C33 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E028E6CB6400CD4C33 /* ChannelTableVC.swift */; };
+		0AF4672428E6CB6500CD4C33 /* NoteEditVC-Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E128E6CB6400CD4C33 /* NoteEditVC-Note.swift */; };
+		0AF4672528E6CB6500CD4C33 /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E228E6CB6400CD4C33 /* POIVC-Config.swift */; };
+		0AF4672628E6CB6500CD4C33 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E328E6CB6400CD4C33 /* NoteEditVC-Config.swift */; };
+		0AF4672728E6CB6500CD4C33 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */; };
+		0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E528E6CB6400CD4C33 /* TextViewIAView.swift */; };
+		0AF4672928E6CB6500CD4C33 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E628E6CB6400CD4C33 /* NoteEditVC.swift */; };
+		0AF4672A28E6CB6500CD4C33 /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E728E6CB6400CD4C33 /* NoteEditVC-UI.swift */; };
+		0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E828E6CB6400CD4C33 /* PhotoFooter.swift */; };
+		0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */; };
+		0AF4672D28E6CB6500CD4C33 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466EA28E6CB6400CD4C33 /* TV.mp4 */; };
+		0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */; };
 		D0283336B63934D89D874380 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
@@ -211,136 +160,85 @@
 		0A60956428BF421600A29A98 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
 		0A60956528BF421600A29A98 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
 		0A60956628BF421600A29A98 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
-		0AF97FBD28E42EAA00787AF1 /* LittlePink.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LittlePink.entitlements; sourceTree = "<group>"; };
+		0AF4669428E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		0AF4669628E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0AF4669828E6CB6400CD4C33 /* NearByVC-GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NearByVC-GCD.swift"; sourceTree = "<group>"; };
+		0AF4669928E6CB6400CD4C33 /* DiscoveryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		0AF4669A28E6CB6400CD4C33 /* FollowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		0AF4669B28E6CB6400CD4C33 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0AF4669D28E6CB6400CD4C33 /* WaterfallVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Config.swift"; sourceTree = "<group>"; };
+		0AF4669E28E6CB6400CD4C33 /* WaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		0AF4669F28E6CB6400CD4C33 /* WaterfallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		0AF466A028E6CB6400CD4C33 /* DraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
+		0AF466A128E6CB6400CD4C33 /* WaterfallVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Delegate.swift"; sourceTree = "<group>"; };
+		0AF466A228E6CB6400CD4C33 /* WaterfallVC-LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-LoadData.swift"; sourceTree = "<group>"; };
+		0AF466A328E6CB6400CD4C33 /* WaterfallVC-DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-DataSource.swift"; sourceTree = "<group>"; };
+		0AF466A628E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0AF466A828E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0AF466A928E6CB6400CD4C33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AF466AA28E6CB6400CD4C33 /* imagePH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePH.png; sourceTree = "<group>"; };
+		0AF466AB28E6CB6400CD4C33 /* avatarPH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatarPH.jpeg; sourceTree = "<group>"; };
+		0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AF466AE28E6CB6400CD4C33 /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; };
+		0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTableVCDemo.swift; sourceTree = "<group>"; };
+		0AF466B028E6CB6400CD4C33 /* 值类型+引用类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "值类型+引用类型.playground"; sourceTree = "<group>"; };
+		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; };
+		0AF466B228E6CB6400CD4C33 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		0AF466B328E6CB6400CD4C33 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
+		0AF466B428E6CB6400CD4C33 /* ARC+循环引用.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ARC+循环引用.playground"; sourceTree = "<group>"; };
+		0AF466B528E6CB6400CD4C33 /* TabBarC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-UI.swift"; sourceTree = "<group>"; };
+		0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Config.swift"; sourceTree = "<group>"; };
+		0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
+		0AF466BC28E6CB6400CD4C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AF466BE28E6CB6400CD4C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AF466C028E6CB6400CD4C33 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0AF466C128E6CB6400CD4C33 /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		0AF466C328E6CB6400CD4C33 /* LocalLogin-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extensions.swift"; sourceTree = "<group>"; };
+		0AF466C428E6CB6400CD4C33 /* Login-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
+		0AF466C528E6CB6400CD4C33 /* System-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "System-Extensions.swift"; sourceTree = "<group>"; };
+		0AF466C628E6CB6400CD4C33 /* LC-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
+		0AF466C728E6CB6400CD4C33 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		0AF466C928E6CB6400CD4C33 /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
+		0AF466CA28E6CB6400CD4C33 /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		0AF466CB28E6CB6400CD4C33 /* LittlePink.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LittlePink.entitlements; sourceTree = "<group>"; };
+		0AF466CC28E6CB6400CD4C33 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AF466CE28E6CB6400CD4C33 /* SocialLoginVC-Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Apple.swift"; sourceTree = "<group>"; };
+		0AF466CF28E6CB6400CD4C33 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0AF466D028E6CB6400CD4C33 /* CodeLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeLoginVC.swift; sourceTree = "<group>"; };
+		0AF466D128E6CB6400CD4C33 /* PasswordLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordLoginVC.swift; sourceTree = "<group>"; };
+		0AF466D228E6CB6400CD4C33 /* SocialLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
+		0AF466D328E6CB6400CD4C33 /* SocialLoginVC-Alipay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Alipay.swift"; sourceTree = "<group>"; };
+		0AF466D428E6CB6400CD4C33 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF466D528E6CB6400CD4C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0AF466D728E6CB6400CD4C33 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
+		0AF466D828E6CB6400CD4C33 /* POICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
+		0AF466D928E6CB6400CD4C33 /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
+		0AF466DA28E6CB6400CD4C33 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		0AF466DB28E6CB6400CD4C33 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0AF466DC28E6CB6400CD4C33 /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
+		0AF466DD28E6CB6400CD4C33 /* POIVC-Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
+		0AF466DE28E6CB6400CD4C33 /* POIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIVC.swift; sourceTree = "<group>"; };
+		0AF466DF28E6CB6400CD4C33 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
+		0AF466E028E6CB6400CD4C33 /* ChannelTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
+		0AF466E128E6CB6400CD4C33 /* NoteEditVC-Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Note.swift"; sourceTree = "<group>"; };
+		0AF466E228E6CB6400CD4C33 /* POIVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
+		0AF466E328E6CB6400CD4C33 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
+		0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
+		0AF466E528E6CB6400CD4C33 /* TextViewIAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
+		0AF466E628E6CB6400CD4C33 /* NoteEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		0AF466E728E6CB6400CD4C33 /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
+		0AF466E828E6CB6400CD4C33 /* PhotoFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
+		0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-KeywordsSearch.swift"; sourceTree = "<group>"; };
+		0AF466EA28E6CB6400CD4C33 /* TV.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV.mp4; sourceTree = "<group>"; };
+		0AF466EC28E6CB6400CD4C33 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
+		0AF466ED28E6CB6400CD4C33 /* LittlePink v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LittlePink v2.xcdatamodel"; sourceTree = "<group>"; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		65399075282AB3DE002EB0E8 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D0C18C28E1FAD1004C6FCA /* EditProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
-		65D0C18D28E1FAD1004C6FCA /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
-		65D0C18E28E1FAD1004C6FCA /* EditProfileTableVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-UI.swift"; sourceTree = "<group>"; };
-		65D0C18F28E1FAD1004C6FCA /* EditProfileTableVC-PHPickerVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-PHPickerVCDelegate.swift"; sourceTree = "<group>"; };
-		65D0C19028E1FAD1004C6FCA /* EditProfileTableVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-Delegate.swift"; sourceTree = "<group>"; };
-		65D0C19228E1FAD1004C6FCA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		65D0C19428E1FAD1004C6FCA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		65D0C19628E1FAD1004C6FCA /* NearByVC-GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NearByVC-GCD.swift"; sourceTree = "<group>"; };
-		65D0C19728E1FAD1004C6FCA /* DiscoveryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
-		65D0C19828E1FAD1004C6FCA /* FollowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
-		65D0C19928E1FAD1004C6FCA /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		65D0C19B28E1FAD1004C6FCA /* WaterfallVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Config.swift"; sourceTree = "<group>"; };
-		65D0C19C28E1FAD1004C6FCA /* WaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
-		65D0C19D28E1FAD1004C6FCA /* WaterfallCell-Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallCell-Like.swift"; sourceTree = "<group>"; };
-		65D0C19E28E1FAD1004C6FCA /* WaterfallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
-		65D0C19F28E1FAD1004C6FCA /* DraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
-		65D0C1A028E1FAD1004C6FCA /* WaterfallVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Delegate.swift"; sourceTree = "<group>"; };
-		65D0C1A128E1FAD1004C6FCA /* WaterfallVC-Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Layout.swift"; sourceTree = "<group>"; };
-		65D0C1A228E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
-		65D0C1A328E1FAD1004C6FCA /* WaterfallVC-LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-LoadData.swift"; sourceTree = "<group>"; };
-		65D0C1A428E1FAD1004C6FCA /* WaterfallVC-DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-DataSource.swift"; sourceTree = "<group>"; };
-		65D0C1A528E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDraftNoteWaterfallCell.xib; sourceTree = "<group>"; };
-		65D0C1A828E1FAD1004C6FCA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		65D0C1AA28E1FAD1004C6FCA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		65D0C1AB28E1FAD1004C6FCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		65D0C1AC28E1FAD1004C6FCA /* imagePH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePH.png; sourceTree = "<group>"; };
-		65D0C1AD28E1FAD1004C6FCA /* avatarPH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatarPH.jpeg; sourceTree = "<group>"; };
-		65D0C1AE28E1FAD1004C6FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65D0C1B028E1FAD1004C6FCA /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; };
-		65D0C1B128E1FAD1004C6FCA /* LocalizationTableVCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTableVCDemo.swift; sourceTree = "<group>"; };
-		65D0C1B228E1FAD1004C6FCA /* 值类型+引用类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "值类型+引用类型.playground"; sourceTree = "<group>"; };
-		65D0C1B328E1FAD1004C6FCA /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; };
-		65D0C1B428E1FAD1004C6FCA /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
-		65D0C1B528E1FAD1004C6FCA /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
-		65D0C1B628E1FAD1004C6FCA /* ARC+循环引用.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ARC+循环引用.playground"; sourceTree = "<group>"; };
-		65D0C1B728E1FAD1004C6FCA /* TabBarC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
-		65D0C1B928E1FAD1004C6FCA /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
-		65D0C1BA28E1FAD1004C6FCA /* NoteDetailVC-EditNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-EditNote.swift"; sourceTree = "<group>"; };
-		65D0C1BB28E1FAD1004C6FCA /* NoteDetailVC-LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-LoadData.swift"; sourceTree = "<group>"; };
-		65D0C1BC28E1FAD1004C6FCA /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
-		65D0C1BD28E1FAD1004C6FCA /* NoteDetailVC-Fav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Fav.swift"; sourceTree = "<group>"; };
-		65D0C1BE28E1FAD1004C6FCA /* NoteDetailVC-TVDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDelegate.swift"; sourceTree = "<group>"; };
-		65D0C1BF28E1FAD1004C6FCA /* CommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
-		65D0C1C028E1FAD1004C6FCA /* NoteDetailVC-PostReply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostReply.swift"; sourceTree = "<group>"; };
-		65D0C1C128E1FAD1004C6FCA /* NoteDetailVC-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Helper.swift"; sourceTree = "<group>"; };
-		65D0C1C228E1FAD1004C6FCA /* NoteDetailVC-Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Like.swift"; sourceTree = "<group>"; };
-		65D0C1C328E1FAD1004C6FCA /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
-		65D0C1C428E1FAD1004C6FCA /* NoteDetailVC-DelNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelNote.swift"; sourceTree = "<group>"; };
-		65D0C1C528E1FAD1004C6FCA /* NoteDetailVC-DelReply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelReply.swift"; sourceTree = "<group>"; };
-		65D0C1C628E1FAD1004C6FCA /* NoteDetailVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-UI.swift"; sourceTree = "<group>"; };
-		65D0C1C728E1FAD1004C6FCA /* NoteDetailVC-MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-MeVC.swift"; sourceTree = "<group>"; };
-		65D0C1C828E1FAD1004C6FCA /* NoteDetailVC-ShareOrMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-ShareOrMore.swift"; sourceTree = "<group>"; };
-		65D0C1C928E1FAD1004C6FCA /* NoteDetailVC-PostComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostComment.swift"; sourceTree = "<group>"; };
-		65D0C1CA28E1FAD2004C6FCA /* NoteDetailVC-DelComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelComment.swift"; sourceTree = "<group>"; };
-		65D0C1CB28E1FAD2004C6FCA /* NoteDetailVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Config.swift"; sourceTree = "<group>"; };
-		65D0C1CC28E1FAD2004C6FCA /* NoteDetailVC-TVDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDataSource.swift"; sourceTree = "<group>"; };
-		65D0C1CD28E1FAD2004C6FCA /* CommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
-		65D0C1CF28E1FAD2004C6FCA /* ExpandableReplies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableReplies.swift; sourceTree = "<group>"; };
-		65D0C1D028E1FAD2004C6FCA /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
-		65D0C1D228E1FAD2004C6FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65D0C1D428E1FAD2004C6FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65D0C1D628E1FAD2004C6FCA /* Other-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Other-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1D728E1FAD2004C6FCA /* LocalLogin-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1D828E1FAD2004C6FCA /* Login-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1D928E1FAD2004C6FCA /* UIView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1DA28E1FAD2004C6FCA /* VC-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1DB28E1FAD2004C6FCA /* Basic-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Basic-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1DC28E1FAD2004C6FCA /* LC-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
-		65D0C1DE28E1FAD2004C6FCA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		65D0C1DF28E1FAD2004C6FCA /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
-		65D0C1E028E1FAD2004C6FCA /* CustomClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
-		65D0C1E128E1FAD2004C6FCA /* Global-Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global-Functions.swift"; sourceTree = "<group>"; };
-		65D0C1E228E1FAD2004C6FCA /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		65D0C1E428E1FAD2004C6FCA /* MeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeHeaderView.swift; sourceTree = "<group>"; };
-		65D0C1E528E1FAD2004C6FCA /* MeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeaderView.xib; sourceTree = "<group>"; };
-		65D0C1E628E1FAD2004C6FCA /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
-		65D0C1E728E1FAD2004C6FCA /* MeVC-SettingOrChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-SettingOrChat.swift"; sourceTree = "<group>"; };
-		65D0C1E828E1FAD2004C6FCA /* MeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
-		65D0C1E928E1FAD2004C6FCA /* MeVC-HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-HeaderView.swift"; sourceTree = "<group>"; };
-		65D0C1EA28E1FAD2004C6FCA /* MeVC-EditIntro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-EditIntro.swift"; sourceTree = "<group>"; };
-		65D0C1EB28E1FAD2004C6FCA /* MeVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-Delegate.swift"; sourceTree = "<group>"; };
-		65D0C1EC28E1FAD2004C6FCA /* MeVC-BackOrDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-BackOrDrawer.swift"; sourceTree = "<group>"; };
-		65D0C1ED28E1FAD2004C6FCA /* MeVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-Config.swift"; sourceTree = "<group>"; };
-		65D0C1EE28E1FAD2004C6FCA /* MeVC-EditOrFollow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-EditOrFollow.swift"; sourceTree = "<group>"; };
-		65D0C1EF28E1FAD2004C6FCA /* MeVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeVC-UI.swift"; sourceTree = "<group>"; };
-		65D0C1F028E1FAD2004C6FCA /* AppDelegate-Push.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate-Push.swift"; sourceTree = "<group>"; };
-		65D0C1F228E1FAD2004C6FCA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65D0C1F428E1FAD2004C6FCA /* DarkModeTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkModeTableVC.swift; sourceTree = "<group>"; };
-		65D0C1F528E1FAD2004C6FCA /* NotificationTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableVC.swift; sourceTree = "<group>"; };
-		65D0C1F628E1FAD2004C6FCA /* SettingTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
-		65D0C1F728E1FAD2004C6FCA /* SettingTableVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingTableVC-Delegate.swift"; sourceTree = "<group>"; };
-		65D0C1F928E1FAD2004C6FCA /* AccountTableVC-Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AccountTableVC-Delegate.swift"; sourceTree = "<group>"; };
-		65D0C1FA28E1FAD2004C6FCA /* AccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
-		65D0C1FB28E1FAD2004C6FCA /* PasswordTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTableVC.swift; sourceTree = "<group>"; };
-		65D0C1FD28E1FAD2004C6FCA /* SocialLoginVC-Apple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Apple.swift"; sourceTree = "<group>"; };
-		65D0C1FE28E1FAD2004C6FCA /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		65D0C1FF28E1FAD2004C6FCA /* CodeLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeLoginVC.swift; sourceTree = "<group>"; };
-		65D0C20028E1FAD2004C6FCA /* PasswordLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordLoginVC.swift; sourceTree = "<group>"; };
-		65D0C20128E1FAD2004C6FCA /* SocialLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
-		65D0C20228E1FAD2004C6FCA /* SocialLoginVC-Alipay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Alipay.swift"; sourceTree = "<group>"; };
-		65D0C20328E1FAD2004C6FCA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65D0C20428E1FAD2004C6FCA /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65D0C20628E1FAD2004C6FCA /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
-		65D0C20728E1FAD2004C6FCA /* POICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
-		65D0C20828E1FAD2004C6FCA /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
-		65D0C20928E1FAD2004C6FCA /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
-		65D0C20A28E1FAD2004C6FCA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		65D0C20B28E1FAD2004C6FCA /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
-		65D0C20C28E1FAD2004C6FCA /* POIVC-Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
-		65D0C20D28E1FAD2004C6FCA /* POIVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POIVC.swift; sourceTree = "<group>"; };
-		65D0C20E28E1FAD2004C6FCA /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
-		65D0C20F28E1FAD2004C6FCA /* ChannelTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
-		65D0C21028E1FAD2004C6FCA /* NoteEditVC-Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Note.swift"; sourceTree = "<group>"; wrapsLines = 0; };
-		65D0C21128E1FAD2004C6FCA /* POIVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
-		65D0C21228E1FAD2004C6FCA /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
-		65D0C21328E1FAD2004C6FCA /* TextViewIAView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
-		65D0C21428E1FAD2004C6FCA /* TextViewIAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
-		65D0C21528E1FAD2004C6FCA /* NoteEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
-		65D0C21628E1FAD2004C6FCA /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
-		65D0C21728E1FAD2004C6FCA /* PhotoFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
-		65D0C21828E1FAD2004C6FCA /* POIVC-KeywordsSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "POIVC-KeywordsSearch.swift"; sourceTree = "<group>"; };
-		65D0C21928E1FAD2004C6FCA /* TV.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV.mp4; sourceTree = "<group>"; };
-		65D0C21B28E1FAD2004C6FCA /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
-		65D0C21C28E1FAD2004C6FCA /* LittlePink v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LittlePink v2.xcdatamodel"; sourceTree = "<group>"; };
 		F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -462,6 +360,165 @@
 			path = openssl;
 			sourceTree = "<group>";
 		};
+		0AF4669228E6CB6300CD4C33 /* LittlePink */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */,
+				0AF4669528E6CB6400CD4C33 /* Main.strings */,
+				0AF4669728E6CB6400CD4C33 /* Home */,
+				0AF4669C28E6CB6400CD4C33 /* Waterfall */,
+				0AF466A428E6CB6400CD4C33 /* Resources */,
+				0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */,
+				0AF466AD28E6CB6400CD4C33 /* Demos+PH */,
+				0AF466B528E6CB6400CD4C33 /* TabBarC.swift */,
+				0AF466B628E6CB6400CD4C33 /* NoteDetail */,
+				0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */,
+				0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */,
+				0AF466BD28E6CB6400CD4C33 /* Main.storyboard */,
+				0AF466BF28E6CB6400CD4C33 /* Common */,
+				0AF466C828E6CB6400CD4C33 /* Me */,
+				0AF466CB28E6CB6400CD4C33 /* LittlePink.entitlements */,
+				0AF466CC28E6CB6400CD4C33 /* AppDelegate.swift */,
+				0AF466CD28E6CB6400CD4C33 /* Login */,
+				0AF466D428E6CB6400CD4C33 /* Info.plist */,
+				0AF466D528E6CB6400CD4C33 /* SceneDelegate.swift */,
+				0AF466D628E6CB6400CD4C33 /* NoteEdit */,
+				0AF466EA28E6CB6400CD4C33 /* TV.mp4 */,
+				0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */,
+			);
+			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		0AF4669728E6CB6400CD4C33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4669828E6CB6400CD4C33 /* NearByVC-GCD.swift */,
+				0AF4669928E6CB6400CD4C33 /* DiscoveryVC.swift */,
+				0AF4669A28E6CB6400CD4C33 /* FollowVC.swift */,
+				0AF4669B28E6CB6400CD4C33 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0AF4669C28E6CB6400CD4C33 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4669D28E6CB6400CD4C33 /* WaterfallVC-Config.swift */,
+				0AF4669E28E6CB6400CD4C33 /* WaterfallCell.swift */,
+				0AF4669F28E6CB6400CD4C33 /* WaterfallVC.swift */,
+				0AF466A028E6CB6400CD4C33 /* DraftNoteWaterfallCell.swift */,
+				0AF466A128E6CB6400CD4C33 /* WaterfallVC-Delegate.swift */,
+				0AF466A228E6CB6400CD4C33 /* WaterfallVC-LoadData.swift */,
+				0AF466A328E6CB6400CD4C33 /* WaterfallVC-DataSource.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		0AF466A428E6CB6400CD4C33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466A528E6CB6400CD4C33 /* Localizable.strings */,
+				0AF466A728E6CB6400CD4C33 /* InfoPlist.strings */,
+				0AF466AA28E6CB6400CD4C33 /* imagePH.png */,
+				0AF466AB28E6CB6400CD4C33 /* avatarPH.jpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AF466AD28E6CB6400CD4C33 /* Demos+PH */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466AE28E6CB6400CD4C33 /* 枚举.playground */,
+				0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */,
+				0AF466B028E6CB6400CD4C33 /* 值类型+引用类型.playground */,
+				0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */,
+				0AF466B228E6CB6400CD4C33 /* PostVC.swift */,
+				0AF466B328E6CB6400CD4C33 /* 闭包.playground */,
+				0AF466B428E6CB6400CD4C33 /* ARC+循环引用.playground */,
+			);
+			path = "Demos+PH";
+			sourceTree = "<group>";
+		};
+		0AF466B628E6CB6400CD4C33 /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
+				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
+				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
+			);
+			path = NoteDetail;
+			sourceTree = "<group>";
+		};
+		0AF466BF28E6CB6400CD4C33 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466C028E6CB6400CD4C33 /* Constants.swift */,
+				0AF466C128E6CB6400CD4C33 /* CustomViews.swift */,
+				0AF466C228E6CB6400CD4C33 /* Extensions */,
+				0AF466C728E6CB6400CD4C33 /* Protocols.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0AF466C228E6CB6400CD4C33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466C328E6CB6400CD4C33 /* LocalLogin-Extensions.swift */,
+				0AF466C428E6CB6400CD4C33 /* Login-Extensions.swift */,
+				0AF466C528E6CB6400CD4C33 /* System-Extensions.swift */,
+				0AF466C628E6CB6400CD4C33 /* LC-Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0AF466C828E6CB6400CD4C33 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466C928E6CB6400CD4C33 /* LoginAndMeParentVC.swift */,
+				0AF466CA28E6CB6400CD4C33 /* MeVC.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		0AF466CD28E6CB6400CD4C33 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466CE28E6CB6400CD4C33 /* SocialLoginVC-Apple.swift */,
+				0AF466CF28E6CB6400CD4C33 /* LoginVC.swift */,
+				0AF466D028E6CB6400CD4C33 /* CodeLoginVC.swift */,
+				0AF466D128E6CB6400CD4C33 /* PasswordLoginVC.swift */,
+				0AF466D228E6CB6400CD4C33 /* SocialLoginVC.swift */,
+				0AF466D328E6CB6400CD4C33 /* SocialLoginVC-Alipay.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0AF466D628E6CB6400CD4C33 /* NoteEdit */ = {
+			isa = PBXGroup;
+			children = (
+				0AF466D728E6CB6400CD4C33 /* NoteEditVC-DragDrop.swift */,
+				0AF466D828E6CB6400CD4C33 /* POICell.swift */,
+				0AF466D928E6CB6400CD4C33 /* NoteEditVC-DraftNote.swift */,
+				0AF466DA28E6CB6400CD4C33 /* ChannelVC.swift */,
+				0AF466DB28E6CB6400CD4C33 /* PhotoCell.swift */,
+				0AF466DC28E6CB6400CD4C33 /* NoteEditVC-Helper.swift */,
+				0AF466DD28E6CB6400CD4C33 /* POIVC-Location.swift */,
+				0AF466DE28E6CB6400CD4C33 /* POIVC.swift */,
+				0AF466DF28E6CB6400CD4C33 /* NoteEditVC-CollectionView.swift */,
+				0AF466E028E6CB6400CD4C33 /* ChannelTableVC.swift */,
+				0AF466E128E6CB6400CD4C33 /* NoteEditVC-Note.swift */,
+				0AF466E228E6CB6400CD4C33 /* POIVC-Config.swift */,
+				0AF466E328E6CB6400CD4C33 /* NoteEditVC-Config.swift */,
+				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
+				0AF466E528E6CB6400CD4C33 /* TextViewIAView.swift */,
+				0AF466E628E6CB6400CD4C33 /* NoteEditVC.swift */,
+				0AF466E728E6CB6400CD4C33 /* NoteEditVC-UI.swift */,
+				0AF466E828E6CB6400CD4C33 /* PhotoFooter.swift */,
+				0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */,
+			);
+			path = NoteEdit;
+			sourceTree = "<group>";
+		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,7 +530,7 @@
 		6539906C282AB3DE002EB0E8 = {
 			isa = PBXGroup;
 			children = (
-				65D0C18A28E1FAD1004C6FCA /* LittlePink */,
+				0AF4669228E6CB6300CD4C33 /* LittlePink */,
 				0A60951328BF421600A29A98 /* AliPay */,
 				65399076282AB3DE002EB0E8 /* Products */,
 				D5F2379E957D28CA1D708B43 /* Pods */,
@@ -487,248 +544,6 @@
 				65399075282AB3DE002EB0E8 /* LittlePink.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		65D0C18A28E1FAD1004C6FCA /* LittlePink */ = {
-			isa = PBXGroup;
-			children = (
-				0AF97FBD28E42EAA00787AF1 /* LittlePink.entitlements */,
-				65D0C18B28E1FAD1004C6FCA /* EditProfile */,
-				65D0C19128E1FAD1004C6FCA /* LaunchScreen.strings */,
-				65D0C19328E1FAD1004C6FCA /* Main.strings */,
-				65D0C19528E1FAD1004C6FCA /* Home */,
-				65D0C19A28E1FAD1004C6FCA /* Waterfall */,
-				65D0C1A628E1FAD1004C6FCA /* Resources */,
-				65D0C1AE28E1FAD1004C6FCA /* Assets.xcassets */,
-				65D0C1AF28E1FAD1004C6FCA /* Demos+PH */,
-				65D0C1B728E1FAD1004C6FCA /* TabBarC.swift */,
-				65D0C1B828E1FAD1004C6FCA /* NoteDetail */,
-				65D0C1CE28E1FAD2004C6FCA /* Models */,
-				65D0C1D028E1FAD2004C6FCA /* LittlePink-Bridging-Header.h */,
-				65D0C1D128E1FAD2004C6FCA /* LaunchScreen.storyboard */,
-				65D0C1D328E1FAD2004C6FCA /* Main.storyboard */,
-				65D0C1D528E1FAD2004C6FCA /* Extensions */,
-				65D0C1DD28E1FAD2004C6FCA /* Common */,
-				65D0C1E328E1FAD2004C6FCA /* Me */,
-				65D0C1F028E1FAD2004C6FCA /* AppDelegate-Push.swift */,
-				65D0C1F228E1FAD2004C6FCA /* AppDelegate.swift */,
-				65D0C1F328E1FAD2004C6FCA /* Setting */,
-				65D0C1FC28E1FAD2004C6FCA /* Login */,
-				65D0C20328E1FAD2004C6FCA /* Info.plist */,
-				65D0C20428E1FAD2004C6FCA /* SceneDelegate.swift */,
-				65D0C20528E1FAD2004C6FCA /* NoteEdit */,
-				65D0C21928E1FAD2004C6FCA /* TV.mp4 */,
-				65D0C21A28E1FAD2004C6FCA /* LittlePink.xcdatamodeld */,
-			);
-			path = LittlePink;
-			sourceTree = "<group>";
-		};
-		65D0C18B28E1FAD1004C6FCA /* EditProfile */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C18C28E1FAD1004C6FCA /* EditProfileTableVC.swift */,
-				65D0C18D28E1FAD1004C6FCA /* IntroVC.swift */,
-				65D0C18E28E1FAD1004C6FCA /* EditProfileTableVC-UI.swift */,
-				65D0C18F28E1FAD1004C6FCA /* EditProfileTableVC-PHPickerVCDelegate.swift */,
-				65D0C19028E1FAD1004C6FCA /* EditProfileTableVC-Delegate.swift */,
-			);
-			path = EditProfile;
-			sourceTree = "<group>";
-		};
-		65D0C19528E1FAD1004C6FCA /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C19628E1FAD1004C6FCA /* NearByVC-GCD.swift */,
-				65D0C19728E1FAD1004C6FCA /* DiscoveryVC.swift */,
-				65D0C19828E1FAD1004C6FCA /* FollowVC.swift */,
-				65D0C19928E1FAD1004C6FCA /* HomeVC.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		65D0C19A28E1FAD1004C6FCA /* Waterfall */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C19B28E1FAD1004C6FCA /* WaterfallVC-Config.swift */,
-				65D0C19C28E1FAD1004C6FCA /* WaterfallCell.swift */,
-				65D0C19D28E1FAD1004C6FCA /* WaterfallCell-Like.swift */,
-				65D0C19E28E1FAD1004C6FCA /* WaterfallVC.swift */,
-				65D0C19F28E1FAD1004C6FCA /* DraftNoteWaterfallCell.swift */,
-				65D0C1A028E1FAD1004C6FCA /* WaterfallVC-Delegate.swift */,
-				65D0C1A128E1FAD1004C6FCA /* WaterfallVC-Layout.swift */,
-				65D0C1A228E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.swift */,
-				65D0C1A328E1FAD1004C6FCA /* WaterfallVC-LoadData.swift */,
-				65D0C1A428E1FAD1004C6FCA /* WaterfallVC-DataSource.swift */,
-				65D0C1A528E1FAD1004C6FCA /* MyDraftNoteWaterfallCell.xib */,
-			);
-			path = Waterfall;
-			sourceTree = "<group>";
-		};
-		65D0C1A628E1FAD1004C6FCA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1A728E1FAD1004C6FCA /* Localizable.strings */,
-				65D0C1A928E1FAD1004C6FCA /* InfoPlist.strings */,
-				65D0C1AC28E1FAD1004C6FCA /* imagePH.png */,
-				65D0C1AD28E1FAD1004C6FCA /* avatarPH.jpeg */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		65D0C1AF28E1FAD1004C6FCA /* Demos+PH */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1B028E1FAD1004C6FCA /* 枚举.playground */,
-				65D0C1B128E1FAD1004C6FCA /* LocalizationTableVCDemo.swift */,
-				65D0C1B228E1FAD1004C6FCA /* 值类型+引用类型.playground */,
-				65D0C1B328E1FAD1004C6FCA /* 用代码实现collectionview.playground */,
-				65D0C1B428E1FAD1004C6FCA /* PostVC.swift */,
-				65D0C1B528E1FAD1004C6FCA /* 闭包.playground */,
-				65D0C1B628E1FAD1004C6FCA /* ARC+循环引用.playground */,
-			);
-			path = "Demos+PH";
-			sourceTree = "<group>";
-		};
-		65D0C1B828E1FAD1004C6FCA /* NoteDetail */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1B928E1FAD1004C6FCA /* NoteDetailVC.swift */,
-				65D0C1BA28E1FAD1004C6FCA /* NoteDetailVC-EditNote.swift */,
-				65D0C1BB28E1FAD1004C6FCA /* NoteDetailVC-LoadData.swift */,
-				65D0C1BC28E1FAD1004C6FCA /* CommentSectionFooterView.swift */,
-				65D0C1BD28E1FAD1004C6FCA /* NoteDetailVC-Fav.swift */,
-				65D0C1BE28E1FAD1004C6FCA /* NoteDetailVC-TVDelegate.swift */,
-				65D0C1BF28E1FAD1004C6FCA /* CommentView.xib */,
-				65D0C1C028E1FAD1004C6FCA /* NoteDetailVC-PostReply.swift */,
-				65D0C1C128E1FAD1004C6FCA /* NoteDetailVC-Helper.swift */,
-				65D0C1C228E1FAD1004C6FCA /* NoteDetailVC-Like.swift */,
-				65D0C1C328E1FAD1004C6FCA /* ReplyCell.swift */,
-				65D0C1C428E1FAD1004C6FCA /* NoteDetailVC-DelNote.swift */,
-				65D0C1C528E1FAD1004C6FCA /* NoteDetailVC-DelReply.swift */,
-				65D0C1C628E1FAD1004C6FCA /* NoteDetailVC-UI.swift */,
-				65D0C1C728E1FAD1004C6FCA /* NoteDetailVC-MeVC.swift */,
-				65D0C1C828E1FAD1004C6FCA /* NoteDetailVC-ShareOrMore.swift */,
-				65D0C1C928E1FAD1004C6FCA /* NoteDetailVC-PostComment.swift */,
-				65D0C1CA28E1FAD2004C6FCA /* NoteDetailVC-DelComment.swift */,
-				65D0C1CB28E1FAD2004C6FCA /* NoteDetailVC-Config.swift */,
-				65D0C1CC28E1FAD2004C6FCA /* NoteDetailVC-TVDataSource.swift */,
-				65D0C1CD28E1FAD2004C6FCA /* CommentView.swift */,
-			);
-			path = NoteDetail;
-			sourceTree = "<group>";
-		};
-		65D0C1CE28E1FAD2004C6FCA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1CF28E1FAD2004C6FCA /* ExpandableReplies.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		65D0C1D528E1FAD2004C6FCA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1D628E1FAD2004C6FCA /* Other-Extensions.swift */,
-				65D0C1D728E1FAD2004C6FCA /* LocalLogin-Extensions.swift */,
-				65D0C1D828E1FAD2004C6FCA /* Login-Extensions.swift */,
-				65D0C1D928E1FAD2004C6FCA /* UIView-Extensions.swift */,
-				65D0C1DA28E1FAD2004C6FCA /* VC-Extensions.swift */,
-				65D0C1DB28E1FAD2004C6FCA /* Basic-Extensions.swift */,
-				65D0C1DC28E1FAD2004C6FCA /* LC-Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		65D0C1DD28E1FAD2004C6FCA /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1DE28E1FAD2004C6FCA /* Constants.swift */,
-				65D0C1DF28E1FAD2004C6FCA /* CustomViews.swift */,
-				65D0C1E028E1FAD2004C6FCA /* CustomClasses.swift */,
-				65D0C1E128E1FAD2004C6FCA /* Global-Functions.swift */,
-				65D0C1E228E1FAD2004C6FCA /* Protocols.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		65D0C1E328E1FAD2004C6FCA /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1E428E1FAD2004C6FCA /* MeHeaderView.swift */,
-				65D0C1E528E1FAD2004C6FCA /* MeHeaderView.xib */,
-				65D0C1E628E1FAD2004C6FCA /* LoginAndMeParentVC.swift */,
-				65D0C1E728E1FAD2004C6FCA /* MeVC-SettingOrChat.swift */,
-				65D0C1E828E1FAD2004C6FCA /* MeVC.swift */,
-				65D0C1E928E1FAD2004C6FCA /* MeVC-HeaderView.swift */,
-				65D0C1EA28E1FAD2004C6FCA /* MeVC-EditIntro.swift */,
-				65D0C1EB28E1FAD2004C6FCA /* MeVC-Delegate.swift */,
-				65D0C1EC28E1FAD2004C6FCA /* MeVC-BackOrDrawer.swift */,
-				65D0C1ED28E1FAD2004C6FCA /* MeVC-Config.swift */,
-				65D0C1EE28E1FAD2004C6FCA /* MeVC-EditOrFollow.swift */,
-				65D0C1EF28E1FAD2004C6FCA /* MeVC-UI.swift */,
-			);
-			path = Me;
-			sourceTree = "<group>";
-		};
-		65D0C1F328E1FAD2004C6FCA /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1F428E1FAD2004C6FCA /* DarkModeTableVC.swift */,
-				65D0C1F528E1FAD2004C6FCA /* NotificationTableVC.swift */,
-				65D0C1F628E1FAD2004C6FCA /* SettingTableVC.swift */,
-				65D0C1F728E1FAD2004C6FCA /* SettingTableVC-Delegate.swift */,
-				65D0C1F828E1FAD2004C6FCA /* Account */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		65D0C1F828E1FAD2004C6FCA /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1F928E1FAD2004C6FCA /* AccountTableVC-Delegate.swift */,
-				65D0C1FA28E1FAD2004C6FCA /* AccountTableVC.swift */,
-				65D0C1FB28E1FAD2004C6FCA /* PasswordTableVC.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		65D0C1FC28E1FAD2004C6FCA /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C1FD28E1FAD2004C6FCA /* SocialLoginVC-Apple.swift */,
-				65D0C1FE28E1FAD2004C6FCA /* LoginVC.swift */,
-				65D0C1FF28E1FAD2004C6FCA /* CodeLoginVC.swift */,
-				65D0C20028E1FAD2004C6FCA /* PasswordLoginVC.swift */,
-				65D0C20128E1FAD2004C6FCA /* SocialLoginVC.swift */,
-				65D0C20228E1FAD2004C6FCA /* SocialLoginVC-Alipay.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		65D0C20528E1FAD2004C6FCA /* NoteEdit */ = {
-			isa = PBXGroup;
-			children = (
-				65D0C20628E1FAD2004C6FCA /* NoteEditVC-DragDrop.swift */,
-				65D0C20728E1FAD2004C6FCA /* POICell.swift */,
-				65D0C20828E1FAD2004C6FCA /* NoteEditVC-DraftNote.swift */,
-				65D0C20928E1FAD2004C6FCA /* ChannelVC.swift */,
-				65D0C20A28E1FAD2004C6FCA /* PhotoCell.swift */,
-				65D0C20B28E1FAD2004C6FCA /* NoteEditVC-Helper.swift */,
-				65D0C20C28E1FAD2004C6FCA /* POIVC-Location.swift */,
-				65D0C20D28E1FAD2004C6FCA /* POIVC.swift */,
-				65D0C20E28E1FAD2004C6FCA /* NoteEditVC-CollectionView.swift */,
-				65D0C20F28E1FAD2004C6FCA /* ChannelTableVC.swift */,
-				65D0C21028E1FAD2004C6FCA /* NoteEditVC-Note.swift */,
-				65D0C21128E1FAD2004C6FCA /* POIVC-Config.swift */,
-				65D0C21228E1FAD2004C6FCA /* NoteEditVC-Config.swift */,
-				65D0C21328E1FAD2004C6FCA /* TextViewIAView.xib */,
-				65D0C21428E1FAD2004C6FCA /* TextViewIAView.swift */,
-				65D0C21528E1FAD2004C6FCA /* NoteEditVC.swift */,
-				65D0C21628E1FAD2004C6FCA /* NoteEditVC-UI.swift */,
-				65D0C21728E1FAD2004C6FCA /* PhotoFooter.swift */,
-				65D0C21828E1FAD2004C6FCA /* POIVC-KeywordsSearch.swift */,
-			);
-			path = NoteEdit;
 			sourceTree = "<group>";
 		};
 		D5F2379E957D28CA1D708B43 /* Pods */ = {
@@ -805,20 +620,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D0C23628E1FAD2004C6FCA /* avatarPH.jpeg in Resources */,
-				65D0C23228E1FAD2004C6FCA /* MyDraftNoteWaterfallCell.xib in Resources */,
-				65D0C23328E1FAD2004C6FCA /* Localizable.strings in Resources */,
-				65D0C26028E1FAD2004C6FCA /* MeHeaderView.xib in Resources */,
-				65D0C25128E1FAD2004C6FCA /* LaunchScreen.storyboard in Resources */,
-				65D0C22228E1FAD2004C6FCA /* LaunchScreen.strings in Resources */,
-				65D0C28928E1FAD2004C6FCA /* TextViewIAView.xib in Resources */,
-				65D0C25228E1FAD2004C6FCA /* Main.storyboard in Resources */,
-				65D0C22328E1FAD2004C6FCA /* Main.strings in Resources */,
-				65D0C23428E1FAD2004C6FCA /* InfoPlist.strings in Resources */,
-				65D0C28F28E1FAD3004C6FCA /* TV.mp4 in Resources */,
-				65D0C23728E1FAD2004C6FCA /* Assets.xcassets in Resources */,
-				65D0C24128E1FAD2004C6FCA /* CommentView.xib in Resources */,
-				65D0C23528E1FAD2004C6FCA /* imagePH.png in Resources */,
+				0AF466FE28E6CB6500CD4C33 /* avatarPH.jpeg in Resources */,
+				0AF4670628E6CB6500CD4C33 /* LaunchScreen.storyboard in Resources */,
+				0AF4672728E6CB6500CD4C33 /* TextViewIAView.xib in Resources */,
+				0AF466EE28E6CB6400CD4C33 /* LaunchScreen.strings in Resources */,
+				0AF466FC28E6CB6500CD4C33 /* InfoPlist.strings in Resources */,
+				0AF466FD28E6CB6500CD4C33 /* imagePH.png in Resources */,
+				0AF466FF28E6CB6500CD4C33 /* Assets.xcassets in Resources */,
+				0AF4672D28E6CB6500CD4C33 /* TV.mp4 in Resources */,
+				0AF4670728E6CB6500CD4C33 /* Main.storyboard in Resources */,
+				0AF466FB28E6CB6500CD4C33 /* Localizable.strings in Resources */,
+				0AF466EF28E6CB6400CD4C33 /* Main.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,160 +700,112 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D0C24028E1FAD2004C6FCA /* NoteDetailVC-TVDelegate.swift in Sources */,
-				65D0C26628E1FAD2004C6FCA /* MeVC-Delegate.swift in Sources */,
-				65D0C26A28E1FAD2004C6FCA /* MeVC-UI.swift in Sources */,
-				65D0C25628E1FAD2004C6FCA /* UIView-Extensions.swift in Sources */,
-				65D0C22C28E1FAD2004C6FCA /* DraftNoteWaterfallCell.swift in Sources */,
-				65D0C23C28E1FAD2004C6FCA /* NoteDetailVC-EditNote.swift in Sources */,
-				65D0C24328E1FAD2004C6FCA /* NoteDetailVC-Helper.swift in Sources */,
+				0AF4671328E6CB6500CD4C33 /* LoginVC.swift in Sources */,
+				0AF4672528E6CB6500CD4C33 /* POIVC-Config.swift in Sources */,
+				0AF4670528E6CB6500CD4C33 /* NoteDetailVC-Config.swift in Sources */,
+				0AF4671A28E6CB6500CD4C33 /* NoteEditVC-DragDrop.swift in Sources */,
+				0AF4670F28E6CB6500CD4C33 /* LoginAndMeParentVC.swift in Sources */,
+				0AF4671F28E6CB6500CD4C33 /* NoteEditVC-Helper.swift in Sources */,
+				0AF4672328E6CB6500CD4C33 /* ChannelTableVC.swift in Sources */,
+				0AF4671D28E6CB6500CD4C33 /* ChannelVC.swift in Sources */,
+				0AF4670D28E6CB6500CD4C33 /* LC-Extensions.swift in Sources */,
+				0AF4671C28E6CB6500CD4C33 /* NoteEditVC-DraftNote.swift in Sources */,
+				0AF466F528E6CB6400CD4C33 /* WaterfallCell.swift in Sources */,
+				0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */,
+				0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */,
+				0AF4672228E6CB6500CD4C33 /* NoteEditVC-CollectionView.swift in Sources */,
+				0AF4670328E6CB6500CD4C33 /* NoteDetailVC.swift in Sources */,
+				0AF4670A28E6CB6500CD4C33 /* LocalLogin-Extensions.swift in Sources */,
+				0AF4670C28E6CB6500CD4C33 /* System-Extensions.swift in Sources */,
+				0AF466F628E6CB6400CD4C33 /* WaterfallVC.swift in Sources */,
+				0AF4672A28E6CB6500CD4C33 /* NoteEditVC-UI.swift in Sources */,
 				0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */,
-				65D0C28228E1FAD2004C6FCA /* POIVC-Location.swift in Sources */,
-				65D0C28828E1FAD2004C6FCA /* NoteEditVC-Config.swift in Sources */,
-				65D0C23D28E1FAD2004C6FCA /* NoteDetailVC-LoadData.swift in Sources */,
-				65D0C28028E1FAD2004C6FCA /* PhotoCell.swift in Sources */,
-				65D0C27228E1FAD2004C6FCA /* AccountTableVC.swift in Sources */,
-				65D0C27028E1FAD2004C6FCA /* SettingTableVC-Delegate.swift in Sources */,
-				65D0C24228E1FAD2004C6FCA /* NoteDetailVC-PostReply.swift in Sources */,
-				65D0C24A28E1FAD2004C6FCA /* NoteDetailVC-ShareOrMore.swift in Sources */,
-				65D0C25F28E1FAD2004C6FCA /* MeHeaderView.swift in Sources */,
-				65D0C25E28E1FAD2004C6FCA /* Protocols.swift in Sources */,
-				65D0C22828E1FAD2004C6FCA /* WaterfallVC-Config.swift in Sources */,
-				65D0C29028E1FAD3004C6FCA /* LittlePink.xcdatamodeld in Sources */,
-				65D0C25728E1FAD2004C6FCA /* VC-Extensions.swift in Sources */,
-				65D0C28B28E1FAD3004C6FCA /* NoteEditVC.swift in Sources */,
-				65D0C28328E1FAD2004C6FCA /* POIVC.swift in Sources */,
-				65D0C24E28E1FAD2004C6FCA /* NoteDetailVC-TVDataSource.swift in Sources */,
-				65D0C27728E1FAD2004C6FCA /* PasswordLoginVC.swift in Sources */,
-				65D0C24B28E1FAD2004C6FCA /* NoteDetailVC-PostComment.swift in Sources */,
-				65D0C21E28E1FAD2004C6FCA /* IntroVC.swift in Sources */,
-				65D0C26C28E1FAD2004C6FCA /* AppDelegate.swift in Sources */,
-				65D0C22428E1FAD2004C6FCA /* NearByVC-GCD.swift in Sources */,
-				65D0C26E28E1FAD2004C6FCA /* NotificationTableVC.swift in Sources */,
-				65D0C24C28E1FAD2004C6FCA /* NoteDetailVC-DelComment.swift in Sources */,
-				65D0C21F28E1FAD2004C6FCA /* EditProfileTableVC-UI.swift in Sources */,
-				65D0C25C28E1FAD2004C6FCA /* CustomClasses.swift in Sources */,
-				65D0C27428E1FAD2004C6FCA /* SocialLoginVC-Apple.swift in Sources */,
-				65D0C22A28E1FAD2004C6FCA /* WaterfallCell-Like.swift in Sources */,
-				65D0C26F28E1FAD2004C6FCA /* SettingTableVC.swift in Sources */,
-				65D0C27D28E1FAD2004C6FCA /* POICell.swift in Sources */,
-				65D0C25928E1FAD2004C6FCA /* LC-Extensions.swift in Sources */,
-				65D0C23A28E1FAD2004C6FCA /* TabBarC.swift in Sources */,
-				65D0C28128E1FAD2004C6FCA /* NoteEditVC-Helper.swift in Sources */,
-				65D0C26928E1FAD2004C6FCA /* MeVC-EditOrFollow.swift in Sources */,
-				65D0C22028E1FAD2004C6FCA /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */,
+				0AF4671928E6CB6500CD4C33 /* SceneDelegate.swift in Sources */,
+				0AF466F128E6CB6400CD4C33 /* DiscoveryVC.swift in Sources */,
+				0AF4670E28E6CB6500CD4C33 /* Protocols.swift in Sources */,
+				0AF4670428E6CB6500CD4C33 /* NoteDetailVC-UI.swift in Sources */,
+				0AF4672928E6CB6500CD4C33 /* NoteEditVC.swift in Sources */,
+				0AF466F728E6CB6500CD4C33 /* DraftNoteWaterfallCell.swift in Sources */,
+				0AF4671228E6CB6500CD4C33 /* SocialLoginVC-Apple.swift in Sources */,
+				0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */,
+				0AF466F228E6CB6400CD4C33 /* FollowVC.swift in Sources */,
+				0AF4670928E6CB6500CD4C33 /* CustomViews.swift in Sources */,
+				0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */,
+				0AF4670B28E6CB6500CD4C33 /* Login-Extensions.swift in Sources */,
+				0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */,
+				0AF4671E28E6CB6500CD4C33 /* PhotoCell.swift in Sources */,
+				0AF4672428E6CB6500CD4C33 /* NoteEditVC-Note.swift in Sources */,
+				0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */,
+				0AF466F328E6CB6400CD4C33 /* HomeVC.swift in Sources */,
+				0AF4670228E6CB6500CD4C33 /* TabBarC.swift in Sources */,
+				0AF466F928E6CB6500CD4C33 /* WaterfallVC-LoadData.swift in Sources */,
+				0AF4671728E6CB6500CD4C33 /* SocialLoginVC-Alipay.swift in Sources */,
+				0AF466F028E6CB6400CD4C33 /* NearByVC-GCD.swift in Sources */,
+				0AF4672628E6CB6500CD4C33 /* NoteEditVC-Config.swift in Sources */,
+				0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */,
+				0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */,
 				0A60956928BF421600A29A98 /* APRSASigner.m in Sources */,
-				65D0C28C28E1FAD3004C6FCA /* NoteEditVC-UI.swift in Sources */,
-				65D0C27F28E1FAD2004C6FCA /* ChannelVC.swift in Sources */,
-				65D0C21D28E1FAD2004C6FCA /* EditProfileTableVC.swift in Sources */,
-				65D0C25D28E1FAD2004C6FCA /* Global-Functions.swift in Sources */,
-				65D0C26D28E1FAD2004C6FCA /* DarkModeTableVC.swift in Sources */,
-				65D0C23928E1FAD2004C6FCA /* PostVC.swift in Sources */,
-				65D0C22928E1FAD2004C6FCA /* WaterfallCell.swift in Sources */,
-				65D0C24928E1FAD2004C6FCA /* NoteDetailVC-MeVC.swift in Sources */,
-				65D0C24728E1FAD2004C6FCA /* NoteDetailVC-DelReply.swift in Sources */,
-				65D0C28D28E1FAD3004C6FCA /* PhotoFooter.swift in Sources */,
-				65D0C23F28E1FAD2004C6FCA /* NoteDetailVC-Fav.swift in Sources */,
-				65D0C28728E1FAD2004C6FCA /* POIVC-Config.swift in Sources */,
-				65D0C25028E1FAD2004C6FCA /* ExpandableReplies.swift in Sources */,
-				65D0C23E28E1FAD2004C6FCA /* CommentSectionFooterView.swift in Sources */,
-				65D0C22F28E1FAD2004C6FCA /* MyDraftNoteWaterfallCell.swift in Sources */,
-				65D0C24628E1FAD2004C6FCA /* NoteDetailVC-DelNote.swift in Sources */,
-				65D0C22E28E1FAD2004C6FCA /* WaterfallVC-Layout.swift in Sources */,
-				65D0C23B28E1FAD2004C6FCA /* NoteDetailVC.swift in Sources */,
-				65D0C24D28E1FAD2004C6FCA /* NoteDetailVC-Config.swift in Sources */,
-				65D0C22628E1FAD2004C6FCA /* FollowVC.swift in Sources */,
-				65D0C28628E1FAD2004C6FCA /* NoteEditVC-Note.swift in Sources */,
-				65D0C27C28E1FAD2004C6FCA /* NoteEditVC-DragDrop.swift in Sources */,
-				65D0C24528E1FAD2004C6FCA /* ReplyCell.swift in Sources */,
-				65D0C22128E1FAD2004C6FCA /* EditProfileTableVC-Delegate.swift in Sources */,
-				65D0C26428E1FAD2004C6FCA /* MeVC-HeaderView.swift in Sources */,
-				65D0C23828E1FAD2004C6FCA /* LocalizationTableVCDemo.swift in Sources */,
-				65D0C27828E1FAD2004C6FCA /* SocialLoginVC.swift in Sources */,
-				65D0C22728E1FAD2004C6FCA /* HomeVC.swift in Sources */,
-				65D0C27928E1FAD2004C6FCA /* SocialLoginVC-Alipay.swift in Sources */,
-				65D0C23128E1FAD2004C6FCA /* WaterfallVC-DataSource.swift in Sources */,
-				65D0C22B28E1FAD2004C6FCA /* WaterfallVC.swift in Sources */,
-				65D0C25528E1FAD2004C6FCA /* Login-Extensions.swift in Sources */,
-				65D0C22D28E1FAD2004C6FCA /* WaterfallVC-Delegate.swift in Sources */,
-				65D0C24828E1FAD2004C6FCA /* NoteDetailVC-UI.swift in Sources */,
-				65D0C26728E1FAD2004C6FCA /* MeVC-BackOrDrawer.swift in Sources */,
-				65D0C26B28E1FAD2004C6FCA /* AppDelegate-Push.swift in Sources */,
-				65D0C25B28E1FAD2004C6FCA /* CustomViews.swift in Sources */,
-				65D0C26228E1FAD2004C6FCA /* MeVC-SettingOrChat.swift in Sources */,
-				65D0C26528E1FAD2004C6FCA /* MeVC-EditIntro.swift in Sources */,
-				65D0C27528E1FAD2004C6FCA /* LoginVC.swift in Sources */,
-				65D0C27E28E1FAD2004C6FCA /* NoteEditVC-DraftNote.swift in Sources */,
-				65D0C24428E1FAD2004C6FCA /* NoteDetailVC-Like.swift in Sources */,
-				65D0C27128E1FAD2004C6FCA /* AccountTableVC-Delegate.swift in Sources */,
-				65D0C27B28E1FAD2004C6FCA /* SceneDelegate.swift in Sources */,
-				65D0C26828E1FAD2004C6FCA /* MeVC-Config.swift in Sources */,
-				65D0C26128E1FAD2004C6FCA /* LoginAndMeParentVC.swift in Sources */,
-				65D0C25328E1FAD2004C6FCA /* Other-Extensions.swift in Sources */,
-				65D0C22528E1FAD2004C6FCA /* DiscoveryVC.swift in Sources */,
-				65D0C25828E1FAD2004C6FCA /* Basic-Extensions.swift in Sources */,
-				65D0C27628E1FAD2004C6FCA /* CodeLoginVC.swift in Sources */,
-				65D0C24F28E1FAD2004C6FCA /* CommentView.swift in Sources */,
-				65D0C25A28E1FAD2004C6FCA /* Constants.swift in Sources */,
-				65D0C23028E1FAD2004C6FCA /* WaterfallVC-LoadData.swift in Sources */,
-				65D0C27328E1FAD2004C6FCA /* PasswordTableVC.swift in Sources */,
-				65D0C26328E1FAD2004C6FCA /* MeVC.swift in Sources */,
-				65D0C28528E1FAD2004C6FCA /* ChannelTableVC.swift in Sources */,
-				65D0C25428E1FAD2004C6FCA /* LocalLogin-Extensions.swift in Sources */,
-				65D0C28E28E1FAD3004C6FCA /* POIVC-KeywordsSearch.swift in Sources */,
-				65D0C28A28E1FAD3004C6FCA /* TextViewIAView.swift in Sources */,
-				65D0C28428E1FAD2004C6FCA /* NoteEditVC-CollectionView.swift in Sources */,
+				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,
+				0AF4672128E6CB6500CD4C33 /* POIVC.swift in Sources */,
+				0AF4671428E6CB6500CD4C33 /* CodeLoginVC.swift in Sources */,
+				0AF4670828E6CB6500CD4C33 /* Constants.swift in Sources */,
+				0AF4671528E6CB6500CD4C33 /* PasswordLoginVC.swift in Sources */,
+				0AF466F428E6CB6400CD4C33 /* WaterfallVC-Config.swift in Sources */,
+				0AF4671028E6CB6500CD4C33 /* MeVC.swift in Sources */,
+				0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */,
+				0AF466FA28E6CB6500CD4C33 /* WaterfallVC-DataSource.swift in Sources */,
+				0AF466F828E6CB6500CD4C33 /* WaterfallVC-Delegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65D0C19128E1FAD1004C6FCA /* LaunchScreen.strings */ = {
+		0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C19228E1FAD1004C6FCA /* zh-Hans */,
+				0AF4669428E6CB6400CD4C33 /* zh-Hans */,
 			);
 			name = LaunchScreen.strings;
 			sourceTree = "<group>";
 		};
-		65D0C19328E1FAD1004C6FCA /* Main.strings */ = {
+		0AF4669528E6CB6400CD4C33 /* Main.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C19428E1FAD1004C6FCA /* zh-Hans */,
+				0AF4669628E6CB6400CD4C33 /* zh-Hans */,
 			);
 			name = Main.strings;
 			sourceTree = "<group>";
 		};
-		65D0C1A728E1FAD1004C6FCA /* Localizable.strings */ = {
+		0AF466A528E6CB6400CD4C33 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C1A828E1FAD1004C6FCA /* zh-Hans */,
-				65D0C1AB28E1FAD1004C6FCA /* en */,
+				0AF466A628E6CB6400CD4C33 /* zh-Hans */,
+				0AF466A928E6CB6400CD4C33 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		65D0C1A928E1FAD1004C6FCA /* InfoPlist.strings */ = {
+		0AF466A728E6CB6400CD4C33 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C1AA28E1FAD1004C6FCA /* zh-Hans */,
+				0AF466A828E6CB6400CD4C33 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		65D0C1D128E1FAD2004C6FCA /* LaunchScreen.storyboard */ = {
+		0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C1D228E1FAD2004C6FCA /* Base */,
+				0AF466BC28E6CB6400CD4C33 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		65D0C1D328E1FAD2004C6FCA /* Main.storyboard */ = {
+		0AF466BD28E6CB6400CD4C33 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65D0C1D428E1FAD2004C6FCA /* Base */,
+				0AF466BE28E6CB6400CD4C33 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1316,13 +1080,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		65D0C21A28E1FAD2004C6FCA /* LittlePink.xcdatamodeld */ = {
+		0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				65D0C21B28E1FAD2004C6FCA /* LittlePink.xcdatamodel */,
-				65D0C21C28E1FAD2004C6FCA /* LittlePink v2.xcdatamodel */,
+				0AF466EC28E6CB6400CD4C33 /* LittlePink.xcdatamodel */,
+				0AF466ED28E6CB6400CD4C33 /* LittlePink v2.xcdatamodel */,
 			);
-			currentVersion = 65D0C21C28E1FAD2004C6FCA /* LittlePink v2.xcdatamodel */;
+			currentVersion = 0AF466EC28E6CB6400CD4C33 /* LittlePink.xcdatamodel */;
 			path = LittlePink.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

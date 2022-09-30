@@ -12,10 +12,11 @@ import LeanCloud
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        
         
         config()
         return true
-        
     }
 
     // MARK: UISceneSession Lifecycle
@@ -88,24 +89,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+
 }
+
 
 extension AppDelegate{
     private func config(){
-        //UI
-        UINavigationBar.appearance().tintColor = .label //设置所有的navigationItem的返回按钮颜色
-        
         //高德
         AMapServices.shared().enableHTTPS = true
         AMapServices.shared().apiKey = kAMapApiKey
         
+        //UI
+        UINavigationBar.appearance().tintColor = .label //设置所有的navigationItem的返回按钮颜色
+        
         //初始化LeanCloud
         //LCApplication.logLevel = .debug
         do {
-            //发推送往测试环境的App(通过Xcode安装的)时需加此设置.上架时需去掉.
-            //let environment: LCApplication.Environment = [.pushDevelopment]
-            //let configuration = LCApplication.Configuration(environment: environment)
-            
             try LCApplication.default.set(
                 id: kLCAppID,
                 key: kLCAppKey,
@@ -113,10 +112,6 @@ extension AppDelegate{
         } catch {
             print(error)
         }
-        
-        
-        UIApplication.shared.registerForRemoteNotifications()
-        UNUserNotificationCenter.current().delegate = self
-        
+       
     }
 }

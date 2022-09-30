@@ -39,12 +39,6 @@ extension NoteEditVC{
         
         // MARK: 请求定位权限
         locationManager.requestWhenInUseAuthorization()
-        // MARK: 隐私合规
-        AMapLocationManager.updatePrivacyShow(AMapPrivacyShowStatus.didShow, privacyInfo: AMapPrivacyInfoStatus.didContain)
-        AMapLocationManager.updatePrivacyAgree(AMapPrivacyAgreeStatus.didAgree)
-        AMapSearchAPI.updatePrivacyShow(AMapPrivacyShowStatus.didShow, privacyInfo: AMapPrivacyInfoStatus.didContain)
-        AMapSearchAPI.updatePrivacyAgree(AMapPrivacyAgreeStatus.didAgree)
-
         
         // MARK: 文件相关
         //print(NSHomeDirectory()) //沙盒根目录,存文件时不建议直接访问根目录

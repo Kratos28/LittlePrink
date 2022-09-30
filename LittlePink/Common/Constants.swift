@@ -20,9 +20,6 @@ let kLoginVCID = "LoginVCID"
 let kMeVCID = "MeVCID"
 let kDraftNotesNaviID = "DraftNotesNaviID"
 let kNoteDetailVCID = "NoteDetailVCID"
-let kIntroVCID = "IntroVCID"
-let kEditProfileNaviID = "EditProfileNaviID"
-let kSettingTableVCID = "SettingTableVCID"
 
 //Cell相关ID
 let kWaterfallCellID = "WaterfallCellID"
@@ -31,10 +28,6 @@ let kPhotoFooterID = "PhotoFooterID"
 let kSubChannelCellID = "SubChannelCellID"
 let kPOICellID = "POICellID"
 let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
-let kMyDraftNoteWaterfallCellID = "MyDraftNoteWaterfallCellID"
-let kCommentViewID = "CommentViewID"
-let kReplyCellID = "ReplyCellID"
-let kCommentSectionFooterViewID = "CommentSectionFooterViewID"
 
 // MARK: - 资源文件相关
 let mainColor = UIColor(named: "main")!
@@ -45,8 +38,6 @@ let imagePH = UIImage(named: "imagePH")!
 // MARK: - UserDefaults的key
 let kNameFromAppleID = "nameFromAppleID"
 let kEmailFromAppleID = "emailFromAppleID"
-let kDraftNoteCount = "draftNoteCount"
-let kUserInterfaceStyle = "userInterfaceStyle"
 // MARK: - CoreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 let persistentContainer = appDelegate.persistentContainer
@@ -72,12 +63,6 @@ let kSpacingBetweenItems: CGFloat = 2
 //笔记
 let kMaxNoteTitleCount = 20
 let kMaxNoteTextCount = 1000
-let kNoteCommentPH = "精彩评论将被优先展示哦"
-
-//用户
-let kMaxIntroCount = 100
-let kIntroPH = "填写个人简介更容易获得关注哦,点击此处填写"
-let kNoCachePH = "无缓存"
 
 //话题
 let kAllSubChannels = [
@@ -111,17 +96,16 @@ let kAppScheme = "LittlePink"
 //正则表达式
 let kPhoneRegEx = "^1\\d{10}$"
 let kAuthCodeRegEx = "^\\d{6}$"
-let kPasswordRegEx = "^[0-9a-zA-Z]{6,16}$"
 
 //云端
 let kNotesOffset = 10
-let kCommentsOffset = 10
+
 
 // MARK: - Leancloud
 //配置相关
 let kLCAppID = "KhBhnnGp6hqVn4K85HyhpqPJ-gzGzoHsz"
 let kLCAppKey = "DTqthcpzPIkVTwlFwIyj4mLQ"
-let kLCServerURL = "https://littlepinkbook.rongcosme.com"
+let kLCServerURL = "https://khbhnngp.lc-cn-n1-shared.com"
 
 //通用字段
 let kCreatedAtCol = "createdAt"
@@ -129,21 +113,12 @@ let kUpdatedAtCol = "updatedAt"
 
 //表
 let kNoteTable = "Note"
-let kUserLikeTable = "UserLike"
-let kUserFavTable = "UserFav"
-let kCommentTable = "Comment"
-let kReplyTable = "Reply"
-let kUserInfoTable = "UserInfo"
 
 //User表
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
-let kIDCol = "id"
-let kBirthCol = "birth"
-let kIsSetPasswordCol = "isSetPassword"
-let kNoteCountCol = "noteCount"
 
 //Note表
 let kCoverPhotoCol = "coverPhoto"
@@ -162,20 +137,11 @@ let kCommentCountCol = "commentCount"
 let kAuthorCol = "author"
 let kHasEditCol = "hasEdit"
 
-//UserLike表
-let kUserCol = "user"
-let kNoteCol = "note"
 
-//Comment表
-let kHasReplyCol = "hasReply"
-
-//Reply表
-let kCommentCol = "comment"
-let kReplyToUserCol = "replyToUser"
-
-//UserInfo表
-let kUserObjectIdCol = "userObjectId"
-
-
-
-
+// MARK: - 全局函数
+func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{
+    let config = UIImage.SymbolConfiguration(scale: .large)
+    let icon = UIImage(systemName: iconName, withConfiguration: config)!
+    
+    return icon.withTintColor(color)
+}

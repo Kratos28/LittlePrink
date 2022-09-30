@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AMapLocationKit
 
 class POIVC: UIViewController {
     
@@ -20,14 +19,14 @@ class POIVC: UIViewController {
         let request = AMapPOIAroundSearchRequest()
         request.types = kPOITypes
         request.location = AMapGeoPoint.location(withLatitude: CGFloat(latitude), longitude: CGFloat(longitude))
-//        request.requireExtension = true
+        request.requireExtension = true
         request.offset = kPOIsOffset
         return request
     }()
     //关键字搜索POI请求
     lazy var keywordsSearchRequest: AMapPOIKeywordsSearchRequest = {
         let request = AMapPOIKeywordsSearchRequest()
-//        request.requireExtension = true
+        request.requireExtension = true
         request.offset = kPOIsOffset
         return request
     }()
@@ -37,6 +36,7 @@ class POIVC: UIViewController {
     //var pois = [Array(repeating: "", count: 2)]
     var pois = kPOIsInitArr
     var aroundSearchedPOIs = kPOIsInitArr //完全同步copy周边的pois数组，用于简化逻辑
+    
     var latitude = 0.0
     var longitude = 0.0
     var keywords = ""
@@ -64,9 +64,7 @@ extension POIVC: UITableViewDataSource{
         let poi = pois[indexPath.row]
         cell.poi = poi
         
-        //if poi[0] == poiName{ cell.accessoryType = .checkmark }
-        
-        cell.accessoryType = poi[0] == poiName ? .checkmark : .none
+        if poi[0] == poiName{ cell.accessoryType = .checkmark }
         
         return cell
     }

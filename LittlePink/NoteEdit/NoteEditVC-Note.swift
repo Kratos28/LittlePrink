@@ -26,11 +26,10 @@ extension NoteEditVC{
             // MARK: 多个文件的存储
             //存为[LCFile]类型最后会变成[Pointer]类型(里面无path,不方便之后的取操作),需存为以下类型:
             //["https://1.jpg", "https://2.jpg", "https://3.jpg"]
+            
             let photoGroup = DispatchGroup()
             //1.把所有文件存进云端
-            var photoPaths: [Int: String] = [:];
-            
-            
+            var photoPaths: [Int: String] = [:]
             for (index, eachPhoto) in photos.enumerated(){
                 if let eachPhotoData = eachPhoto.jpeg(.high){
                     let photo = LCFile(payload: .data(data: eachPhotoData))
@@ -38,7 +37,7 @@ extension NoteEditVC{
                     photo.save { res in
                         //print("photo文件保存成功/失败")
                         if case .success = res, let path = photo.url?.stringValue{
-                            photoPaths[index] = path;
+                            photoPaths[index] = path
                         }
                         photoGroup.leave()
                     }
@@ -55,6 +54,7 @@ extension NoteEditVC{
                 //print(sortedDic)
                 //[(key: 1, value: "aa"), (key: 2, value: "bb"), (key: 3, value: "cc"), (key: 4, value: "dd")]
                 let photoPathsArr = photoPaths.sorted(by: <).map{ $0.value }
+                
                 do{
                     try note.set(kPhotosCol, value: photoPathsArr)
                     note.save { _ in
@@ -83,31 +83,17 @@ extension NoteEditVC{
             try note.set(kCommentCountCol, value: 0)
             
             //笔记的作者
-            let author = LCApplication.default.currentUser!
-            try note.set(kAuthorCol, value: author);
+            try note.set(kAuthorCol, value: LCApplication.default.currentUser!)
+            
             noteGroup.enter()
             note.save { _ in
                 //print("存储一般数据字段成功/失败")
-                noteGroup.leave();
+                noteGroup.leave()
             }
             
             
             noteGroup.notify(queue: .main) {
                 //print("笔记内容全部存储结束")
-
-                //请求通知权限.可根据实际业务逻辑灵活放置
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
-                    if let error = error{ print("请求通知授权出错: \(error)") }
-                }
-                
-                //用户经一定的操作后,判断用户对通知的授权状态,若notDetermined则请求权限,若denied则弹出自定义请求权限框(因系统弹框只弹一次)
-                let noteCount = author.getExactIntVal(kNoteCountCol)
-                if noteCount != 0, noteCount % 3 == 0{ self.showAllowPushAlert() }
-                
-                //用户表的noteCount增1
-                try? author.increase(kNoteCountCol)
-                author.save{ _ in }
-                
                 self.showTextHUD("发布笔记成功", false)
             }
             
@@ -134,79 +120,6 @@ extension NoteEditVC{
             DispatchQueue.main.async {
                 self.postDraftNoteFinished?()
             }
-        }
-    }
-    
-    func updateNote(_ note: LCObject){
-        do {
-            let noteGroup = DispatchGroup()
-            
-            if !isVideo{
-                if let coverPhotoData = photos[0].jpeg(.high){
-                    let coverPhoto = LCFile(payload: .data(data: coverPhotoData))
-                    //coverPhoto.mimeType = "image/jpeg"
-                    coverPhoto.save(to: note, as: kCoverPhotoCol, group: noteGroup)
-                }
-                
-                let photoGroup = DispatchGroup()
-                var photoPaths: [Int: String] = [:];
-                for (index, eachPhoto) in photos.enumerated(){
-                    if let eachPhotoData = eachPhoto.jpeg(.high){
-                        let photo = LCFile(payload: .data(data: eachPhotoData))
-                        photoGroup.enter();
-                        photo.save { res in
-                            //print("photo文件保存成功/失败")
-                            if case .success = res, let path = photo.url?.stringValue{
-                                photoPaths[index] = path
-                            }
-                            photoGroup.leave()
-                        }
-                    }
-                }
-                noteGroup.enter()
-                photoGroup.notify(queue: .main) {
-                    let photoPathsArr = photoPaths.sorted(by: <).map{ $0.value }
-                    
-                    do{
-                        try note.set(kPhotosCol, value: photoPathsArr)
-                        note.save { _ in
-                            //print("存储photos字段成功/失败")
-                            noteGroup.leave()
-                        }
-                    }catch{
-                        print("字段赋值失败: \(error)")
-                    }
-                }
-            }
-            
-            //封面图宽高比
-            let coverPhotoSize = photos[0].size
-            let coverPhotoRatio = Double(coverPhotoSize.height / coverPhotoSize.width)
-            
-            try note.set(kCoverPhotoRatioCol, value: coverPhotoRatio)
-            try note.set(kTitleCol, value: titleTextField.exactText)
-            try note.set(kTextCol, value: textView.exactText)
-            try note.set(kChannelCol, value: channel.isEmpty ? "推荐" : channel)
-            try note.set(kSubChannelCol, value: subChannel)
-            try note.set(kPOINameCol, value: poiName)
-            
-            try note.set(kHasEditCol, value: true)
-            
-            noteGroup.enter()
-            note.save { _ in
-                //print("存储一般数据字段成功/失败")
-                noteGroup.leave()
-            }
-            
-            noteGroup.notify(queue: .main) {
-                //print("笔记内容全部存储结束")
-                self.updateNoteFinished?(note.objectId!.stringValue!)
-                self.showTextHUD("更新笔记成功", false)
-            }
-            
-            dismiss(animated: true)
-        } catch {
-            print("字段赋值失败: \(error)")
         }
     }
 }

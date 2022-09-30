@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import LeanCloud
+
 
 class NoteEditVC: UIViewController {
     
@@ -14,10 +14,8 @@ class NoteEditVC: UIViewController {
     var updateDraftNoteFinished: (() -> ())?
     var postDraftNoteFinished: (() -> ())?
     
-    var note: LCObject?
-    var updateNoteFinished: ((String) -> ())?
-    
     var photos: [UIImage] = []
+    
     //var videoURL: URL? = Bundle.main.url(forResource: "TV", withExtension: "mp4")
     var videoURL: URL?
     
@@ -66,14 +64,12 @@ class NoteEditVC: UIViewController {
     
     @IBAction func postNote(_ sender: Any) {
         guard isValidateNote() else { return }
+        
         if let draftNote = draftNote{//发布草稿笔记
             postDraftNote(draftNote)
-        }else if let note = note{//更新笔记
-            updateNote(note);
         }else{//发布新笔记
-            createNote();
+            createNote()            
         }
-        
     }
     
     

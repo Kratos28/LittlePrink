@@ -21,11 +21,12 @@ extension UIViewController{
                 JVERIFICATIONService.preLogin(5000) { (result) in
                     self.hideLoadHUD()
                     if let result = result, let code = result["code"] as? Int, code == 7000 {
-                        //预取号成功
+                        //当前设备可使用一键登录
                         self.setLocalLoginUI()
                         self.presentLocalLoginVC()
+                        
                     }else{
-                        //print("预取号失败. 错误码: \(result!["code"]), 错误描述: \(result!["content"])")
+                        print("当前设备不可使用一键登录")
                         self.presentCodeLoginVC()
                     }
                 }

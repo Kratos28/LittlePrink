@@ -21,15 +21,3 @@ protocol ChannelVCDelegate {
 protocol POIVCDelegate {
     func updatePOIName(_ poiName: String)
 }
-
-protocol IntroVCDelegate {
-    func updateIntro(_ intro: String)
-}
-
-protocol EditProfileTableVCDelegate {
-    func updateUser(_ avatar: UIImage?, _ nickName: String, _ gender: Bool, _ birth: Date?, _ intro: String)
-}
-
-protocol NoteDetailVCDelegate {
-    func updateLikeBtn(cellItem: Int, isLike: Bool, likeCount: Int)
-}

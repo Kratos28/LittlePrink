@@ -1,4 +1,4 @@
-f//
+//
 //  WaterfallVC-DataSource.swift
 //  LittlePink
 //
@@ -10,8 +10,6 @@ import Foundation
 extension WaterfallVC{
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isMyDraft{
-            return notes.count + 1
-        }else if isDraft{
             return draftNotes.count
         }else{
             return notes.count
@@ -20,10 +18,7 @@ extension WaterfallVC{
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if isMyDraft, indexPath.item == 0{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kMyDraftNoteWaterfallCellID, for: indexPath)
-            return cell
-        }else if isDraft{
+        if isMyDraft{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDraftNoteWaterfallCellID, for: indexPath) as! DraftNoteWaterfallCell
             cell.draftNote = draftNotes[indexPath.item]
             cell.deleteBtn.tag = indexPath.item
@@ -31,16 +26,7 @@ extension WaterfallVC{
             return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
-
-            //需在给note赋值前赋值,因note的didset里面需要用到这个变量
-            cell.isMyselfLike = isMyselfLike
-            
-            let offset = isMyDraft ? 1 : 0
-            cell.note = notes[indexPath.item - offset]
-            
-            //配置cell的heroID
-            cell.hero.id = "noteHeroID\(indexPath.item)"
-            
+            cell.note = notes[indexPath.item]
             return cell
         }
     }
@@ -56,8 +42,6 @@ extension WaterfallVC{
             appDelegate.saveBackgroundContext()
             //数据2:内存中的
             self.draftNotes.remove(at: index)
-            
-            UserDefaults.decrease(kDraftNoteCount)
             
             //UI
             DispatchQueue.main.async {
