@@ -53,7 +53,7 @@ extension WaterfallVC: CHTCollectionViewDelegateWaterfallLayout{
         }else{
             let note = notes[indexPath.item]
             let coverPhotoRatio = CGFloat(note.getExactDoubelVal(kCoverPhotoRatioCol))
-            cellH = cellW * coverPhotoRatio + kWaterfallCellBottomViewH
+            cellH = cellW * coverPhotoRatio + kWaterfallCellBottomViewH;
         }
         
         return CGSize(width: cellW, height: cellH)

@@ -10,9 +10,9 @@ import Foundation
 extension WaterfallVC{
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isMyDraft{
-            return draftNotes.count
+            return draftNotes.count;
         }else{
-            return notes.count
+            return notes.count;
         }
     }
 
@@ -20,13 +20,13 @@ extension WaterfallVC{
         
         if isMyDraft{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kDraftNoteWaterfallCellID, for: indexPath) as! DraftNoteWaterfallCell
-            cell.draftNote = draftNotes[indexPath.item]
-            cell.deleteBtn.tag = indexPath.item
-            cell.deleteBtn.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
-            return cell
+            cell.draftNote = draftNotes[indexPath.item];
+            cell.deleteBtn.tag = indexPath.item;
+            cell.deleteBtn.addTarget(self, action: #selector(showAlert), for: .touchUpInside);
+            return cell;
         }else{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
-            cell.note = notes[indexPath.item]
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell;
+            cell.note = notes[indexPath.item];
             return cell
         }
     }

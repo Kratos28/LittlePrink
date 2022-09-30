@@ -58,8 +58,9 @@ extension WaterfallVC{
         
         query.find { result in
             if case let .success(objects: notes) = result{
-                self.notes = notes
-                self.collectionView.reloadData()
+                self.notes = notes;
+                self.collectionView.reloadData();
+            
             }
             
         }
