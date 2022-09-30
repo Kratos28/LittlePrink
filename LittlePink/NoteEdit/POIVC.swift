@@ -19,14 +19,14 @@ class POIVC: UIViewController {
         let request = AMapPOIAroundSearchRequest()
         request.types = kPOITypes
         request.location = AMapGeoPoint.location(withLatitude: CGFloat(latitude), longitude: CGFloat(longitude))
-        request.requireExtension = true
+//        request.requireExtension = true
         request.offset = kPOIsOffset
         return request
     }()
     //关键字搜索POI请求
     lazy var keywordsSearchRequest: AMapPOIKeywordsSearchRequest = {
         let request = AMapPOIKeywordsSearchRequest()
-        request.requireExtension = true
+//        request.requireExtension = true
         request.offset = kPOIsOffset
         return request
     }()

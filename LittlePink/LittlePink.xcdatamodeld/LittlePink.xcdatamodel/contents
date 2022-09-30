@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DraftNote" representedClassName="DraftNote" syncable="YES" codeGenerationType="class">
         <attribute name="channel" attributeType="String" defaultValueString=""/>
         <attribute name="coverPhoto" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="isVideo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="photos" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="poiName" attributeType="String" defaultValueString=""/>
         <attribute name="subChannel" attributeType="String" defaultValueString=""/>
@@ -12,6 +13,6 @@
         <attribute name="video" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
     </entity>
     <elements>
-        <element name="DraftNote" positionX="-63" positionY="-18" width="128" height="164"/>
+        <element name="DraftNote" positionX="-63" positionY="-18" width="128" height="179"/>
     </elements>
 </model>
