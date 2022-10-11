@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A021E2A28F592F600DAF4E2 /* NoteDetail-LikeFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */; };
 		0A60956728BF421600A29A98 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951428BF421600A29A98 /* libcrypto.a */; };
 		0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951628BF421600A29A98 /* openssl_wrapper.m */; };
 		0A60956928BF421600A29A98 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951928BF421600A29A98 /* APRSASigner.m */; };
@@ -79,6 +80,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetail-LikeFav.swift"; sourceTree = "<group>"; };
 		0A60951428BF421600A29A98 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		0A60951628BF421600A29A98 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
 		0A60951728BF421600A29A98 /* APRSASigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRSASigner.h; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
 				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
 				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
+				0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				0AF4670828E6CB6500CD4C33 /* Constants.swift in Sources */,
 				0AF4671528E6CB6500CD4C33 /* PasswordLoginVC.swift in Sources */,
 				0AF466F428E6CB6400CD4C33 /* WaterfallVC-Config.swift in Sources */,
+				0A021E2A28F592F600DAF4E2 /* NoteDetail-LikeFav.swift in Sources */,
 				0AF4671028E6CB6500CD4C33 /* MeVC.swift in Sources */,
 				0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */,
 				0AF466FA28E6CB6500CD4C33 /* WaterfallVC-DataSource.swift in Sources */,

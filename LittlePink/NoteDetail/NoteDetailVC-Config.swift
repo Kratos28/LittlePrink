@@ -17,6 +17,7 @@ extension NoteDetailVC{
         let pageControl = UIPageControl()
         pageControl.pageIndicatorTintColor = .systemGray
         pageControl.currentPageIndicatorTintColor = mainColor
-        imageSlideshow.pageIndicator = pageControl
+        imageSlideshow.pageIndicator = pageControl;
+        
     }
 }

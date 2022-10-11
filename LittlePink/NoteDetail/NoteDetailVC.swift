@@ -19,6 +19,10 @@ class NoteDetailVC: UIViewController {
     @IBOutlet weak var followBtn: UIButton!
     @IBOutlet weak var shareBtn: UIButton!
     
+    
+    
+    
+    
     //tableHeaderView
     @IBOutlet weak var tableHeaderView: UIView!
     @IBOutlet weak var imageSlideshow: ImageSlideshow!
@@ -90,5 +94,7 @@ class NoteDetailVC: UIViewController {
     }
     
 
-
+    @IBAction func like(_ sender: Any) {like()}
+    
+    @IBAction func fav(_ sender: Any) {fav()}
 }
