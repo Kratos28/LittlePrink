@@ -36,8 +36,8 @@ extension NoteDetailVC
                 }
                 try? note.set(kLikeCountCol, value: likeCount);
                 note.save { _ in}
-                try? author?.set(kLikeCountCol, value: likeCount);
-                author?.save { _ in}
+//                try? author?.set(kLikeCountCol, value: likeCount);
+//                author?.save { _ in}
 
             }
             
