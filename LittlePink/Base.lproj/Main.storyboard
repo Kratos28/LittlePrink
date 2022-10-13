@@ -1974,8 +1974,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" width="128" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="number.circle.fill" catalog="system" width="128" height="121"/>

@@ -64,7 +64,9 @@ class NoteDetailVC: UIViewController {
     
     //计算属性
     var author: LCUser?{ note.get(kAuthorCol) as? LCUser }
-    
+    var isLike:Bool {
+        likeBtn.isSelected
+    }
     init?(coder: NSCoder, note: LCObject) {
         self.note = note
         super.init(coder: coder)
