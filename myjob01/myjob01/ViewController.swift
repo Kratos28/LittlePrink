@@ -42,6 +42,7 @@ class ViewController: UIViewController {
 //            width: 300,
 //            height: 100)
 //        kaishi.frame = redViewFrame~
+        
         self.kaishi.snp.remakeConstraints { make in
             make.width.equalTo(910.rpx);
             make.height.equalTo(270.rpx);
