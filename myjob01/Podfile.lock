@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.6.0)
+  - SwiftyFitsize (1.4.2)
+
+DEPENDENCIES:
+  - SnapKit
+  - SwiftyFitsize
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - SwiftyFitsize
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyFitsize: b5801bf659c0cf9c86bca0be123fffb1291caedf
+
+PODFILE CHECKSUM: d6722133e5d63e333e10c0c42d53f7f51841c25f
+
+COCOAPODS: 1.11.3
