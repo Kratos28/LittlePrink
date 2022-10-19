@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C41402467333F92885A7D76 /* Pods_myjob01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90FB1402A7D126CBF8D52D1 /* Pods_myjob01.framework */; };
+		656C963E2900566900EDFF49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C963D2900566900EDFF49 /* MainViewController.swift */; };
 		657EEACB28FEF98200086F41 /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EEACA28FEF98200086F41 /* SViewController.swift */; };
 		65A97C6C28F85E4D0035F359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C6B28F85E4D0035F359 /* AppDelegate.swift */; };
 		65A97C7028F85E4D0035F359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A97C6F28F85E4D0035F359 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		089F43A6B3441B77C72E1224 /* Pods-myjob01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myjob01.release.xcconfig"; path = "Target Support Files/Pods-myjob01/Pods-myjob01.release.xcconfig"; sourceTree = "<group>"; };
+		656C963D2900566900EDFF49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		657EEACA28FEF98200086F41 /* SViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SViewController.swift; sourceTree = "<group>"; };
 		65A97C6828F85E4D0035F359 /* myjob01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myjob01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A97C6B28F85E4D0035F359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				65A97C8228F860960035F359 /* QSizeFit.swift */,
 				65A97C7128F85E4D0035F359 /* Main.storyboard */,
 				657EEACA28FEF98200086F41 /* SViewController.swift */,
+				656C963D2900566900EDFF49 /* MainViewController.swift */,
 				65A97C7728F85E510035F359 /* Assets.xcassets */,
 				65A97C7928F85E510035F359 /* LaunchScreen.storyboard */,
 				65A97C7C28F85E510035F359 /* Info.plist */,
@@ -215,6 +218,7 @@
 				65A97C7028F85E4D0035F359 /* ViewController.swift in Sources */,
 				65A97C8328F860960035F359 /* QSizeFit.swift in Sources */,
 				65A97C6C28F85E4D0035F359 /* AppDelegate.swift in Sources */,
+				656C963E2900566900EDFF49 /* MainViewController.swift in Sources */,
 				65A97C7628F85E4D0035F359 /* myjob01.xcdatamodeld in Sources */,
 				657EEACB28FEF98200086F41 /* SViewController.swift in Sources */,
 			);
