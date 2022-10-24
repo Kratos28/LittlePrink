@@ -13,7 +13,7 @@ let persistentContainer = appDelegate.persistentContainer
 let context = persistentContainer.viewContext
 let backgroundContext = persistentContainer.newBackgroundContext()
 
-func setupData()
+func setupData() ->[P]
 {
     let p0 = P(context:context);
     p0.coin = 0;
@@ -36,7 +36,7 @@ func setupData()
     p2.headViewImage = "";
     p2.mingzi = "";
     appDelegate.saveContext();
-    
+    return getEntityName(entityName: "P", type: P.self);
 }
 func getPlayData() ->P?
 {

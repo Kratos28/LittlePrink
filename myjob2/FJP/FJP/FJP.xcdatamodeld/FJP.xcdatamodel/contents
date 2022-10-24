@@ -7,7 +7,7 @@
         <attribute name="mingzi" optional="YES" attributeType="String"/>
         <attribute name="playIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="renwuImanname" optional="YES" attributeType="String"/>
-        <attribute name="select" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="select" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="ZR" representedClassName="ZR" syncable="YES" codeGenerationType="class">
         <attribute name="bgImageView" optional="YES" attributeType="String"/>

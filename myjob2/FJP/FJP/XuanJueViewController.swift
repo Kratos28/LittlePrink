@@ -33,7 +33,9 @@ class XuanJueViewController: UIViewController {
     @IBAction func ccccccffff(_ sender: UIButton)
     {
 //        self.bb.tag
-        
+        let s = setupData()[sender.tag];
+        s.select = true;
+        appDelegate.saveContext();
     }
     
 
