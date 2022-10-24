@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Xuan Jue View Controller-->
+        <scene sceneID="mAG-yb-BUs">
+            <objects>
+                <viewController storyboardIdentifier="XuanJueViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R8X-VS-A5y" customClass="XuanJueViewController" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPI-VZ-R7w">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2选择角色_背景4" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-vw-PQE">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ECP-r4-bRQ">
+                                <rect key="frame" x="55" y="348" width="567" height="1362"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-eW-9Gw">
+                                        <rect key="frame" x="0.0" y="0.0" width="567" height="424"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="2选择角色_选框"/>
+                                        <state key="selected" backgroundImage="2选择角色_选框22"/>
+                                        <connections>
+                                            <action selector="cccccc:" destination="R8X-VS-A5y" eventType="touchUpInside" id="6OQ-ua-BBz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ7-z2-unZ">
+                                        <rect key="frame" x="0.0" y="469" width="567" height="424"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="2选择角色_选框拷贝22"/>
+                                        <state key="selected" backgroundImage="2选择角色_选框拷贝22s"/>
+                                        <connections>
+                                            <action selector="cccccc:" destination="R8X-VS-A5y" eventType="touchUpInside" id="kdU-aG-9ye"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-me-XD9">
+                                        <rect key="frame" x="0.0" y="938" width="567" height="424"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="2选择角色_选框拷贝222"/>
+                                        <state key="selected" backgroundImage="2选择角色_选框拷贝222we"/>
+                                        <connections>
+                                            <action selector="cccccc:" destination="R8X-VS-A5y" eventType="touchUpInside" id="8ba-J0-FzT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miw-GW-OH5">
+                                <rect key="frame" x="284" y="894" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0PA-Cm-egB"/>
+                                    <constraint firstAttribute="width" constant="200" id="EAl-Ja-VlG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="2选择角色_2按钮22"/>
+                                <connections>
+                                    <action selector="ccccccffff:" destination="R8X-VS-A5y" eventType="touchUpInside" id="YZB-Zb-n5w"/>
+                                    <action selector="kaishiclcickcc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tA-XC-N3p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ldX-FN-hfm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Aet-vw-PQE" secondAttribute="trailing" id="210-09-lnh"/>
+                            <constraint firstItem="miw-GW-OH5" firstAttribute="centerX" secondItem="rPI-VZ-R7w" secondAttribute="centerX" id="klx-N5-uQS"/>
+                            <constraint firstAttribute="bottom" secondItem="miw-GW-OH5" secondAttribute="bottom" constant="70" id="pAk-oq-zF2"/>
+                            <constraint firstAttribute="bottom" secondItem="Aet-vw-PQE" secondAttribute="bottom" id="qgj-RI-TSs"/>
+                            <constraint firstItem="Aet-vw-PQE" firstAttribute="top" secondItem="rPI-VZ-R7w" secondAttribute="top" id="qhv-gq-3HG"/>
+                            <constraint firstItem="Aet-vw-PQE" firstAttribute="leading" secondItem="rPI-VZ-R7w" secondAttribute="leading" id="sqL-fQ-RcC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageVIew" destination="Aet-vw-PQE" id="cNi-lL-9MN"/>
+                        <outlet property="stacckc" destination="ECP-r4-bRQ" id="tg4-5A-GKH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzB-bp-cn0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-227.34375" y="-611.1328125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1登录_背景" translatesAutoresizingMaskIntoConstraints="NO" id="Oc8-XZ-6Ck">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYQ-iW-5Jo">
+                                <rect key="frame" x="284" y="919" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bc2-ci-ZYn"/>
+                                    <constraint firstAttribute="height" constant="45" id="Cem-A3-Vsz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="1登录_按钮"/>
+                                <connections>
+                                    <action selector="kaishiclcickcc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MoA-Se-pmp"/>
+                                    <segue destination="R8X-VS-A5y" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="YhZ-Zd-ZTI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oc8-XZ-6Ck" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5d4-Sa-OCp"/>
+                            <constraint firstAttribute="trailing" secondItem="Oc8-XZ-6Ck" secondAttribute="trailing" id="Xv2-eR-R6D"/>
+                            <constraint firstItem="wYQ-iW-5Jo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5b-fP-kiZ"/>
+                            <constraint firstItem="Oc8-XZ-6Ck" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qcv-kc-eex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wYQ-iW-5Jo" secondAttribute="bottom" constant="60" id="rig-HT-Hj7"/>
+                            <constraint firstAttribute="bottom" secondItem="Oc8-XZ-6Ck" secondAttribute="bottom" id="u3O-sb-lSx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yaj-od-V7u">
+            <objects>
+                <viewController id="QZi-Bc-U3v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nPt-aA-m98">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mj8-2J-9Aj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ha4-cF-be0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="-538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1登录_按钮" width="375.5" height="112.5"/>
+        <image name="1登录_背景" width="1024.5" height="1366.5"/>
+        <image name="2选择角色_2按钮22" width="751" height="225"/>
+        <image name="2选择角色_背景4" width="2048" height="2732"/>
+        <image name="2选择角色_选框" width="507" height="424"/>
+        <image name="2选择角色_选框22" width="550" height="474"/>
+        <image name="2选择角色_选框拷贝22" width="524" height="414"/>
+        <image name="2选择角色_选框拷贝222" width="567" height="414"/>
+        <image name="2选择角色_选框拷贝222we" width="612" height="473"/>
+        <image name="2选择角色_选框拷贝22s" width="592" height="470"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
