@@ -5,8 +5,9 @@
 //  Created by Kratos on 2022/10/21.
 //
 
-import Foundation
 import UIKit
+import CoreData
+
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 let persistentContainer = appDelegate.persistentContainer
 let context = persistentContainer.viewContext
@@ -37,3 +38,32 @@ func setupData()
     appDelegate.saveContext();
     
 }
+func getPlayData() ->P?
+{
+    let fetchRequest =  NSFetchRequest<NSFetchRequestResult>(entityName:"P");
+    fetchRequest.predicate = NSPredicate(format: "select = %d", true);
+    var fetchedResults: Array<P> = Array<P>()
+      if let    fetchedResults1 =  try? context.fetch(fetchRequest) as? [P]
+        {
+          fetchedResults = fetchedResults1;
+          if  fetchedResults.count > 0
+          {
+              return fetchedResults[0];
+          }
+          return nil;
+        }
+    return nil;
+}
+
+@discardableResult func getEntityName<T>(entityName:String,type:T.Type) -> [T]
+ {
+     let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:entityName);
+     var fetchedResults: Array<T> = Array<T>()
+     do{
+         fetchedResults =  try context.fetch(fetchRequest) as! [T];
+     }catch
+     {
+         fetchedResults = Array<T>()
+     }
+     return fetchedResults;
+ }
