@@ -7,34 +7,160 @@
 
 import UIKit
 import CoreData
-
+let jinbiupdate = "jinbiupdate";
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 let persistentContainer = appDelegate.persistentContainer
 let context = persistentContainer.viewContext
 let backgroundContext = persistentContainer.newBackgroundContext()
 
+func setupSign()
+{
+    let s0 = Sign(context: context);
+    s0.mingzi = "";
+    s0.bgImageView = "6签到_框";
+    s0.issign = false;
+    s0.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    let s1 = Sign(context: context);
+    s1.mingzi = "";
+    s1.bgImageView = "6签到_框拷贝";
+    s1.issign = false;
+    s1.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    
+    let s2 = Sign(context: context);
+    s2.mingzi = "";
+    s2.bgImageView = "6签到_框拷贝2";
+    s2.issign = false;
+    s2.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    
+    let s3 = Sign(context: context);
+    s3.mingzi = "";
+    s3.bgImageView = "6签到_框拷贝3";
+    s3.issign = false;
+    s3.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    
+    let s4 = Sign(context: context);
+    s4.mingzi = "";
+    s4.bgImageView = "6签到_框拷贝3(1)";
+    s4.issign = false;
+    s4.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    
+    let s5 = Sign(context: context);
+    s5.mingzi = "";
+    s5.bgImageView = "6签到_框拷贝3(2)";
+    s5.issign = false;
+    s5.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+    
+    let s6 = Sign(context: context);
+    s6.mingzi = "";
+    s6.bgImageView = "6签到_框拷贝4";
+    s6.issign = false;
+    s6.unSelectedBgimaView  = "";
+    appDelegate.saveContext();
+}
+
+func delete()
+{
+    let ReqVar = NSFetchRequest<NSFetchRequestResult>(entityName: "P");
+    let DelAllReqVar = NSBatchDeleteRequest(fetchRequest: ReqVar);
+     do {
+         try context.execute(DelAllReqVar)
+     }
+     catch {
+         
+     }
+    
+    
+
+    
+    
+    
+    let ReqVar2 = NSFetchRequest<NSFetchRequestResult>(entityName: "ZR");
+    let DelAllReqVar2 = NSBatchDeleteRequest(fetchRequest: ReqVar2);
+     do {
+         try context.execute(DelAllReqVar2)
+     }
+     catch {
+     }
+    
+//
+    let ReqVar3 = NSFetchRequest<NSFetchRequestResult>(entityName: "Sign");
+    let DelAllReqVar3 = NSBatchDeleteRequest(fetchRequest: ReqVar3);
+     do {
+         try context.execute(DelAllReqVar3)
+     }
+     catch {
+     }
+////
+//    let ReqVar4 = NSFetchRequest<NSFetchRequestResult>(entityName: "NengLiangjineng");
+//    let DelAllReqVar4 = NSBatchDeleteRequest(fetchRequest: ReqVar4);
+//     do {
+//         try context.execute(DelAllReqVar4)
+//     }
+//     catch {
+//     }
+//
+//
+//    let ReqVar5 = NSFetchRequest<NSFetchRequestResult>(entityName: "Zr");
+//    let DelAllReqVar5 = NSBatchDeleteRequest(fetchRequest: ReqVar5);
+//     do {
+//         try context.execute(DelAllReqVar5)
+//     }
+//     catch {
+//     }
+//
+//
+//    let ReqVary6 = NSFetchRequest<NSFetchRequestResult>(entityName: "BossZr");
+//    let DelAllReqVar6 = NSBatchDeleteRequest(fetchRequest: ReqVary6);
+//     do {
+//         try context.execute(DelAllReqVar6)
+//     }
+//     catch {
+//     }
+    
+}
+
+
 func setupData() ->[P]
 {
+    delete();
+    
     let p0 = P(context:context);
     p0.coin = 0;
+    p0.zuanshi = 0;
     p0.headViewImage = "";
     p0.mingzi = "";
+    p0.renwuImanname = "3主界面_b0";
     appDelegate.saveContext();
     
     
     
     let p1 = P(context:context);
     p1.coin = 0;
+    p1.zuanshi = 0;
     p1.headViewImage = "";
     p1.mingzi = "";
+    p1.renwuImanname = "3主界面_b1";
     appDelegate.saveContext();
 
     
     
     let p2 = P(context:context);
     p2.coin = 0;
+    p2.zuanshi = 0;
     p2.headViewImage = "";
     p2.mingzi = "";
+    p2.renwuImanname = "3主界面_b2";
     appDelegate.saveContext();
     return getEntityName(entityName: "P", type: P.self);
 }
@@ -67,3 +193,6 @@ func getPlayData() ->P?
      }
      return fetchedResults;
  }
+
+
+

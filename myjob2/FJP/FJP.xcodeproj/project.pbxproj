@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A509B2B2907CDCF00BEF7CA /* ZuanshiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B2A2907CDCE00BEF7CA /* ZuanshiViewController.swift */; };
+		0A509B2D2907D29B00BEF7CA /* Recharge.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A509B2C2907D29B00BEF7CA /* Recharge.json */; };
+		0A509B2F2907D77800BEF7CA /* ShangdianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */; };
+		0A509B312907E3C700BEF7CA /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B302907E3C700BEF7CA /* extension.swift */; };
+		0A509B332907EC8A00BEF7CA /* QiandaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B322907EC8A00BEF7CA /* QiandaoVC.swift */; };
+		0A5F3F4D2907874700662574 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F3F4C2907874700662574 /* MainVC.swift */; };
+		0A5F3F4F290788E200662574 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F3F4E290788E200662574 /* BaseVC.swift */; };
 		2615E9F6FCBA8C45853542F8 /* Pods_FJP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F49F49266C57CF2967310D7 /* Pods_FJP.framework */; };
 		655592EB2902F8A4006EEBF6 /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655592EA2902F8A4006EEBF6 /* Build.swift */; };
 		65BA697129019C9000F53369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA697029019C9000F53369 /* AppDelegate.swift */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A509B2A2907CDCE00BEF7CA /* ZuanshiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuanshiViewController.swift; sourceTree = "<group>"; };
+		0A509B2C2907D29B00BEF7CA /* Recharge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recharge.json; sourceTree = "<group>"; };
+		0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShangdianViewController.swift; sourceTree = "<group>"; };
+		0A509B302907E3C700BEF7CA /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		0A509B322907EC8A00BEF7CA /* QiandaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiandaoVC.swift; sourceTree = "<group>"; };
+		0A5F3F4C2907874700662574 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0A5F3F4E290788E200662574 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		655592EA2902F8A4006EEBF6 /* Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Build.swift; sourceTree = "<group>"; };
 		65BA696D29019C9000F53369 /* FJP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BA697029019C9000F53369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,12 +92,19 @@
 		65BA696F29019C9000F53369 /* FJP */ = {
 			isa = PBXGroup;
 			children = (
+				0A509B2C2907D29B00BEF7CA /* Recharge.json */,
 				65BA69872901A0E600F53369 /* QSizeFit.swift */,
 				65BA697029019C9000F53369 /* AppDelegate.swift */,
 				65BA697429019C9000F53369 /* ViewController.swift */,
 				65BA69892901A38200F53369 /* XuanJueViewController.swift */,
+				0A5F3F4C2907874700662574 /* MainVC.swift */,
 				655592EA2902F8A4006EEBF6 /* Build.swift */,
+				0A509B302907E3C700BEF7CA /* extension.swift */,
+				0A5F3F4E290788E200662574 /* BaseVC.swift */,
+				0A509B2A2907CDCE00BEF7CA /* ZuanshiViewController.swift */,
 				65BA697629019C9000F53369 /* Main.storyboard */,
+				0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */,
+				0A509B322907EC8A00BEF7CA /* QiandaoVC.swift */,
 				65BA697C29019C9500F53369 /* Assets.xcassets */,
 				65BA697E29019C9500F53369 /* LaunchScreen.storyboard */,
 				65BA698129019C9500F53369 /* Info.plist */,
@@ -162,6 +183,7 @@
 			files = (
 				65BA698029019C9500F53369 /* LaunchScreen.storyboard in Resources */,
 				65BA697D29019C9500F53369 /* Assets.xcassets in Resources */,
+				0A509B2D2907D29B00BEF7CA /* Recharge.json in Resources */,
 				65BA697829019C9000F53369 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +240,15 @@
 				65BA69882901A0E600F53369 /* QSizeFit.swift in Sources */,
 				65BA697B29019C9000F53369 /* FJP.xcdatamodeld in Sources */,
 				655592EB2902F8A4006EEBF6 /* Build.swift in Sources */,
+				0A5F3F4F290788E200662574 /* BaseVC.swift in Sources */,
+				0A509B2F2907D77800BEF7CA /* ShangdianViewController.swift in Sources */,
 				65BA697529019C9000F53369 /* ViewController.swift in Sources */,
+				0A509B312907E3C700BEF7CA /* extension.swift in Sources */,
 				65BA698A2901A38200F53369 /* XuanJueViewController.swift in Sources */,
+				0A509B332907EC8A00BEF7CA /* QiandaoVC.swift in Sources */,
+				0A509B2B2907CDCF00BEF7CA /* ZuanshiViewController.swift in Sources */,
 				65BA697129019C9000F53369 /* AppDelegate.swift in Sources */,
+				0A5F3F4D2907874700662574 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +396,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FJP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -396,6 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FJP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

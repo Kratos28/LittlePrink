@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="P" representedClassName="P" syncable="YES" codeGenerationType="class">
         <attribute name="coin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="headViewImage" optional="YES" attributeType="String"/>
@@ -8,13 +8,21 @@
         <attribute name="playIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="renwuImanname" optional="YES" attributeType="String"/>
         <attribute name="select" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="zuanshi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Sign" representedClassName="Sign" syncable="YES" codeGenerationType="class">
+        <attribute name="bgImageView" optional="YES" attributeType="String"/>
+        <attribute name="issign" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mingzi" optional="YES" attributeType="String"/>
+        <attribute name="unSelectedBgimaView" optional="YES" attributeType="String"/>
     </entity>
     <entity name="ZR" representedClassName="ZR" syncable="YES" codeGenerationType="class">
         <attribute name="bgImageView" optional="YES" attributeType="String"/>
         <attribute name="mingzi" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="P" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="P" positionX="-63" positionY="-18" width="128" height="149"/>
         <element name="ZR" positionX="-54" positionY="36" width="128" height="59"/>
+        <element name="Sign" positionX="-54" positionY="45" width="128" height="89"/>
     </elements>
 </model>

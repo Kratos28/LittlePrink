@@ -19,8 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2选择角色_背景4" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-vw-PQE">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ECP-r4-bRQ">
-                                <rect key="frame" x="55" y="348" width="567" height="1362"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ECP-r4-bRQ">
+                                <rect key="frame" x="55" y="348" width="567" height="1392"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-eW-9Gw">
                                         <rect key="frame" x="0.0" y="0.0" width="567" height="424"/>
@@ -31,8 +31,8 @@
                                             <action selector="cccccc:" destination="R8X-VS-A5y" eventType="touchUpInside" id="6OQ-ua-BBz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ7-z2-unZ">
-                                        <rect key="frame" x="0.0" y="469" width="567" height="424"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ7-z2-unZ">
+                                        <rect key="frame" x="0.0" y="484" width="567" height="424"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="2选择角色_选框拷贝22"/>
                                         <state key="selected" backgroundImage="2选择角色_选框拷贝22s"/>
@@ -40,8 +40,8 @@
                                             <action selector="cccccc:" destination="R8X-VS-A5y" eventType="touchUpInside" id="kdU-aG-9ye"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-me-XD9">
-                                        <rect key="frame" x="0.0" y="938" width="567" height="424"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-me-XD9">
+                                        <rect key="frame" x="0.0" y="968" width="567" height="424"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="2选择角色_选框拷贝222"/>
                                         <state key="selected" backgroundImage="2选择角色_选框拷贝222we"/>
@@ -62,6 +62,7 @@
                                 <connections>
                                     <action selector="ccccccffff:" destination="R8X-VS-A5y" eventType="touchUpInside" id="YZB-Zb-n5w"/>
                                     <action selector="kaishiclcickcc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tA-XC-N3p"/>
+                                    <segue destination="QZi-Bc-U3v" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="Cdq-gk-3ad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,20 +127,232 @@
             </objects>
             <point key="canvasLocation" x="-239" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Shangdian View Controller-->
+        <scene sceneID="Kn7-GI-Dul">
+            <objects>
+                <viewController id="cYh-bJ-enV" customClass="ShangdianViewController" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pdy-Fk-CUX">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5商店_t" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-3r-Not">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5商店_bei" translatesAutoresizingMaskIntoConstraints="NO" id="4t6-X2-CXG">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etd-ih-KPu">
+                                <rect key="frame" x="639" y="70" width="67" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="5商店_x 拷贝 2"/>
+                                <connections>
+                                    <action selector="guanbiclickck:" destination="cYh-bJ-enV" eventType="touchUpInside" id="sDt-8P-pgd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S3a-jG-nyj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4t6-X2-CXG" firstAttribute="top" secondItem="Pdy-Fk-CUX" secondAttribute="top" id="Ffd-9X-r9H"/>
+                            <constraint firstItem="4t6-X2-CXG" firstAttribute="leading" secondItem="Pdy-Fk-CUX" secondAttribute="leading" id="IWv-fM-xns"/>
+                            <constraint firstAttribute="bottom" secondItem="CjM-3r-Not" secondAttribute="bottom" id="Rsx-yP-Z9M"/>
+                            <constraint firstItem="CjM-3r-Not" firstAttribute="leading" secondItem="Pdy-Fk-CUX" secondAttribute="leading" id="THt-Ki-S7T"/>
+                            <constraint firstAttribute="trailing" secondItem="4t6-X2-CXG" secondAttribute="trailing" id="eDf-d2-wmO"/>
+                            <constraint firstAttribute="trailing" secondItem="CjM-3r-Not" secondAttribute="trailing" id="eoq-rg-Re6"/>
+                            <constraint firstAttribute="bottom" secondItem="4t6-X2-CXG" secondAttribute="bottom" id="g2z-PP-LbV"/>
+                            <constraint firstItem="CjM-3r-Not" firstAttribute="top" secondItem="Pdy-Fk-CUX" secondAttribute="top" id="hp6-4K-vJq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanbibb" destination="etd-ih-KPu" id="fnQ-cz-VqF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCC-Pd-RZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-313.28125" y="973.82812499999989"/>
+        </scene>
+        <!--MainVC-->
         <scene sceneID="yaj-od-V7u">
             <objects>
-                <viewController id="QZi-Bc-U3v" sceneMemberID="viewController">
+                <viewController id="QZi-Bc-U3v" customClass="MainVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nPt-aA-m98">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3主界面_b0" translatesAutoresizingMaskIntoConstraints="NO" id="sJp-mY-ZX5">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-CI-9Qx">
+                                <rect key="frame" x="602" y="297" width="148" height="555"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RK5-nX-aBA">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="163"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_3"/>
+                                        <connections>
+                                            <segue destination="VJo-We-KMU" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="gBN-Bk-gAk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpc-qg-upA">
+                                        <rect key="frame" x="0.0" y="196" width="148" height="163"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_2"/>
+                                        <connections>
+                                            <segue destination="cYh-bJ-enV" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="Q9x-4B-s1C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-eh-kiu">
+                                        <rect key="frame" x="0.0" y="392" width="148" height="163"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_1"/>
+                                        <connections>
+                                            <segue destination="bTv-iO-XuM" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="utw-a2-mHH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VMF-Kt-H7K">
+                                <rect key="frame" x="168" y="807" width="754" height="160.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEA-tX-Q2h">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="160.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_5"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVJ-cK-xBc">
+                                        <rect key="frame" x="208.5" y="0.0" width="148.5" height="160.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_6"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-Gk-Kdn">
+                                        <rect key="frame" x="407" y="0.0" width="148.5" height="160.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_7"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-1f-9TN">
+                                        <rect key="frame" x="605.5" y="0.0" width="148.5" height="160.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="3主界面_8"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-eC-rPE">
+                                <rect key="frame" x="197" y="98" width="41" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.97687512639999996" green="0.84967011209999999" blue="0.1043257341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Mj8-2J-9Aj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sJp-mY-ZX5" firstAttribute="top" secondItem="nPt-aA-m98" secondAttribute="top" id="GsT-Ld-gZK"/>
+                            <constraint firstAttribute="trailing" secondItem="sJp-mY-ZX5" secondAttribute="trailing" id="Jjb-PF-EhD"/>
+                            <constraint firstItem="sJp-mY-ZX5" firstAttribute="leading" secondItem="nPt-aA-m98" secondAttribute="leading" id="mga-Y1-Vd1"/>
+                            <constraint firstAttribute="bottom" secondItem="sJp-mY-ZX5" secondAttribute="bottom" id="rkl-Mh-QhK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgimaveiw" destination="sJp-mY-ZX5" id="HoA-ep-f02"/>
+                        <outlet property="xiabian" destination="VMF-Kt-H7K" id="wet-NK-gXg"/>
+                        <outlet property="youbian" destination="Ohb-CI-9Qx" id="yAZ-oM-2Y3"/>
+                        <outlet property="zhandouli" destination="2wA-eC-rPE" id="1Lr-Yt-ftd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha4-cF-be0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-863" y="-538"/>
+            <point key="canvasLocation" x="-1054.6875" y="-324.0234375"/>
+        </scene>
+        <!--Zuanshi View Controller-->
+        <scene sceneID="vfK-L2-Dbb">
+            <objects>
+                <viewController id="VJo-We-KMU" customClass="ZuanshiViewController" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GDX-hw-fHU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="FF8-9p-fcR">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_b" translatesAutoresizingMaskIntoConstraints="NO" id="N64-Vs-IbZ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4i-jp-GT4">
+                                <rect key="frame" x="585" y="135" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="4充值_x 拷贝"/>
+                                <connections>
+                                    <action selector="dismissclick:" destination="VJo-We-KMU" eventType="touchUpInside" id="50N-eL-KEz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L1K-SP-BBq"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N64-Vs-IbZ" firstAttribute="top" secondItem="GDX-hw-fHU" secondAttribute="top" id="36E-8C-LfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="N64-Vs-IbZ" secondAttribute="trailing" id="5nL-Eo-CsC"/>
+                            <constraint firstItem="N64-Vs-IbZ" firstAttribute="leading" secondItem="GDX-hw-fHU" secondAttribute="leading" id="NhZ-aZ-9iT"/>
+                            <constraint firstAttribute="bottom" secondItem="N64-Vs-IbZ" secondAttribute="bottom" id="VNi-xj-Ipi"/>
+                            <constraint firstItem="FF8-9p-fcR" firstAttribute="leading" secondItem="GDX-hw-fHU" secondAttribute="leading" id="gZY-et-CiT"/>
+                            <constraint firstAttribute="trailing" secondItem="FF8-9p-fcR" secondAttribute="trailing" id="ivF-Lb-3DP"/>
+                            <constraint firstAttribute="bottom" secondItem="FF8-9p-fcR" secondAttribute="bottom" id="ocU-Wc-P26"/>
+                            <constraint firstItem="FF8-9p-fcR" firstAttribute="top" secondItem="GDX-hw-fHU" secondAttribute="top" id="p0q-3b-8Ua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bggggImage" destination="N64-Vs-IbZ" id="G2j-17-bv1"/>
+                        <outlet property="guanbi" destination="W4i-jp-GT4" id="8BO-Ex-rdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMR-wf-UxO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1253.125" y="475.78124999999994"/>
+        </scene>
+        <!--QiandaoVC-->
+        <scene sceneID="fUg-qK-MDP">
+            <objects>
+                <viewController id="bTv-iO-XuM" customClass="QiandaoVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbx-46-kMv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-GA-KIg">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6签到_背景" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-62-tYx">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-W1-I9F">
+                                <rect key="frame" x="620" y="39" width="67" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="6签到_x"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XYB-wg-3CZ"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BSA-GA-KIg" firstAttribute="top" secondItem="Pbx-46-kMv" secondAttribute="top" id="D7x-1v-PLU"/>
+                            <constraint firstAttribute="bottom" secondItem="BSA-GA-KIg" secondAttribute="bottom" id="FsQ-gj-hVE"/>
+                            <constraint firstItem="kHi-62-tYx" firstAttribute="leading" secondItem="Pbx-46-kMv" secondAttribute="leading" id="GiS-sw-kwJ"/>
+                            <constraint firstItem="BSA-GA-KIg" firstAttribute="leading" secondItem="Pbx-46-kMv" secondAttribute="leading" id="HEG-eH-9GO"/>
+                            <constraint firstAttribute="trailing" secondItem="BSA-GA-KIg" secondAttribute="trailing" id="MQE-ex-9hT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kHi-62-tYx" secondAttribute="bottom" constant="100" id="UdX-Ba-MOE"/>
+                            <constraint firstAttribute="trailing" secondItem="kHi-62-tYx" secondAttribute="trailing" id="fpU-Jm-7sG"/>
+                            <constraint firstItem="kHi-62-tYx" firstAttribute="top" secondItem="Pbx-46-kMv" secondAttribute="top" id="qhL-yr-OuU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="kHi-62-tYx" id="KlE-3c-dJu"/>
+                        <outlet property="qiandaoV" destination="Ue8-W1-I9F" id="5Il-Ax-g5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwh-fw-nab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1192" y="1454"/>
         </scene>
     </scenes>
     <resources>
@@ -153,6 +366,22 @@
         <image name="2选择角色_选框拷贝222" width="567" height="414"/>
         <image name="2选择角色_选框拷贝222we" width="612" height="473"/>
         <image name="2选择角色_选框拷贝22s" width="592" height="470"/>
+        <image name="3主界面_1" width="148" height="157.5"/>
+        <image name="3主界面_2" width="148" height="163"/>
+        <image name="3主界面_3" width="148" height="157.5"/>
+        <image name="3主界面_5" width="158.5" height="160.5"/>
+        <image name="3主界面_6" width="148.5" height="155.5"/>
+        <image name="3主界面_7" width="148.5" height="156"/>
+        <image name="3主界面_8" width="148.5" height="156"/>
+        <image name="3主界面_b0" width="1024" height="1366"/>
+        <image name="4充值_b" width="767" height="1065.5"/>
+        <image name="4充值_t" width="1024" height="1366"/>
+        <image name="4充值_x 拷贝" width="51" height="38.5"/>
+        <image name="5商店_bei" width="792.5" height="1050"/>
+        <image name="5商店_t" width="1024" height="1366"/>
+        <image name="5商店_x 拷贝 2" width="51" height="38.5"/>
+        <image name="6签到_x" width="102" height="77"/>
+        <image name="6签到_背景" width="1534" height="2131"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

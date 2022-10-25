@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "6签到_框.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "6签到_框@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

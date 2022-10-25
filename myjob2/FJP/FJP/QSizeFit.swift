@@ -36,20 +36,20 @@ extension Int {
     }
 }
 
-extension Float {
-    
-    var rpx : Float {
-        return QSizeFit.shared.getFRpx(value: self)
-    }
-    
-}
+//extension Float {
+//    
+//    var rpx : Float {
+//        return QSizeFit.shared.getFRpx(value: self)
+//    }
+//    
+//}
 
-extension Double {
-    
-    var rpx : Double {
-        return QSizeFit.shared.getDRpx(value: self)
-    }
-}
+//extension Double {
+//    
+//    var rpx : Double {
+//        return QSizeFit.shared.getDRpx(value: self)
+//    }
+//}
 
 extension CGFloat {
     
