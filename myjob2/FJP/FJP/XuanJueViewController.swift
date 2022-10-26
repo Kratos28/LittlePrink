@@ -17,7 +17,7 @@ class XuanJueViewController: UIViewController {
         super.viewDidLoad()
         self.stacckc.snp.remakeConstraints { make in
             make.width.equalTo(400.rpx);
-            make.height.equalTo(1500.rpx);
+            make.height.equalTo(1400.rpx);
             make.leading.equalTo(100.rpx);
             make.top.equalTo(400.rpx);
         };

@@ -172,6 +172,155 @@
             </objects>
             <point key="canvasLocation" x="-313.28125" y="973.82812499999989"/>
         </scene>
+        <!--Jiao Se View Controller-->
+        <scene sceneID="jG7-31-P0e">
+            <objects>
+                <viewController id="I3S-Zz-aty" customClass="JiaoSeViewController" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpO-Uo-Dxb">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7角色_背景" translatesAutoresizingMaskIntoConstraints="NO" id="fYx-hl-Wiu">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umM-hd-JUk">
+                                <rect key="frame" x="501" y="20" width="224" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="7角色_返回"/>
+                                <connections>
+                                    <action selector="guanbiS:" destination="I3S-Zz-aty" eventType="touchUpInside" id="5IY-vD-I1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTv-os-TVc">
+                                <rect key="frame" x="71" y="242" width="147" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="7角色_选框 装备拷贝 3"/>
+                                <connections>
+                                    <action selector="kongclick:" destination="I3S-Zz-aty" eventType="touchUpInside" id="0ex-2j-GZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pml-YQ-hE2">
+                                <rect key="frame" x="154" y="348" width="147" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="7角色_选框 装备拷贝 3"/>
+                                <connections>
+                                    <action selector="kongclick:" destination="I3S-Zz-aty" eventType="touchUpInside" id="OcP-Lq-Ieh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-pB-bUT">
+                                <rect key="frame" x="71" y="445" width="147" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="7角色_选框 装备拷贝 3"/>
+                                <connections>
+                                    <action selector="kongclick:" destination="I3S-Zz-aty" eventType="touchUpInside" id="zkw-aF-C90"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7角色_属性" translatesAutoresizingMaskIntoConstraints="NO" id="uQc-0S-mk2">
+                                <rect key="frame" x="429" y="242" width="296" height="463"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rWY-33-v6L">
+                                <rect key="frame" x="177" y="903" width="619.5" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDX-wu-5Kb">
+                                        <rect key="frame" x="0.0" y="0.0" width="186.5" height="172"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="7角色_选中" backgroundImage="7角色_人选框"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1m-ZZ-yOL">
+                                        <rect key="frame" x="216.5" y="0.0" width="186.5" height="172"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmE-Jb-sfD">
+                                        <rect key="frame" x="433" y="0.0" width="186.5" height="172"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bGo-1y-ofV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYx-hl-Wiu" firstAttribute="top" secondItem="dpO-Uo-Dxb" secondAttribute="top" id="D3i-nN-lAy"/>
+                            <constraint firstAttribute="trailing" secondItem="fYx-hl-Wiu" secondAttribute="trailing" id="Ez2-BI-EgH"/>
+                            <constraint firstItem="fYx-hl-Wiu" firstAttribute="leading" secondItem="dpO-Uo-Dxb" secondAttribute="leading" id="crX-iV-Siy"/>
+                            <constraint firstAttribute="bottom" secondItem="fYx-hl-Wiu" secondAttribute="bottom" id="j44-le-lgl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanbi" destination="umM-hd-JUk" id="9s1-iB-m0z"/>
+                        <outlet property="imageSS" destination="uQc-0S-mk2" id="I4N-3K-eR7"/>
+                        <outlet property="kong0" destination="fTv-os-TVc" id="Ogy-X3-lNf"/>
+                        <outlet property="kong1" destination="pml-YQ-hE2" id="Oeu-xH-pG5"/>
+                        <outlet property="kong2" destination="Txg-pB-bUT" id="JcI-Yx-BAV"/>
+                        <outlet property="stackView" destination="rWY-33-v6L" id="RIf-AT-Aso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4j-kx-55L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308.59375" y="1651.7578125"/>
+        </scene>
+        <!--Zhao HuanVC-->
+        <scene sceneID="Q4f-Td-3E4">
+            <objects>
+                <viewController id="GxZ-kq-nmc" customClass="ZhaoHuanVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a5l-wg-2fL">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-ll-zvV">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8召唤_beib" translatesAutoresizingMaskIntoConstraints="NO" id="DVk-dK-n5O">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="824"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="wbL-ap-Pym">
+                                <rect key="frame" x="235" y="885" width="1022" height="223"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-OO-ggO">
+                                        <rect key="frame" x="0.0" y="0.0" width="466" height="223"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="8召唤_按钮_301666774958"/>
+                                        <connections>
+                                            <action selector="zhaohuanyiciclick:" destination="GxZ-kq-nmc" eventType="touchUpInside" id="Kgx-ve-huO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd3-vV-Md7">
+                                        <rect key="frame" x="556" y="0.0" width="466" height="223"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="8召唤_按钮_331666774958"/>
+                                        <connections>
+                                            <action selector="zhaohuan10ci:" destination="GxZ-kq-nmc" eventType="touchUpInside" id="prh-7z-hOM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yHJ-1G-ubW"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yHJ-1G-ubW" firstAttribute="trailing" secondItem="qPb-ll-zvV" secondAttribute="trailing" id="7Ke-7z-QmI"/>
+                            <constraint firstItem="qPb-ll-zvV" firstAttribute="leading" secondItem="a5l-wg-2fL" secondAttribute="leading" id="9Ba-UE-6eo"/>
+                            <constraint firstItem="qPb-ll-zvV" firstAttribute="top" secondItem="a5l-wg-2fL" secondAttribute="top" id="GdH-Lr-QoQ"/>
+                            <constraint firstAttribute="bottom" secondItem="DVk-dK-n5O" secondAttribute="bottom" constant="200" id="J2R-0i-USn"/>
+                            <constraint firstItem="yHJ-1G-ubW" firstAttribute="trailing" secondItem="DVk-dK-n5O" secondAttribute="trailing" id="JBg-Xm-xmq"/>
+                            <constraint firstItem="DVk-dK-n5O" firstAttribute="leading" secondItem="yHJ-1G-ubW" secondAttribute="leading" id="Upy-wj-f6s"/>
+                            <constraint firstItem="DVk-dK-n5O" firstAttribute="top" secondItem="yHJ-1G-ubW" secondAttribute="top" id="WVn-Ml-zhf"/>
+                            <constraint firstAttribute="bottom" secondItem="qPb-ll-zvV" secondAttribute="bottom" id="mSS-jM-7KC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="wbL-ap-Pym" id="owy-zy-ed5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlk-aw-rGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1917.1875" y="-209.1796875"/>
+        </scene>
         <!--MainVC-->
         <scene sceneID="yaj-od-V7u">
             <objects>
@@ -219,11 +368,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="158.5" height="160.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_5"/>
+                                        <connections>
+                                            <segue destination="I3S-Zz-aty" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="8qB-9F-KPb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVJ-cK-xBc">
                                         <rect key="frame" x="208.5" y="0.0" width="148.5" height="160.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_6"/>
+                                        <connections>
+                                            <segue destination="GxZ-kq-nmc" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="L7o-vT-ikk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-Gk-Kdn">
                                         <rect key="frame" x="407" y="0.0" width="148.5" height="160.5"/>
@@ -234,10 +389,13 @@
                                         <rect key="frame" x="605.5" y="0.0" width="148.5" height="160.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_8"/>
+                                        <connections>
+                                            <segue destination="oFK-sC-9sZ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zi8-7R-dIP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-eC-rPE">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-eC-rPE">
                                 <rect key="frame" x="197" y="98" width="41" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -264,6 +422,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha4-cF-be0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1054.6875" y="-324.0234375"/>
+        </scene>
+        <!--BAGVC-->
+        <scene sceneID="Lgv-US-xWv">
+            <objects>
+                <viewController id="oFK-sC-9sZ" customClass="BAGVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p9O-4R-uOl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-7Z-0mj">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11背包_组 1" translatesAutoresizingMaskIntoConstraints="NO" id="c8M-F6-fzq">
+                                <rect key="frame" x="0.0" y="100" width="768" height="724"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iIm-gw-jow"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g7W-7Z-0mj" secondAttribute="trailing" id="1kF-yf-R19"/>
+                            <constraint firstAttribute="bottom" secondItem="c8M-F6-fzq" secondAttribute="bottom" constant="200" id="1oY-6t-4A7"/>
+                            <constraint firstAttribute="bottom" secondItem="g7W-7Z-0mj" secondAttribute="bottom" id="3ED-ip-dJq"/>
+                            <constraint firstItem="c8M-F6-fzq" firstAttribute="top" secondItem="p9O-4R-uOl" secondAttribute="top" constant="100" id="4Kw-ac-O1O"/>
+                            <constraint firstItem="g7W-7Z-0mj" firstAttribute="leading" secondItem="p9O-4R-uOl" secondAttribute="leading" id="FOk-Sj-Mq9"/>
+                            <constraint firstItem="g7W-7Z-0mj" firstAttribute="top" secondItem="p9O-4R-uOl" secondAttribute="top" id="IVC-WO-Bxh"/>
+                            <constraint firstAttribute="trailing" secondItem="c8M-F6-fzq" secondAttribute="trailing" id="Ofl-wF-M3Y"/>
+                            <constraint firstItem="c8M-F6-fzq" firstAttribute="leading" secondItem="p9O-4R-uOl" secondAttribute="leading" id="Sxp-lB-5GT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImagView" destination="c8M-F6-fzq" id="MIh-hf-sby"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ejz-df-RX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2203" y="544"/>
         </scene>
         <!--Zuanshi View Controller-->
         <scene sceneID="vfK-L2-Dbb">
@@ -322,7 +516,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-GA-KIg">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6签到_背景" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-62-tYx">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6签到_背景" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-62-tYx">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-W1-I9F">
@@ -330,6 +524,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="6签到_x"/>
+                                <connections>
+                                    <action selector="buttolclick:" destination="bTv-iO-XuM" eventType="touchUpInside" id="6QO-nw-9Fq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XYB-wg-3CZ"/>
@@ -356,6 +553,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="11背包_组 1" width="702.5" height="902"/>
         <image name="1登录_按钮" width="375.5" height="112.5"/>
         <image name="1登录_背景" width="1024.5" height="1366.5"/>
         <image name="2选择角色_2按钮22" width="751" height="225"/>
@@ -382,6 +580,15 @@
         <image name="5商店_x 拷贝 2" width="51" height="38.5"/>
         <image name="6签到_x" width="102" height="77"/>
         <image name="6签到_背景" width="1534" height="2131"/>
+        <image name="7角色_人选框" width="186.5" height="172"/>
+        <image name="7角色_属性" width="332" height="639"/>
+        <image name="7角色_背景" width="1024" height="1366"/>
+        <image name="7角色_返回" width="119.5" height="89"/>
+        <image name="7角色_选中" width="155" height="47.5"/>
+        <image name="7角色_选框 装备拷贝 3" width="184" height="172"/>
+        <image name="8召唤_beib" width="718" height="793.5"/>
+        <image name="8召唤_按钮_301666774958" width="466" height="223"/>
+        <image name="8召唤_按钮_331666774958" width="466" height="223"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

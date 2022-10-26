@@ -33,12 +33,7 @@ class MainVC: BaseVC {
             make.bottom.equalTo(-100.rpx);
         }
         
-        self.zhandouli.snp.remakeConstraints { make in
-            make.width.equalTo(100);
-            make.height.equalTo(100.rpx);
-            make.top.equalTo(220.rpx);
-            make.leading.equalTo(500.rpx);
-        }
+   
     }
     
 

@@ -13,7 +13,7 @@ let persistentContainer = appDelegate.persistentContainer
 let context = persistentContainer.viewContext
 let backgroundContext = persistentContainer.newBackgroundContext()
 
-func setupSign()
+@discardableResult func setupSign() ->[Sign]
 {
     let s0 = Sign(context: context);
     s0.mingzi = "";
@@ -61,12 +61,14 @@ func setupSign()
     s5.unSelectedBgimaView  = "";
     appDelegate.saveContext();
     
-    let s6 = Sign(context: context);
-    s6.mingzi = "";
-    s6.bgImageView = "6签到_框拷贝4";
-    s6.issign = false;
-    s6.unSelectedBgimaView  = "";
-    appDelegate.saveContext();
+//    let s6 = Sign(context: context);
+//    s6.mingzi = "";
+//    s6.bgImageView = "6签到_框拷贝4";
+//    s6.issign = false;
+//    s6.unSelectedBgimaView  = "";
+//    appDelegate.saveContext();
+    
+    return getEntityName(entityName: "Sign", type: Sign.self);
 }
 
 func delete()
@@ -102,13 +104,13 @@ func delete()
      catch {
      }
 ////
-//    let ReqVar4 = NSFetchRequest<NSFetchRequestResult>(entityName: "NengLiangjineng");
-//    let DelAllReqVar4 = NSBatchDeleteRequest(fetchRequest: ReqVar4);
-//     do {
-//         try context.execute(DelAllReqVar4)
-//     }
-//     catch {
-//     }
+    let ReqVar4 = NSFetchRequest<NSFetchRequestResult>(entityName: "ZB");
+    let DelAllReqVar4 = NSBatchDeleteRequest(fetchRequest: ReqVar4);
+     do {
+         try context.execute(DelAllReqVar4)
+     }
+     catch {
+     }
 //
 //
 //    let ReqVar5 = NSFetchRequest<NSFetchRequestResult>(entityName: "Zr");
@@ -131,7 +133,23 @@ func delete()
 }
 
 
-func setupData() ->[P]
+@discardableResult func setupZB()->[ZB]
+{
+    let z0 = ZB(context:context);
+    z0.bgImageView = "7角色_选框 拷贝 3";
+    z0.mingzi = "";
+    z0.unbgImageView = "";
+    z0.xuanzhong = false;
+    z0.jiaoSe_XiangqingbgimageView = "7角色_弹窗_图标";
+    z0.huoqu =  false;
+    appDelegate.saveContext();
+    return getEntityName(entityName: "ZB", type: ZB.self);
+
+}
+
+
+
+@discardableResult  func setupData() ->[P]
 {
     delete();
     
@@ -162,6 +180,9 @@ func setupData() ->[P]
     p2.mingzi = "";
     p2.renwuImanname = "3主界面_b2";
     appDelegate.saveContext();
+    
+    setupSign();
+    setupZB();
     return getEntityName(entityName: "P", type: P.self);
 }
 func getPlayData() ->P?
@@ -180,6 +201,22 @@ func getPlayData() ->P?
         }
     return nil;
 }
+
+
+@discardableResult  func getZB() ->[ZB]{
+    
+    return getEntityName(entityName: "ZB", type: ZB.self);
+
+}
+
+
+@discardableResult  func getSign() ->[Sign]{
+    
+    
+    return getEntityName(entityName: "Sign", type: Sign.self);
+
+}
+
 
 @discardableResult func getEntityName<T>(entityName:String,type:T.Type) -> [T]
  {

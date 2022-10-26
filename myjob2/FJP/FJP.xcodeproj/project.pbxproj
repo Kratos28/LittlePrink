@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1F9BE12908DB3000332414 /* JiaoSeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F9BE02908DB3000332414 /* JiaoSeViewController.swift */; };
+		0A1F9BE329092C1C00332414 /* ZhaoHuanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F9BE229092C1C00332414 /* ZhaoHuanVC.swift */; };
+		0A1F9BE52909398200332414 /* BAGVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F9BE42909398200332414 /* BAGVC.swift */; };
 		0A509B2B2907CDCF00BEF7CA /* ZuanshiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B2A2907CDCE00BEF7CA /* ZuanshiViewController.swift */; };
 		0A509B2D2907D29B00BEF7CA /* Recharge.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A509B2C2907D29B00BEF7CA /* Recharge.json */; };
 		0A509B2F2907D77800BEF7CA /* ShangdianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1F9BE02908DB3000332414 /* JiaoSeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaoSeViewController.swift; sourceTree = "<group>"; };
+		0A1F9BE229092C1C00332414 /* ZhaoHuanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhaoHuanVC.swift; sourceTree = "<group>"; };
+		0A1F9BE42909398200332414 /* BAGVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAGVC.swift; sourceTree = "<group>"; };
 		0A509B2A2907CDCE00BEF7CA /* ZuanshiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZuanshiViewController.swift; sourceTree = "<group>"; };
 		0A509B2C2907D29B00BEF7CA /* Recharge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recharge.json; sourceTree = "<group>"; };
 		0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShangdianViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 				65BA697629019C9000F53369 /* Main.storyboard */,
 				0A509B2E2907D77800BEF7CA /* ShangdianViewController.swift */,
 				0A509B322907EC8A00BEF7CA /* QiandaoVC.swift */,
+				0A1F9BE02908DB3000332414 /* JiaoSeViewController.swift */,
+				0A1F9BE229092C1C00332414 /* ZhaoHuanVC.swift */,
+				0A1F9BE42909398200332414 /* BAGVC.swift */,
 				65BA697C29019C9500F53369 /* Assets.xcassets */,
 				65BA697E29019C9500F53369 /* LaunchScreen.storyboard */,
 				65BA698129019C9500F53369 /* Info.plist */,
@@ -237,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1F9BE12908DB3000332414 /* JiaoSeViewController.swift in Sources */,
 				65BA69882901A0E600F53369 /* QSizeFit.swift in Sources */,
+				0A1F9BE329092C1C00332414 /* ZhaoHuanVC.swift in Sources */,
 				65BA697B29019C9000F53369 /* FJP.xcdatamodeld in Sources */,
 				655592EB2902F8A4006EEBF6 /* Build.swift in Sources */,
 				0A5F3F4F290788E200662574 /* BaseVC.swift in Sources */,
@@ -245,6 +256,7 @@
 				65BA697529019C9000F53369 /* ViewController.swift in Sources */,
 				0A509B312907E3C700BEF7CA /* extension.swift in Sources */,
 				65BA698A2901A38200F53369 /* XuanJueViewController.swift in Sources */,
+				0A1F9BE52909398200332414 /* BAGVC.swift in Sources */,
 				0A509B332907EC8A00BEF7CA /* QiandaoVC.swift in Sources */,
 				0A509B2B2907CDCF00BEF7CA /* ZuanshiViewController.swift in Sources */,
 				65BA697129019C9000F53369 /* AppDelegate.swift in Sources */,
