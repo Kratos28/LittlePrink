@@ -22,5 +22,21 @@ extension UIView
         }
 }
 
+extension Date {
+
+    /// 获取当前 秒级 时间戳 - 10位
+    var timestamp : String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let timestamp = Int(timeInterval)
+        return "\(timestamp)"
+    }
+
+    /// 获取当前 毫秒级 时间戳 - 13位
+    var milliStamp : String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let millisecond = CLongLong(round(timeInterval*1000))
+        return "\(millisecond)"
+    }
+}
 
 

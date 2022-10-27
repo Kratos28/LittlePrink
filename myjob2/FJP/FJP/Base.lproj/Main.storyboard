@@ -264,6 +264,51 @@
             </objects>
             <point key="canvasLocation" x="308.59375" y="1651.7578125"/>
         </scene>
+        <!--Zhan DouVC-->
+        <scene sceneID="DxW-oS-qKL">
+            <objects>
+                <viewController storyboardIdentifier="ZhanDouVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="73M-Wj-cGM" customClass="ZhanDouVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mUb-oU-G8c">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9战斗_图层 0" translatesAutoresizingMaskIntoConstraints="NO" id="9de-eG-Jon">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTl-jk-lTi">
+                                <rect key="frame" x="565" y="46" width="147" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="9战斗_返回"/>
+                                <connections>
+                                    <action selector="closeClick:" destination="73M-Wj-cGM" eventType="touchUpInside" id="tHP-fX-93M"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02J-l1-HMN">
+                                <rect key="frame" x="0.0" y="913" width="410" height="111"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="3Ei-hi-g9B" kind="embed" id="PeS-04-k5z"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BIo-kJ-bEb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9de-eG-Jon" secondAttribute="bottom" id="LH0-Hq-fUD"/>
+                            <constraint firstItem="9de-eG-Jon" firstAttribute="top" secondItem="mUb-oU-G8c" secondAttribute="top" id="dKo-XL-3yR"/>
+                            <constraint firstItem="9de-eG-Jon" firstAttribute="leading" secondItem="mUb-oU-G8c" secondAttribute="leading" id="dRR-AK-bwC"/>
+                            <constraint firstAttribute="trailing" secondItem="9de-eG-Jon" secondAttribute="trailing" id="s1I-fO-dzg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fanhui" destination="zTl-jk-lTi" id="jqA-Rg-t4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fd2-VI-CxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2702.34375" y="-624.0234375"/>
+        </scene>
         <!--Zhao HuanVC-->
         <scene sceneID="Q4f-Td-3E4">
             <objects>
@@ -384,6 +429,9 @@
                                         <rect key="frame" x="407" y="0.0" width="148.5" height="160.5"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_7"/>
+                                        <connections>
+                                            <segue destination="73M-Wj-cGM" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="WFr-7R-eLR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2M-1f-9TN">
                                         <rect key="frame" x="605.5" y="0.0" width="148.5" height="160.5"/>
@@ -431,10 +479,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-7Z-0mj">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4充值_t" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-7Z-0mj">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11背包_组 1" translatesAutoresizingMaskIntoConstraints="NO" id="c8M-F6-fzq">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11背包_组 1" translatesAutoresizingMaskIntoConstraints="NO" id="c8M-F6-fzq">
                                 <rect key="frame" x="0.0" y="100" width="768" height="724"/>
                             </imageView>
                         </subviews>
@@ -551,6 +599,116 @@
             </objects>
             <point key="canvasLocation" x="-1192" y="1454"/>
         </scene>
+        <!--XuetiaoVC-->
+        <scene sceneID="EI2-P2-Ioe">
+            <objects>
+                <viewController id="3Ei-hi-g9B" customClass="XuetiaoVC" customModule="FJP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5i-Dh-Lsk">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="111"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9战斗_头像" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-1t-y9c">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1gt-mX-65n"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9战斗_组 4" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-za-5eP">
+                                <rect key="frame" x="104" y="0.0" width="306" height="111"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oqK-OI-Ea8">
+                                <rect key="frame" x="100" y="26.5" width="310" height="58"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h41-KF-53k" customClass="LinearProgressView" customModule="FJP" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="294" height="18.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" systemColor="systemPinkColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocu-j6-P3U" customClass="LinearProgressView" customModule="FJP" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="31.5" width="294" height="18.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" systemColor="linkColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                <real key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="wwZ-Ui-5o1"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPC-ji-MwO">
+                                <rect key="frame" x="104" y="0.0" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-61-7Rh">
+                                <rect key="frame" x="348" y="0.0" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oqK-OI-Ea8" firstAttribute="leading" secondItem="6B7-1t-y9c" secondAttribute="trailing" id="6hO-ie-1JM"/>
+                            <constraint firstAttribute="trailing" secondItem="xQq-za-5eP" secondAttribute="trailing" id="77j-eX-jJT"/>
+                            <constraint firstItem="oqK-OI-Ea8" firstAttribute="centerY" secondItem="q5i-Dh-Lsk" secondAttribute="centerY" id="U4b-Ph-ACP"/>
+                            <constraint firstItem="xQq-za-5eP" firstAttribute="top" secondItem="q5i-Dh-Lsk" secondAttribute="top" id="U8N-lp-EQI"/>
+                            <constraint firstAttribute="trailing" secondItem="oqK-OI-Ea8" secondAttribute="trailing" id="Ul3-8K-mO6"/>
+                            <constraint firstItem="HPC-ji-MwO" firstAttribute="leading" secondItem="6B7-1t-y9c" secondAttribute="trailing" constant="4" id="W26-z5-mmJ"/>
+                            <constraint firstAttribute="bottom" secondItem="6B7-1t-y9c" secondAttribute="bottom" id="YQm-l8-o7P"/>
+                            <constraint firstItem="6B7-1t-y9c" firstAttribute="leading" secondItem="q5i-Dh-Lsk" secondAttribute="leading" id="a77-LQ-Mcl"/>
+                            <constraint firstItem="6B7-1t-y9c" firstAttribute="top" secondItem="q5i-Dh-Lsk" secondAttribute="top" id="awz-lb-CzU"/>
+                            <constraint firstItem="HPC-ji-MwO" firstAttribute="top" secondItem="q5i-Dh-Lsk" secondAttribute="top" id="i1G-4E-Elu"/>
+                            <constraint firstAttribute="bottom" secondItem="xQq-za-5eP" secondAttribute="bottom" id="shQ-gc-Yt0"/>
+                            <constraint firstItem="xQq-za-5eP" firstAttribute="leading" secondItem="6B7-1t-y9c" secondAttribute="trailing" constant="4" id="wjW-9n-3fx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgima" destination="6B7-1t-y9c" id="tOo-mk-ySB"/>
+                        <outlet property="lantiao" destination="Ocu-j6-P3U" id="DIG-k2-VZH"/>
+                        <outlet property="lvc" destination="mrb-61-7Rh" id="vLb-48-sTz"/>
+                        <outlet property="mingzi" destination="HPC-ji-MwO" id="Zv8-S6-3Vt"/>
+                        <outlet property="xuetiao" destination="h41-KF-53k" id="faK-D6-hGy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hU5-wr-KC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3046.875" y="-185.44921875"/>
+        </scene>
     </scenes>
     <resources>
         <image name="11背包_组 1" width="702.5" height="902"/>
@@ -589,8 +747,18 @@
         <image name="8召唤_beib" width="718" height="793.5"/>
         <image name="8召唤_按钮_301666774958" width="466" height="223"/>
         <image name="8召唤_按钮_331666774958" width="466" height="223"/>
+        <image name="9战斗_图层 0" width="1024" height="1366"/>
+        <image name="9战斗_头像" width="150" height="150"/>
+        <image name="9战斗_组 4" width="443" height="86"/>
+        <image name="9战斗_返回" width="116" height="103.5"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
