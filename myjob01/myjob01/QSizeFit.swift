@@ -25,7 +25,7 @@ class QSizeFit : NSObject {
     func getDRpx(value : Double) -> Double{
         return rpx * value
     }
-    
+    //
 }
 
 
