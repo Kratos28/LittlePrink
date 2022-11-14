@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "12战斗_slices(1)_12战斗_slices(1)_背景1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
