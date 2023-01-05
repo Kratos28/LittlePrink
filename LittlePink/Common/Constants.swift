@@ -39,7 +39,9 @@ let imagePH = UIImage(named: "imagePH")!
 let kNameFromAppleID = "nameFromAppleID"
 let kEmailFromAppleID = "emailFromAppleID"
 // MARK: - CoreData
-let appDelegate = UIApplication.shared.delegate as! AppDelegate
+let appDelegate = UIApplication.shared.delegate as! AppDelegate;
+
+
 let persistentContainer = appDelegate.persistentContainer
 let context = persistentContainer.viewContext
 let backgroundContext = persistentContainer.newBackgroundContext()
@@ -113,7 +115,9 @@ let kUpdatedAtCol = "updatedAt"
 
 //表
 let kNoteTable = "Note"
-let kUserLikeTable = "userLike";
+let kUserLikeTable = "UserLike";
+let kUserFavTable = "UserFav";
+let kCommentTable = "Comment"
 //User表
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
@@ -145,4 +149,14 @@ func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{
     let icon = UIImage(systemName: iconName, withConfiguration: config)!
     
     return icon.withTintColor(color)
+}
+
+
+
+func showGlobalTextHUD(_ title:String){
+    let window = UIApplication.shared.windows.last!;
+    let hud = MBProgressHUD.showAdded(to: window, animated: true);
+    hud.mode = .text;
+    hud.label.text = title;
+    hud.hide(animated: true, afterDelay: 2);
 }

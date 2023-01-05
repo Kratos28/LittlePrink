@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A16080C291C9E60006A2738 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16080B291C9E60006A2738 /* AppDelegate.m */; };
-		0A16080F291C9E60006A2738 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16080E291C9E60006A2738 /* SceneDelegate.m */; };
 		0A160812291C9E60006A2738 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A160811291C9E60006A2738 /* ViewController.m */; };
 		0A160815291C9E60006A2738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A160813291C9E60006A2738 /* Main.storyboard */; };
 		0A160817291C9E61006A2738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A160816291C9E61006A2738 /* Assets.xcassets */; };
@@ -18,6 +17,28 @@
 		0A518DD7291CD7F4003EB1E0 /* Sanguo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A518DD5291CD7F4003EB1E0 /* Sanguo.xcdatamodeld */; };
 		0A518DDA291CD820003EB1E0 /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A518DD9291CD820003EB1E0 /* MViewController.m */; };
 		0A518DDD291CDA44003EB1E0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A518DDC291CDA44003EB1E0 /* BaseViewController.m */; };
+		651851D22936474E00B86EAF /* VersionUpdateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 651851D12936474E00B86EAF /* VersionUpdateTool.m */; };
+		65407FCB292BB31F00279C41 /* CDM.m in Sources */ = {isa = PBXBuildFile; fileRef = 65407FCA292BB31F00279C41 /* CDM.m */; };
+		656112BD292BBBF10018E885 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656112BC292BBBF10018E885 /* QViewController.m */; };
+		656133BA29379F6A00D68EEB /* ChongZhiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 656133B929379F6A00D68EEB /* ChongZhiVC.m */; };
+		658B69BB292F45880033A30D /* BGBGVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B69BA292F45880033A30D /* BGBGVIew.m */; };
+		658B69BE292F45CE0033A30D /* BVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B69BD292F45CE0033A30D /* BVIew.m */; };
+		658B69C1292F46070033A30D /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B69C0292F46070033A30D /* ProgressView.m */; };
+		658B69C4292F48B40033A30D /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B69C3292F48B40033A30D /* BGView.m */; };
+		658B69C7292F61F50033A30D /* ZhanDouVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B69C6292F61F50033A30D /* ZhanDouVC.m */; };
+		65B3CB392937A97500A44D60 /* YQInAppPurchaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B3CB382937A97500A44D60 /* YQInAppPurchaseTool.m */; };
+		65B3CB3C2937AA0B00A44D60 /* QF_HZActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B3CB3B2937AA0B00A44D60 /* QF_HZActivityIndicatorView.m */; };
+		65BDFDC9293E25FE0035EF02 /* LotterTanChuangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BDFDC8293E25FE0035EF02 /* LotterTanChuangViewController.m */; };
+		65BE3FB4292CAABC004D68E5 /* ShangDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FB3292CAABC004D68E5 /* ShangDViewController.m */; };
+		65BE3FC7292CEAAC004D68E5 /* LotterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FC6292CEAAC004D68E5 /* LotterViewController.m */; };
+		65BE3FCA292CF35A004D68E5 /* RenWuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE3FC9292CF35A004D68E5 /* RenWuViewController.m */; };
+		65C136A8292E05E4001E6257 /* JueSeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C136A7292E05E4001E6257 /* JueSeViewController.m */; };
+		65C136AE292E3402001E6257 /* ZhengZhanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C136AD292E3402001E6257 /* ZhengZhanViewController.m */; };
+		65C136B1292E45B8001E6257 /* ZhenRongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C136B0292E45B8001E6257 /* ZhenRongViewController.m */; };
+		65C3E603292D17AA00DBAFA8 /* BaoguoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3E602292D17AA00DBAFA8 /* BaoguoViewController.m */; };
+		65D8FF5329347805000A7BD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65D8FF5529347805000A7BD7 /* InfoPlist.strings */; };
+		65EC0428292B6A52007054CD /* PM.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EC0427292B6A51007054CD /* PM.m */; };
+		65EC042A292B6AC7007054CD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EC0429292B6AC7007054CD /* CoreData.framework */; };
 		8B4361F73A4429D157491F3E /* Pods_Sanguo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD58668DD2FD45322593B35 /* Pods_Sanguo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +46,6 @@
 		0A160807291C9E60006A2738 /* Sanguo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sanguo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A16080A291C9E60006A2738 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A16080B291C9E60006A2738 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A16080D291C9E60006A2738 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0A16080E291C9E60006A2738 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0A160810291C9E60006A2738 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0A160811291C9E60006A2738 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A160814291C9E60006A2738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +63,49 @@
 		0A518DDC291CDA44003EB1E0 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		280C3A71458CC237BF1A87E9 /* Pods-Sanguo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanguo.debug.xcconfig"; path = "Target Support Files/Pods-Sanguo/Pods-Sanguo.debug.xcconfig"; sourceTree = "<group>"; };
 		3BD58668DD2FD45322593B35 /* Pods_Sanguo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sanguo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		651851D02936474E00B86EAF /* VersionUpdateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionUpdateTool.h; sourceTree = "<group>"; };
+		651851D12936474E00B86EAF /* VersionUpdateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionUpdateTool.m; sourceTree = "<group>"; };
+		65407FC9292BB31F00279C41 /* CDM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDM.h; sourceTree = "<group>"; };
+		65407FCA292BB31F00279C41 /* CDM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDM.m; sourceTree = "<group>"; };
+		656112BB292BBBF10018E885 /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
+		656112BC292BBBF10018E885 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+		656133B829379F6A00D68EEB /* ChongZhiVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChongZhiVC.h; sourceTree = "<group>"; };
+		656133B929379F6A00D68EEB /* ChongZhiVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChongZhiVC.m; sourceTree = "<group>"; };
+		658B69B9292F45880033A30D /* BGBGVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGBGVIew.h; sourceTree = "<group>"; };
+		658B69BA292F45880033A30D /* BGBGVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGBGVIew.m; sourceTree = "<group>"; };
+		658B69BC292F45CE0033A30D /* BVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BVIew.h; sourceTree = "<group>"; };
+		658B69BD292F45CE0033A30D /* BVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BVIew.m; sourceTree = "<group>"; };
+		658B69BF292F46070033A30D /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		658B69C0292F46070033A30D /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		658B69C2292F48B40033A30D /* BGView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
+		658B69C3292F48B40033A30D /* BGView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
+		658B69C5292F61F50033A30D /* ZhanDouVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhanDouVC.h; sourceTree = "<group>"; };
+		658B69C6292F61F50033A30D /* ZhanDouVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhanDouVC.m; sourceTree = "<group>"; };
+		65B3CB372937A97500A44D60 /* YQInAppPurchaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQInAppPurchaseTool.h; sourceTree = "<group>"; };
+		65B3CB382937A97500A44D60 /* YQInAppPurchaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQInAppPurchaseTool.m; sourceTree = "<group>"; };
+		65B3CB3A2937AA0B00A44D60 /* QF_HZActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QF_HZActivityIndicatorView.h; sourceTree = "<group>"; };
+		65B3CB3B2937AA0B00A44D60 /* QF_HZActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QF_HZActivityIndicatorView.m; sourceTree = "<group>"; };
+		65BDFDC7293E25FE0035EF02 /* LotterTanChuangViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotterTanChuangViewController.h; sourceTree = "<group>"; };
+		65BDFDC8293E25FE0035EF02 /* LotterTanChuangViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotterTanChuangViewController.m; sourceTree = "<group>"; };
+		65BE3FB2292CAABC004D68E5 /* ShangDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShangDViewController.h; sourceTree = "<group>"; };
+		65BE3FB3292CAABC004D68E5 /* ShangDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShangDViewController.m; sourceTree = "<group>"; };
+		65BE3FC5292CEAAC004D68E5 /* LotterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LotterViewController.h; sourceTree = "<group>"; };
+		65BE3FC6292CEAAC004D68E5 /* LotterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LotterViewController.m; sourceTree = "<group>"; };
+		65BE3FC8292CF35A004D68E5 /* RenWuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenWuViewController.h; sourceTree = "<group>"; };
+		65BE3FC9292CF35A004D68E5 /* RenWuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenWuViewController.m; sourceTree = "<group>"; };
+		65C136A6292E05E4001E6257 /* JueSeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JueSeViewController.h; sourceTree = "<group>"; };
+		65C136A7292E05E4001E6257 /* JueSeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JueSeViewController.m; sourceTree = "<group>"; };
+		65C136AC292E3402001E6257 /* ZhengZhanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhengZhanViewController.h; sourceTree = "<group>"; };
+		65C136AD292E3402001E6257 /* ZhengZhanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhengZhanViewController.m; sourceTree = "<group>"; };
+		65C136AF292E45B8001E6257 /* ZhenRongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhenRongViewController.h; sourceTree = "<group>"; };
+		65C136B0292E45B8001E6257 /* ZhenRongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhenRongViewController.m; sourceTree = "<group>"; };
+		65C3E601292D17AA00DBAFA8 /* BaoguoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaoguoViewController.h; sourceTree = "<group>"; };
+		65C3E602292D17AA00DBAFA8 /* BaoguoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaoguoViewController.m; sourceTree = "<group>"; };
+		65CCEBD92934794200149506 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		65D8FF5429347805000A7BD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65EC0426292B6A51007054CD /* PM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PM.h; sourceTree = "<group>"; };
+		65EC0427292B6A51007054CD /* PM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PM.m; sourceTree = "<group>"; };
+		65EC0429292B6AC7007054CD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		69FE3903063672E5C272F1AB /* Pods-Sanguo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sanguo.release.xcconfig"; path = "Target Support Files/Pods-Sanguo/Pods-Sanguo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EC042A292B6AC7007054CD /* CoreData.framework in Frameworks */,
 				8B4361F73A4429D157491F3E /* Pods_Sanguo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,11 +143,15 @@
 		0A160809291C9E60006A2738 /* Sanguo */ = {
 			isa = PBXGroup;
 			children = (
+				65B3CB372937A97500A44D60 /* YQInAppPurchaseTool.h */,
+				65B3CB382937A97500A44D60 /* YQInAppPurchaseTool.m */,
+				658B69BF292F46070033A30D /* ProgressView.h */,
+				658B69C0292F46070033A30D /* ProgressView.m */,
+				651851D02936474E00B86EAF /* VersionUpdateTool.h */,
+				651851D12936474E00B86EAF /* VersionUpdateTool.m */,
 				0A160827291CA65D006A2738 /* Headr.h */,
 				0A16080A291C9E60006A2738 /* AppDelegate.h */,
 				0A16080B291C9E60006A2738 /* AppDelegate.m */,
-				0A16080D291C9E60006A2738 /* SceneDelegate.h */,
-				0A16080E291C9E60006A2738 /* SceneDelegate.m */,
 				0A160810291C9E60006A2738 /* ViewController.h */,
 				0A160811291C9E60006A2738 /* ViewController.m */,
 				0A160823291CA2CB006A2738 /* SViewController.h */,
@@ -93,12 +160,47 @@
 				0A518DD9291CD820003EB1E0 /* MViewController.m */,
 				0A518DDB291CDA44003EB1E0 /* BaseViewController.h */,
 				0A518DDC291CDA44003EB1E0 /* BaseViewController.m */,
+				65407FC9292BB31F00279C41 /* CDM.h */,
+				65407FCA292BB31F00279C41 /* CDM.m */,
+				65EC0426292B6A51007054CD /* PM.h */,
+				65EC0427292B6A51007054CD /* PM.m */,
 				0A160813291C9E60006A2738 /* Main.storyboard */,
+				65BE3FC5292CEAAC004D68E5 /* LotterViewController.h */,
+				65BE3FC6292CEAAC004D68E5 /* LotterViewController.m */,
+				65BDFDC7293E25FE0035EF02 /* LotterTanChuangViewController.h */,
+				65BDFDC8293E25FE0035EF02 /* LotterTanChuangViewController.m */,
+				656112BB292BBBF10018E885 /* QViewController.h */,
+				656112BC292BBBF10018E885 /* QViewController.m */,
+				65BE3FB2292CAABC004D68E5 /* ShangDViewController.h */,
+				65BE3FB3292CAABC004D68E5 /* ShangDViewController.m */,
+				65BE3FC8292CF35A004D68E5 /* RenWuViewController.h */,
+				65BE3FC9292CF35A004D68E5 /* RenWuViewController.m */,
+				65C3E601292D17AA00DBAFA8 /* BaoguoViewController.h */,
+				65C3E602292D17AA00DBAFA8 /* BaoguoViewController.m */,
+				65C136A6292E05E4001E6257 /* JueSeViewController.h */,
+				65C136A7292E05E4001E6257 /* JueSeViewController.m */,
+				65C136AC292E3402001E6257 /* ZhengZhanViewController.h */,
+				65C136AD292E3402001E6257 /* ZhengZhanViewController.m */,
+				65C136AF292E45B8001E6257 /* ZhenRongViewController.h */,
+				65C136B0292E45B8001E6257 /* ZhenRongViewController.m */,
+				658B69B9292F45880033A30D /* BGBGVIew.h */,
+				658B69BA292F45880033A30D /* BGBGVIew.m */,
+				658B69C2292F48B40033A30D /* BGView.h */,
+				658B69C3292F48B40033A30D /* BGView.m */,
+				658B69BC292F45CE0033A30D /* BVIew.h */,
+				658B69BD292F45CE0033A30D /* BVIew.m */,
+				658B69C5292F61F50033A30D /* ZhanDouVC.h */,
+				658B69C6292F61F50033A30D /* ZhanDouVC.m */,
+				656133B829379F6A00D68EEB /* ChongZhiVC.h */,
+				656133B929379F6A00D68EEB /* ChongZhiVC.m */,
+				65B3CB3A2937AA0B00A44D60 /* QF_HZActivityIndicatorView.h */,
+				65B3CB3B2937AA0B00A44D60 /* QF_HZActivityIndicatorView.m */,
 				0A160816291C9E61006A2738 /* Assets.xcassets */,
 				0A160818291C9E61006A2738 /* LaunchScreen.storyboard */,
 				0A16081B291C9E61006A2738 /* Info.plist */,
 				0A16081C291C9E61006A2738 /* main.m */,
 				0A518DD5291CD7F4003EB1E0 /* Sanguo.xcdatamodeld */,
+				65D8FF5529347805000A7BD7 /* InfoPlist.strings */,
 			);
 			path = Sanguo;
 			sourceTree = "<group>";
@@ -115,6 +217,7 @@
 		E6EE8DF82B7E6E7D62A84EC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65EC0429292B6AC7007054CD /* CoreData.framework */,
 				3BD58668DD2FD45322593B35 /* Pods_Sanguo.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0A1607FE291C9E60006A2738;
 			productRefGroup = 0A160808291C9E60006A2738 /* Products */;
@@ -180,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A16081A291C9E61006A2738 /* LaunchScreen.storyboard in Resources */,
+				65D8FF5329347805000A7BD7 /* InfoPlist.strings in Resources */,
 				0A160817291C9E61006A2738 /* Assets.xcassets in Resources */,
 				0A160815291C9E60006A2738 /* Main.storyboard in Resources */,
 			);
@@ -234,14 +339,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658B69C7292F61F50033A30D /* ZhanDouVC.m in Sources */,
+				65C136AE292E3402001E6257 /* ZhengZhanViewController.m in Sources */,
+				658B69C1292F46070033A30D /* ProgressView.m in Sources */,
 				0A518DD7291CD7F4003EB1E0 /* Sanguo.xcdatamodeld in Sources */,
 				0A518DDD291CDA44003EB1E0 /* BaseViewController.m in Sources */,
+				65C136B1292E45B8001E6257 /* ZhenRongViewController.m in Sources */,
 				0A518DDA291CD820003EB1E0 /* MViewController.m in Sources */,
+				65EC0428292B6A52007054CD /* PM.m in Sources */,
 				0A160825291CA2CB006A2738 /* SViewController.m in Sources */,
 				0A160812291C9E60006A2738 /* ViewController.m in Sources */,
+				656133BA29379F6A00D68EEB /* ChongZhiVC.m in Sources */,
+				651851D22936474E00B86EAF /* VersionUpdateTool.m in Sources */,
+				658B69BE292F45CE0033A30D /* BVIew.m in Sources */,
+				656112BD292BBBF10018E885 /* QViewController.m in Sources */,
+				65BE3FCA292CF35A004D68E5 /* RenWuViewController.m in Sources */,
+				65B3CB392937A97500A44D60 /* YQInAppPurchaseTool.m in Sources */,
+				658B69BB292F45880033A30D /* BGBGVIew.m in Sources */,
+				65407FCB292BB31F00279C41 /* CDM.m in Sources */,
+				65B3CB3C2937AA0B00A44D60 /* QF_HZActivityIndicatorView.m in Sources */,
 				0A16080C291C9E60006A2738 /* AppDelegate.m in Sources */,
+				65BDFDC9293E25FE0035EF02 /* LotterTanChuangViewController.m in Sources */,
+				65BE3FB4292CAABC004D68E5 /* ShangDViewController.m in Sources */,
+				65BE3FC7292CEAAC004D68E5 /* LotterViewController.m in Sources */,
 				0A16081D291C9E61006A2738 /* main.m in Sources */,
-				0A16080F291C9E60006A2738 /* SceneDelegate.m in Sources */,
+				65C136A8292E05E4001E6257 /* JueSeViewController.m in Sources */,
+				65C3E603292D17AA00DBAFA8 /* BaoguoViewController.m in Sources */,
+				658B69C4292F48B40033A30D /* BGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +388,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		65D8FF5529347805000A7BD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D8FF5429347805000A7BD7 /* en */,
+				65CCEBD92934794200149506 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -271,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -329,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -383,9 +518,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XQ89XT8BW;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = F6Y2WQCA9G;
+				EXCLUDED_ARCHS = armv7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sanguo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -393,14 +530,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.K.kfwwww.Sanguo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwsg.Sanguo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ff;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,9 +550,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XQ89XT8BW;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = F6Y2WQCA9G;
+				EXCLUDED_ARCHS = armv7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sanguo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -422,14 +562,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.K.kfwwww.Sanguo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwsg.Sanguo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ff;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

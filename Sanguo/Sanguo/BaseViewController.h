@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
-
+@property (nonatomic,strong)UIButton *jinbtn;
 @end
 
 NS_ASSUME_NONNULL_END

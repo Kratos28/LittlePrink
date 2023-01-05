@@ -2,6 +2,48 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Sanguo/Boss+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/Boss+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/Boss+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/Boss+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:ZR+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:ZR+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:ZR+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:ZR+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/P+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/P+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/P+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/P+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/SIgn+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:Sanguo/SIgn+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:Sanguo.xcodeproj">
    </FileRef>
    <FileRef

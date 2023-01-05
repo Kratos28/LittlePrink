@@ -6,13 +6,15 @@
 //
 
 import UIKit
-
+import LeanCloud
 
 class NoteEditVC: UIViewController {
     
     var draftNote: DraftNote?
     var updateDraftNoteFinished: (() -> ())?
     var postDraftNoteFinished: (() -> ())?
+    var note: LCObject?
+    var updateNoteFinished : ((String) -> ())?
     
     var photos: [UIImage] = []
     
@@ -67,8 +69,14 @@ class NoteEditVC: UIViewController {
         
         if let draftNote = draftNote{//发布草稿笔记
             postDraftNote(draftNote)
-        }else{//发布新笔记
-            createNote()            
+        }else if let note = note{
+            //更新笔记
+            updateNote(note);
+        }else
+        {
+            //发布新笔记
+            createNote()
+
         }
     }
     

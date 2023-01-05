@@ -13,15 +13,23 @@ extension NoteDetailVC{
     func setUI(){
         followBtn.layer.borderWidth = 1
         followBtn.layer.borderColor = mainColor.cgColor
-        
-        showNote()
+        if isReadMyNote{
+            followBtn.isHidden = true;
+            shareBtnOrMoreBtn.setImage(UIImage(systemName: "ellipsis"), for: .normal);
+        }
+        showNote();
+        showLike();
     }
     
-    private func showNote(){
-        //上方bar的author
-        let authorAvatarURL = author?.getImageURL(from: kAvatarCol, .avater)
-        authorAvatarBtn.kf.setImage(with: authorAvatarURL, for: .normal)
-        authorNickNameBtn.setTitle(author?.getExactStringVal(kNickNameCol), for: .normal)
+    func showNote(_ isUpdatingNote : Bool = false){
+        
+        if !isUpdatingNote
+        {
+            //上方bar的author
+            let authorAvatarURL = author?.getImageURL(from: kAvatarCol, .avater)
+            authorAvatarBtn.kf.setImage(with: authorAvatarURL, for: .normal)
+            authorNickNameBtn.setTitle(author?.getExactStringVal(kNickNameCol), for: .normal)
+        }
         
         //note图片
         //1.图片高度
@@ -73,7 +81,14 @@ extension NoteDetailVC{
         
         //底部bar的点赞数,收藏数,评论数
         likeCount = note.getExactIntVal(kLikeCountCol)
+        currentLikeCount = likeCount;
         favCount = note.getExactIntVal(kFavCountCol)
+        currentFavCount = favCount;
+
         commentCount = note.getExactIntVal(kCommentCountCol)
+    }
+    
+    private func showLike(){
+        self.likeBtn.setSelected(selected: isLikeFormWaterfallCell, animated: false);
     }
 }

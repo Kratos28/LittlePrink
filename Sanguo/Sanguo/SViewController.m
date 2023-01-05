@@ -8,6 +8,8 @@
 #import "SViewController.h"
 #import "Masonry/Masonry.h"
 #import "Headr.h"
+#import "PM.h"
+#import "AppDelegate.h"
 @interface SViewController ()
 
 @property (weak, nonatomic) IBOutlet UIStackView *sview;
@@ -43,6 +45,8 @@
         make.trailing.equalTo(@(X(-100)));
     }];
     
+    
+    
 }
 - (IBAction)chuanjianClick:(UIButton *)sender {
     
@@ -56,15 +60,21 @@
 - (IBAction)click:(UIButton *)sender {
     self.b.selected = false;
     sender.selected = true;
+    P *p =   [PM setupP][sender.tag];
+    p.selected = YES;
+    
     self.b = sender;
-    switch (sender.tag) {
+    [appDelegate saveContext];
+     P *pp = [PM getP];
+    //[app1 saveContext];
+    switch (sender.tag)
+    {
         case 0:
             self.imageVIEW.image = [UIImage imageNamed:@"2选角色1_slices_2选角色1_slices_组9"];
             break;
         case 1:
             self.imageVIEW.image = [UIImage imageNamed:@"2选角色1_slices_2选角色1_slices_组8"];
             break;;
-            
         case 2:
             self.imageVIEW.image = [UIImage imageNamed:@"2选角色1_slices_2选角色1_slices_组7"];
             break;;

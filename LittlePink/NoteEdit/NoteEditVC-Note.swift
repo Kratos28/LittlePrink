@@ -122,4 +122,92 @@ extension NoteEditVC{
             }
         }
     }
+    
+    func updateNote(_ note : LCObject)
+    {
+        do {
+            let noteGroup = DispatchGroup()
+            
+            let note = LCObject(className: kNoteTable)
+            
+            // MARK: 单个文件的存储
+            if !isVideo
+            {
+                if let coverPhotoData = photos[0].jpeg(.high){
+                    let coverPhoto = LCFile(payload: .data(data: coverPhotoData))
+                    //coverPhoto.mimeType = "image/jpeg"
+                    coverPhoto.save(to: note, as: kCoverPhotoCol, group: noteGroup)
+                }
+                
+                
+                let photoGroup = DispatchGroup()
+                //1.把所有文件存进云端
+                var photoPaths: [Int: String] = [:]
+                for (index, eachPhoto) in photos.enumerated(){
+                    if let eachPhotoData = eachPhoto.jpeg(.high){
+                        let photo = LCFile(payload: .data(data: eachPhotoData))
+                        photoGroup.enter()
+                        photo.save { res in
+                            //print("photo文件保存成功/失败")
+                            if case .success = res, let path = photo.url?.stringValue{
+                                photoPaths[index] = path
+                            }
+                            photoGroup.leave()
+                        }
+                    }
+                }
+                
+                noteGroup.enter()
+                photoGroup.notify(queue: .main) {
+             
+                    let photoPathsArr = photoPaths.sorted(by: <).map{ $0.value }
+                    
+                    do{
+                        try note.set(kPhotosCol, value: photoPathsArr)
+                        note.save { _ in
+                            //print("存储photos字段成功/失败")
+                            noteGroup.leave()
+                        }
+                    }catch{
+                        print("字段赋值失败: \(error)")
+                    }
+                }
+
+            }
+       
+            
+            
+            // MARK: 一般类型的存储
+            //封面图宽高比
+            let coverPhotoSize = photos[0].size
+            let coverPhotoRatio = Double(coverPhotoSize.height / coverPhotoSize.width)
+            
+            try note.set(kCoverPhotoRatioCol, value: coverPhotoRatio)
+            try note.set(kTitleCol, value: titleTextField.exactText)
+            try note.set(kTextCol, value: textView.exactText)
+            try note.set(kChannelCol, value: channel.isEmpty ? "推荐" : channel)
+            try note.set(kSubChannelCol, value: subChannel)
+            try note.set(kPOINameCol, value: poiName)
+            try note.set(kHasEditCol, value: true)
+
+            noteGroup.enter()
+            note.save { _ in
+                //print("存储一般数据字段成功/失败")
+                noteGroup.leave()
+            }
+            
+            
+            noteGroup.notify(queue: .main) {
+                //print("笔记内容全部存储结束")
+                self.updateNoteFinished?(note.objectId!.stringValue!);
+                self.showTextHUD("更新笔记成功", false)
+            }
+      
+            dismiss(animated: true)
+            
+        } catch {
+            print("字段赋值失败: \(error)")
+        }
+
+    }
 }

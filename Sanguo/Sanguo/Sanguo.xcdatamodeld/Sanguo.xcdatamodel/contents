@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G918" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Boss" representedClassName="Boss" syncable="YES" codeGenerationType="class">
+        <attribute name="type_shengming" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type_zuidashengming" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="zhandou_kaipai" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="P" representedClassName="P" syncable="YES" codeGenerationType="class">
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="jinbi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="main_bgImageView" optional="YES" attributeType="String"/>
         <attribute name="main_headimagename" optional="YES" attributeType="String"/>
         <attribute name="mingzi" optional="YES" attributeType="String"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="zhandou_bgimage" optional="YES" attributeType="String"/>
+        <attribute name="zhandou_kaipai" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Shop" representedClassName="Shop" syncable="YES" codeGenerationType="class">
+        <attribute name="bg_imageview" optional="YES" attributeType="String"/>
+        <attribute name="jinbi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="SIgn" representedClassName="SIgn" syncable="YES" codeGenerationType="class">
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mingzi" optional="YES" attributeType="String"/>
+        <attribute name="pic" optional="YES" attributeType="String"/>
+        <attribute name="qiandao" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="selectedpic" optional="YES" attributeType="String"/>
+        <attribute name="yuanbao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ZR" representedClassName="ZR" syncable="YES" codeGenerationType="class">
+        <attribute name="mingzi" optional="YES" attributeType="String"/>
+        <attribute name="norimagname" optional="YES" attributeType="String"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="selectedImagename" optional="YES" attributeType="String"/>
+        <attribute name="type_shengming" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type_zuidashengming" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="zhandou_kaipai" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="P" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="P" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="Shop" positionX="-63" positionY="18" width="128" height="59"/>
+        <element name="SIgn" positionX="-54" positionY="27" width="128" height="119"/>
+        <element name="ZR" positionX="-54" positionY="54" width="128" height="134"/>
+        <element name="Boss" positionX="-54" positionY="72" width="128" height="74"/>
     </elements>
 </model>

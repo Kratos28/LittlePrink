@@ -1,0 +1,87 @@
+Hello,
+
+
+Thank you for your efforts to follow our guidelines. There are still some issues that need your attention.
+
+
+If you have any questions, we are here to help. Reply to this message in App Store Connect and let us know. 
+
+
+Guideline 2.1 - Performance - App Completeness
+
+We found that your in-app purchase products exhibited one or more bugs which create a poor user experience. Specifically, when we tried to purchase your in-app purchase product, it was loading indefinitely. Please review the details and resources below and complete the next steps.
+
+
+Review device details:
+
+
+- Device type: iPad
+
+- OS version: iOS 16.1.1
+
+
+Next Steps
+
+
+When validating receipts on your server, your server needs to be able to handle a production-signed app getting its receipts from Apple’s test environment. The recommended approach is for your production server to always validate receipts against the production App Store first. If validation fails with the error code "Sandbox receipt used in production," you should validate against the test environment instead.
+
+
+Resources
+
+
+- Learn how to set up and test in-app purchase products in the sandbox environment.
+
+- For more information on receipt validation, see the In-App Purchase FAQ.
+
+- If your app makes a SKReceiptRefreshRequest call and fails, do not retry the call. Assume the user does not have access. Continue by making the addPayment call.
+
+- If your app makes a SKReceiptRefreshRequest call to restore previously purchased in-app purchases, make sure the app calls restoreCompletedTransactions when the user selects the "Restore" button.
+
+
+Guideline 2.3.6 - Performance - Accurate Metadata
+
+The rating you have selected, 9+, is inconsistent with the content of your app. Since your app includes contests or sweepstakes, you must select "Frequent/Intense" for Contests in App Store Connect.
+
+
+Apps must be rated for the highest level of content available so App Store users know what to expect when they download your app onto their device.
+
+
+Next Steps
+
+
+To resolve this issue, please update your Age Rating selections to select "Frequent/Intense" for Contests.
+
+
+The Age Rating selections can be found on the App Information page after selecting your app in App Store Connect.
+
+
+Resources
+
+
+- See how to set the app age rating in App Store Connect.
+
+- Review our policies for age ratings on the App Store in App Store Review Guideline 2.3.6.
+
+
+Guideline 5.3.2 - Legal - Gaming, Gambling, and Lotteries
+
+Your app includes a contest or sweepstakes but it does not:
+
+
+- Include official rules for the 幸运转盘 within the app, which is required.
+
+- Indicate that Apple is not involved in any way with the contest or sweepstakes.
+
+
+Next Steps
+
+
+It is necessary to:
+
+
+- Include official rules of the contest or sweepstakes in the app and ensure the rules are available to users at all times.
+
+- Include an explicit statement in the contest or sweepstakes rules specifying that Apple is not a sponsor.
+
+ 
+

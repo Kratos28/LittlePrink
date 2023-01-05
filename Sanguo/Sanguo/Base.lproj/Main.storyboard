@@ -2,9 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,22 +63,39 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-6q-Lxa">
-                                <rect key="frame" x="194" y="91" width="1089" height="350"/>
+                                <rect key="frame" x="194" y="91" width="1452" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIg-fb-Z1x">
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝9"/>
+                                        <connections>
+                                            <segue destination="kii-fE-tuf" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="ydW-gU-PsN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm8-z6-R6C">
                                         <rect key="frame" x="363" y="0.0" width="363" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝8"/>
+                                        <connections>
+                                            <segue destination="M65-K2-hAq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g0X-hw-GHJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-eM-n0S">
                                         <rect key="frame" x="726" y="0.0" width="363" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝7"/>
+                                        <connections>
+                                            <segue destination="sjD-VN-DiG" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="D7c-Te-rWG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-4I-Umw">
+                                        <rect key="frame" x="1089" y="0.0" width="363" height="350"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" backgroundImage="切图_3主界面_slices_chongzhi"/>
+                                        <connections>
+                                            <segue destination="zaa-yV-DR0" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Zgg-pr-Ryo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -87,16 +106,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝6"/>
+                                        <connections>
+                                            <segue destination="Nce-sn-0At" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="xae-ss-zXs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1K-9m-j3Q">
                                         <rect key="frame" x="0.0" y="350" width="375" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝5"/>
+                                        <connections>
+                                            <action selector="clickccc:" destination="I1K-zd-NJf" eventType="touchUpInside" id="EUO-xg-SkN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-62-h7p">
                                         <rect key="frame" x="0.0" y="700" width="375" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝4"/>
+                                        <connections>
+                                            <action selector="clickccc:" destination="I1K-zd-NJf" eventType="touchUpInside" id="tAe-qQ-qk4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -107,31 +135,54 @@
                                         <rect key="frame" x="10" y="44" width="332" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_包裹"/>
+                                        <connections>
+                                            <segue destination="gc4-yv-8JE" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="Fkp-DH-kWQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk6-ng-TNA">
                                         <rect key="frame" x="372" y="44" width="332" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角"/>
+                                        <connections>
+                                            <segue destination="bai-gO-wPr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hqD-NK-LZh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTB-8K-foZ">
                                         <rect key="frame" x="734" y="44" width="332" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝"/>
+                                        <connections>
+                                            <segue destination="J9e-vq-y5Q" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="llu-6l-SSV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGq-Dd-poa">
                                         <rect key="frame" x="1096" y="44" width="332" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝2"/>
+                                        <connections>
+                                            <action selector="clickccc:" destination="I1K-zd-NJf" eventType="touchUpInside" id="qe4-FI-YXw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMv-Lh-EwC">
                                         <rect key="frame" x="1458" y="44" width="332" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝3"/>
+                                        <connections>
+                                            <action selector="clickccc:" destination="I1K-zd-NJf" eventType="touchUpInside" id="3sK-iB-zDm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <edgeInsets key="layoutMargins" top="0.0" left="10" bottom="0.0" right="10"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hek-Pu-nBE">
+                                <rect key="frame" x="239" y="259" width="67" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="UEf-Yp-kZn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7sn-ht-Dl8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,6 +196,7 @@
                     <connections>
                         <outlet property="MViewController" destination="2SJ-6f-4Ww" id="SWw-NJ-QvE"/>
                         <outlet property="bottomS" destination="8pc-gD-1ph" id="1vx-D2-AsT"/>
+                        <outlet property="jinbi" destination="hek-Pu-nBE" id="xHG-zD-fBV"/>
                         <outlet property="tops" destination="OX9-6q-Lxa" id="3uI-Zv-HQ1"/>
                         <outlet property="zuoS" destination="oTi-kX-sBR" id="fDw-ql-QLC"/>
                     </connections>
@@ -228,8 +280,514 @@
             </objects>
             <point key="canvasLocation" x="1496" y="321"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="MQr-XS-KWf">
+            <objects>
+                <viewController storyboardIdentifier="QViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kii-fE-tuf" customClass="QViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VC0-x0-8wo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4七天签到_slices_4七天签到_slices_组17" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-Gg-rug">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPb-Fb-Xri">
+                                <rect key="frame" x="287" y="152" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="4七天签到_slices_4七天签到_slices_取消"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="m6i-uh-GeB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U9f-im-qfN"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c2r-Gg-rug" secondAttribute="trailing" id="ENQ-ge-0ur"/>
+                            <constraint firstItem="c2r-Gg-rug" firstAttribute="leading" secondItem="VC0-x0-8wo" secondAttribute="leading" id="W5T-Wg-yec"/>
+                            <constraint firstItem="c2r-Gg-rug" firstAttribute="top" secondItem="VC0-x0-8wo" secondAttribute="top" id="Xxz-v8-hgI"/>
+                            <constraint firstAttribute="bottom" secondItem="c2r-Gg-rug" secondAttribute="bottom" id="hNN-nl-J6V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanbi" destination="KPb-Fb-Xri" id="mmZ-tI-aXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ruE-Bc-dZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="808"/>
+        </scene>
+        <!--ShangD View Controller-->
+        <scene sceneID="XJC-Ax-M9Y">
+            <objects>
+                <viewController id="M65-K2-hAq" customClass="ShangDViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGl-oU-cM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5商店_slices_5商店_slices_组19" translatesAutoresizingMaskIntoConstraints="NO" id="dr5-gd-m9K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-oa-RV8">
+                                <rect key="frame" x="284" y="145" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="4七天签到_slices_4七天签到_slices_取消"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="X3v-78-y1Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iSU-Vn-Ynr"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dr5-gd-m9K" secondAttribute="bottom" id="Hwl-dJ-eGb"/>
+                            <constraint firstItem="dr5-gd-m9K" firstAttribute="top" secondItem="xGl-oU-cM7" secondAttribute="top" id="RL2-AE-Ag2"/>
+                            <constraint firstAttribute="trailing" secondItem="dr5-gd-m9K" secondAttribute="trailing" id="SeI-LH-p1p"/>
+                            <constraint firstItem="dr5-gd-m9K" firstAttribute="leading" secondItem="xGl-oU-cM7" secondAttribute="leading" id="uRN-YP-2IS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanbi" destination="hp8-oa-RV8" id="DDp-eB-hVY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXp-ca-vTZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="1552"/>
+        </scene>
+        <!--Lotter Tan Chuang View Controller-->
+        <scene sceneID="Rh6-UD-hVh">
+            <objects>
+                <viewController storyboardIdentifier="LotterTanChuangViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9tG-Ep-v3s" customClass="LotterTanChuangViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WeZ-fW-TaV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6转盘_slices_6转盘_slices_弹窗_1(2)" translatesAutoresizingMaskIntoConstraints="NO" id="9Ey-9U-hod">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZTg-RQ-aIO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ey-9U-hod" firstAttribute="leading" secondItem="WeZ-fW-TaV" secondAttribute="leading" id="6tP-V4-cSP"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ey-9U-hod" secondAttribute="bottom" id="OjR-YX-VHf"/>
+                            <constraint firstItem="9Ey-9U-hod" firstAttribute="top" secondItem="WeZ-fW-TaV" secondAttribute="top" id="QxO-0W-NGo"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ey-9U-hod" secondAttribute="trailing" id="d0I-IH-biC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5I-1k-VdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="1709"/>
+        </scene>
+        <!--Baoguo View Controller-->
+        <scene sceneID="7Uq-ek-j2S">
+            <objects>
+                <viewController id="gc4-yv-8JE" customClass="BaoguoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gei-CC-8Lo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8包裹_slices_8包裹_slices_背景" translatesAutoresizingMaskIntoConstraints="NO" id="rvL-vH-F1G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnI-Ji-pkz">
+                                <rect key="frame" x="291" y="137" width="67" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="4七天签到_slices_4七天签到_slices_取消"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="gc4-yv-8JE" eventType="touchUpInside" id="YIA-W0-6Pu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vo-1i-4qe">
+                                <rect key="frame" x="251" y="199" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="8包裹_slices_8包裹_slices_元宝"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="Wa7-g3-WCn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMp-AE-jeG">
+                                <rect key="frame" x="49" y="199" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="8包裹_slices_8包裹_slices_组20"/>
+                                <connections>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="Ij3-ks-UL3"/>
+                                    <action selector="zhuangclick:" destination="gc4-yv-8JE" eventType="touchUpInside" id="iFJ-Xe-nsW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-YT-bDt">
+                                <rect key="frame" x="136" y="199" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="8包裹_slices_8包裹_slices_组21"/>
+                                <connections>
+                                    <action selector="daojuclick:" destination="gc4-yv-8JE" eventType="touchUpInside" id="xXX-6A-fzO"/>
+                                    <action selector="guanbi:" destination="kii-fE-tuf" eventType="touchUpInside" id="hdJ-mJ-ooS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OjY-6L-EuL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rvL-vH-F1G" firstAttribute="top" secondItem="Gei-CC-8Lo" secondAttribute="top" id="1hw-qH-8WV"/>
+                            <constraint firstItem="rvL-vH-F1G" firstAttribute="leading" secondItem="Gei-CC-8Lo" secondAttribute="leading" id="Oek-IJ-1cT"/>
+                            <constraint firstAttribute="trailing" secondItem="rvL-vH-F1G" secondAttribute="trailing" id="WQ1-SY-R1p"/>
+                            <constraint firstAttribute="bottom" secondItem="rvL-vH-F1G" secondAttribute="bottom" id="WXt-B7-vJG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="daojuC" destination="tFD-YT-bDt" id="TYm-sl-Tp2"/>
+                        <outlet property="guanbi" destination="VnI-Ji-pkz" id="BbZ-qS-Ftg"/>
+                        <outlet property="jinbi" destination="2Vo-1i-4qe" id="xIx-nk-IKY"/>
+                        <outlet property="zhuangbeic" destination="PMp-AE-jeG" id="b2x-c0-Fl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRb-2s-fRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468.11594202898556" y="2295.5357142857142"/>
+        </scene>
+        <!--Ren Wu View Controller-->
+        <scene sceneID="aqr-aG-ViK">
+            <objects>
+                <viewController id="Nce-sn-0At" customClass="RenWuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A3R-SY-gh3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7任务_slices_7任务_slices_beijing" translatesAutoresizingMaskIntoConstraints="NO" id="hnX-43-TAj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0yA-XH-1hU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hnX-43-TAj" firstAttribute="top" secondItem="A3R-SY-gh3" secondAttribute="top" id="QWI-Cc-c2t"/>
+                            <constraint firstItem="hnX-43-TAj" firstAttribute="leading" secondItem="A3R-SY-gh3" secondAttribute="leading" id="T3I-8q-mrY"/>
+                            <constraint firstAttribute="bottom" secondItem="hnX-43-TAj" secondAttribute="bottom" id="mTr-NV-wjr"/>
+                            <constraint firstAttribute="trailing" secondItem="hnX-43-TAj" secondAttribute="trailing" id="p2e-Yj-XOR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPY-BX-MAB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="2492"/>
+        </scene>
+        <!--Lotter View Controller-->
+        <scene sceneID="aRN-Xd-KTy">
+            <objects>
+                <viewController id="sjD-VN-DiG" customClass="LotterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqk-yy-6bg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6转盘_slices_6转盘_slices_背景" translatesAutoresizingMaskIntoConstraints="NO" id="fOX-Ys-yE7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6转盘_slices_6转盘_slices_转盘" translatesAutoresizingMaskIntoConstraints="NO" id="GDx-SS-ddj">
+                                <rect key="frame" x="87" y="344" width="240" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6转盘_slices_6转盘_slices_组10" translatesAutoresizingMaskIntoConstraints="NO" id="a6Z-D4-nkw">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FXF-bv-VcL"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fOX-Ys-yE7" firstAttribute="top" secondItem="wqk-yy-6bg" secondAttribute="top" id="I7O-AG-w5U"/>
+                            <constraint firstAttribute="trailing" secondItem="fOX-Ys-yE7" secondAttribute="trailing" id="OpU-03-dNW"/>
+                            <constraint firstItem="fOX-Ys-yE7" firstAttribute="leading" secondItem="wqk-yy-6bg" secondAttribute="leading" id="T3z-fQ-kFi"/>
+                            <constraint firstAttribute="bottom" secondItem="fOX-Ys-yE7" secondAttribute="bottom" id="kuL-aB-gW2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zhizhen" destination="a6Z-D4-nkw" id="rdq-hL-d2B"/>
+                        <outlet property="zhuanpan" destination="GDx-SS-ddj" id="jPb-MH-MwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzF-fp-c4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="1590"/>
+        </scene>
+        <!--Zheng Zhan View Controller-->
+        <scene sceneID="wUC-Rb-EaI">
+            <objects>
+                <viewController id="J9e-vq-y5Q" customClass="ZhengZhanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkS-cp-Mk7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10征战_slices_10征战_slices_组202" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-cc-YAW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10征战_slices_10征战_slices_色相／饱和度1" translatesAutoresizingMaskIntoConstraints="NO" id="khd-du-DEi">
+                                <rect key="frame" x="204" y="681" width="164" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QG-uw-5Ap">
+                                <rect key="frame" x="204" y="503" width="141" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="10征战_slices_10征战_slices_三角"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Acj-hx-2QN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bn5-cc-YAW" secondAttribute="bottom" id="D9s-S6-GrN"/>
+                            <constraint firstAttribute="trailing" secondItem="bn5-cc-YAW" secondAttribute="trailing" id="LDt-Xz-9wR"/>
+                            <constraint firstItem="bn5-cc-YAW" firstAttribute="top" secondItem="bkS-cp-Mk7" secondAttribute="top" id="jNE-W8-dcz"/>
+                            <constraint firstItem="bn5-cc-YAW" firstAttribute="leading" secondItem="bkS-cp-Mk7" secondAttribute="leading" id="ooT-Zm-4aX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanghuan" destination="khd-du-DEi" id="sPX-6u-Qs5"/>
+                        <outlet property="jiantou" destination="8QG-uw-5Ap" id="tFw-fY-YXh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Zj-L4-BOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1723.1884057971015" y="1774.5535714285713"/>
+        </scene>
+        <!--Jue Se View Controller-->
+        <scene sceneID="1e9-5t-1jb">
+            <objects>
+                <viewController id="bai-gO-wPr" customClass="JueSeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgU-US-0rc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9主角拷贝2_slices_9主角拷贝2_slices_组20" translatesAutoresizingMaskIntoConstraints="NO" id="i3D-ua-jEg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="DAf-Az-17b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39T-oH-reY">
+                                <rect key="frame" x="38" y="519" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝5"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg1-fm-gNE">
+                                <rect key="frame" x="250" y="519" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝6"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0L-Vl-e0T">
+                                <rect key="frame" x="288" y="808" width="107" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝9"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGN-G0-NKX">
+                                <rect key="frame" x="315" y="695" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPd-2o-kue">
+                                <rect key="frame" x="343" y="447" width="42" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tR-Ra-Zns">
+                                <rect key="frame" x="288" y="710" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCH-6j-Ueu">
+                                <rect key="frame" x="265" y="72" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="8包裹_slices_8包裹_slices_取消"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JaN-z2-AJT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i3D-ua-jEg" secondAttribute="bottom" id="5M8-rC-WAO"/>
+                            <constraint firstAttribute="trailing" secondItem="i3D-ua-jEg" secondAttribute="trailing" id="8Sn-Wt-56E"/>
+                            <constraint firstItem="i3D-ua-jEg" firstAttribute="leading" secondItem="tgU-US-0rc" secondAttribute="leading" id="eVk-x5-OKj"/>
+                            <constraint firstItem="i3D-ua-jEg" firstAttribute="top" secondItem="tgU-US-0rc" secondAttribute="top" id="moS-OI-ZlR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="i3D-ua-jEg" id="J0X-Qm-r4l"/>
+                        <outlet property="guanbib" destination="SCH-6j-Ueu" id="suR-uT-iUo"/>
+                        <outlet property="jingyan" destination="HGN-G0-NKX" id="cBC-tl-JU5"/>
+                        <outlet property="tiao" destination="5tR-Ra-Zns" id="QFi-7R-j6v"/>
+                        <outlet property="tisheng" destination="A0L-Vl-e0T" id="lrU-Xv-qL6"/>
+                        <outlet property="xiaohao" destination="uPd-2o-kue" id="yq6-tw-qUC"/>
+                        <outlet property="xiezhuang" destination="39T-oH-reY" id="RHK-FJ-4Ue"/>
+                        <outlet property="yijianzhuangbei" destination="Vg1-fm-gNE" id="uNW-dD-O9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bj3-dG-Cip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681.15942028985512" y="1622.5446428571429"/>
+        </scene>
+        <!--Zhen Rong View Controller-->
+        <scene sceneID="cKG-8p-e8Z">
+            <objects>
+                <viewController storyboardIdentifier="ZhenRongViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Thi-dB-lXp" customClass="ZhenRongViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lGf-Cd-5ec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11阵容拷贝2_slices_11阵容拷贝2_slices_beijing" translatesAutoresizingMaskIntoConstraints="NO" id="Std-ka-apt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iXV-pB-cVD">
+                                <rect key="frame" x="87" y="518" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.48872870210000002" green="0.36721152070000002" blue="0.21565103529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hlV-44-NEh">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionView" id="v7o-nM-uHM">
+                                        <rect key="frame" x="20" y="10" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TBQ-au-BRq">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Thi-dB-lXp" id="iDZ-a3-UhV"/>
+                                    <outlet property="delegate" destination="Thi-dB-lXp" id="nJe-H0-9uK"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-hx-VQz">
+                                <rect key="frame" x="289" y="449" width="67" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝7(1)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-vx-3kV">
+                                <rect key="frame" x="43" y="499" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWP-Xr-uxo">
+                                <rect key="frame" x="174" y="784" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝7"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gWc-Mi-T5W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Std-ka-apt" secondAttribute="bottom" id="1Wo-Lf-L84"/>
+                            <constraint firstAttribute="trailing" secondItem="Std-ka-apt" secondAttribute="trailing" id="Y4V-6K-Mkn"/>
+                            <constraint firstItem="Std-ka-apt" firstAttribute="top" secondItem="lGf-Cd-5ec" secondAttribute="top" id="o92-E5-uYG"/>
+                            <constraint firstItem="Std-ka-apt" firstAttribute="leading" secondItem="lGf-Cd-5ec" secondAttribute="leading" id="qTY-Rx-sSw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collviewView" destination="iXV-pB-cVD" id="McO-61-I4L"/>
+                        <outlet property="kaishizhandou" destination="jWP-Xr-uxo" id="Qpc-l5-gUT"/>
+                        <outlet property="qingkong" destination="Cka-hx-VQz" id="0Fp-l0-DTq"/>
+                        <outlet property="yijinabuzhen" destination="3BJ-vx-3kV" id="0uv-o8-GR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnr-EW-iQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="3033"/>
+        </scene>
+        <!--Zhan DouVC-->
+        <scene sceneID="dM8-sX-0PR">
+            <objects>
+                <viewController storyboardIdentifier="ZhanDouVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cW3-pI-bMK" customClass="ZhanDouVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3H5-VV-t5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12战斗_slices(1)_12战斗_slices(1)_背景" translatesAutoresizingMaskIntoConstraints="NO" id="uzm-xx-gyu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRa-yS-KeI">
+                                <rect key="frame" x="327" y="178" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="12战斗_slices(1)_12战斗_slices(1)_逃跑"/>
+                                <connections>
+                                    <action selector="taopaoclick:" destination="cW3-pI-bMK" eventType="touchUpInside" id="uG4-HR-gza"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RUv-aR-MHm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uzm-xx-gyu" secondAttribute="trailing" id="NqY-bg-Sks"/>
+                            <constraint firstItem="uzm-xx-gyu" firstAttribute="top" secondItem="3H5-VV-t5Z" secondAttribute="top" id="Ppl-jt-9hV"/>
+                            <constraint firstItem="uzm-xx-gyu" firstAttribute="leading" secondItem="3H5-VV-t5Z" secondAttribute="leading" id="aWg-Uk-8FR"/>
+                            <constraint firstAttribute="bottom" secondItem="uzm-xx-gyu" secondAttribute="bottom" id="ghn-iR-Xa5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageV" destination="uzm-xx-gyu" id="4GX-tz-KRe"/>
+                        <outlet property="taopao" destination="lRa-yS-KeI" id="bux-VJ-eSs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJN-KQ-UXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2390" y="2360"/>
+        </scene>
+        <!--Chong ZhiVC-->
+        <scene sceneID="cdY-Fy-GRk">
+            <objects>
+                <viewController id="zaa-yV-DR0" customClass="ChongZhiVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hF1-UV-aeT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="充值_19_" translatesAutoresizingMaskIntoConstraints="NO" id="MWO-uF-lgo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dC3-bd-eZS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MWO-uF-lgo" secondAttribute="bottom" id="8Zs-Ca-1ZL"/>
+                            <constraint firstItem="MWO-uF-lgo" firstAttribute="leading" secondItem="hF1-UV-aeT" secondAttribute="leading" id="AYY-BJ-WEf"/>
+                            <constraint firstAttribute="trailing" secondItem="MWO-uF-lgo" secondAttribute="trailing" id="DsE-Ot-uwC"/>
+                            <constraint firstItem="MWO-uF-lgo" firstAttribute="top" secondItem="hF1-UV-aeT" secondAttribute="top" id="k28-3p-cle"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CD-dT-lJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="997"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="10征战_slices_10征战_slices_三角" width="183" height="152"/>
+        <image name="10征战_slices_10征战_slices_组202" width="2048" height="2732"/>
+        <image name="10征战_slices_10征战_slices_色相／饱和度1" width="828" height="437"/>
+        <image name="11阵容拷贝2_slices_11阵容拷贝2_slices_beijing" width="2048" height="2732"/>
+        <image name="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝7" width="857" height="258"/>
+        <image name="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝7(1)" width="539" height="164"/>
+        <image name="11阵容拷贝2_slices_11阵容拷贝2_slices_按钮拷贝8" width="539" height="163"/>
+        <image name="12战斗_slices(1)_12战斗_slices(1)_背景" width="2048" height="2732"/>
+        <image name="12战斗_slices(1)_12战斗_slices(1)_逃跑" width="329" height="251"/>
         <image name="1登录_slices_1登录_slices_图层" width="2048" height="2732"/>
         <image name="1登录_slices_1登录_slices_按钮" width="910" height="270"/>
         <image name="2选角色1_slices_2选角色1_slices_1(1)" width="490" height="360"/>
@@ -252,6 +810,25 @@
         <image name="3主界面_slices_3主界面_slices_主角拷贝9" width="310" height="350"/>
         <image name="3主界面_slices_3主界面_slices_包裹" width="310" height="340"/>
         <image name="3主界面_slices_3主界面_slices_背景" width="2048" height="2732"/>
+        <image name="4七天签到_slices_4七天签到_slices_取消" width="160" height="170"/>
+        <image name="4七天签到_slices_4七天签到_slices_组17" width="2048" height="2732"/>
+        <image name="5商店_slices_5商店_slices_组19" width="2048" height="2732"/>
+        <image name="6转盘_slices_6转盘_slices_弹窗_1(2)" width="2048" height="2732"/>
+        <image name="6转盘_slices_6转盘_slices_组10" width="322" height="458"/>
+        <image name="6转盘_slices_6转盘_slices_背景" width="2048" height="2732"/>
+        <image name="6转盘_slices_6转盘_slices_转盘" width="1354" height="1347"/>
+        <image name="7任务_slices_7任务_slices_beijing" width="2048" height="2732"/>
+        <image name="8包裹_slices_8包裹_slices_元宝" width="490" height="143"/>
+        <image name="8包裹_slices_8包裹_slices_取消" width="161" height="173"/>
+        <image name="8包裹_slices_8包裹_slices_组20" width="428" height="129"/>
+        <image name="8包裹_slices_8包裹_slices_组21" width="431" height="129"/>
+        <image name="8包裹_slices_8包裹_slices_背景" width="2048" height="2732"/>
+        <image name="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝5" width="369" height="146"/>
+        <image name="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝6" width="369" height="145"/>
+        <image name="9主角拷贝2_slices_9主角拷贝2_slices_按钮拷贝9" width="372" height="149"/>
+        <image name="9主角拷贝2_slices_9主角拷贝2_slices_组20" width="2048" height="2732"/>
+        <image name="充值_19_" width="2048" height="2732"/>
+        <image name="切图_3主界面_slices_chongzhi" width="310" height="350"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

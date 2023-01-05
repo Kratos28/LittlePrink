@@ -44,6 +44,17 @@ extension WaterfallVC{
             let detailVC = storyboard!.instantiateViewController(identifier: kNoteDetailVCID) { coder in
                 NoteDetailVC(coder: coder, note: self.notes[indexPath.item])
             }
+            
+            if let cell = collectionView.cellForItem(at: indexPath) as? WaterfallCell
+            {
+                detailVC.isLikeFormWaterfallCell = cell.isLike;
+            }
+            detailVC.delNoteFinished = {
+                self.notes.remove(at: indexPath.item);
+                collectionView.performBatchUpdates {
+                    collectionView.deleteItems(at: [indexPath]);
+                }
+            }
             detailVC.modalPresentationStyle = .fullScreen
             present(detailVC, animated: true)
         }

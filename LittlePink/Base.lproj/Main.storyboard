@@ -1146,6 +1146,10 @@
                                                                     <state key="normal" title="423" image="heart" catalog="system">
                                                                         <color key="titleColor" systemColor="secondaryLabelColor"/>
                                                                     </state>
+                                                                    <state key="selected" image="heart.fill" catalog="system"/>
+                                                                    <connections>
+                                                                        <action selector="like:" destination="nxP-r2-CaR" eventType="touchUpInside" id="jMW-hS-ECz"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -1300,6 +1304,9 @@
                                                         <state key="normal">
                                                             <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="back:" destination="YLb-rI-8xz" eventType="touchUpInside" id="sMZ-3z-kWi"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdc-Gz-Q5Q">
                                                         <rect key="frame" x="40" y="0.0" width="32" height="32"/>
@@ -1347,6 +1354,9 @@
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="shareOrMore:" destination="YLb-rI-8xz" eventType="touchUpInside" id="HzQ-cU-cBd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1462,6 +1472,9 @@
                                                                     <real key="value" value="18"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="comment:" destination="YLb-rI-8xz" eventType="touchUpInside" id="OX9-Xl-4ak"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -1525,6 +1538,10 @@
                                                         <real key="value" value="18"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="comment:" destination="YLb-rI-8xz" eventType="touchUpInside" id="tPW-pZ-UcN"/>
+                                                    <action selector="fav:" destination="YLb-rI-8xz" eventType="touchUpInside" id="5fc-6w-7aH"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zPq-QB-WJv">
                                                 <rect key="frame" x="183.5" y="0.0" width="136" height="36"/>
@@ -1557,6 +1574,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="wat-nX-wKC"/>
+                                                        </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="ZB2-wY-ndt">
                                                         <rect key="frame" x="73" y="0.0" width="63" height="36"/>
@@ -1586,10 +1606,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="rCT-Sl-w3s"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-8c-d0v">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPJ-8c-d0v">
                                                 <rect key="frame" x="327.5" y="0.0" width="54.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="tintColor" red="0.55114442109999995" green="0.6110342741" blue="0.65055358409999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1597,6 +1620,9 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="comment:" destination="YLb-rI-8xz" eventType="touchUpInside" id="sEA-a0-59V"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1612,10 +1638,67 @@
                                     <constraint firstAttribute="height" constant="45" id="zxU-3N-dcg"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-dP-M46">
+                                <rect key="frame" x="0.0" y="840" width="414" height="56"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="精彩评论将被优先展示哦" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8is-Wy-YaT" customClass="GrowingTextView" customModule="GrowingTextView">
+                                        <rect key="frame" x="16" y="8" width="321" height="40"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                <integer key="value" value="200"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxHeight">
+                                                <real key="value" value="90"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFR-0T-qez">
+                                        <rect key="frame" x="345" y="8" width="53" height="40"/>
+                                        <color key="backgroundColor" name="main"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1z8-wt-Euo"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发送">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="postComment:" destination="YLb-rI-8xz" eventType="touchUpInside" id="LbX-Qo-Tj7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8is-Wy-YaT" firstAttribute="leading" secondItem="nJg-dP-M46" secondAttribute="leading" constant="16" id="0S0-6i-aSC"/>
+                                    <constraint firstAttribute="bottom" secondItem="JFR-0T-qez" secondAttribute="bottom" constant="8" id="8fi-rL-wS1"/>
+                                    <constraint firstAttribute="bottom" secondItem="8is-Wy-YaT" secondAttribute="bottom" constant="8" id="GpE-Qu-qpb"/>
+                                    <constraint firstItem="JFR-0T-qez" firstAttribute="leading" secondItem="8is-Wy-YaT" secondAttribute="trailing" constant="8" id="foD-eE-rhX"/>
+                                    <constraint firstItem="JFR-0T-qez" firstAttribute="centerY" secondItem="nJg-dP-M46" secondAttribute="centerY" id="nIQ-V2-poo"/>
+                                    <constraint firstItem="8is-Wy-YaT" firstAttribute="top" secondItem="nJg-dP-M46" secondAttribute="top" constant="8" id="rKV-GI-MMG"/>
+                                    <constraint firstAttribute="trailing" secondItem="JFR-0T-qez" secondAttribute="trailing" constant="16" id="sp9-Fd-7Xr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Vm-5f-Tl7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9Vm-5f-Tl7" firstAttribute="trailing" secondItem="nJg-dP-M46" secondAttribute="trailing" id="01Y-21-0TI"/>
                             <constraint firstItem="9Vm-5f-Tl7" firstAttribute="trailing" secondItem="ZaA-MT-DIv" secondAttribute="trailing" id="4RS-2v-Gex"/>
                             <constraint firstItem="iDS-WN-SsF" firstAttribute="top" secondItem="9Vm-5f-Tl7" secondAttribute="top" id="6Bf-qf-9vJ"/>
                             <constraint firstItem="iDS-WN-SsF" firstAttribute="leading" secondItem="9Vm-5f-Tl7" secondAttribute="leading" id="6MQ-mi-boz"/>
@@ -1626,6 +1709,8 @@
                             <constraint firstItem="9Vm-5f-Tl7" firstAttribute="trailing" secondItem="iDS-WN-SsF" secondAttribute="trailing" id="QdY-dE-JcV"/>
                             <constraint firstItem="ZaA-MT-DIv" firstAttribute="bottom" secondItem="9Vm-5f-Tl7" secondAttribute="bottom" id="aOd-pj-qoq"/>
                             <constraint firstItem="xkG-XQ-AJH" firstAttribute="leading" secondItem="9Vm-5f-Tl7" secondAttribute="leading" id="iUW-a6-ekR"/>
+                            <constraint firstAttribute="bottom" secondItem="nJg-dP-M46" secondAttribute="bottom" id="o36-LO-x4Z"/>
+                            <constraint firstItem="nJg-dP-M46" firstAttribute="leading" secondItem="9Vm-5f-Tl7" secondAttribute="leading" id="tH7-Yk-PL3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1643,16 +1728,19 @@
                         <outlet property="imageSlideshow" destination="tne-Ib-Yac" id="dWJ-5X-Nj9"/>
                         <outlet property="likeBtn" destination="Wn5-G9-O8K" id="VyK-Vx-eH2"/>
                         <outlet property="likeCountLabel" destination="mPY-8l-Ipi" id="z7o-p9-sBt"/>
-                        <outlet property="shareBtn" destination="oKt-pU-540" id="9x3-fx-lZp"/>
+                        <outlet property="shareBtnOrMoreBtn" destination="oKt-pU-540" id="9x3-fx-lZp"/>
                         <outlet property="tableHeaderView" destination="IuJ-nY-227" id="be5-ZH-uib"/>
                         <outlet property="tableView" destination="xkG-XQ-AJH" id="np2-ka-18t"/>
                         <outlet property="textLabel" destination="dIz-gm-kd3" id="bCc-H1-ePf"/>
+                        <outlet property="textViewBarBottomConstraint" destination="o36-LO-x4Z" id="gkl-OZ-qhx"/>
+                        <outlet property="textViewBarView" destination="nJg-dP-M46" id="DAH-Ha-jw9"/>
+                        <outlet property="textViw" destination="8is-Wy-YaT" id="3AW-Je-iHn"/>
                         <outlet property="titleLabel" destination="ydE-Q0-WzN" id="mIi-Tg-vaS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joU-Ir-7Ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6711.594202898551" y="-717.1875"/>
+            <point key="canvasLocation" x="6610" y="-707"/>
         </scene>
         <!--FollowVC-->
         <scene sceneID="onx-Ms-hos">
@@ -1954,10 +2042,10 @@
     </scenes>
     <designables>
         <designable name="SOk-cE-s64">
-            <size key="intrinsicContentSize" width="113" height="18"/>
+            <size key="intrinsicContentSize" width="97" height="30"/>
         </designable>
         <designable name="g87-mB-ifF">
-            <size key="intrinsicContentSize" width="110.5" height="22"/>
+            <size key="intrinsicContentSize" width="94.5" height="22"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -1976,6 +2064,7 @@
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="number.circle.fill" catalog="system" width="128" height="121"/>

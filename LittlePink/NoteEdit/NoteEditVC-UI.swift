@@ -10,6 +10,8 @@ extension NoteEditVC{
     func setUI(){
         addPopup()//右上角加按钮并展示popup弹框
         setDraftNoteEditUI()//编辑草稿笔记时
+        setNoteEditUI()//编辑笔记时
+
     }
 }
 
@@ -28,6 +30,28 @@ extension NoteEditVC{
         }
     }
     
+    func setNoteEditUI()
+    {
+        if let note = note
+        {
+            titleTextField.text = note.getExactStringVal(kTitleCol);
+            textView.text =  note.getExactStringVal(kTextCol);
+            channel =  note.getExactStringVal(kChannelCol);
+            subChannel =  note.getExactStringVal(kSubChannelCol);
+            poiName =  note.getExactStringVal(kPOINameCol);
+            
+            if !subChannel.isEmpty{ updateChannelUI() }
+            if !poiName.isEmpty{ updatePOINameUI() }
+
+        }
+    }
+    
+
+}
+
+//编辑
+extension NoteEditVC
+{
     func updateChannelUI(){
         channelIcon.tintColor = blueColor
         channelLabel.text = subChannel

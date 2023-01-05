@@ -6,12 +6,13 @@
 //
 
 #import "MViewController.h"
-#import "Headr.h"
+#import "PM.h"
 @interface MViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *MViewController;
 @property (weak, nonatomic) IBOutlet UIStackView *tops;
 @property (weak, nonatomic) IBOutlet UIStackView *zuoS;
 @property (weak, nonatomic) IBOutlet UIStackView *bottomS;
+@property (weak, nonatomic) IBOutlet UIButton *jinbi;
 
 @end
 
@@ -41,10 +42,35 @@
         make.bottom.equalTo(self.view).offset(-Y(140));
         
     }];
+    P *p =  [PM getP];
+    self.MViewController.image = [UIImage imageNamed:p.main_headimagename];
     
-    
+    [self.jinbi mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@(H(80)));
+            make.trailing.equalTo(@(W(-110)));
+            make.height.equalTo(@(H(100)));
+        make.width.equalTo(nW(400));
+        
+    }];
+//    self.jinbi.text = [NSString stringWithFormat:@"%d",p.jinbi];
+    [self.jinbi setTitle:[NSString stringWithFormat:@"%d",p.jinbi] forState:UIControlStateNormal];
+    [[NSNotificationCenter defaultCenter]addObserverForName:@"jinbiupdate" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self.jinbi setTitle:[NSString stringWithFormat:@"%d",p.jinbi] forState:UIControlStateNormal];
+
+    }];
 }
 
+
+
+- (IBAction)clickccc:(id)sender {
+    
+    UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"暂未开启" message:@"请挑战3关完成后再开启" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ac1 = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [vc addAction:ac1];
+    [self presentViewController:vc animated:false completion:nil];
+}
 
 
 @end

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A021E2A28F592F600DAF4E2 /* NoteDetail-LikeFav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */; };
+		0A021E2A28F592F600DAF4E2 /* NoteDetailVC-Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */; };
 		0A60956728BF421600A29A98 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951428BF421600A29A98 /* libcrypto.a */; };
 		0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951628BF421600A29A98 /* openssl_wrapper.m */; };
 		0A60956928BF421600A29A98 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951928BF421600A29A98 /* APRSASigner.m */; };
@@ -76,11 +76,17 @@
 		0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */; };
 		0AF4672D28E6CB6500CD4C33 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466EA28E6CB6400CD4C33 /* TV.mp4 */; };
 		0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */; };
+		65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */; };
+		65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */; };
+		65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */; };
+		65BDACC3295F461E00CCD7CF /* NoteDetailVC-DelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */; };
+		65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA5CA1295DE00C0023885E /* WaterfallCell-Like.swift */; };
+		65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */; };
 		D0283336B63934D89D874380 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetail-LikeFav.swift"; sourceTree = "<group>"; };
+		0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Like.swift"; sourceTree = "<group>"; };
 		0A60951428BF421600A29A98 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		0A60951628BF421600A29A98 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
 		0A60951728BF421600A29A98 /* APRSASigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRSASigner.h; sourceTree = "<group>"; };
@@ -241,6 +247,12 @@
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		65399075282AB3DE002EB0E8 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Helper.swift"; sourceTree = "<group>"; };
+		65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-EditNote.swift"; sourceTree = "<group>"; };
+		65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-ShareOrMore.swift"; sourceTree = "<group>"; };
+		65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelNote.swift"; sourceTree = "<group>"; };
+		65EA5CA1295DE00C0023885E /* WaterfallCell-Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallCell-Like.swift"; sourceTree = "<group>"; };
+		65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Fav.swift"; sourceTree = "<group>"; };
 		F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -407,6 +419,7 @@
 			children = (
 				0AF4669D28E6CB6400CD4C33 /* WaterfallVC-Config.swift */,
 				0AF4669E28E6CB6400CD4C33 /* WaterfallCell.swift */,
+				65EA5CA1295DE00C0023885E /* WaterfallCell-Like.swift */,
 				0AF4669F28E6CB6400CD4C33 /* WaterfallVC.swift */,
 				0AF466A028E6CB6400CD4C33 /* DraftNoteWaterfallCell.swift */,
 				0AF466A128E6CB6400CD4C33 /* WaterfallVC-Delegate.swift */,
@@ -444,10 +457,15 @@
 		0AF466B628E6CB6400CD4C33 /* NoteDetail */ = {
 			isa = PBXGroup;
 			children = (
-				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
-				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
+				65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */,
+				65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */,
+				0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */,
 				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
-				0A021E2928F592F600DAF4E2 /* NoteDetail-LikeFav.swift */,
+				65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */,
+				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
+				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
+				65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */,
+				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -499,25 +517,25 @@
 		0AF466D628E6CB6400CD4C33 /* NoteEdit */ = {
 			isa = PBXGroup;
 			children = (
-				0AF466D728E6CB6400CD4C33 /* NoteEditVC-DragDrop.swift */,
-				0AF466D828E6CB6400CD4C33 /* POICell.swift */,
-				0AF466D928E6CB6400CD4C33 /* NoteEditVC-DraftNote.swift */,
+				0AF466E028E6CB6400CD4C33 /* ChannelTableVC.swift */,
 				0AF466DA28E6CB6400CD4C33 /* ChannelVC.swift */,
-				0AF466DB28E6CB6400CD4C33 /* PhotoCell.swift */,
+				0AF466DF28E6CB6400CD4C33 /* NoteEditVC-CollectionView.swift */,
+				0AF466E328E6CB6400CD4C33 /* NoteEditVC-Config.swift */,
+				0AF466D928E6CB6400CD4C33 /* NoteEditVC-DraftNote.swift */,
+				0AF466D728E6CB6400CD4C33 /* NoteEditVC-DragDrop.swift */,
 				0AF466DC28E6CB6400CD4C33 /* NoteEditVC-Helper.swift */,
+				0AF466E128E6CB6400CD4C33 /* NoteEditVC-Note.swift */,
+				0AF466E728E6CB6400CD4C33 /* NoteEditVC-UI.swift */,
+				0AF466E628E6CB6400CD4C33 /* NoteEditVC.swift */,
+				0AF466DB28E6CB6400CD4C33 /* PhotoCell.swift */,
+				0AF466E828E6CB6400CD4C33 /* PhotoFooter.swift */,
+				0AF466D828E6CB6400CD4C33 /* POICell.swift */,
+				0AF466E228E6CB6400CD4C33 /* POIVC-Config.swift */,
+				0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */,
 				0AF466DD28E6CB6400CD4C33 /* POIVC-Location.swift */,
 				0AF466DE28E6CB6400CD4C33 /* POIVC.swift */,
-				0AF466DF28E6CB6400CD4C33 /* NoteEditVC-CollectionView.swift */,
-				0AF466E028E6CB6400CD4C33 /* ChannelTableVC.swift */,
-				0AF466E128E6CB6400CD4C33 /* NoteEditVC-Note.swift */,
-				0AF466E228E6CB6400CD4C33 /* POIVC-Config.swift */,
-				0AF466E328E6CB6400CD4C33 /* NoteEditVC-Config.swift */,
-				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
 				0AF466E528E6CB6400CD4C33 /* TextViewIAView.swift */,
-				0AF466E628E6CB6400CD4C33 /* NoteEditVC.swift */,
-				0AF466E728E6CB6400CD4C33 /* NoteEditVC-UI.swift */,
-				0AF466E828E6CB6400CD4C33 /* PhotoFooter.swift */,
-				0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */,
+				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -714,6 +732,7 @@
 				0AF4670D28E6CB6500CD4C33 /* LC-Extensions.swift in Sources */,
 				0AF4671C28E6CB6500CD4C33 /* NoteEditVC-DraftNote.swift in Sources */,
 				0AF466F528E6CB6400CD4C33 /* WaterfallCell.swift in Sources */,
+				65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */,
 				0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */,
 				0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */,
 				0AF4672228E6CB6500CD4C33 /* NoteEditVC-CollectionView.swift in Sources */,
@@ -733,6 +752,7 @@
 				0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */,
 				0AF466F228E6CB6400CD4C33 /* FollowVC.swift in Sources */,
 				0AF4670928E6CB6500CD4C33 /* CustomViews.swift in Sources */,
+				65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */,
 				0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */,
 				0AF4670B28E6CB6500CD4C33 /* Login-Extensions.swift in Sources */,
 				0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */,
@@ -747,14 +767,18 @@
 				0AF4672628E6CB6500CD4C33 /* NoteEditVC-Config.swift in Sources */,
 				0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */,
 				0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */,
+				65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */,
+				65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */,
 				0A60956928BF421600A29A98 /* APRSASigner.m in Sources */,
 				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,
 				0AF4672128E6CB6500CD4C33 /* POIVC.swift in Sources */,
 				0AF4671428E6CB6500CD4C33 /* CodeLoginVC.swift in Sources */,
+				65BDACC3295F461E00CCD7CF /* NoteDetailVC-DelNote.swift in Sources */,
+				65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */,
 				0AF4670828E6CB6500CD4C33 /* Constants.swift in Sources */,
 				0AF4671528E6CB6500CD4C33 /* PasswordLoginVC.swift in Sources */,
 				0AF466F428E6CB6400CD4C33 /* WaterfallVC-Config.swift in Sources */,
-				0A021E2A28F592F600DAF4E2 /* NoteDetail-LikeFav.swift in Sources */,
+				0A021E2A28F592F600DAF4E2 /* NoteDetailVC-Like.swift in Sources */,
 				0AF4671028E6CB6500CD4C33 /* MeVC.swift in Sources */,
 				0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */,
 				0AF466FA28E6CB6500CD4C33 /* WaterfallVC-DataSource.swift in Sources */,
