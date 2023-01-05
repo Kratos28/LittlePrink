@@ -50,7 +50,7 @@ class NoteDetailVC: UIViewController {
     @IBOutlet weak var commentCountBtn: UIButton!
     
     @IBOutlet weak var textViewBarView: UIView!
-    @IBOutlet weak var textViw: GrowingTextView!
+    @IBOutlet weak var textView: GrowingTextView!
     @IBOutlet weak var textViewBarBottomConstraint: NSLayoutConstraint!
     
     lazy var overlayView:UIView = {
@@ -125,6 +125,23 @@ class NoteDetailVC: UIViewController {
     @IBAction func fav(_ sender: Any) {fav()}
     
     @IBAction func postComment(_ sender: Any) {
-        
+      if  !textView.isBlank{
+          let user = LCApplication.default.currentUser!
+          do {
+              let comment = LCObject(className: kCommentTable)
+              try? comment.set(kTextCol, value: textView.unwrappedText);
+              try? comment.set(kUserCol, value: user);
+              try? comment.set(kNoteCol, value: note);
+              comment.save { res in
+                  if case .success = res {
+                      self.showTextHUD("评论已发布");
+                  }
+              }
+          } catch  {
+              print("sfads");
+          }
+       
+          hideAndRestTextView();
+        }
     }
 }

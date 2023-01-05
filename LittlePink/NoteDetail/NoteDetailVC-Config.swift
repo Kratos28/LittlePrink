@@ -24,9 +24,9 @@ extension NoteDetailVC{
         pageControl.currentPageIndicatorTintColor = mainColor
         imageSlideshow.pageIndicator = pageControl;
         //textView
-        textViw.textContainerInset = UIEdgeInsets(top: 11.5 , left: 16, bottom:11.5, right: 15);
+        textView.textContainerInset = UIEdgeInsets(top: 11.5 , left: 16, bottom:11.5, right: 15);
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil);
-        textViw.delegate = self;
+        textView.delegate = self;
     }
     func adjustTableHeaderViewHeight()
     {
