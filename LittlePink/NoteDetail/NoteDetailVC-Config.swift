@@ -27,6 +27,7 @@ extension NoteDetailVC{
         textView.textContainerInset = UIEdgeInsets(top: 11.5 , left: 16, bottom:11.5, right: 15);
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil);
         textView.delegate = self;
+        tableView.register(UINib(nibName: "CommentView", bundle: nil), forHeaderFooterViewReuseIdentifier: kCommentViewID);
     }
     func adjustTableHeaderViewHeight()
     {

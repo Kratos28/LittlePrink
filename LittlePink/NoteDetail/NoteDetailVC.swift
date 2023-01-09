@@ -102,8 +102,8 @@ class NoteDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        config()
-        setUI()
+        config();
+        setUI();
     }
     //动态计算tableHeaderView的height(放在viewdidappear的话会触发多次),相当于手动实现了estimate size(目前cell已配备这种功能)
     override func viewDidLayoutSubviews() {
@@ -138,7 +138,7 @@ class NoteDetailVC: UIViewController {
                   }
               }
           } catch  {
-              print("sfads");
+              print("哈哈哈");
           }
        
           hideAndRestTextView();
