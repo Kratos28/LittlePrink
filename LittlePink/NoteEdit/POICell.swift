@@ -14,8 +14,8 @@ class POICell: UITableViewCell {
     
     var poi = ["", ""]{
         didSet{
-            nameLabel.text = poi[0]
-            addressLabel.text = poi[1]
+            nameLabel.text = poi[0];
+            addressLabel.text = poi[1];
         }
     }
 

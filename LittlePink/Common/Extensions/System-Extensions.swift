@@ -170,6 +170,7 @@ extension UIView{
             layer.cornerRadius
         }
         set{
+            clipsToBounds = true;
             layer.cornerRadius = newValue
         }
     }
