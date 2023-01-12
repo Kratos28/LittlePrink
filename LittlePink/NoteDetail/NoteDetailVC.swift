@@ -16,7 +16,7 @@ class NoteDetailVC: UIViewController {
     var note: LCObject
     var isLikeFormWaterfallCell = false;
     var delNoteFinished: (()->())?
-
+    var comments: [LCObject] = [];
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!

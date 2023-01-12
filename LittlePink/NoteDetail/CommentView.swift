@@ -6,9 +6,22 @@
 //
 
 import UIKit
-
+import LeanCloud
+import Kingfisher
 class CommentView: UITableViewHeaderFooterView {
-
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var commentTextLabel: UILabel!
+    var comment: LCObject?{
+        didSet{
+            guard let comment = comment else {return};
+            if let user = comment.get(kUserCol) as? LCUser{
+                avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avater));
+                nickNameLabel.text = user.getExactStringVal(kNickNameCol);
+            }
+        }
+    }
     
 
 }

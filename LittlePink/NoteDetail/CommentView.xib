@@ -36,7 +36,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-Pz-qe8">
-                                    <rect key="frame" x="46" y="0.0" width="251" height="41"/>
+                                    <rect key="frame" x="46" y="0.0" width="251" height="61.333333333333336"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zpn-cb-en7">
                                             <rect key="frame" x="0.0" y="0.0" width="65.666666666666671" height="15.666666666666666"/>
@@ -64,8 +64,8 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPz-0g-jGM">
-                                            <rect key="frame" x="0.0" y="20.666666666666664" width="52" height="20.333333333333336"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfadsfdasfdasfdsafdasfjadsfjklasdjfkljadksfjkajsk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPz-0g-jGM">
+                                            <rect key="frame" x="0.0" y="20.666666666666668" width="250.66666666666666" height="40.666666666666657"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -93,6 +93,12 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fKR-NW-ifZ" secondAttribute="trailing" id="ttz-af-QKg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="authorLabel" destination="uEF-ST-bmg" id="Jkg-gM-JY8"/>
+                <outlet property="avatarImageView" destination="2qO-in-wll" id="aZY-6N-bqx"/>
+                <outlet property="commentTextLabel" destination="vPz-0g-jGM" id="SPL-Pk-9Eq"/>
+                <outlet property="nickNameLabel" destination="7Gm-wQ-0aE" id="W9C-vX-s2w"/>
+            </connections>
             <point key="canvasLocation" x="-28.244274809160306" y="263.73239436619718"/>
         </view>
     </objects>

@@ -9,6 +9,8 @@ import Foundation
 extension NoteDetailVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        let commentView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kCommentViewID) as! CommentView;
+        commentView.comment =  comments[section];
+        
         return commentView;
     }
 }

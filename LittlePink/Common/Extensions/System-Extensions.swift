@@ -30,6 +30,24 @@ extension String{
         self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     
+    func spliceAttrStr(_ dateStr: String)->NSAttributedString
+    {
+        let attr1:[NSAttributedString.Key:Any] = [
+            .font:UIFont.systemFont(ofSize: 14),
+            .foregroundColor:UIColor.label
+        ];
+        
+        let attrText =  NSMutableAttributedString(string: self,attributes: attr1);
+        let attr2:[NSAttributedString.Key:Any] = [
+            .font:UIFont.systemFont(ofSize: 12),
+            .foregroundColor:UIColor.secondaryLabel
+        ];
+        let attrDate = NSAttributedString(string: dateStr,attributes: attr2);
+        attrText.append(attrDate);
+        return attrText;
+        
+    }
+    
     var isPhoneNum: Bool{
         Int(self) != nil && NSRegularExpression(kPhoneRegEx).matches(self)
     }
