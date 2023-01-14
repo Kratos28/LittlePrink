@@ -32,20 +32,20 @@ extension String{
     
     func spliceAttrStr(_ dateStr: String)->NSAttributedString
     {
-        let attr1:[NSAttributedString.Key:Any] = [
-            .font:UIFont.systemFont(ofSize: 14),
-            .foregroundColor:UIColor.label
-        ];
-        
-        let attrText =  NSMutableAttributedString(string: self,attributes: attr1);
-        let attr2:[NSAttributedString.Key:Any] = [
-            .font:UIFont.systemFont(ofSize: 12),
-            .foregroundColor:UIColor.secondaryLabel
-        ];
-        let attrDate = NSAttributedString(string: dateStr,attributes: attr2);
+            
+        let attrText =  toAttrStr();
+        let attrDate = " \(dateStr)".toAttrStr(12, .secondaryLabel);
         attrText.append(attrDate);
         return attrText;
         
+    }
+    func toAttrStr(_ font :CGFloat = 14, _ color: UIColor = .label) ->NSMutableAttributedString
+    {
+        let attr : [NSAttributedString.Key:Any] = [
+            .font : UIFont.systemFont(ofSize: font),
+            .foregroundColor : color
+        ]
+        return NSMutableAttributedString(string: self,attributes: attr);
     }
     
     var isPhoneNum: Bool{
