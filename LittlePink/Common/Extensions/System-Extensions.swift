@@ -39,10 +39,10 @@ extension String{
         return attrText;
         
     }
-    func toAttrStr(_ font :CGFloat = 14, _ color: UIColor = .label) ->NSMutableAttributedString
+    func toAttrStr(_ fontSize :CGFloat = 14, _ color: UIColor = .label) ->NSMutableAttributedString
     {
         let attr : [NSAttributedString.Key:Any] = [
-            .font : UIFont.systemFont(ofSize: font),
+            .font : UIFont.systemFont(ofSize: fontSize),
             .foregroundColor : color
         ]
         return NSMutableAttributedString(string: self,attributes: attr);
