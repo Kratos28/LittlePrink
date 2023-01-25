@@ -16,15 +16,16 @@ class CommentView: UITableViewHeaderFooterView {
     var comment: LCObject?{
         didSet{
             guard let comment = comment else {return};
+            
             if let user = comment.get(kUserCol) as? LCUser{
                 avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avater));
                 nickNameLabel.text = user.getExactStringVal(kNickNameCol);
             }
             let commentText = comment.getExactStringVal(kTextCol);
-            let dateText = comment.createdAt?.value.formattedDate;
+            let createAt = comment.createdAt?.value;
+            let dateText = createAt == nil ? "刚刚" : createAt!.formattedDate;
             commentTextLabel.attributedText =    commentText.spliceAttrStr(dateText);
-            
-            
+         
         }
     }
     

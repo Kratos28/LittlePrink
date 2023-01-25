@@ -1,0 +1,322 @@
+2023-01-20 15:27:59 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fa59b94af40; archive(resolved)="<IDEArchive: 0x7fa59c305ea0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	Chain (16, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fa59b94af40; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x7fa5ac140510; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ae70b660; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5af3d2740; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5af3d0180; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ae0853e0; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ab84f4b0; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ad0f8d40; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa59d821d40; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa59b94f270; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ab8a24a0; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5ab8d1a50; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa5abac8eb0; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x7fa5c61f65a0; teamID='F6Y2WQCA9G', teamName='feng li', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fa59b85ac10; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="(null)">
+	<IDEDistributionContext: 0x7fa5af3b7dd0; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa5a1d554f0>", team="(null)">
+	<IDEDistributionContext: 0x7fa5af3bb700; archive = "<IDEArchive: 0x7fa59c305ea0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x7fa59b94af40>
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCreateDestRootStep
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCopyItemStep
+2023-01-20 15:27:59 +0000  Running /usr/bin/ditto '-V' '/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app'
+2023-01-20 15:27:59 +0000  >>> Copying /Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app 
+2023-01-20 15:27:59 +0000  copying file ./_CodeSignature/CodeResources ... 
+2023-01-20 15:27:59 +0000  13717 bytes for ./_CodeSignature/CodeResources
+2023-01-20 15:27:59 +0000  copying file ./zh-Hans.lproj/InfoPlist.strings ... 
+2023-01-20 15:27:59 +0000  77 bytes for ./zh-Hans.lproj/InfoPlist.strings
+2023-01-20 15:27:59 +0000  copying file ./en.lproj/InfoPlist.strings ... 
+2023-01-20 15:27:59 +0000  77 bytes for ./en.lproj/InfoPlist.strings
+2023-01-20 15:27:59 +0000  copying file ./AppIcon60x60@2x.png ... 
+2023-01-20 15:27:59 +0000  48695 bytes for ./AppIcon60x60@2x.png
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-M65-K2-hAq.nib ... 
+2023-01-20 15:27:59 +0000  961 bytes for ./Base.lproj/Main.storyboardc/UIViewController-M65-K2-hAq.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/ZhenRongViewController.nib ... 
+2023-01-20 15:27:59 +0000  1022 bytes for ./Base.lproj/Main.storyboardc/ZhenRongViewController.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/Thi-dB-lXp-view-lGf-Cd-5ec.nib ... 
+2023-01-20 15:27:59 +0000  5931 bytes for ./Base.lproj/Main.storyboardc/Thi-dB-lXp-view-lGf-Cd-5ec.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/gc4-yv-8JE-view-Gei-CC-8Lo.nib ... 
+2023-01-20 15:27:59 +0000  4119 bytes for ./Base.lproj/Main.storyboardc/gc4-yv-8JE-view-Gei-CC-8Lo.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/hjq-tM-aev-view-Bgx-5s-KRK.nib ... 
+2023-01-20 15:27:59 +0000  4951 bytes for ./Base.lproj/Main.storyboardc/hjq-tM-aev-view-Bgx-5s-KRK.nib
+copying file ./Base.lproj/Main.storyboardc/zaa-yV-DR0-view-hF1-UV-aeT.nib ... 
+2023-01-20 15:27:59 +0000  2029 bytes for ./Base.lproj/Main.storyboardc/zaa-yV-DR0-view-hF1-UV-aeT.nib
+copying file ./Base.lproj/Main.storyboardc/QViewController.nib ... 
+2023-01-20 15:27:59 +0000  1015 bytes for ./Base.lproj/Main.storyboardc/QViewController.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/J9e-vq-y5Q-view-bkS-cp-Mk7.nib ... 
+2023-01-20 15:27:59 +0000  3343 bytes for ./Base.lproj/Main.storyboardc/J9e-vq-y5Q-view-bkS-cp-Mk7.nib
+copying file ./Base.lproj/Main.storyboardc/UIViewController-Nce-sn-0At.nib ... 
+2023-01-20 15:27:59 +0000  921 bytes for ./Base.lproj/Main.storyboardc/UIViewController-Nce-sn-0At.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/LotterTanChuangViewController.nib ... 
+2023-01-20 15:27:59 +0000  990 bytes for ./Base.lproj/Main.storyboardc/LotterTanChuangViewController.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-zaa-yV-DR0.nib ... 
+2023-01-20 15:27:59 +0000  912 bytes for ./Base.lproj/Main.storyboardc/UIViewController-zaa-yV-DR0.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2023-01-20 15:27:59 +0000  1253 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/MViewController.nib ... 
+2023-01-20 15:27:59 +0000  2074 bytes for ./Base.lproj/Main.storyboardc/MViewController.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/9tG-Ep-v3s-view-WeZ-fW-TaV.nib ... 
+2023-01-20 15:27:59 +0000  2060 bytes for ./Base.lproj/Main.storyboardc/9tG-Ep-v3s-view-WeZ-fW-TaV.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/SViewController.nib ... 
+2023-01-20 15:27:59 +0000  1015 bytes for ./Base.lproj/Main.storyboardc/SViewController.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-bai-gO-wPr.nib ... 
+2023-01-20 15:27:59 +0000  960 bytes for ./Base.lproj/Main.storyboardc/UIViewController-bai-gO-wPr.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/I1K-zd-NJf-view-iIt-gl-7o1.nib ... 
+2023-01-20 15:27:59 +0000  7760 bytes for ./Base.lproj/Main.storyboardc/I1K-zd-NJf-view-iIt-gl-7o1.nib
+copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-01-20 15:27:59 +0000  3938 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/Nce-sn-0At-view-A3R-SY-gh3.nib ... 
+2023-01-20 15:27:59 +0000  2056 bytes for ./Base.lproj/Main.storyboardc/Nce-sn-0At-view-A3R-SY-gh3.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/kii-fE-tuf-view-VC0-x0-8wo.nib ... 
+2023-01-20 15:27:59 +0000  3187 bytes for ./Base.lproj/Main.storyboardc/kii-fE-tuf-view-VC0-x0-8wo.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-J9e-vq-y5Q.nib ... 
+2023-01-20 15:27:59 +0000  964 bytes for ./Base.lproj/Main.storyboardc/UIViewController-J9e-vq-y5Q.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/ZhanDouVC.nib ... 
+2023-01-20 15:27:59 +0000  1009 bytes for ./Base.lproj/Main.storyboardc/ZhanDouVC.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/bai-gO-wPr-view-tgU-US-0rc.nib ... 
+2023-01-20 15:27:59 +0000  5077 bytes for ./Base.lproj/Main.storyboardc/bai-gO-wPr-view-tgU-US-0rc.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/M65-K2-hAq-view-xGl-oU-cM7.nib ... 
+2023-01-20 15:27:59 +0000  3091 bytes for ./Base.lproj/Main.storyboardc/M65-K2-hAq-view-xGl-oU-cM7.nib
+copying file ./Base.lproj/Main.storyboardc/cW3-pI-bMK-view-3H5-VV-t5Z.nib ... 
+2023-01-20 15:27:59 +0000  3209 bytes for ./Base.lproj/Main.storyboardc/cW3-pI-bMK-view-3H5-VV-t5Z.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-gc4-yv-8JE.nib ... 
+2023-01-20 15:27:59 +0000  961 bytes for ./Base.lproj/Main.storyboardc/UIViewController-gc4-yv-8JE.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2023-01-20 15:27:59 +0000  941 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-01-20 15:27:59 +0000  1197 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-01-20 15:27:59 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2023-01-20 15:27:59 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-01-20 15:27:59 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2023-01-20 15:27:59 +0000  copying file ./Assets.car ... 
+2023-01-20 15:27:59 +0000  78200152 bytes for ./Assets.car
+copying file ./AppIcon76x76@2x~ipad.png ... 
+2023-01-20 15:27:59 +0000  74319 bytes for ./AppIcon76x76@2x~ipad.png
+2023-01-20 15:27:59 +0000  copying file ./Sanguo.momd/VersionInfo.plist ... 
+2023-01-20 15:27:59 +0000  326 bytes for ./Sanguo.momd/VersionInfo.plist
+copying file ./Sanguo.momd/Sanguo.mom ... 
+2023-01-20 15:27:59 +0000  4708 bytes for ./Sanguo.momd/Sanguo.mom
+2023-01-20 15:27:59 +0000  copying file ./Frameworks/Masonry.framework/_CodeSignature/CodeResources ... 
+2023-01-20 15:27:59 +0000  1798 bytes for ./Frameworks/Masonry.framework/_CodeSignature/CodeResources
+2023-01-20 15:27:59 +0000  copying file ./Frameworks/Masonry.framework/Masonry ... 
+2023-01-20 15:27:59 +0000  683952 bytes for ./Frameworks/Masonry.framework/Masonry
+2023-01-20 15:27:59 +0000  copying file ./Frameworks/Masonry.framework/Info.plist ... 
+2023-01-20 15:27:59 +0000  737 bytes for ./Frameworks/Masonry.framework/Info.plist
+2023-01-20 15:27:59 +0000  copying file ./embedded.mobileprovision ... 
+2023-01-20 15:27:59 +0000  11937 bytes for ./embedded.mobileprovision
+copying file ./Sanguo ... 
+2023-01-20 15:27:59 +0000  1433168 bytes for ./Sanguo
+2023-01-20 15:27:59 +0000  copying file ./Info.plist ... 
+2023-01-20 15:27:59 +0000  1412 bytes for ./Info.plist
+2023-01-20 15:27:59 +0000  copying file ./PkgInfo ... 
+2023-01-20 15:27:59 +0000  8 bytes for ./PkgInfo
+2023-01-20 15:27:59 +0000  /usr/bin/ditto exited with 0
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionEmbedProfileStep
+2023-01-20 15:27:59 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa5ae0a5e90; bundleID='org.cocoapods.Masonry', path='<DVTFilePath:0x7fa5c2ae4b90:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5c11ab690; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5aba8cee0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='(null)', teamID='F6Y2WQCA9G', identifier='org.cocoapods.Masonry', executablePath='<DVTFilePath:0x7fa5ab8afd10:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework/Masonry'>', hardenedRuntime='0'>'>
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionInfoPlistStep
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionItemRemovalStep
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2023-01-20 15:27:59 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2023-01-20 15:27:59 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2023-01-20 15:27:59 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework/Masonry' '-l' '-keep_cs' '-o' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework/Masonry'
+2023-01-20 15:27:59 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2023-01-20 15:27:59 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Sanguo' '-l' '-keep_cs' '-o' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Sanguo'
+2023-01-20 15:27:59 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip exited with 0
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2023-01-20 15:27:59 +0000  Running /usr/bin/ditto '-V' '/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/BCSymbolMaps/E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/BCSymbolMaps/E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap'
+2023-01-20 15:27:59 +0000  >>> Copying /Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/BCSymbolMaps/E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap 
+2023-01-20 15:27:59 +0000  copying file ./E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap ... 
+2023-01-20 15:27:59 +0000  34601 bytes for ./E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap
+2023-01-20 15:27:59 +0000  /usr/bin/ditto exited with 0
+2023-01-20 15:27:59 +0000  Running /usr/bin/ditto '-V' '/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/BCSymbolMaps/DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/BCSymbolMaps/DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap'
+2023-01-20 15:27:59 +0000  >>> Copying /Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/BCSymbolMaps/DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap 
+2023-01-20 15:27:59 +0000  copying file ./DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap ... 
+2023-01-20 15:27:59 +0000  55273 bytes for ./DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap
+2023-01-20 15:27:59 +0000  /usr/bin/ditto exited with 0
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionSymbolsStep
+2023-01-20 15:27:59 +0000  Excluding symbols for Masonry.framework
+2023-01-20 15:27:59 +0000  Excluding symbols for Sanguo.app
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionAppThinningStep
+2023-01-20 15:27:59 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionArchThinningStep
+2023-01-20 15:27:59 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework/Masonry' '-verify_arch' 'arm64e'
+2023-01-20 15:27:59 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-20 15:27:59 +0000  Skipping architecture thinning for item "Masonry" because arch "arm64e" wasn't found
+2023-01-20 15:27:59 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Sanguo' '-verify_arch' 'arm64e'
+2023-01-20 15:27:59 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-20 15:27:59 +0000  Skipping architecture thinning for item "Sanguo" because arch "arm64e" wasn't found
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionODRStep
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionStripXattrsStep
+2023-01-20 15:27:59 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa5ae0a5e90; bundleID='org.cocoapods.Masonry', path='<DVTFilePath:0x7fa5c2ae4b90:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5c11ab690; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5aba521c0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='(null)', teamID='F6Y2WQCA9G', identifier='org.cocoapods.Masonry', executablePath='<DVTFilePath:0x7fa5ab8afd10:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework/Masonry'>', hardenedRuntime='0'>'>
+2023-01-20 15:27:59 +0000  Running /usr/bin/xattr '-crs' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app'
+2023-01-20 15:27:59 +0000  /usr/bin/xattr exited with 0
+2023-01-20 15:27:59 +0000  Processing step: IDEDistributionCodesignStep
+2023-01-20 15:27:59 +0000  Entitlements for <IDEDistributionItem: 0x7fa5ae0a5e90; bundleID='org.cocoapods.Masonry', path='<DVTFilePath:0x7fa5c2ae4b90:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5c11ab690; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5c5d4bc60; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='(null)', teamID='F6Y2WQCA9G', identifier='org.cocoapods.Masonry', executablePath='<DVTFilePath:0x7fa5ab8afd10:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework/Masonry'>', hardenedRuntime='0'>'>: {
+}
+2023-01-20 15:27:59 +0000  Entitlements for <IDEDistributionItem: 0x7fa5ae0a5e90; bundleID='org.cocoapods.Masonry', path='<DVTFilePath:0x7fa5c2ae4b90:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5c11ab690; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa59b9cdaf0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='(null)', teamID='F6Y2WQCA9G', identifier='org.cocoapods.Masonry', executablePath='<DVTFilePath:0x7fa5ab8afd10:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework/Masonry'>', hardenedRuntime='0'>'> are: {
+}
+2023-01-20 15:27:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa5ae0a5e90; bundleID='org.cocoapods.Masonry', path='<DVTFilePath:0x7fa5c2ae4b90:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5c11ab690; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5aba521c0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='(null)', teamID='F6Y2WQCA9G', identifier='org.cocoapods.Masonry', executablePath='<DVTFilePath:0x7fa5ab8afd10:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Frameworks/Masonry.framework/Masonry'>', hardenedRuntime='0'>'> to: /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/entitlements~~~gaQNCp
+2023-01-20 15:27:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'DE5D2267636BA73FF6AEB418BEA032995E0A9DB6' '--entitlements' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/entitlements~~~gaQNCp' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework'
+2023-01-20 15:27:59 +0000  /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework: replacing existing signature
+2023-01-20 15:27:59 +0000  /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.Masonry]
+2023-01-20 15:27:59 +0000  /usr/bin/codesign exited with 0
+2023-01-20 15:27:59 +0000  Entitlements for <IDEDistributionItem: 0x7fa5aed15010; bundleID='com.jwsg.Sanguo', path='<DVTFilePath:0x7fa5c5dbf120:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5b01c4be0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5c5dfc4c0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='{
+    "application-identifier" = "F6Y2WQCA9G.com.jwsg.Sanguo";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = F6Y2WQCA9G;
+    "get-task-allow" = 0;
+}', teamID='F6Y2WQCA9G', identifier='com.jwsg.Sanguo', executablePath='<DVTFilePath:0x7fa5afff38b0:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Sanguo'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "F6Y2WQCA9G.com.jwsg.Sanguo";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = F6Y2WQCA9G;
+    "get-task-allow" = 0;
+}
+2023-01-20 15:27:59 +0000  Entitlements for <IDEDistributionItem: 0x7fa5aed15010; bundleID='com.jwsg.Sanguo', path='<DVTFilePath:0x7fa5c5dbf120:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5b01c4be0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5ac138190; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='{
+    "application-identifier" = "F6Y2WQCA9G.com.jwsg.Sanguo";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = F6Y2WQCA9G;
+    "get-task-allow" = 0;
+}', teamID='F6Y2WQCA9G', identifier='com.jwsg.Sanguo', executablePath='<DVTFilePath:0x7fa5afff38b0:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Sanguo'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "F6Y2WQCA9G.com.jwsg.Sanguo";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = F6Y2WQCA9G;
+    "get-task-allow" = 0;
+}
+2023-01-20 15:27:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa5aed15010; bundleID='com.jwsg.Sanguo', path='<DVTFilePath:0x7fa5c5dbf120:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fa5b01c4be0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fa5abab14b0; name='iPhone Distribution: feng li (F6Y2WQCA9G)', hash='DE5D2267636BA73FF6AEB418BEA032995E0A9DB6', serialNumber='56EA30845031123380F11213B4DB0626', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-11-29 13:38:09 +0000''>', entitlements='{
+    "application-identifier" = "F6Y2WQCA9G.com.jwsg.Sanguo";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = F6Y2WQCA9G;
+    "get-task-allow" = 0;
+}', teamID='F6Y2WQCA9G', identifier='com.jwsg.Sanguo', executablePath='<DVTFilePath:0x7fa5afff38b0:'/Users/kratos/Library/Developer/Xcode/Archives/2023-01-20/Sanguo 2023-1-20, 23.27.xcarchive/Products/Applications/Sanguo.app/Sanguo'>', hardenedRuntime='0'>'> to: /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/entitlements~~~3ZqHKB
+2023-01-20 15:27:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'DE5D2267636BA73FF6AEB418BEA032995E0A9DB6' '--entitlements' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/entitlements~~~3ZqHKB' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app'
+2023-01-20 15:27:59 +0000  /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app: replacing existing signature
+2023-01-20 15:28:00 +0000  /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app: signed app bundle with Mach-O thin (arm64) [com.jwsg.Sanguo]
+2023-01-20 15:28:00 +0000  /usr/bin/codesign exited with 0
+2023-01-20 15:28:00 +0000  Processing step: IDEDistributionZipODRItemStep
+2023-01-20 15:28:00 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-20 15:28:00 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-20 15:28:00 +0000  Processing step: IDEDistributionCreateIPAStep
+2023-01-20 15:28:00 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root' '/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Packages/Sanguo.ipa'
+2023-01-20 15:28:00 +0000  >>> Copying /var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root 
+2023-01-20 15:28:00 +0000  copying file ./BCSymbolMaps/E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap ... 
+2023-01-20 15:28:00 +0000  34601 bytes for ./BCSymbolMaps/E9FAD1BC-E4A5-3EC2-B6A4-B9E7BEB51318.bcsymbolmap
+2023-01-20 15:28:00 +0000  copying file ./BCSymbolMaps/DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap ... 
+2023-01-20 15:28:00 +0000  55273 bytes for ./BCSymbolMaps/DD633F5A-0568-3953-B8FB-BBB322BAF913.bcsymbolmap
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/_CodeSignature/CodeResources ... 
+2023-01-20 15:28:00 +0000  13717 bytes for ./Payload/Sanguo.app/_CodeSignature/CodeResources
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/zh-Hans.lproj/InfoPlist.strings ... 
+77 bytes for ./Payload/Sanguo.app/zh-Hans.lproj/InfoPlist.strings
+copying file ./Payload/Sanguo.app/en.lproj/InfoPlist.strings ... 
+2023-01-20 15:28:00 +0000  77 bytes for ./Payload/Sanguo.app/en.lproj/InfoPlist.strings
+copying file ./Payload/Sanguo.app/AppIcon60x60@2x.png ... 
+2023-01-20 15:28:00 +0000  48695 bytes for ./Payload/Sanguo.app/AppIcon60x60@2x.png
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-M65-K2-hAq.nib ... 
+2023-01-20 15:28:00 +0000  961 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-M65-K2-hAq.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/ZhenRongViewController.nib ... 
+2023-01-20 15:28:00 +0000  1022 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/ZhenRongViewController.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Thi-dB-lXp-view-lGf-Cd-5ec.nib ... 
+2023-01-20 15:28:00 +0000  5931 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Thi-dB-lXp-view-lGf-Cd-5ec.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/gc4-yv-8JE-view-Gei-CC-8Lo.nib ... 
+2023-01-20 15:28:00 +0000  4119 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/gc4-yv-8JE-view-Gei-CC-8Lo.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/hjq-tM-aev-view-Bgx-5s-KRK.nib ... 
+2023-01-20 15:28:00 +0000  4951 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/hjq-tM-aev-view-Bgx-5s-KRK.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/zaa-yV-DR0-view-hF1-UV-aeT.nib ... 
+2023-01-20 15:28:00 +0000  2029 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/zaa-yV-DR0-view-hF1-UV-aeT.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/QViewController.nib ... 
+2023-01-20 15:28:00 +0000  1015 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/QViewController.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/J9e-vq-y5Q-view-bkS-cp-Mk7.nib ... 
+2023-01-20 15:28:00 +0000  3343 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/J9e-vq-y5Q-view-bkS-cp-Mk7.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-Nce-sn-0At.nib ... 
+2023-01-20 15:28:00 +0000  921 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-Nce-sn-0At.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/LotterTanChuangViewController.nib ... 
+2023-01-20 15:28:00 +0000  990 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/LotterTanChuangViewController.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-zaa-yV-DR0.nib ... 
+2023-01-20 15:28:00 +0000  912 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-zaa-yV-DR0.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2023-01-20 15:28:00 +0000  1253 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/MViewController.nib ... 
+2023-01-20 15:28:00 +0000  2074 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/MViewController.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/9tG-Ep-v3s-view-WeZ-fW-TaV.nib ... 
+2023-01-20 15:28:00 +0000  2060 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/9tG-Ep-v3s-view-WeZ-fW-TaV.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/SViewController.nib ... 
+2023-01-20 15:28:00 +0000  1015 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/SViewController.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-bai-gO-wPr.nib ... 
+2023-01-20 15:28:00 +0000  960 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-bai-gO-wPr.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/I1K-zd-NJf-view-iIt-gl-7o1.nib ... 
+2023-01-20 15:28:00 +0000  7760 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/I1K-zd-NJf-view-iIt-gl-7o1.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2023-01-20 15:28:00 +0000  3938 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Nce-sn-0At-view-A3R-SY-gh3.nib ... 
+2023-01-20 15:28:00 +0000  2056 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Nce-sn-0At-view-A3R-SY-gh3.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/kii-fE-tuf-view-VC0-x0-8wo.nib ... 
+2023-01-20 15:28:00 +0000  3187 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/kii-fE-tuf-view-VC0-x0-8wo.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-J9e-vq-y5Q.nib ... 
+2023-01-20 15:28:00 +0000  964 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-J9e-vq-y5Q.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/ZhanDouVC.nib ... 
+2023-01-20 15:28:00 +0000  1009 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/ZhanDouVC.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/bai-gO-wPr-view-tgU-US-0rc.nib ... 
+2023-01-20 15:28:00 +0000  5077 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/bai-gO-wPr-view-tgU-US-0rc.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/M65-K2-hAq-view-xGl-oU-cM7.nib ... 
+2023-01-20 15:28:00 +0000  3091 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/M65-K2-hAq-view-xGl-oU-cM7.nib
+copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/cW3-pI-bMK-view-3H5-VV-t5Z.nib ... 
+2023-01-20 15:28:00 +0000  3209 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/cW3-pI-bMK-view-3H5-VV-t5Z.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-gc4-yv-8JE.nib ... 
+961 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/UIViewController-gc4-yv-8JE.nib
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Info.plist ... 
+941 bytes for ./Payload/Sanguo.app/Base.lproj/Main.storyboardc/Info.plist
+2023-01-20 15:28:00 +0000  copying file ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2023-01-20 15:28:00 +0000  1197 bytes for ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2023-01-20 15:28:00 +0000  896 bytes for ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2023-01-20 15:28:00 +0000  258 bytes for ./Payload/Sanguo.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/Sanguo.app/Assets.car ... 
+2023-01-20 15:28:03 +0000  78200152 bytes for ./Payload/Sanguo.app/Assets.car
+2023-01-20 15:28:03 +0000  copying file ./Payload/Sanguo.app/AppIcon76x76@2x~ipad.png ... 
+2023-01-20 15:28:03 +0000  74319 bytes for ./Payload/Sanguo.app/AppIcon76x76@2x~ipad.png
+2023-01-20 15:28:03 +0000  copying file ./Payload/Sanguo.app/Sanguo.momd/VersionInfo.plist ... 
+2023-01-20 15:28:03 +0000  326 bytes for ./Payload/Sanguo.app/Sanguo.momd/VersionInfo.plist
+copying file ./Payload/Sanguo.app/Sanguo.momd/Sanguo.mom ... 
+2023-01-20 15:28:03 +0000  4708 bytes for ./Payload/Sanguo.app/Sanguo.momd/Sanguo.mom
+2023-01-20 15:28:03 +0000  copying file ./Payload/Sanguo.app/Frameworks/Masonry.framework/_CodeSignature/CodeResources ... 
+2023-01-20 15:28:03 +0000  1798 bytes for ./Payload/Sanguo.app/Frameworks/Masonry.framework/_CodeSignature/CodeResources
+copying file ./Payload/Sanguo.app/Frameworks/Masonry.framework/Masonry ... 
+2023-01-20 15:28:03 +0000  510768 bytes for ./Payload/Sanguo.app/Frameworks/Masonry.framework/Masonry
+copying file ./Payload/Sanguo.app/Frameworks/Masonry.framework/Info.plist ... 
+2023-01-20 15:28:03 +0000  735 bytes for ./Payload/Sanguo.app/Frameworks/Masonry.framework/Info.plist
+copying file ./Payload/Sanguo.app/embedded.mobileprovision ... 
+2023-01-20 15:28:03 +0000  11937 bytes for ./Payload/Sanguo.app/embedded.mobileprovision
+copying file ./Payload/Sanguo.app/Sanguo ... 
+2023-01-20 15:28:03 +0000  1206016 bytes for ./Payload/Sanguo.app/Sanguo
+2023-01-20 15:28:03 +0000  copying file ./Payload/Sanguo.app/Info.plist ... 
+1412 bytes for ./Payload/Sanguo.app/Info.plist
+2023-01-20 15:28:03 +0000  copying file ./Payload/Sanguo.app/PkgInfo ... 
+8 bytes for ./Payload/Sanguo.app/PkgInfo
+2023-01-20 15:28:03 +0000  /usr/bin/ditto exited with 0
+2023-01-20 15:28:03 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2023-01-20 15:28:03 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2023-01-20 15:28:03 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2023-01-20 15:28:03 +0000  IDEDistributionItem init <DVTFilePath:0x7fa5ac3df810:'/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app/Frameworks/Masonry.framework'>
+2023-01-20 15:28:03 +0000  IDEDistributionItem init <DVTFilePath:0x7fa5abb25b80:'/var/folders/50/bvvg3zn96_92rrgd3nh6mn5w0000gn/T/XcodeDistPipeline.~~~FkJVNl/Root/Payload/Sanguo.app'>
+2023-01-20 15:28:03 +0000  Processing step: IDEDistributionCreateManifestStep
+2023-01-20 15:28:03 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

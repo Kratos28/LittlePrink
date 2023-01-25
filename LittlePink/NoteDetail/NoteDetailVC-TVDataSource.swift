@@ -9,6 +9,10 @@ import Foundation
 
 extension NoteDetailVC:UITableViewDataSource
 {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        comments.count;
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }

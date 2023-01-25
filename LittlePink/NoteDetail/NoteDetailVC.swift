@@ -132,11 +132,15 @@ class NoteDetailVC: UIViewController {
               try? comment.set(kTextCol, value: textView.unwrappedText);
               try? comment.set(kUserCol, value: user);
               try? comment.set(kNoteCol, value: note);
-              comment.save { res in
-                  if case .success = res {
-                      self.showTextHUD("评论已发布");
-                  }
+              comment.save { _ in
+                 
               }
+              try? note.increase(kCommentCountCol);
+              comments.insert(comment, at: 0);
+              tableView.performBatchUpdates {
+                  tableView.insertSections(IndexSet(integer: 0), with: .automatic);
+              };
+              commentCount += 1;
           } catch  {
               print("哈哈哈");
           }

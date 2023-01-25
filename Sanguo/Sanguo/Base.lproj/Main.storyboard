@@ -63,10 +63,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-6q-Lxa">
-                                <rect key="frame" x="194" y="91" width="1452" height="350"/>
+                                <rect key="frame" x="194" y="91" width="930" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIg-fb-Z1x">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝9"/>
                                         <connections>
@@ -74,23 +74,20 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm8-z6-R6C">
-                                        <rect key="frame" x="363" y="0.0" width="363" height="350"/>
+                                        <rect key="frame" x="310" y="0.0" width="310" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝8"/>
                                         <connections>
                                             <segue destination="M65-K2-hAq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="g0X-hw-GHJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-eM-n0S">
-                                        <rect key="frame" x="726" y="0.0" width="363" height="350"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-eM-n0S">
+                                        <rect key="frame" x="620" y="0.0" width="0.0" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="3主界面_slices_3主界面_slices_主角拷贝7"/>
-                                        <connections>
-                                            <segue destination="sjD-VN-DiG" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="D7c-Te-rWG"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-4I-Umw">
-                                        <rect key="frame" x="1089" y="0.0" width="363" height="350"/>
+                                        <rect key="frame" x="620" y="0.0" width="310" height="350"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="切图_3主界面_slices_chongzhi"/>
                                         <connections>
