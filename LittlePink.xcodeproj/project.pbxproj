@@ -84,6 +84,8 @@
 		65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */; };
 		65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */; };
 		65BDACC3295F461E00CCD7CF /* NoteDetailVC-DelNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */; };
+		65DF4EAD29813E9500B36902 /* NoteDetailVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */; };
+		65DF4EAF29817D5E00B36902 /* NoteDetailVC-DelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */; };
 		65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA5CA1295DE00C0023885E /* WaterfallCell-Like.swift */; };
 		65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */; };
 		D0283336B63934D89D874380 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */; };
@@ -259,6 +261,8 @@
 		65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-EditNote.swift"; sourceTree = "<group>"; };
 		65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-ShareOrMore.swift"; sourceTree = "<group>"; };
 		65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelNote.swift"; sourceTree = "<group>"; };
+		65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-LoadData.swift"; sourceTree = "<group>"; };
+		65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelComment.swift"; sourceTree = "<group>"; };
 		65EA5CA1295DE00C0023885E /* WaterfallCell-Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallCell-Like.swift"; sourceTree = "<group>"; };
 		65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Fav.swift"; sourceTree = "<group>"; };
 		F21E3B59C6CA4A53E4446122 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -478,6 +482,8 @@
 				1BD09B9129680B5200A638F1 /* CommentView.xib */,
 				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
 				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
+				65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */,
+				65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -767,8 +773,10 @@
 				0AF4670928E6CB6500CD4C33 /* CustomViews.swift in Sources */,
 				65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */,
 				0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */,
+				65DF4EAD29813E9500B36902 /* NoteDetailVC-LoadData.swift in Sources */,
 				0AF4670B28E6CB6500CD4C33 /* Login-Extensions.swift in Sources */,
 				0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */,
+				65DF4EAF29817D5E00B36902 /* NoteDetailVC-DelComment.swift in Sources */,
 				0AF4671E28E6CB6500CD4C33 /* PhotoCell.swift in Sources */,
 				0AF4672428E6CB6500CD4C33 /* NoteEditVC-Note.swift in Sources */,
 				1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */,

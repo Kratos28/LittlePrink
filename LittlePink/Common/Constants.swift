@@ -104,6 +104,9 @@ let kAuthCodeRegEx = "^\\d{6}$"
 let kNotesOffset = 10
 
 
+let kCommentOffSet = 10;
+
+
 // MARK: - Leancloud
 //配置相关
 let kLCAppID = "KhBhnnGp6hqVn4K85HyhpqPJ-gzGzoHsz"

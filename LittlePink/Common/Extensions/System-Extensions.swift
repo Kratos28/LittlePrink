@@ -194,6 +194,24 @@ extension UIView{
     }
 }
 
+extension UIAlertAction
+{
+    func setTitleColor(_ color :UIColor){
+        setValue(color, forKey: "titleTextColor");
+    }
+    
+    var titleTextColor: UIColor?{
+        get
+        {
+            value(forKey: "titleTextColor") as? UIColor
+        }set
+        {
+            setValue(newValue, forKey: "titleTextColor");
+
+        }
+    }
+}
+
 extension UIViewController{
     
     // MARK: - 展示加载框或提示框
