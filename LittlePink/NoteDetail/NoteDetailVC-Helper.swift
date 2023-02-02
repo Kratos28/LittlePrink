@@ -20,16 +20,17 @@ extension NoteDetailVC
         if let _ = LCApplication.default.currentUser
         {
             isReply = false;
-            textView.placeholder = kNoteCommetAndReplyPH;
+            textView.placeholder = kNoteCommetPH;
             self.showTextView();
-            
         }else{
             showTextHUD("请登录");
         }
     }
     
-    func showTextView()
+    func showTextView(_ isReply:Bool = false ,_ textViewPH:String = kNoteCommetPH)
     {
+        self.isReply = isReply;
+        textView.placeholder = textViewPH;
         textView.becomeFirstResponder()
         textViewBarView.isHidden = false;
     }
