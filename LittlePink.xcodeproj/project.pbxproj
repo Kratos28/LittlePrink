@@ -469,21 +469,21 @@
 		0AF466B628E6CB6400CD4C33 /* NoteDetail */ = {
 			isa = PBXGroup;
 			children = (
+				1BD09B8F29680B3D00A638F1 /* CommentView.swift */,
+				1BD09B9129680B5200A638F1 /* CommentView.xib */,
+				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
+				65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */,
+				65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */,
+				65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */,
 				65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */,
 				65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */,
 				0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */,
-				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
-				65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */,
-				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
-				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
-				65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */,
-				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
-				1BD09B8F29680B3D00A638F1 /* CommentView.swift */,
-				1BD09B9129680B5200A638F1 /* CommentView.xib */,
-				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
-				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
 				65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */,
-				65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */,
+				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
+				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
+				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
+				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
+				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -991,7 +991,7 @@
 				CODE_SIGN_ENTITLEMENTS = LittlePink/LittlePink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XQ89XT8BW;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1055,7 +1055,7 @@
 				CODE_SIGN_ENTITLEMENTS = LittlePink/LittlePink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XQ89XT8BW;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

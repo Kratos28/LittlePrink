@@ -31,11 +31,16 @@ extension NoteDetailVC{
             
             guard let section = tap.view?.tag else {return};
             let comment = comments[section];
-            if let section = tap.view?.tag , let commentAuthor = comment.get(kUserCol) as? LCUser,commentAuthor == user {
+            guard  let commentAuthor = comment.get(kUserCol) as? LCUser else {return}
+            let commentAuthorNickName = commentAuthor.getExactStringVal(kNickNameCol);
+
+            if commentAuthor == user {
                 let commentText = comment.getExactStringVal(kTextCol);
                 let alert = UIAlertController(title: nil, message: "你的评论\(commentText)", preferredStyle: .actionSheet);
                 let replyAction = UIAlertAction(title: "回复", style: .default){ _ in
                     //回复
+                    self.prepareForReply(commentAuthorNickName);
+
                 }
                 replyAction.setTitleColor(mainColor);
                 let copyAction  = UIAlertAction(title: "复制", style: .destructive){ _ in
@@ -59,11 +64,21 @@ extension NoteDetailVC{
                 
             }else {
                 //回复
+                prepareForReply(commentAuthorNickName);
             }
             
         }else
         {
             showTextHUD("请先登录");
         }
+    }
+}
+
+extension NoteDetailVC
+{
+    private func prepareForReply(_ commentAuthorNickName:String)
+    {
+        showTextView();
+        textView.placeholder = "回复 \(commentAuthorNickName)";
     }
 }

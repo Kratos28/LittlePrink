@@ -19,16 +19,25 @@ extension NoteDetailVC
     func comment(){
         if let _ = LCApplication.default.currentUser
         {
-            textView.becomeFirstResponder()
-            textViewBarView.isHidden = false;
+            self.showTextView();
             
         }else{
             showTextHUD("请登录");
         }
     }
+    
+    func showTextView()
+    {
+        textView.becomeFirstResponder()
+        textViewBarView.isHidden = false;
+    }
+    
     func hideAndRestTextView(){
         textView.resignFirstResponder();
         textView.text = "";
     }
+    
+    
+    
     
 }
