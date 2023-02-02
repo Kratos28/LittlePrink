@@ -122,6 +122,7 @@ let kNoteTable = "Note"
 let kUserLikeTable = "UserLike";
 let kUserFavTable = "UserFav";
 let kCommentTable = "Comment"
+let kReplyTable = "Reply";
 //User表
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
@@ -146,6 +147,7 @@ let kAuthorCol = "author"
 let kHasEditCol = "hasEdit"
 let kUserCol = "user";
 let kNoteCol = "note"
+let kCommentCol = "comment"
 
 // MARK: - 全局函数
 func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{

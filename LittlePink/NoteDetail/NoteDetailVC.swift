@@ -126,28 +126,24 @@ class NoteDetailVC: UIViewController {
     }
     @IBAction func fav(_ sender: Any) {fav()}
     
-    @IBAction func postComment(_ sender: Any) {
+    @IBAction func postCommentOrReply(_ sender: Any) {
       if  !textView.isBlank{
-          let user = LCApplication.default.currentUser!
-          do {
-              let comment = LCObject(className: kCommentTable)
-              try? comment.set(kTextCol, value: textView.unwrappedText);
-              try? comment.set(kUserCol, value: user);
-              try? comment.set(kNoteCol, value: note);
-              comment.save { _ in
-                 
-              }
-              try? note.increase(kCommentCountCol);
-              comments.insert(comment, at: 0);
-              tableView.performBatchUpdates {
-                  tableView.insertSections(IndexSet(integer: 0), with: .automatic);
-              };
-              commentCount += 1;
-          } catch  {
-              print("哈哈哈");
+          if isReply{
+              
+              self.postComment();
+              
+        
+          }else
+          {
+              self.postReply();
           }
+          
+   
        
           hideAndRestTextView();
         }
     }
+    
+    
+    
 }
