@@ -66,7 +66,7 @@ let kSpacingBetweenItems: CGFloat = 2
 //笔记
 let kMaxNoteTitleCount = 20
 let kMaxNoteTextCount = 1000
-
+let  kNoteCommetAndReplyPH = "精彩评论被优先展示哦";
 //话题
 let kAllSubChannels = [
     ["穿神马是神马", "就快瘦到50斤啦", "花5个小时修的靓图", "网红店入坑记"],

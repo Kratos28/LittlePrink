@@ -19,6 +19,8 @@ extension NoteDetailVC
     func comment(){
         if let _ = LCApplication.default.currentUser
         {
+            isReply = false;
+            textView.placeholder = kNoteCommetAndReplyPH;
             self.showTextView();
             
         }else{

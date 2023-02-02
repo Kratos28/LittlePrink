@@ -78,6 +78,7 @@ extension NoteDetailVC
 {
     private func prepareForReply(_ commentAuthorNickName:String)
     {
+        isReply = true;
         showTextView();
         textView.placeholder = "回复 \(commentAuthorNickName)";
     }
