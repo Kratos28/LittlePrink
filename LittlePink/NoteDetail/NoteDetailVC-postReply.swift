@@ -17,7 +17,8 @@ extension NoteDetailVC
             let reply =  LCObject(className: kReplyTable);
             try reply.set(kTextCol,value: textView.unwrappedText);
             try reply.set(kUserCol, value: user);
-            try reply.set(kCommentCol, value: nil);
+            try reply.set(kCommentCol, value: comments[commentSection]);
+            reply.save { _ in}
         } catch  {
             
         }

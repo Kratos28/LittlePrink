@@ -1552,12 +1552,66 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" id="ctB-wZ-BcZ">
-                                        <rect key="frame" x="0.0" y="446" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" rowHeight="80" id="ctB-wZ-BcZ">
+                                        <rect key="frame" x="0.0" y="446" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ctB-wZ-BcZ" id="d1a-pI-Gy7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tHd-wa-KrM">
+                                                    <rect key="frame" x="82" y="11" width="166.5" height="48"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPH3" translatesAutoresizingMaskIntoConstraints="NO" id="LSx-7F-f2L">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="48"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="TyF-ff-8GE"/>
+                                                                <constraint firstAttribute="height" constant="40" id="aJj-9k-UcP"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hbc-SK-sC4">
+                                                            <rect key="frame" x="45" y="0.0" width="121.5" height="48"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E4c-Pb-OMM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="12.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="洗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewo-IM-5kD">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="35" height="12.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pq-Oq-kZh">
+                                                                            <rect key="frame" x="35" y="0.0" width="35" height="12.5"/>
+                                                                            <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是一个吹拂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubx-ww-rnu">
+                                                                    <rect key="frame" x="0.0" y="17.5" width="104" height="13"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-P6-9gG">
+                                                                    <rect key="frame" x="0.0" y="35.5" width="121.5" height="12.5"/>
+                                                                    <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="展示9条回复"/>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tHd-wa-KrM" firstAttribute="top" secondItem="d1a-pI-Gy7" secondAttribute="topMargin" id="08w-P5-5Sv"/>
+                                                <constraint firstItem="tHd-wa-KrM" firstAttribute="leading" secondItem="d1a-pI-Gy7" secondAttribute="leadingMargin" constant="62" id="3aB-O8-UQ5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tHd-wa-KrM" secondAttribute="bottom" constant="10" id="zeh-OW-VGi"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -1793,7 +1847,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joU-Ir-7Ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6610" y="-707"/>
+            <point key="canvasLocation" x="6608.6956521739139" y="-707.14285714285711"/>
         </scene>
         <!--FollowVC-->
         <scene sceneID="onx-Ms-hos">
@@ -2160,6 +2214,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
