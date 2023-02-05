@@ -30,7 +30,7 @@ let kPOICellID = "POICellID"
 let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
 let kCommentViewID =  "CommentViewID"
 let kReplyCellID  = "ReplyCellID";
-let kcommentSectionFooterViewID  = "kcommentSectionFooterViewID";
+let kCommentSectionFooterViewID  = "kcommentSectionFooterViewID";
 // MARK: - 资源文件相关
 let mainColor = UIColor(named: "main")!
 let mainLightColor = UIColor(named: "main-light")!

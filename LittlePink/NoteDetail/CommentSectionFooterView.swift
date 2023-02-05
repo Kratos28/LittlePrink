@@ -9,6 +9,9 @@ import UIKit
 
 class CommentSectionFooterView: UITableViewHeaderFooterView {
 
-
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier);
+        
+    }
 
 }
