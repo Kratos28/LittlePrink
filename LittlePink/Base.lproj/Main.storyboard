@@ -1552,7 +1552,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" rowHeight="80" id="ctB-wZ-BcZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" rowHeight="80" id="ctB-wZ-BcZ" customClass="ReplyCell" customModule="LittlePink" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="446" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ctB-wZ-BcZ" id="d1a-pI-Gy7">
@@ -1613,6 +1613,13 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="tHd-wa-KrM" secondAttribute="bottom" constant="10" id="zeh-OW-VGi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="3Pq-Oq-kZh" id="dOY-qw-uIx"/>
+                                            <outlet property="avatarImageView" destination="LSx-7F-f2L" id="J2x-TF-61L"/>
+                                            <outlet property="nickNameLabel" destination="ewo-IM-5kD" id="Ayb-c1-aQi"/>
+                                            <outlet property="replyTextLabel" destination="Ubx-ww-rnu" id="PhC-qr-bRF"/>
+                                            <outlet property="showAllReplyBtn" destination="gUl-P6-9gG" id="rAv-9f-QRz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

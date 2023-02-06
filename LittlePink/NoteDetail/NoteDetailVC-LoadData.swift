@@ -52,6 +52,9 @@ extension NoteDetailVC
         }
         group.notify(queue: .main) {
             self.replies =     replicsDic.sorted {$0.key < $1.key}.map {$0.value};
+            DispatchQueue.main.async {
+                self.tableView.reloadData();
+            }
         }
     }
 }
