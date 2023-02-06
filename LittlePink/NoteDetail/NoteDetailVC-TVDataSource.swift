@@ -24,7 +24,6 @@ extension NoteDetailVC:UITableViewDataSource
             return replyCount;
         }
         
-        return replyCount > 1 ? 1 : replyCount;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
