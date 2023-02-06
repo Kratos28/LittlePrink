@@ -82,6 +82,7 @@
 		1BD09B972968376600A638F1 /* NoteDetailVC-TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */; };
 		1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */; };
 		1BDD20CE2990E02E00884CE7 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD20CD2990E02E00884CE7 /* ReplyCell.swift */; };
+		1BDD20D02991063600884CE7 /* ExpandableRepiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */; };
 		1BF10A21298BE75200ABF0CF /* NoteDetailVC-postComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */; };
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
 		65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */; };
@@ -258,6 +259,7 @@
 		1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDelegate.swift"; sourceTree = "<group>"; };
 		1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDataSource.swift"; sourceTree = "<group>"; };
 		1BDD20CD2990E02E00884CE7 /* ReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
+		1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableRepiles.swift; sourceTree = "<group>"; };
 		1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-postComment.swift"; sourceTree = "<group>"; };
 		1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostReply.swift"; sourceTree = "<group>"; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */,
 				0AF466AD28E6CB6400CD4C33 /* Demos+PH */,
 				0AF466B528E6CB6400CD4C33 /* TabBarC.swift */,
+				1BB0FDD7299122240057E04D /* Models */,
 				0AF466B628E6CB6400CD4C33 /* NoteDetail */,
 				0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */,
 				0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */,
@@ -568,6 +571,14 @@
 				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
+			sourceTree = "<group>";
+		};
+		1BB0FDD7299122240057E04D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
@@ -770,6 +781,7 @@
 				1B89AA95298D12410016D173 /* CommentSectionFooterView.swift in Sources */,
 				0AF4670328E6CB6500CD4C33 /* NoteDetailVC.swift in Sources */,
 				0AF4670A28E6CB6500CD4C33 /* LocalLogin-Extensions.swift in Sources */,
+				1BDD20D02991063600884CE7 /* ExpandableRepiles.swift in Sources */,
 				1BF10A21298BE75200ABF0CF /* NoteDetailVC-postComment.swift in Sources */,
 				0AF4670C28E6CB6500CD4C33 /* System-Extensions.swift in Sources */,
 				0AF466F628E6CB6400CD4C33 /* WaterfallVC.swift in Sources */,
