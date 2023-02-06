@@ -36,6 +36,8 @@ extension NoteDetailVC
                 try? userFav.set(kUserCol, value: note);
                 userFav.save { _ in};
                 try?note.increase(kFavCountCol)
+                note.save { _ in}
+
             }else
             {
                 let query = LCQuery(className:kUserFavTable);

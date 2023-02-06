@@ -23,6 +23,8 @@ extension WaterfallCell
                  userLike.save { _ in}
                 //点赞数
                 try? note.increase(kLikeCountCol);
+                note.save { _ in}
+
                 //不能修改别人的user表字段，故里面不能放xxxCount这种，因为费这个用户本人是存不进去的
             }else
             {

@@ -21,6 +21,8 @@ extension NoteDetailVC
                
             }
             try? note.increase(kCommentCountCol);
+            note.save { _ in}
+
             comments.insert(comment, at: 0);
             tableView.performBatchUpdates {
                 tableView.insertSections(IndexSet(integer: 0), with: .automatic);
