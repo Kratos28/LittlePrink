@@ -21,6 +21,11 @@ extension NoteDetailVC:UITableViewDelegate{
         commentView.addGestureRecognizer(commentTap);
         return commentView;
     }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let separatorLine = tableView.dequeueReusableCell(withIdentifier: kCommentSectionFooterViewID);
+        return separatorLine;
+    }
 
 }
 extension NoteDetailVC{

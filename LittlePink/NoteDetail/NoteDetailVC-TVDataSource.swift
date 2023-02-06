@@ -14,12 +14,12 @@ extension NoteDetailVC:UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        replies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kReplyCellID, for: indexPath);
-        cell.textLabel?.text = "wefwe";
+
         return cell;
     }
     
