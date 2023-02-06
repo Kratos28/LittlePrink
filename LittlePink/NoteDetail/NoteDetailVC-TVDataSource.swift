@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import LeanCloud
 extension NoteDetailVC:UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -19,7 +19,12 @@ extension NoteDetailVC:UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kReplyCellID, for: indexPath) as! ReplyCell
-        cell.reply = replies[indexPath.section][indexPath.row];
+        let reply =  replies[indexPath.section][indexPath.row];
+        cell.reply = reply;
+       if let replyAuthor =  reply.get(kUserCol) as? LCUser,let noteAuthor = author,replyAuthor ==  noteAuthor
+        {
+           cell.authorLabel.isHidden  = false;
+        }
         return cell;
     }
     
