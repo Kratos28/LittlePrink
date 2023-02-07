@@ -201,7 +201,7 @@
 		0AF466AE28E6CB6400CD4C33 /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; };
 		0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTableVCDemo.swift; sourceTree = "<group>"; };
 		0AF466B028E6CB6400CD4C33 /* 值类型+引用类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "值类型+引用类型.playground"; sourceTree = "<group>"; };
-		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; };
+		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0AF466B228E6CB6400CD4C33 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		0AF466B328E6CB6400CD4C33 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
 		0AF466B428E6CB6400CD4C33 /* ARC+循环引用.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ARC+循环引用.playground"; sourceTree = "<group>"; };
