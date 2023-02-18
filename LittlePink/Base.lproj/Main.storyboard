@@ -2154,6 +2154,14 @@
             <point key="canvasLocation" x="5228" y="-716"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="SOk-cE-s64">
+            <size key="intrinsicContentSize" width="97" height="30"/>
+        </designable>
+        <designable name="g87-mB-ifF">
+            <size key="intrinsicContentSize" width="94.5" height="22"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="bdT-cY-5Ov"/>
         <segue reference="zAw-mi-0vt"/>
@@ -2168,8 +2176,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" width="128" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
