@@ -39,7 +39,7 @@ extension NoteDetailVC{
                 let alert = UIAlertController(title: nil, message: "你的评论\(commentText)", preferredStyle: .actionSheet);
                 let replyAction = UIAlertAction(title: "回复", style: .default){ _ in
                     //回复
-                    self.prepareForReply(commentAuthorNickName);
+                    self.prepareForReply(commentAuthorNickName,section);
 
                 }
                 replyAction.setTitleColor(mainColor);
@@ -64,7 +64,7 @@ extension NoteDetailVC{
                 
             }else {
                 //回复
-                prepareForReply(commentAuthorNickName);
+                prepareForReply(commentAuthorNickName,section);
             }
             
         }else
@@ -76,8 +76,10 @@ extension NoteDetailVC{
 
 extension NoteDetailVC
 {
-    private func prepareForReply(_ commentAuthorNickName:String)
+    private func prepareForReply(_ commentAuthorNickName:String , _ section:Int )
     {
+    
         showTextView(true,"回复 \(commentAuthorNickName)");
+        commentSection = section;
     }
 }

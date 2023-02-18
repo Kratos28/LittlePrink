@@ -198,7 +198,7 @@
 		0AF466AE28E6CB6400CD4C33 /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; };
 		0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTableVCDemo.swift; sourceTree = "<group>"; };
 		0AF466B028E6CB6400CD4C33 /* 值类型+引用类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "值类型+引用类型.playground"; sourceTree = "<group>"; };
-		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; };
+		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0AF466B228E6CB6400CD4C33 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		0AF466B328E6CB6400CD4C33 /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
 		0AF466B428E6CB6400CD4C33 /* ARC+循环引用.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "ARC+循环引用.playground"; sourceTree = "<group>"; };
@@ -483,13 +483,13 @@
 				65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */,
 				0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */,
 				65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */,
+				1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */,
+				1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-postReply.swift */,
 				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
 				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
 				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
 				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
 				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
-				1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */,
-				1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-postReply.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
