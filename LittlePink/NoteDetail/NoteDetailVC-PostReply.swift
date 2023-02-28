@@ -18,9 +18,10 @@ extension NoteDetailVC
             try reply.set(kTextCol,value: textView.unwrappedText);
             try reply.set(kUserCol, value: user);
             try reply.set(kCommentCol, value: comments[commentSection]);
-            reply.save { _ in
-                
-            }
+            reply.save {_ in   }
+            try? note.increase(kCommentCountCol);
+            replies[commentSection].append(reply);
+
         } catch  {
             print("给Reply表的字段复制失败");
         }

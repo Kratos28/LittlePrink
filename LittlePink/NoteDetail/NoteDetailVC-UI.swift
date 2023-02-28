@@ -26,7 +26,7 @@ extension NoteDetailVC{
         if !isUpdatingNote
         {
             //上方bar的author
-            let authorAvatarURL = author?.getImageURL(from: kAvatarCol, .avater)
+            let authorAvatarURL = author?.getImageURL(from: kAvatarCol, .avatar)
             authorAvatarBtn.kf.setImage(with: authorAvatarURL, for: .normal)
             authorNickNameBtn.setTitle(author?.getExactStringVal(kNickNameCol), for: .normal)
         }
@@ -75,7 +75,7 @@ extension NoteDetailVC{
         
         //当前用户头像
         if let user = LCApplication.default.currentUser{
-            let avatarURL = user.getImageURL(from: kAvatarCol, .avater)
+            let avatarURL = user.getImageURL(from: kAvatarCol, .avatar)
             avatarImageView.kf.setImage(with: avatarURL)
         }
         

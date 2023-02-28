@@ -83,6 +83,7 @@
 		1BF10A21298BE75200ABF0CF /* NoteDetailVC-PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */; };
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
 		652FDA0929A1FC0C008F68E7 /* commentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */; };
+		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
 		65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */; };
 		65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */; };
 		65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */; };
@@ -263,6 +264,7 @@
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentSectionFooterView.swift; sourceTree = "<group>"; };
 		65399075282AB3DE002EB0E8 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6569C10929A90A8B00684C3C /* ReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Helper.swift"; sourceTree = "<group>"; };
 		65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-EditNote.swift"; sourceTree = "<group>"; };
 		65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-ShareOrMore.swift"; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
 				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
 				652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */,
+				6569C10929A90A8B00684C3C /* ReplyCell.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 				0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */,
 				0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */,
 				65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */,
+				6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */,
 				65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */,
 				0A60956928BF421600A29A98 /* APRSASigner.m in Sources */,
 				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,

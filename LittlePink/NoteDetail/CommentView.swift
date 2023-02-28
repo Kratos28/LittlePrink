@@ -18,7 +18,7 @@ class CommentView: UITableViewHeaderFooterView {
             guard let comment = comment else {return};
             
             if let user = comment.get(kUserCol) as? LCUser{
-                avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avater));
+                avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avatar));
                 nickNameLabel.text = user.getExactStringVal(kNickNameCol);
             }
             let commentText = comment.getExactStringVal(kTextCol);

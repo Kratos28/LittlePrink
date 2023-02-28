@@ -1552,7 +1552,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" id="ctB-wZ-BcZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReplyCellID" id="ctB-wZ-BcZ" customClass="ReplyCell" customModule="LittlePink" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="440.5" width="414" height="83.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ctB-wZ-BcZ" id="d1a-pI-Gy7">
@@ -1573,7 +1573,7 @@
                                                             <rect key="frame" x="35" y="0.0" width="301" height="67.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CLt-We-MrU">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="72.5" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="29.5" height="16"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-hq-bVO">
                                                                             <rect key="frame" x="0.0" y="0.0" width="29.5" height="16"/>
@@ -1581,8 +1581,8 @@
                                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-OQ-Pdx">
-                                                                            <rect key="frame" x="39.5" y="0.0" width="33" height="16"/>
+                                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWb-OQ-Pdx">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="16"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                             <color key="textColor" systemColor="systemGray2Color"/>
                                                                             <nil key="highlightedColor"/>
@@ -1613,6 +1613,13 @@
                                                 <constraint firstItem="5ly-KJ-Fvj" firstAttribute="top" secondItem="d1a-pI-Gy7" secondAttribute="top" id="n0q-OV-ZEy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="OWb-OQ-Pdx" id="FX6-sP-wqr"/>
+                                            <outlet property="avatarImageView" destination="vPe-El-7hF" id="Xcg-Aj-prV"/>
+                                            <outlet property="nickNameLabel" destination="xQ1-hq-bVO" id="4ex-wX-RWz"/>
+                                            <outlet property="replyTextLabel" destination="DdE-3j-F7U" id="vdf-Ch-o1X"/>
+                                            <outlet property="showAllReplyBtn" destination="vSH-p1-Xha" id="EvN-oh-pIX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -2152,10 +2159,10 @@
             <size key="intrinsicContentSize" width="-1" height="30"/>
         </designable>
         <designable name="SOk-cE-s64">
-            <size key="intrinsicContentSize" width="113" height="18"/>
+            <size key="intrinsicContentSize" width="97" height="30"/>
         </designable>
         <designable name="g87-mB-ifF">
-            <size key="intrinsicContentSize" width="110.5" height="22"/>
+            <size key="intrinsicContentSize" width="94.5" height="22"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import LeanCloud
 
 extension NoteDetailVC:UITableViewDataSource
 {
@@ -14,11 +15,19 @@ extension NoteDetailVC:UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+         replies[section].count;
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kReplyCellID, for: indexPath);
+        let cell = tableView.dequeueReusableCell(withIdentifier: kReplyCellID, for: indexPath) as! ReplyCell;
+        
+        let reply = replies[indexPath.section][indexPath.row];
+        cell.reply = reply;
+     if  let replyAuthor = reply.get(kUserCol) as? LCUser,let noteAuthor = author,replyAuthor == noteAuthor{
+            cell.authorLabel.isHidden = false;
+        }
         
         return cell;
     }
