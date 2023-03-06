@@ -81,9 +81,10 @@ extension NoteDetailVC{
 
 extension NoteDetailVC
 {
-    private func prepareForReply(_ commentAuthorNickName:String,_ section:Int)
+    private func prepareForReply(_ commentAuthorNickName:String , _ section:Int )
     {
+    
         showTextView(true,"回复 \(commentAuthorNickName)");
-        self.commentSection = section;
+        commentSection = section;
     }
 }

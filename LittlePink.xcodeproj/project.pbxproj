@@ -76,15 +76,14 @@
 		0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466E928E6CB6400CD4C33 /* POIVC-KeywordsSearch.swift */; };
 		0AF4672D28E6CB6500CD4C33 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466EA28E6CB6400CD4C33 /* TV.mp4 */; };
 		0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */; };
-		1B89AA95298D12410016D173 /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89AA94298D12410016D173 /* CommentSectionFooterView.swift */; };
 		1BD09B9029680B3D00A638F1 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B8F29680B3D00A638F1 /* CommentView.swift */; };
 		1BD09B9229680B5200A638F1 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BD09B9129680B5200A638F1 /* CommentView.xib */; };
 		1BD09B972968376600A638F1 /* NoteDetailVC-TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */; };
 		1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */; };
-		1BDD20CE2990E02E00884CE7 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD20CD2990E02E00884CE7 /* ReplyCell.swift */; };
-		1BDD20D02991063600884CE7 /* ExpandableRepiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */; };
-		1BF10A21298BE75200ABF0CF /* NoteDetailVC-postComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */; };
+		1BF10A21298BE75200ABF0CF /* NoteDetailVC-PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */; };
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
+		652FDA0929A1FC0C008F68E7 /* commentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */; };
+		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
 		65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */; };
 		65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */; };
 		65BDACC1295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */; };
@@ -253,20 +252,19 @@
 		0AF466EA28E6CB6400CD4C33 /* TV.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV.mp4; sourceTree = "<group>"; };
 		0AF466EC28E6CB6400CD4C33 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		0AF466ED28E6CB6400CD4C33 /* LittlePink v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LittlePink v2.xcdatamodel"; sourceTree = "<group>"; };
-		1B89AA94298D12410016D173 /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		1BD09B8F29680B3D00A638F1 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		1BD09B9129680B5200A638F1 /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
 		1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDelegate.swift"; sourceTree = "<group>"; };
 		1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDataSource.swift"; sourceTree = "<group>"; };
-		1BDD20CD2990E02E00884CE7 /* ReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
-		1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableRepiles.swift; sourceTree = "<group>"; };
-		1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-postComment.swift"; sourceTree = "<group>"; };
+		1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostComment.swift"; sourceTree = "<group>"; };
 		1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostReply.swift"; sourceTree = "<group>"; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentSectionFooterView.swift; sourceTree = "<group>"; };
 		65399075282AB3DE002EB0E8 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6569C10929A90A8B00684C3C /* ReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Helper.swift"; sourceTree = "<group>"; };
 		65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-EditNote.swift"; sourceTree = "<group>"; };
 		65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-ShareOrMore.swift"; sourceTree = "<group>"; };
@@ -407,7 +405,6 @@
 				0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */,
 				0AF466AD28E6CB6400CD4C33 /* Demos+PH */,
 				0AF466B528E6CB6400CD4C33 /* TabBarC.swift */,
-				1BB0FDD7299122240057E04D /* Models */,
 				0AF466B628E6CB6400CD4C33 /* NoteDetail */,
 				0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */,
 				0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */,
@@ -483,7 +480,6 @@
 				1BD09B8F29680B3D00A638F1 /* CommentView.swift */,
 				1BD09B9129680B5200A638F1 /* CommentView.xib */,
 				0AF466B928E6CB6400CD4C33 /* NoteDetailVC-Config.swift */,
-				1B89AA94298D12410016D173 /* CommentSectionFooterView.swift */,
 				65DF4EAE29817D5E00B36902 /* NoteDetailVC-DelComment.swift */,
 				65BDACC2295F461E00CCD7CF /* NoteDetailVC-DelNote.swift */,
 				65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */,
@@ -491,14 +487,15 @@
 				65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */,
 				0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */,
 				65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */,
+				1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */,
+				1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */,
 				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
 				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
 				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
 				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
 				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
-				1BF10A20298BE75200ABF0CF /* NoteDetailVC-postComment.swift */,
-				1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */,
-				1BDD20CD2990E02E00884CE7 /* ReplyCell.swift */,
+				652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */,
+				6569C10929A90A8B00684C3C /* ReplyCell.swift */,
 			);
 			path = NoteDetail;
 			sourceTree = "<group>";
@@ -571,14 +568,6 @@
 				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
-			sourceTree = "<group>";
-		};
-		1BB0FDD7299122240057E04D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1BDD20CF2991063600884CE7 /* ExpandableRepiles.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
@@ -778,11 +767,10 @@
 				0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */,
 				0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */,
 				0AF4672228E6CB6500CD4C33 /* NoteEditVC-CollectionView.swift in Sources */,
-				1B89AA95298D12410016D173 /* CommentSectionFooterView.swift in Sources */,
 				0AF4670328E6CB6500CD4C33 /* NoteDetailVC.swift in Sources */,
 				0AF4670A28E6CB6500CD4C33 /* LocalLogin-Extensions.swift in Sources */,
-				1BDD20D02991063600884CE7 /* ExpandableRepiles.swift in Sources */,
-				1BF10A21298BE75200ABF0CF /* NoteDetailVC-postComment.swift in Sources */,
+				652FDA0929A1FC0C008F68E7 /* commentSectionFooterView.swift in Sources */,
+				1BF10A21298BE75200ABF0CF /* NoteDetailVC-PostComment.swift in Sources */,
 				0AF4670C28E6CB6500CD4C33 /* System-Extensions.swift in Sources */,
 				0AF466F628E6CB6400CD4C33 /* WaterfallVC.swift in Sources */,
 				0AF4672A28E6CB6500CD4C33 /* NoteEditVC-UI.swift in Sources */,
@@ -817,7 +805,7 @@
 				0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */,
 				0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */,
 				65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */,
-				1BDD20CE2990E02E00884CE7 /* ReplyCell.swift in Sources */,
+				6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */,
 				65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */,
 				0A60956928BF421600A29A98 /* APRSASigner.m in Sources */,
 				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,
