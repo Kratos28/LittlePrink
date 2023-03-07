@@ -20,7 +20,7 @@ class NoteDetailVC: UIViewController {
     
     var isReply = false;
     var commentSection = 0;
-    var replies : [[LCObject]] = [];
+    var replies : [ExpandableReplies] = [];
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
