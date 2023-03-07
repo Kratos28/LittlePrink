@@ -61,32 +61,6 @@ extension NoteDetailVC
         }
     }
     
-    func getReplies(){
-        let query = LCQuery(className: kReplyTable);
-        let group = DispatchGroup();
-        var replicsDic :[Int:[LCObject]] = [:];
-        for (index, comment) in comments.enumerated()
-        {
-            group.enter();
-           try? query.where(kCommentCol, .equalTo(comment));
-           try? query.where(kUserCol, .included);
-           try? query.where(kCreatedAtCol, .ascending);
-            query.find { res in
-                if case let   .success(objects: replies)   = res{
-                    replicsDic[index] = replies;
-                }else
-                {
-                    replicsDic[index] = [];
-                }
-                group.leave();
-            }
-        }
-        group.notify(queue: .main) {
-            self.replies =     replicsDic.sorted {$0.key < $1.key}.map {ExpandableRepiles(replies: $0.value)};
-            DispatchQueue.main.async {
-                self.tableView.reloadData();
-            }
-        }
-    }
+
 }
     
