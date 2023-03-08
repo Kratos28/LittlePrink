@@ -16,7 +16,14 @@ extension NoteDetailVC:UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let replyCount =  replies[section].replies.count;
-        return replyCount > 1 ? 1 : replyCount;
+        
+        if replyCount >  1 && replies[section].isExpanded
+        {
+            return 1;
+        }else
+        {
+            return replyCount;
+        }
     }
     
     
@@ -30,9 +37,9 @@ extension NoteDetailVC:UITableViewDataSource
             cell.authorLabel.isHidden = false;
         }
         let replyCount = replies[indexPath.section].replies.count
-        if replyCount > 1
-        {
+        if replyCount > 1,replies[indexPath.section].isExpanded{
             cell.showAllReplyBtn.isHidden = false;
+            cell.showAllReplyBtn.tag = indexPath.section;
             cell.showAllReplyBtn.setTitle("展示\(replyCount - 1 )", for: .normal);
             cell.showAllReplyBtn.addTarget(self, action: #selector(showAllReply), for: .touchUpInside);
         }else
@@ -51,7 +58,13 @@ extension NoteDetailVC
 {
     @objc private func showAllReply(sender:UIButton)
     {
-        tableView.reloadData();
-     
+       let section =   sender.tag;
+        replies[section].isExpanded = true;
+        tableView.performBatchUpdates {
+            tableView.reloadSections(IndexSet(integer: section), with: .automatic);
+
+        }
+        
+        
     }
 }

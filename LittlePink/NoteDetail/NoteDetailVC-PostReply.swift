@@ -19,14 +19,11 @@ extension NoteDetailVC
             try reply.set(kUserCol, value: user);
             try reply.set(kCommentCol, value: comments[commentSection]);
             reply.save {_ in   }
-            try note.increase(kCommentCountCol);
-            note.save { _ in}
+            self.updateCommentCount(by: 1);
             replies[commentSection].replies.append(reply);
-            
             tableView.performBatchUpdates {
                 tableView.insertRows(at: [IndexPath(row: replies[commentSection].replies.count - 1, section: commentSection)], with: .automatic);
             }
-            commentCount += 1
 
         } catch  {
             print("给Reply表的字段复制失败");

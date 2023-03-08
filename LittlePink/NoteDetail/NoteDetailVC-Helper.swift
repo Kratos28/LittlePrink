@@ -40,7 +40,11 @@ extension NoteDetailVC
         textView.text = "";
     }
     
-    
+    func updateCommentCount(by offset:Int){
+        try? self.note.increase(kCommentCountCol,by:  offset);
+        note.save{_ in}
+        self.commentCount += offset;
+    }
     
     
 }

@@ -11,11 +11,9 @@ extension NoteDetailVC
     func delComment(_ comment: LCObject, _ section: Int){
         showDelAlert(for: "评论") { _ in
             comment.delete { _ in }
-            try? self.note.increase(kCommentCountCol, by: -1)
-            self.note.save { _ in}
+            self.updateCommentCount(by: -1);
             self.comments.remove(at: section);
             self.tableView.reloadData();
-            self.commentCount -= 1;
         }
     }
 }

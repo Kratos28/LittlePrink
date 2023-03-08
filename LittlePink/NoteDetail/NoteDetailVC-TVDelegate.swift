@@ -26,6 +26,46 @@ extension NoteDetailVC:UITableViewDelegate{
         let separatorLine = tableView.dequeueReusableCell(withIdentifier: kCommentSectionFooterViewID);
         return separatorLine;
     }
+    
+    //用户按下评论的回复Cellh后
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let user = LCApplication.default.currentUser{
+           let reply =  replies[indexPath.section].replies[indexPath.row];
+            guard let replyAuthor =  reply.get(kUserCol) as? LCUser else {return}
+            if user ==  replyAuthor
+            {
+                let replyText = reply.getExactStringVal(kTextCol);
+                let alert = UIAlertController(title: nil, message: "你的回复\(replyText)", preferredStyle: .actionSheet);
+                let subReplyAction = UIAlertAction(title: "回复", style: .default){ _ in
+                    
+                }
+                let copyAction  = UIAlertAction(title: "复制", style: .destructive){ _ in
+                    UIPasteboard.general.string = replyText;
+                }
+                let deleteAction  = UIAlertAction(title: "删除", style: .destructive){ _ in
+                    self.delReply(reply, indexPath);
+                }
+                
+                let cancelAction  = UIAlertAction(title: "取消", style: .cancel){ _ in
+                    
+                }
+                alert.addAction(subReplyAction);
+                alert.addAction(copyAction);
+                alert.addAction(deleteAction);
+                alert.addAction(cancelAction);
+
+
+                present(alert, animated: true)
+                
+            }else
+            {
+                tableView.deselectRow(at: indexPath, animated: true);
+            }
+        }else
+        {
+            showTextHUD("请先登录");
+        }
+    }
 
 }
 extension NoteDetailVC{
@@ -66,7 +106,7 @@ extension NoteDetailVC{
                 alert.addAction(cancelAction);
 
 
-                
+                present(alert, animated: true)
             }else {
                 //回复
                 prepareForReply(commentAuthorNickName,section);

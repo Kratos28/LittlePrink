@@ -77,6 +77,7 @@
 		0AF4672D28E6CB6500CD4C33 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF466EA28E6CB6400CD4C33 /* TV.mp4 */; };
 		0AF4672E28E6CB6500CD4C33 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AF466EB28E6CB6400CD4C33 /* LittlePink.xcdatamodeld */; };
 		1B2B502629B732CD00F84026 /* ExpandableReplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B502529B732CD00F84026 /* ExpandableReplies.swift */; };
+		1B2B503429B86C6B00F84026 /* NoteDetailVC-DelReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B503329B86C6B00F84026 /* NoteDetailVC-DelReply.swift */; };
 		1BD09B9029680B3D00A638F1 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B8F29680B3D00A638F1 /* CommentView.swift */; };
 		1BD09B9229680B5200A638F1 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BD09B9129680B5200A638F1 /* CommentView.xib */; };
 		1BD09B972968376600A638F1 /* NoteDetailVC-TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */; };
@@ -254,6 +255,7 @@
 		0AF466EC28E6CB6400CD4C33 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		0AF466ED28E6CB6400CD4C33 /* LittlePink v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LittlePink v2.xcdatamodel"; sourceTree = "<group>"; };
 		1B2B502529B732CD00F84026 /* ExpandableReplies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableReplies.swift; sourceTree = "<group>"; };
+		1B2B503329B86C6B00F84026 /* NoteDetailVC-DelReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-DelReply.swift"; sourceTree = "<group>"; };
 		1BD09B8F29680B3D00A638F1 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		1BD09B9129680B5200A638F1 /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
 		1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-TVDelegate.swift"; sourceTree = "<group>"; };
@@ -407,7 +409,7 @@
 				0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */,
 				0AF466AD28E6CB6400CD4C33 /* Demos+PH */,
 				0AF466B528E6CB6400CD4C33 /* TabBarC.swift */,
-				1B2B502529B732CD00F84026 /* ExpandableReplies.swift */,
+				1B2B502729B738BB00F84026 /* Model */,
 				0AF466B628E6CB6400CD4C33 /* NoteDetail */,
 				0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */,
 				0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */,
@@ -495,6 +497,7 @@
 				65BDACC0295F457B00CCD7CF /* NoteDetailVC-ShareOrMore.swift */,
 				1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */,
 				1BD09B962968376600A638F1 /* NoteDetailVC-TVDelegate.swift */,
+				1B2B503329B86C6B00F84026 /* NoteDetailVC-DelReply.swift */,
 				0AF466B828E6CB6400CD4C33 /* NoteDetailVC-UI.swift */,
 				0AF466B728E6CB6400CD4C33 /* NoteDetailVC.swift */,
 				652FDA0829A1FC0C008F68E7 /* commentSectionFooterView.swift */,
@@ -571,6 +574,14 @@
 				0AF466E428E6CB6400CD4C33 /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
+			sourceTree = "<group>";
+		};
+		1B2B502729B738BB00F84026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B2B502529B732CD00F84026 /* ExpandableReplies.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
@@ -796,6 +807,7 @@
 				0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */,
 				65DF4EAF29817D5E00B36902 /* NoteDetailVC-DelComment.swift in Sources */,
 				0AF4671E28E6CB6500CD4C33 /* PhotoCell.swift in Sources */,
+				1B2B503429B86C6B00F84026 /* NoteDetailVC-DelReply.swift in Sources */,
 				0AF4672428E6CB6500CD4C33 /* NoteEditVC-Note.swift in Sources */,
 				1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */,
 				0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */,
