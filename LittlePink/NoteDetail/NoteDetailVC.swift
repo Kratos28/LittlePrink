@@ -21,6 +21,7 @@ class NoteDetailVC: UIViewController {
     var isReply = false;
     var commentSection = 0;
     var replies : [ExpandableReplies] = [];
+    var replyToUser:LCUser?
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
@@ -140,8 +141,6 @@ class NoteDetailVC: UIViewController {
               self.postReply();
           }
           
-   
-       
           hideAndRestTextView();
         }
     }

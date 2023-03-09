@@ -15,6 +15,10 @@ extension NoteDetailVC:UITableViewDelegate{
         commentView.comment = comment;
         if let commentAuthor =  comment.get(kUserCol) as? LCUser, let noteAuthor = author,commentAuthor == noteAuthor{
             commentView.authorLabel.isHidden = false;
+        }else
+        {
+            commentView.authorLabel.isHidden = true;
+
         }
         let commentTap = UITapGestureRecognizer(target: self, action: #selector(commentTaped));
         commentView.tag = section;
@@ -29,15 +33,17 @@ extension NoteDetailVC:UITableViewDelegate{
     
     //用户按下评论的回复Cellh后
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         if let user = LCApplication.default.currentUser{
            let reply =  replies[indexPath.section].replies[indexPath.row];
             guard let replyAuthor =  reply.get(kUserCol) as? LCUser else {return}
+            let replyAuthorNickName = replyAuthor.getExactStringVal(kNickNameCol);
             if user ==  replyAuthor
             {
                 let replyText = reply.getExactStringVal(kTextCol);
                 let alert = UIAlertController(title: nil, message: "你的回复\(replyText)", preferredStyle: .actionSheet);
                 let subReplyAction = UIAlertAction(title: "回复", style: .default){ _ in
-                    
+                    self.prepareForReply(replyAuthorNickName, indexPath.section,replyAuthor);
                 }
                 let copyAction  = UIAlertAction(title: "复制", style: .destructive){ _ in
                     UIPasteboard.general.string = replyText;
@@ -59,7 +65,8 @@ extension NoteDetailVC:UITableViewDelegate{
                 
             }else
             {
-                tableView.deselectRow(at: indexPath, animated: true);
+                self.prepareForReply(replyAuthorNickName, indexPath.section,replyAuthor);
+
             }
         }else
         {
@@ -111,20 +118,9 @@ extension NoteDetailVC{
                 //回复
                 prepareForReply(commentAuthorNickName,section);
             }
-            
         }else
         {
             showTextHUD("请先登录");
         }
-    }
-}
-
-extension NoteDetailVC
-{
-    private func prepareForReply(_ commentAuthorNickName:String , _ section:Int )
-    {
-    
-        showTextView(true,"回复 \(commentAuthorNickName)");
-        commentSection = section;
     }
 }

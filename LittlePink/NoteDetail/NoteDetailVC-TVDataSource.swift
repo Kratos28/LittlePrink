@@ -35,7 +35,12 @@ extension NoteDetailVC:UITableViewDataSource
         cell.reply = reply;
      if  let replyAuthor = reply.get(kUserCol) as? LCUser,let noteAuthor = author,replyAuthor == noteAuthor{
             cell.authorLabel.isHidden = false;
+        }else
+        {
+            cell.authorLabel.isHidden = true;
+
         }
+       
         let replyCount = replies[indexPath.section].replies.count
         if replyCount > 1,replies[indexPath.section].isExpanded{
             cell.showAllReplyBtn.isHidden = false;

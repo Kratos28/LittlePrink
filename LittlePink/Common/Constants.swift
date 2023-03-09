@@ -124,6 +124,9 @@ let kUserLikeTable = "UserLike";
 let kUserFavTable = "UserFav";
 let kCommentTable = "Comment"
 let kReplyTable = "Reply";
+
+
+let kReplyToUserCol = "ReplyToUserCol"
 //User表
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
