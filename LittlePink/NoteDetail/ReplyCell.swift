@@ -22,10 +22,20 @@ class ReplyCell: UITableViewCell {
                 avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avatar));
                 nickNameLabel.text = user.getExactStringVal(kNickNameCol);
             }
-            let  replyText = reply.getExactStringVal(kTextCol);
             let createdAt = reply.createdAt?.value;
             let dateText = createdAt == nil ? "刚刚" : createdAt!.formattedDate;
-            replyTextLabel.attributedText =  replyText.spliceAttrStr(dateText);
+            let replyText = reply.getExactStringVal(kTextCol).spliceAttrStr(dateText);
+            
+            if let replyToUser = reply.get(kReplyToUserCol) as? LCUser{
+                
+               let replytoText =  "回复".toAttrStr();
+                let nickName = replyToUser.getExactStringVal(kNickNameCol).toAttrStr(14,.secondaryLabel)
+                let colon =  ": ".toAttrStr();
+                replytoText.append(nickName);
+                replytoText.append(colon);
+                replyText.insert(replytoText, at: 0);
+            }
+            replyTextLabel.attributedText = replyText;
         }
     }
 }

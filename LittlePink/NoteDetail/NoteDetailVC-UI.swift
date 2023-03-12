@@ -70,7 +70,7 @@ extension NoteDetailVC{
         
         //note发表或编辑时间
         if let updatedAt = note.updatedAt?.value{
-            dateLabel.text = "\(note.getExactBoolVal(kHasEditCol) ? "编辑于 " : "")\(updatedAt.formattedDate)"
+            dateLabel.text = "\(note.getExactBoolValDefaultF(kHasEditCol) ? "编辑于 " : "")\(updatedAt.formattedDate)"
         }
         
         //当前用户头像

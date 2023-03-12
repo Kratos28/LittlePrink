@@ -47,7 +47,11 @@ extension LCObject{
     func getExactStringVal(_ col: String) -> String { get(col)?.stringValue ?? "" }
     func getExactIntVal(_ col: String) -> Int { get(col)?.intValue ?? 0 }
     func getExactDoubelVal(_ col: String) -> Double { get(col)?.doubleValue ?? 1 }//这里取1,方便大多数情况使用
-    func getExactBoolVal(_ col: String) -> Bool { get(col)?.boolValue ?? false }//仅少数地方用(如性别)
+    func getExactBoolValDefaultF(_ col: String) -> Bool { get(col)?.boolValue ?? false }//仅少数地方用(如性别)
+    func getExactBoolValDefaultT(_ col: String) -> Bool { get(col)?.boolValue ?? true }//仅少数地方用(如性别)
+
+    
+    
     enum imageType {
         case avatar
         case coverPhoto

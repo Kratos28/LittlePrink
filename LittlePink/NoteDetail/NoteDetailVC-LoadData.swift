@@ -14,6 +14,7 @@ extension NoteDetailVC
 //        try? query.whereKey(kNoteCol, .equalTo(note));
          query.whereKey("\(kUserCol).\(kNickNameCol)", .selected);
         query.whereKey(kUserCol,.included);
+        query.whereKey(kReplyToUserCol,.included);
          query.whereKey(kCreatedAtCol, .descending);
          query.limit =  kCommentOffSet;
         query.find { res in
@@ -36,22 +37,31 @@ extension NoteDetailVC
         let group = DispatchGroup();
         for (index , comment) in comments.enumerated()
         {
-            group.enter();
-            let query = LCQuery(className: kReplyTable);
+           if  comment.getExactBoolValDefaultT(kHasReplyCol){
+               group.enter();
+               let query = LCQuery(className: kReplyTable);
 
-            query.whereKey(kCommentCol,.equalTo(comment));
-            query.whereKey(kUserCol, .included);
-            query.whereKey(kCreatedAtCol, .ascending);
-            query.find { res in
-                if case let .success(objects: replies) = res
-                {
-                    repliesDic[index] = replies;
-                }else
-                {
-                    repliesDic[index] = [];
-                }
-                group.leave();
-            }
+               query.whereKey(kCommentCol,.equalTo(comment));
+               query.whereKey(kUserCol, .included);
+               query.whereKey(kCreatedAtCol, .ascending);
+               query.find { res in
+                   if case let .success(objects: replies) = res{
+                       if replies.isEmpty
+                       {
+                           try? comment.set(kHasReplyCol, value: false)
+                           comment.save{_ in }
+                       }
+                       repliesDic[index] = replies;
+                   }else{
+                       repliesDic[index] = [];
+                   }
+                   group.leave();
+               }
+           }else{
+               repliesDic[index] = [];
+           }
+        
+         
         }
         group.notify(queue: .main) {
             self.replies =   repliesDic.sorted {$0.key < $1.key}.map{

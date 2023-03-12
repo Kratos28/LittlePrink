@@ -30,7 +30,7 @@ extension String{
         self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     
-    func spliceAttrStr(_ dateStr: String)->NSAttributedString
+    func spliceAttrStr(_ dateStr: String)->NSMutableAttributedString
     {
             
         let attrText =  toAttrStr();

@@ -10,10 +10,7 @@ extension NoteDetailVC
     {
         showDelAlert(for: "回复") { _ in
             reply.delete { _ in}
-            
             self.updateCommentCount(by: -1);
-
-            
             self.replies[indexPath.section].replies.remove(at: indexPath.row);
             self.tableView.reloadData();
         }

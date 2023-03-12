@@ -14,14 +14,24 @@ extension NoteDetailVC
     {
         let user = LCApplication.default.currentUser;
         do {
+            let comment = comments[commentSection];
             let reply =  LCObject(className: kReplyTable);
             try reply.set(kTextCol,value: textView.unwrappedText);
             try reply.set(kUserCol, value: user);
-            try reply.set(kCommentCol, value: comments[commentSection]);
+            try reply.set(kCommentCol, value: comment);
             if let replyToUser = replyToUser{
               try? reply.set(kReplyToUserCol, value: replyToUser)
             }
-            reply.save {_ in   }
+            reply.save { res in
+                
+                if case .success = res{
+                    if let hasReply =  comment.get(kHasReplyCol)?.boolValue,hasReply != true{
+                        try? comment.set(kHasReplyCol, value: true);
+                        comment.save{_ in }
+                    }
+                }
+                
+            }
             self.updateCommentCount(by: 1);
             replies[commentSection].replies.append(reply);
             tableView.performBatchUpdates {

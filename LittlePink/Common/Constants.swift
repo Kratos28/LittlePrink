@@ -152,6 +152,7 @@ let kHasEditCol = "hasEdit"
 let kUserCol = "user";
 let kNoteCol = "note"
 let kCommentCol = "comment"
+let kHasReplyCol = "hasReply"
 
 // MARK: - 全局函数
 func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{
