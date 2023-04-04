@@ -12,6 +12,7 @@
 		0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951628BF421600A29A98 /* openssl_wrapper.m */; };
 		0A60956928BF421600A29A98 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A60951928BF421600A29A98 /* APRSASigner.m */; };
 		0A60956A28BF421600A29A98 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951A28BF421600A29A98 /* libssl.a */; };
+		0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACA247929DC7D3600C57107 /* Other-Extension.swift */; };
 		0AF466EE28E6CB6400CD4C33 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */; };
 		0AF466EF28E6CB6400CD4C33 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669528E6CB6400CD4C33 /* Main.strings */; };
 		0AF466F028E6CB6400CD4C33 /* NearByVC-GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4669828E6CB6400CD4C33 /* NearByVC-GCD.swift */; };
@@ -180,6 +181,7 @@
 		0A60956428BF421600A29A98 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
 		0A60956528BF421600A29A98 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
 		0A60956628BF421600A29A98 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		0ACA247929DC7D3600C57107 /* Other-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other-Extension.swift"; sourceTree = "<group>"; };
 		0AF4669428E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0AF4669628E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0AF4669828E6CB6400CD4C33 /* NearByVC-GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NearByVC-GCD.swift"; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				0AF466C428E6CB6400CD4C33 /* Login-Extensions.swift */,
 				0AF466C528E6CB6400CD4C33 /* System-Extensions.swift */,
 				0AF466C628E6CB6400CD4C33 /* LC-Extensions.swift */,
+				0ACA247929DC7D3600C57107 /* Other-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -794,6 +797,7 @@
 				0AF4670E28E6CB6500CD4C33 /* Protocols.swift in Sources */,
 				0AF4670428E6CB6500CD4C33 /* NoteDetailVC-UI.swift in Sources */,
 				0AF4672928E6CB6500CD4C33 /* NoteEditVC.swift in Sources */,
+				0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */,
 				0AF466F728E6CB6500CD4C33 /* DraftNoteWaterfallCell.swift in Sources */,
 				0AF4671228E6CB6500CD4C33 /* SocialLoginVC-Apple.swift in Sources */,
 				0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */,

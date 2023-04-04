@@ -1536,7 +1536,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="141.5"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="141.5" id="xXy-eD-o8j"/>
+                                                <constraint firstAttribute="height" priority="750" constant="141.5" id="xXy-eD-o8j"/>
                                             </constraints>
                                         </view>
                                     </subviews>

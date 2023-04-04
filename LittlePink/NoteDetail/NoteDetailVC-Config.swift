@@ -9,7 +9,7 @@ import Foundation
 import ImageSlideshow
 import UIKit
 import GrowingTextView
-
+import LeanCloud
 extension NoteDetailVC{
     func config(){
         
@@ -23,6 +23,15 @@ extension NoteDetailVC{
         pageControl.pageIndicatorTintColor = .systemGray
         pageControl.currentPageIndicatorTintColor = mainColor
         imageSlideshow.pageIndicator = pageControl;
+        
+        
+        if LCApplication.default.currentUser == nil{
+            likeBtn.setToNormal();
+            favBtn.setToNormal();
+            
+        }
+        
+        
         //textView
         textView.textContainerInset = UIEdgeInsets(top: 11.5 , left: 16, bottom:11.5, right: 15);
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil);

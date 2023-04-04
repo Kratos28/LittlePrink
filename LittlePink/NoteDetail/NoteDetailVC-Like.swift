@@ -22,7 +22,6 @@ extension NoteDetailVC
             perform(#selector(likeBtnTappedWhenLogin), with: nil, afterDelay: 1);
 
         
-            
         }else
         {
             showTextHUD("请先登录");

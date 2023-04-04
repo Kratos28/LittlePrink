@@ -59,7 +59,7 @@ extension NoteDetailVC
                }
            }else{
                repliesDic[index] = [];
-           }
+           } 
         
          
         }
