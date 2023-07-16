@@ -22,6 +22,9 @@ class NoteDetailVC: UIViewController {
     var commentSection = 0;
     var replies : [ExpandableReplies] = [];
     var replyToUser:LCUser?
+    
+    var isFromMeVC = false;
+    var formMeVCUser: LCUser?
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
@@ -109,6 +112,8 @@ class NoteDetailVC: UIViewController {
         super.viewDidLoad()
         config();
         setUI();
+        getCommentsAndReplies();
+        getFav();
     }
     //动态计算tableHeaderView的height(放在viewdidappear的话会触发多次),相当于手动实现了estimate size(目前cell已配备这种功能)
     override func viewDidLayoutSubviews() {

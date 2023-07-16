@@ -6615,22 +6615,6 @@
 			};
 			name = Debug;
 		};
-		1FBB5FE66D1B0C598C39DE90AE2E4C04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9A6291B6EB645EA54B2F234D3F5A375 /* XLPagerTabStrip.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				IBSC_MODULE = XLPagerTabStrip;
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		2A093FA4AAF31AA5384BBA757D079391 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C03033911C70DA979BD554C67830FA0 /* Pods-LittlePink.debug.xcconfig */;
@@ -6667,6 +6651,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		38464103133E715A6A2CE611A5F60461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9A6291B6EB645EA54B2F234D3F5A375 /* XLPagerTabStrip.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				IBSC_MODULE = XLPagerTabStrip;
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		38671DF12962F0734B1B6E208F0F63BB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -7829,6 +7830,23 @@
 			};
 			name = Debug;
 		};
+		C884F8B064A28F2F9A831C69DF79F75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D6C6DF0838C0250383548EF364DC22 /* XLPagerTabStrip.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				IBSC_MODULE = XLPagerTabStrip;
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		CB571D0290B427310A493D846978F025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E6334DEA292C71502241D906522FC59 /* PryntTrimmerView.release.xcconfig */;
@@ -8116,22 +8134,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F0CCF78818DB56896BE8419DDE4B7094 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72D6C6DF0838C0250383548EF364DC22 /* XLPagerTabStrip.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				IBSC_MODULE = XLPagerTabStrip;
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -8592,8 +8594,8 @@
 		E1B0A3E41C4AC3E684997E3DB10A1AE9 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0CCF78818DB56896BE8419DDE4B7094 /* Debug */,
-				1FBB5FE66D1B0C598C39DE90AE2E4C04 /* Release */,
+				C884F8B064A28F2F9A831C69DF79F75A /* Debug */,
+				38464103133E715A6A2CE611A5F60461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

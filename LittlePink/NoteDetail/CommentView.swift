@@ -25,7 +25,7 @@ class CommentView: UITableViewHeaderFooterView {
             let createAt = comment.createdAt?.value;
             let dateText = createAt == nil ? "刚刚" : createAt!.formattedDate;
             commentTextLabel.attributedText =    commentText.spliceAttrStr(dateText);
-         
+            
         }
     }
     

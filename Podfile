@@ -27,6 +27,7 @@ target 'LittlePink' do
   pod 'SegementSlide', '3.0.1'
   pod 'ActionSheetPicker-3.0'
   pod 'Hero'
+  pod 'SegementSlide','3.0.1'
 end
 
 post_install do |installer|

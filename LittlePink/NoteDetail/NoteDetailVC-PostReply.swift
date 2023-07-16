@@ -34,10 +34,15 @@ extension NoteDetailVC
             }
             self.updateCommentCount(by: 1);
             replies[commentSection].replies.append(reply);
-            tableView.performBatchUpdates {
-                tableView.insertRows(at: [IndexPath(row: replies[commentSection].replies.count - 1, section: commentSection)], with: .automatic);
-            }
-
+           if  replies[commentSection].isExpanded{
+               tableView.performBatchUpdates {
+                   tableView.insertRows(at: [IndexPath(row: replies[commentSection].replies.count - 1, section: commentSection)], with: .automatic);
+               }
+           }else
+            {
+              let cell =  tableView.cellForRow(at:   IndexPath(row: 0, section: commentSection)) as! ReplyCell
+               cell.showAllReplyBtn.setTitle("展示\(replies[commentSection].replies.count - 1)条回复", for: .normal);
+           }
         } catch  {
             print("给Reply表的字段复制失败");
         }
