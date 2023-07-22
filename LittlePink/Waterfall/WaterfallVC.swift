@@ -9,10 +9,15 @@ import UIKit
 import CHTCollectionViewWaterfallLayout
 import XLPagerTabStrip
 import LeanCloud
+import SegementSlide
 
-class WaterfallVC: UICollectionViewController {
+class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDelegate {
     var channel = ""
     
+    @objc var scrollView: UIScrollView
+    {
+        return self.collectionView;
+    }
     //草稿页相关数据
     var isMyDraft = false
     var draftNotes: [DraftNote] = []
@@ -29,6 +34,8 @@ class WaterfallVC: UICollectionViewController {
         getDraftNotes()
         
     }
+    
+    
     @IBAction func dismissDraftNotesVC(_ sender: Any) {
         dismiss(animated: true)
     }
