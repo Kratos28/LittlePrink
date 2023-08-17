@@ -24,7 +24,6 @@ extension UIViewController{
                         //当前设备可使用一键登录
                         self.setLocalLoginUI()
                         self.presentLocalLoginVC()
-                        
                     }else{
                         print("当前设备不可使用一键登录")
                         self.presentCodeLoginVC()

@@ -1,25 +1,23 @@
 //
-//  commentSectionFooterView.swift
+//  CommentSectionFooterView.swift
 //  LittlePink
 //
-//  Created by Kratos on 2023/2/19.
+//  Created by JZ_MacMini on 2023/2/3.
 //
 
 import UIKit
 
-class commentSectionFooterView: UITableViewHeaderFooterView {
+class CommentSectionFooterView: UITableViewHeaderFooterView {
 
-    
-     override init(reuseIdentifier:String?) {
+    override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier);
-         tintColor = .systemBackground;
-         let separeLineView = UIView(frame: CGRect(x: 62, y: 0, width: screenRect.width - 62, height: 1));
-         separeLineView.backgroundColor = .quaternaryLabel;
-         addSubview(separeLineView);
+        tintColor = .systemBackground;
+        let separator = UIView(frame: CGRectMake(62, 0, screenRect.width, 1));
+        separator.backgroundColor = .quaternaryLabel;
+        addSubview(separator);
     }
-    
-    required init(coder:NSCoder) {
-        fatalError("");
+
+    required init?(coder: NSCoder) {
+        fatalError();
     }
-    
 }

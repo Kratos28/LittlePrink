@@ -49,8 +49,6 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                 
                 // MARK: - Gallery(多选完后的展示和编辑页面)-画廊
                 config.gallery.hidesRemoveButton = false //每个照片或视频右上方是否有删除按钮
-                
-                
                 let picker = YPImagePicker(configuration: config)
                 
                 // MARK: 选完或按取消按钮后的异步回调处理（依据配置处理单个或多个）
@@ -91,13 +89,12 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                 
                 present(alert, animated: true, completion: nil)
             }
-            
-            return false
+            return false;
         }
-        
-        return true
-        
+        return true;
     }
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

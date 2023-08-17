@@ -51,7 +51,7 @@ extension LCObject{
     func getExactBoolValDefaultT(_ col: String) -> Bool { get(col)?.boolValue ?? true }//仅少数地方用(如性别)
 
     
-    
+
     enum imageType {
         case avatar
         case coverPhoto

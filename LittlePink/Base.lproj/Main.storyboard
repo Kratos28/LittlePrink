@@ -1390,11 +1390,6 @@
                                                         <state key="normal" title="关注">
                                                             <color key="titleColor" name="main"/>
                                                         </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                                                <real key="value" value="12"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKt-pU-540">
                                                         <rect key="frame" x="67" y="0.0" width="35" height="24"/>
@@ -2175,6 +2170,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="8is-Wy-YaT">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
         <designable name="SOk-cE-s64">
             <size key="intrinsicContentSize" width="97" height="30"/>
         </designable>
@@ -2197,8 +2195,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart" width="128" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>

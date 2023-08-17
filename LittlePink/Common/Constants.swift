@@ -124,6 +124,7 @@ let kUserLikeTable = "UserLike";
 let kUserFavTable = "UserFav";
 let kCommentTable = "Comment"
 let kReplyTable = "Reply";
+let kIDCol = "id";
 
 
 let kReplyToUserCol = "ReplyToUserCol"

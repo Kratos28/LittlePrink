@@ -11,8 +11,8 @@ import ImageSlideshow
 
 extension NoteDetailVC{
     func setUI(){
-        followBtn.layer.borderWidth = 1
-        followBtn.layer.borderColor = mainColor.cgColor
+        followBtn.makeCapsule(mainColor);
+        
         if isReadMyNote{
             followBtn.isHidden = true;
             shareBtnOrMoreBtn.setImage(UIImage(systemName: "ellipsis"), for: .normal);

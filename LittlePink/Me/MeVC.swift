@@ -23,11 +23,17 @@ class MeVC: SegementSlideDefaultViewController {
         reloadData();
     }
     
+    
+    override var bouncesType: BouncesType
+    {
+        return .child;
+    }
+    
     override func segementSlideHeaderView() -> UIView? {
-        let headerView = UIView();
+        
+        let headerView = Bundle.loadView(fromNib: "MeHeadView", with:MeHeaderView.self);
         headerView.translatesAutoresizingMaskIntoConstraints = false;
-        headerView.backgroundColor = mainColor;
-        headerView.heightAnchor.constraint(equalToConstant: view.bounds.height / 4).isActive = true;
+        headerView.heightAnchor.constraint(equalToConstant: headerView.rootStackView.frame.height  + 16).isActive = true;
         return headerView;
     }
     
