@@ -27,6 +27,7 @@ extension NoteDetailVC
         if favCount != currentFavCount
         {
             let  user = LCApplication.default.currentUser!;
+            let authorObjectId = author?.objectId?.stringValue ?? ""
             let offset = isFav ? 1 : -1
             currentFavCount += offset;
             
@@ -36,7 +37,7 @@ extension NoteDetailVC
                 try? userFav.set(kUserCol, value: note);
                 userFav.save { _ in};
                 try?note.increase(kFavCountCol)
-
+                LCObject.userInfo(where: authorObjectId, Increase: kFavCountCol);
             }else
             {
                 let query = LCQuery(className:kUserFavTable);
@@ -49,6 +50,9 @@ extension NoteDetailVC
                 }
                 try? note.set(kFavCountCol, value: favCount)
                 note.save { _ in}
+                LCObject.userInfo(where: authorObjectId, decrease: kFavCountCol, to: favCount);
+
+                
             }
         }
     }

@@ -125,14 +125,20 @@ let kUserFavTable = "UserFav";
 let kCommentTable = "Comment"
 let kReplyTable = "Reply";
 let kIDCol = "id";
+let kUserInfoTable =  "UserInfo";
+
 
 
 let kReplyToUserCol = "ReplyToUserCol"
+//UserInfo 表
+let kUserObjectIDCol = "userObjectId";
+
 //User表
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
+
 
 //Note表
 let kCoverPhotoCol = "coverPhoto"

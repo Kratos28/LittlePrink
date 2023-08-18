@@ -32,6 +32,8 @@ extension NoteDetailVC
         if likeCount != currentLikeCount
         {
             let user = LCApplication.default.currentUser!;
+            let authorObjectId = author?.objectId?.stringValue ?? ""
+            
             let offset = isLike ? 1 : -1;
             currentLikeCount += offset;
             if isLike
@@ -43,8 +45,9 @@ extension NoteDetailVC
                 //点赞数
                 try? note.increase(kLikeCountCol);
                 note.save { _ in}
-
+                LCObject.userInfo(where: authorObjectId, Increase: kLikeCountCol);
                 //不能修改别人的user表字段，故里面不能放xxxCount这种，因为费这个用户本人是存不进去的
+         
             }else
             {
                 //userLike中间表
@@ -58,7 +61,8 @@ extension NoteDetailVC
                 }
                 try? note.set(kLikeCountCol, value: likeCount);
                 note.save { _ in}
-//                author?.save { _ in}
+                
+                LCObject.userInfo(where: authorObjectId, decrease: kLikeCountCol, to: likeCount);
 
             }
         }

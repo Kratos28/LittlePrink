@@ -11,7 +11,7 @@ extension WaterfallCell
     @objc func likeBtnTappedWhenLogin()
     {
         if likeCount != currentLikeCount{
-            guard let note = note else {return};
+            guard let note = note ,let authorObjectId = (note.get(kAvatarCol) as? LCUser)?.objectId?.stringValue else {return};
             let user = LCApplication.default.currentUser!;
             let offset = isLike ? 1 : -1;
             currentLikeCount += offset;
@@ -23,8 +23,12 @@ extension WaterfallCell
                  userLike.save { _ in}
                 //点赞数
                 try? note.increase(kLikeCountCol);
-
+                
                 //不能修改别人的user表字段，故里面不能放xxxCount这种，因为费这个用户本人是存不进去的
+                LCObject.userInfo(where: authorObjectId, Increase: kLikeCountCol);
+                
+                
+              
             }else
             {
                 //userLike中间表
@@ -38,8 +42,8 @@ extension WaterfallCell
                 }
                 try? note.set(kLikeCountCol, value: likeCount);
                 note.save { _ in}
-    //                author?.save { _ in}
-
+                LCObject.userInfo(where: authorObjectId, decrease: kLikeCountCol, to: likeCount);
+                
             }
 
         }

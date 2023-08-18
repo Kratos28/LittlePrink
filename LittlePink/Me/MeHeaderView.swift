@@ -45,7 +45,6 @@ class MeHeaderView: UIView {
             let intro = user.getExactStringVal(kIntroCol);
             introLabel.text = user.getExactStringVal(kIntroCol).isEmpty ? "填写个人简介更容易获得关注哦":intro;
             
-            
         }
     }
     

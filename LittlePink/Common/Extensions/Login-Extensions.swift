@@ -33,9 +33,11 @@ extension UIViewController{
                 return
             }
             
-            group.enter()
+            group.enter();
             user.save { _ in group.leave() }
-            
+            let userinfo = LCObject(className: kUserInfoTable);
+           try? user.set(kUserObjectIDCol,value: user.objectId);
+            userinfo.save{_ in group.leave() }
             group.notify(queue: .main) {
                 self.dismissAndShowMeVC()
             }
