@@ -38,8 +38,9 @@ class WaterfallCell: UICollectionViewCell {
             //笔记标题
             titleLabel.text = note.getExactStringVal(kTitleCol)
             
+            nickNameLabel.text = author.getExactStringVal(kNickNameCol);
+            
             //笔记被赞数
-    
             likeCount = note.getExactIntVal(kLikeCountCol);
             currentLikeCount = likeCount;
             //待做:点赞功能+判断是否已点赞

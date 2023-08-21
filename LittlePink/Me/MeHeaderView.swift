@@ -29,9 +29,6 @@ class MeHeaderView: UIView {
         super.awakeFromNib();
         editOrFollowBtn.makeCapsule();
         setttingOrChatBtn.makeCapsule();
-        
-        
-        
     }
     
     var user:LCUser!{
@@ -44,6 +41,18 @@ class MeHeaderView: UIView {
             idLabel.text = "\(user.getExactIntVal(kIDCol))";
             let intro = user.getExactStringVal(kIntroCol);
             introLabel.text = user.getExactStringVal(kIntroCol).isEmpty ? "填写个人简介更容易获得关注哦":intro;
+            guard let userObjectid =  user.objectId?.stringValue else {return}
+            let query = LCQuery(className: kUserInfoTable);
+            query.getFirst{ res in
+                if  case let . success(object : userInfo) = res {
+                  let likeCount =   userInfo.getExactIntVal(kLikeCountCol);
+                  let favCount =   userInfo.getExactIntVal(kFavCountCol);
+    
+                    DispatchQueue.main.async {
+                        self.likedAndFavedLabel.text = "\(likeCount + favCount)";
+                    }
+                }
+            }
             
         }
     }

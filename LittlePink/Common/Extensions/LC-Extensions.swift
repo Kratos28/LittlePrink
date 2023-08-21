@@ -77,7 +77,7 @@ extension LCObject{
         query.getFirst { res in
             if case let .success(object:userInfo) = res{
                 try? userInfo.increase(kLikeCountCol);
-
+                userInfo.save{_ in };
             }
         }
     }

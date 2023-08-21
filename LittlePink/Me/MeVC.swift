@@ -10,7 +10,17 @@ import LeanCloud
 import SegementSlide
 import SwiftUI
 class MeVC: SegementSlideDefaultViewController {
-
+    
+    
+    var user : LCUser
+    init?(coder:NSCoder,user:LCUser){
+        self.user = user;
+        super.init(coder: coder);
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
  
@@ -32,8 +42,11 @@ class MeVC: SegementSlideDefaultViewController {
     override func segementSlideHeaderView() -> UIView? {
         
         let headerView = Bundle.loadView(fromNib: "MeHeadView", with:MeHeaderView.self);
+        headerView.user = user;
+
         headerView.translatesAutoresizingMaskIntoConstraints = false;
         headerView.heightAnchor.constraint(equalToConstant: headerView.rootStackView.frame.height  + 16).isActive = true;
+        
         return headerView;
     }
     

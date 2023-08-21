@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         guard let windowScenne = (scene as? UIWindowScene) else { return }
-        kStatusBarH = windowScenne.statusBarManager?.statusBarFrame.height?? 0;
+        kStatusBarH = windowScenne.statusBarManager?.statusBarFrame.height ?? 0 ;
         
     }
 
