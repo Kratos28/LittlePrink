@@ -1367,6 +1367,9 @@
                                                                 <real key="value" value="16"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="goToAuthorMeVC:" destination="YLb-rI-8xz" eventType="touchUpInside" id="Had-cu-vH9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kH-60-t0h">
                                                         <rect key="frame" x="80" y="0.0" width="58" height="32"/>
@@ -1374,6 +1377,9 @@
                                                         <state key="normal" title="作者昵称">
                                                             <color key="titleColor" systemColor="labelColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="goToAuthorMeVC:" destination="YLb-rI-8xz" eventType="touchUpInside" id="RdP-ma-Wa9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1869,7 +1875,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joU-Ir-7Ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6610" y="-707"/>
+            <point key="canvasLocation" x="6514" y="-658"/>
         </scene>
         <!--FollowVC-->
         <scene sceneID="onx-Ms-hos">
@@ -2174,10 +2180,10 @@
             <size key="intrinsicContentSize" width="-1" height="30"/>
         </designable>
         <designable name="SOk-cE-s64">
-            <size key="intrinsicContentSize" width="97" height="30"/>
+            <size key="intrinsicContentSize" width="113" height="18"/>
         </designable>
         <designable name="g87-mB-ifF">
-            <size key="intrinsicContentSize" width="94.5" height="22"/>
+            <size key="intrinsicContentSize" width="110.5" height="22"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

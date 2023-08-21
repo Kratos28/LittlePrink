@@ -88,8 +88,7 @@ class CodeLoginVC: UIViewController {
             case let .success(object: user):
                 //print(user)
                 let randomNickName = "小粉薯\(String.randomString(6))"
-                self.configAfterLogin(user, randomNickName)
-                
+                self.configAfterLogin(user, randomNickName);
             case let .failure(error: error):
                 self.hideLoadHUD()
                 DispatchQueue.main.async {

@@ -134,6 +134,10 @@ class NoteDetailVC: UIViewController {
     }
     @IBAction func fav(_ sender: Any) {fav()}
     
+    @IBAction func goToAuthorMeVC(_ sender: Any) {
+        noteToMeVC(author);
+        
+    }
     @IBAction func postCommentOrReply(_ sender: Any) {
       if  !textView.isBlank{
           if isReply{

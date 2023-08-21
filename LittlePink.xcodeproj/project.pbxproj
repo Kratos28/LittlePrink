@@ -85,6 +85,8 @@
 		1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD09B982968387200A638F1 /* NoteDetailVC-TVDataSource.swift */; };
 		1BF10A21298BE75200ABF0CF /* NoteDetailVC-PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */; };
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
+		47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */; };
+		47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
 		65832BCE2A6B89A500B16875 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65832BCD2A6B89A500B16875 /* MeHeaderView.swift */; };
@@ -269,6 +271,8 @@
 		1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-PostReply.swift"; sourceTree = "<group>"; };
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-MeVC.swift"; sourceTree = "<group>"; };
+		47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-BackorDrawer.swift"; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -499,6 +503,7 @@
 				65BA94912960216D008C5F65 /* NoteDetailVC-EditNote.swift */,
 				65EA5CA3295DE2140023885E /* NoteDetailVC-Fav.swift */,
 				65BA948F29601F2D008C5F65 /* NoteDetailVC-Helper.swift */,
+				47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */,
 				0A021E2928F592F600DAF4E2 /* NoteDetailVC-Like.swift */,
 				65DF4EAC29813E9500B36902 /* NoteDetailVC-LoadData.swift */,
 				1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */,
@@ -541,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				0AF466C928E6CB6400CD4C33 /* LoginAndMeParentVC.swift */,
+				47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */,
 				0AF466CA28E6CB6400CD4C33 /* MeVC.swift */,
 				65D049712A67FB020031AE5E /* MeVC-UI.swift */,
 				65832BCD2A6B89A500B16875 /* MeHeaderView.swift */,
@@ -792,6 +798,7 @@
 				0AF466F528E6CB6400CD4C33 /* WaterfallCell.swift in Sources */,
 				65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */,
 				0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */,
+				47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */,
 				0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */,
 				65832BCE2A6B89A500B16875 /* MeHeaderView.swift in Sources */,
 				0AF4672228E6CB6500CD4C33 /* NoteEditVC-CollectionView.swift in Sources */,
@@ -839,6 +846,7 @@
 				6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */,
 				65EA5CA2295DE00C0023885E /* WaterfallCell-Like.swift in Sources */,
 				0A60956928BF421600A29A98 /* APRSASigner.m in Sources */,
+				47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */,
 				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,
 				0AF4672128E6CB6500CD4C33 /* POIVC.swift in Sources */,
 				0AF4671428E6CB6500CD4C33 /* CodeLoginVC.swift in Sources */,

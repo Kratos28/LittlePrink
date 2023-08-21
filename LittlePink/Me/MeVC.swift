@@ -13,6 +13,7 @@ class MeVC: SegementSlideDefaultViewController {
     
     
     var user : LCUser
+    var isFromNote = false;
     init?(coder:NSCoder,user:LCUser){
         self.user = user;
         super.init(coder: coder);
@@ -42,11 +43,18 @@ class MeVC: SegementSlideDefaultViewController {
     override func segementSlideHeaderView() -> UIView? {
         
         let headerView = Bundle.loadView(fromNib: "MeHeadView", with:MeHeaderView.self);
-        headerView.user = user;
 
         headerView.translatesAutoresizingMaskIntoConstraints = false;
-        headerView.heightAnchor.constraint(equalToConstant: headerView.rootStackView.frame.height  + 16).isActive = true;
-        
+        headerView.heightAnchor.constraint(equalToConstant: headerView.rootStackView.frame.height  + 16).isActive =
+        true;
+        headerView.user = user;
+
+        if isFromNote
+        {
+            headerView.backOrSlideBtn.setImage(largeIcon("chevron.left"), for: .normal);
+            
+        }
+        headerView.backOrSlideBtn.addTarget(self, action: #selector(backOrDrawer), for: .touchUpInside);
         return headerView;
     }
     
