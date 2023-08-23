@@ -165,7 +165,6 @@ let kHasReplyCol = "hasReply"
 func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{
     let config = UIImage.SymbolConfiguration(scale: .large)
     let icon = UIImage(systemName: iconName, withConfiguration: config)!
-    
     return icon.withTintColor(color)
 }
 

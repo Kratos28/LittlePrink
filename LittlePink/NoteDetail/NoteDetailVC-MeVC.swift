@@ -18,4 +18,9 @@ extension NoteDetailVC{
         meVC.modalPresentationStyle = .fullScreen;
         present(meVC, animated: false);
     }
+    
+    @objc func goToMeVC(_tap:UIPassableTapGestureRecoginzer){
+        noteToMeVC(tap.passObj)
+    }
+    
 }

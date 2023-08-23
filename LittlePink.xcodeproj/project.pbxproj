@@ -87,6 +87,7 @@
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
 		47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */; };
 		47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */; };
+		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
 		65832BCE2A6B89A500B16875 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65832BCD2A6B89A500B16875 /* MeHeaderView.swift */; };
@@ -206,7 +207,7 @@
 		0AF466AA28E6CB6400CD4C33 /* imagePH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePH.png; sourceTree = "<group>"; };
 		0AF466AB28E6CB6400CD4C33 /* avatarPH.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatarPH.jpeg; sourceTree = "<group>"; };
 		0AF466AC28E6CB6400CD4C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AF466AE28E6CB6400CD4C33 /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; };
+		0AF466AE28E6CB6400CD4C33 /* 枚举.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "枚举.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0AF466AF28E6CB6400CD4C33 /* LocalizationTableVCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationTableVCDemo.swift; sourceTree = "<group>"; };
 		0AF466B028E6CB6400CD4C33 /* 值类型+引用类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "值类型+引用类型.playground"; sourceTree = "<group>"; };
 		0AF466B128E6CB6400CD4C33 /* 用代码实现collectionview.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用代码实现collectionview.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -273,6 +274,7 @@
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-MeVC.swift"; sourceTree = "<group>"; };
 		47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-BackorDrawer.swift"; sourceTree = "<group>"; };
+		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
@@ -526,6 +528,7 @@
 				0AF466C128E6CB6400CD4C33 /* CustomViews.swift */,
 				0AF466C228E6CB6400CD4C33 /* Extensions */,
 				0AF466C728E6CB6400CD4C33 /* Protocols.swift */,
+				47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -798,6 +801,7 @@
 				0AF466F528E6CB6400CD4C33 /* WaterfallCell.swift in Sources */,
 				65BA94922960216D008C5F65 /* NoteDetailVC-EditNote.swift in Sources */,
 				0AF4671B28E6CB6500CD4C33 /* POICell.swift in Sources */,
+				47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */,
 				47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */,
 				0AF4671128E6CB6500CD4C33 /* AppDelegate.swift in Sources */,
 				65832BCE2A6B89A500B16875 /* MeHeaderView.swift in Sources */,

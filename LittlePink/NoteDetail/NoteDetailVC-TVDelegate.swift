@@ -12,6 +12,9 @@ extension NoteDetailVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        let commentView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kCommentViewID) as! CommentView;
         let comment = comments[section];
+        
+        let commentAuthor =  comment.get(kUserCol);
+        
         commentView.comment = comment;
         if let commentAuthor =  comment.get(kUserCol) as? LCUser, let noteAuthor = author,commentAuthor == noteAuthor{
             commentView.authorLabel.isHidden = false;
@@ -23,8 +26,12 @@ extension NoteDetailVC:UITableViewDelegate{
         let commentTap = UITapGestureRecognizer(target: self, action: #selector(commentTaped));
         commentView.tag = section;
         commentView.addGestureRecognizer(commentTap);
+        let avatarTap = UIPassableTapGestureRecoginzer(target: self, action: #selector(goToMeVC));
+        commentView.avatarImageView.addGestureRecognizer(avatarTap)
         return commentView;
     }
+    
+    
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let separatorLine = tableView.dequeueReusableCell(withIdentifier: kCommentSectionFooterViewID);
@@ -55,6 +62,7 @@ extension NoteDetailVC:UITableViewDelegate{
                 let cancelAction  = UIAlertAction(title: "取消", style: .cancel){ _ in
                     
                 }
+                
                 alert.addAction(subReplyAction);
                 alert.addAction(copyAction);
                 alert.addAction(deleteAction);
