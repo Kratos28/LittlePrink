@@ -28,9 +28,12 @@ let kPhotoFooterID = "PhotoFooterID"
 let kSubChannelCellID = "SubChannelCellID"
 let kPOICellID = "POICellID"
 let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
+let kMyDraftNoteWaterfallCellID = "myyDraftNoteWaterfallCellID"
+
 let kCommentViewID =  "CommentViewID"
 let kReplyCellID  = "ReplyCellID";
 let kCommentSectionFooterViewID = "commentSectionFooterViewID";
+
 // MARK: - 资源文件相关
 let mainColor = UIColor(named: "main")!
 let mainLightColor = UIColor(named: "main-light")!

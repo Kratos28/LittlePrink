@@ -50,8 +50,23 @@ extension WaterfallVC{
     
     func getNotes(){
         let query = LCQuery(className: kNoteTable)
-        
         query.whereKey(kChannelCol, .equalTo(channel))//条件查询
+        query.whereKey(kAuthorCol, .included)//同时查询出作者对象
+        query.whereKey(kUpdatedAtCol, .descending)//排序
+        query.limit = kNotesOffset//上拉加载的分页
+        
+        query.find { result in
+            if case let .success(objects: notes) = result{
+                self.notes = notes;
+                self.collectionView.reloadData();
+            
+            }
+            
+        }
+    }
+    func getMyNotes(_ user :LCUser){
+        let query = LCQuery(className: kNoteTable)
+        query.whereKey(kAuthorCol, .equalTo(user))//条件查询
         query.whereKey(kAuthorCol, .included)//同时查询出作者对象
         query.whereKey(kUpdatedAtCol, .descending)//排序
         query.limit = kNotesOffset//上拉加载的分页
