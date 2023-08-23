@@ -1580,7 +1580,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-KJ-Fvj">
                                                     <rect key="frame" x="62" y="0.0" width="336" height="58.5"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPH.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vPe-El-7hF">
+                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPH.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="vPe-El-7hF">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="4DF-ce-4Vu"/>
@@ -1593,7 +1593,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CLt-We-MrU">
                                                                     <rect key="frame" x="0.0" y="0.0" width="29.5" height="16"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-hq-bVO">
+                                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-hq-bVO">
                                                                             <rect key="frame" x="0.0" y="0.0" width="29.5" height="16"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" systemColor="systemGrayColor"/>
@@ -2201,8 +2201,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" width="128" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>

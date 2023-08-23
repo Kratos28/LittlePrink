@@ -20,7 +20,8 @@ extension NoteDetailVC{
     }
     
     @objc func goToMeVC(_tap:UIPassableTapGestureRecoginzer){
-        noteToMeVC(tap.passObj)
+        let user = _tap.passObj;
+        noteToMeVC(user);
     }
     
 }

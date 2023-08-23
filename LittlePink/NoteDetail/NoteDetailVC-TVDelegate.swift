@@ -12,11 +12,10 @@ extension NoteDetailVC:UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        let commentView = tableView.dequeueReusableHeaderFooterView(withIdentifier: kCommentViewID) as! CommentView;
         let comment = comments[section];
-        
-        let commentAuthor =  comment.get(kUserCol);
+        let commentAuthor =  comment.get(kUserCol) as! LCUser;
         
         commentView.comment = comment;
-        if let commentAuthor =  comment.get(kUserCol) as? LCUser, let noteAuthor = author,commentAuthor == noteAuthor{
+        if let commentAuthor =  commentAuthor as? LCUser, let noteAuthor = author,commentAuthor == noteAuthor{
             commentView.authorLabel.isHidden = false;
         }else
         {
@@ -27,7 +26,13 @@ extension NoteDetailVC:UITableViewDelegate{
         commentView.tag = section;
         commentView.addGestureRecognizer(commentTap);
         let avatarTap = UIPassableTapGestureRecoginzer(target: self, action: #selector(goToMeVC));
-        commentView.avatarImageView.addGestureRecognizer(avatarTap)
+        avatarTap.passObj = commentAuthor;
+        commentView.avatarImageView.addGestureRecognizer(avatarTap);
+        
+        
+        let nickNameTap = UIPassableTapGestureRecoginzer(target: self, action: #selector(goToMeVC));
+        nickNameTap.passObj = commentAuthor;
+        commentView.nickNameLabel.addGestureRecognizer(nickNameTap);
         return commentView;
     }
     

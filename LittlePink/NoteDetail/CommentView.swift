@@ -20,7 +20,6 @@ class CommentView: UITableViewHeaderFooterView {
                 avatarImageView.kf.setImage(with: user.getImageURL(from: kAvatarCol, .avatar));
                 nickNameLabel.text = user.getExactStringVal(kNickNameCol);
             }
-            
             let commentText = comment.getExactStringVal(kTextCol);
             let createAt = comment.createdAt?.value;
             let dateText = createAt == nil ? "刚刚" : createAt!.formattedDate;

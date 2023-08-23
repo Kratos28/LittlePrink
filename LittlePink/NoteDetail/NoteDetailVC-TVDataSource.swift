@@ -32,14 +32,23 @@ extension NoteDetailVC:UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: kReplyCellID, for: indexPath) as! ReplyCell;
         
         let reply = replies[indexPath.section].replies[indexPath.row];
+        let replyAuthor = reply.get(kUserCol) as? LCUser
         cell.reply = reply;
-     if  let replyAuthor = reply.get(kUserCol) as? LCUser,let noteAuthor = author,replyAuthor == noteAuthor{
+     if  let replyAuthor = replyAuthor,let noteAuthor = author,replyAuthor == noteAuthor{
             cell.authorLabel.isHidden = false;
         }else
         {
             cell.authorLabel.isHidden = true;
 
         }
+        let avatarTap = UIPassableTapGestureRecoginzer(target: self, action: #selector(goToMeVC));
+        avatarTap.passObj = replyAuthor;
+        cell.avatarImageView.addGestureRecognizer(avatarTap);
+        
+        
+        let nickNameTap = UIPassableTapGestureRecoginzer(target: self, action: #selector(goToMeVC));
+        nickNameTap.passObj = replyAuthor;
+        cell.nickNameLabel.addGestureRecognizer(nickNameTap);
        
         let replyCount = replies[indexPath.section].replies.count
         if replyCount > 1,replies[indexPath.section].isExpanded{
