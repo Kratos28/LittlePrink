@@ -26,6 +26,7 @@ extension WaterfallVC{
         }
         collectionView.register(UINib(nibName: "MyDraftNoteWaterfallCell", bundle: nil), forCellWithReuseIdentifier: kMyDraftNoteWaterfallCellID);
         
+        collectionView.mj_header = header;
     }
     
     

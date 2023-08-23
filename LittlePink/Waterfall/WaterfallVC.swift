@@ -8,7 +8,7 @@ import SegementSlide
 
 class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDelegate {
     var channel = ""
-    
+    lazy var header = MJRefreshNormalHeader();
     @objc var scrollView: UIScrollView
     {
         return self.collectionView;
@@ -28,22 +28,28 @@ class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDele
         super.viewDidLoad()
         config()
         
-        if let  user = user
+        if let  _ = user
         {//个人页面
             
             if isMyNote{
-                getMyNotes(user);
+                header.setRefreshingTarget(self, refreshingAction: #selector(getMyNotes));
             }else if isMyFav{
+                header.setRefreshingTarget(self, refreshingAction: #selector(getMyFavNotes));
+
+            }else
+            {
                 
             }
-            
+            header.beginRefreshing();
         }else if isDraft
         {//草稿总页面
             getDraftNotes();
 
         }else
         {//首页
-            getNotes();
+            header.setRefreshingTarget(self, refreshingAction: #selector(getNotes));
+            header.beginRefreshing();
+
 
         }
         

@@ -4,161 +4,163 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AMapFoundation.xcscheme_^#shared#^_</key>
+		<key>AMapFoundation.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>AMapLocation.xcscheme_^#shared#^_</key>
+		<key>AMapLocation.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>AMapSearch.xcscheme_^#shared#^_</key>
+		<key>AMapSearch.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>31</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>ActionSheetPicker-3.0.xcscheme_^#shared#^_</key>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Alamofire.xcscheme_^#shared#^_</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>AlipaySDK-iOS.xcscheme_^#shared#^_</key>
+		<key>AlipaySDK-iOS.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>CHTCollectionViewWaterfallLayout.xcscheme_^#shared#^_</key>
+		<key>CHTCollectionViewWaterfallLayout.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>26</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>DateToolsSwift.xcscheme_^#shared#^_</key>
+		<key>DateToolsSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>DynamicBlurView.xcscheme_^#shared#^_</key>
+		<key>DynamicBlurView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FaveButton.xcscheme_^#shared#^_</key>
+		<key>FaveButton.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>GRDB.swift.xcscheme_^#shared#^_</key>
+		<key>GRDB.swift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>22</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>GrowingTextView.xcscheme_^#shared#^_</key>
+		<key>GrowingTextView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Hero.xcscheme_^#shared#^_</key>
+		<key>Hero.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>ImageSlideshow.xcscheme_^#shared#^_</key>
+		<key>ImageSlideshow.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>JCore.xcscheme_^#shared#^_</key>
+		<key>JCore.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>27</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>JVerification.xcscheme_^#shared#^_</key>
+		<key>JVerification.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>KMPlaceholderTextView.xcscheme_^#shared#^_</key>
+		<key>KMPlaceholderTextView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>29</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Kingfisher.xcscheme_^#shared#^_</key>
+		<key>Kingfisher.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>LeanCloud.xcscheme_^#shared#^_</key>
+		<key>LeanCloud.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>25</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MBProgressHUD.xcscheme_^#shared#^_</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>MJRefresh.xcscheme_^#shared#^_</key>
+		<key>MJRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-LittlePink.xcscheme_^#shared#^_</key>
+		<key>Pods-LittlePink.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>PopupDialog.xcscheme_^#shared#^_</key>
+		<key>PopupDialog.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>28</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>PryntTrimmerView.xcscheme_^#shared#^_</key>
+		<key>PryntTrimmerView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SKPhotoBrowser.xcscheme_^#shared#^_</key>
+		<key>SKPhotoBrowser.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SegementSlide.xcscheme_^#shared#^_</key>
+		<key>SegementSlide.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SteviaLayout.xcscheme_^#shared#^_</key>
+		<key>SteviaLayout.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SwiftProtobuf.xcscheme_^#shared#^_</key>
+		<key>SwiftProtobuf.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme_^#shared#^_</key>
+		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>30</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>XLPagerTabStrip.xcscheme_^#shared#^_</key>
+		<key>XLPagerTabStrip.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>YPImagePicker.xcscheme_^#shared#^_</key>
+		<key>YPImagePicker.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

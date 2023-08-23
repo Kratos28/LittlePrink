@@ -48,7 +48,7 @@ extension WaterfallVC{
         
     }
     
-    func getNotes(){
+  @objc   func getNotes(){
         let query = LCQuery(className: kNoteTable)
         query.whereKey(kChannelCol, .equalTo(channel))//条件查询
         query.whereKey(kAuthorCol, .included)//同时查询出作者对象
@@ -61,12 +61,14 @@ extension WaterfallVC{
                 self.collectionView.reloadData();
             
             }
-            
+            DispatchQueue.main.async {
+                self.header.endRefreshing();
+            }
         }
     }
-    func getMyNotes(_ user :LCUser){
+  @objc func getMyNotes(){
         let query = LCQuery(className: kNoteTable)
-        query.whereKey(kAuthorCol, .equalTo(user))//条件查询
+        query.whereKey(kAuthorCol, .equalTo(user!))//条件查询
         query.whereKey(kAuthorCol, .included)//同时查询出作者对象
         query.whereKey(kUpdatedAtCol, .descending)//排序
         query.limit = kNotesOffset//上拉加载的分页
@@ -74,10 +76,34 @@ extension WaterfallVC{
         query.find { result in
             if case let .success(objects: notes) = result{
                 self.notes = notes;
-                self.collectionView.reloadData();
-            
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData();
+                }
             }
-            
+            DispatchQueue.main.async {
+                self.header.endRefreshing();
+            }        }
+    }
+    
+    @objc func getMyFavNotes()
+    {
+        let query = LCQuery(className: kUserFavTable)
+        query.whereKey(kUserCol, .equalTo(user!))//条件查询
+        query.whereKey(kNoteCol, .selected);
+        query.whereKey(kNoteCol, .included);
+        query.whereKey("\(kNoteCol).\(kAuthorCol)", .included);
+        query.whereKey(kUpdatedAtCol, .descending)//排序
+        query.limit = kNotesOffset;
+        query.find { res in
+            if case let .success(objects:userFavs) = res {
+                self.notes =  userFavs.compactMap{$0.get(kNoteCol) as? LCObject}
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData();
+                }
+            }
+            DispatchQueue.main.async {
+                self.header.endRefreshing();
+            }
         }
     }
 }
