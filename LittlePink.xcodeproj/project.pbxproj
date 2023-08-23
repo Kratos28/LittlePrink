@@ -87,6 +87,11 @@
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
 		47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */; };
 		47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */; };
+		474F6A012A95EC600089048D /* MeVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A002A95EC600089048D /* MeVC-Config.swift */; };
+		474F6A032A95ED1C0089048D /* MeVC-HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A022A95ED1C0089048D /* MeVC-HeaderView.swift */; };
+		474F6A052A95F2670089048D /* MeVC-EditIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A042A95F2670089048D /* MeVC-EditIntro.swift */; };
+		474F6A072A95F3BE0089048D /* MeVC-EditOrFllow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A062A95F3BE0089048D /* MeVC-EditOrFllow.swift */; };
+		474F6A092A95FB480089048D /* MeVC-SettingOrChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A082A95FB480089048D /* MeVC-SettingOrChat.swift */; };
 		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
@@ -274,6 +279,11 @@
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-MeVC.swift"; sourceTree = "<group>"; };
 		47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-BackorDrawer.swift"; sourceTree = "<group>"; };
+		474F6A002A95EC600089048D /* MeVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-Config.swift"; sourceTree = "<group>"; };
+		474F6A022A95ED1C0089048D /* MeVC-HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-HeaderView.swift"; sourceTree = "<group>"; };
+		474F6A042A95F2670089048D /* MeVC-EditIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-EditIntro.swift"; sourceTree = "<group>"; };
+		474F6A062A95F3BE0089048D /* MeVC-EditOrFllow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-EditOrFllow.swift"; sourceTree = "<group>"; };
+		474F6A082A95FB480089048D /* MeVC-SettingOrChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-SettingOrChat.swift"; sourceTree = "<group>"; };
 		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
@@ -549,11 +559,16 @@
 			isa = PBXGroup;
 			children = (
 				0AF466C928E6CB6400CD4C33 /* LoginAndMeParentVC.swift */,
-				47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */,
-				0AF466CA28E6CB6400CD4C33 /* MeVC.swift */,
-				65D049712A67FB020031AE5E /* MeVC-UI.swift */,
 				65832BCD2A6B89A500B16875 /* MeHeaderView.swift */,
 				65832BCF2A6B89C200B16875 /* MeHeaderView.xib */,
+				47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */,
+				474F6A002A95EC600089048D /* MeVC-Config.swift */,
+				474F6A042A95F2670089048D /* MeVC-EditIntro.swift */,
+				474F6A062A95F3BE0089048D /* MeVC-EditOrFllow.swift */,
+				474F6A022A95ED1C0089048D /* MeVC-HeaderView.swift */,
+				474F6A082A95FB480089048D /* MeVC-SettingOrChat.swift */,
+				65D049712A67FB020031AE5E /* MeVC-UI.swift */,
+				0AF466CA28E6CB6400CD4C33 /* MeVC.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -788,7 +803,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474F6A072A95F3BE0089048D /* MeVC-EditOrFllow.swift in Sources */,
 				0AF4671328E6CB6500CD4C33 /* LoginVC.swift in Sources */,
+				474F6A092A95FB480089048D /* MeVC-SettingOrChat.swift in Sources */,
 				0AF4672528E6CB6500CD4C33 /* POIVC-Config.swift in Sources */,
 				0AF4670528E6CB6500CD4C33 /* NoteDetailVC-Config.swift in Sources */,
 				0AF4671A28E6CB6500CD4C33 /* NoteEditVC-DragDrop.swift in Sources */,
@@ -821,6 +838,7 @@
 				0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */,
 				0AF466F728E6CB6500CD4C33 /* DraftNoteWaterfallCell.swift in Sources */,
 				0AF4671228E6CB6500CD4C33 /* SocialLoginVC-Apple.swift in Sources */,
+				474F6A032A95ED1C0089048D /* MeVC-HeaderView.swift in Sources */,
 				0AF4672C28E6CB6500CD4C33 /* POIVC-KeywordsSearch.swift in Sources */,
 				0AF466F228E6CB6400CD4C33 /* FollowVC.swift in Sources */,
 				0AF4670928E6CB6500CD4C33 /* CustomViews.swift in Sources */,
@@ -838,6 +856,7 @@
 				1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */,
 				0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */,
 				0AF466F328E6CB6400CD4C33 /* HomeVC.swift in Sources */,
+				474F6A052A95F2670089048D /* MeVC-EditIntro.swift in Sources */,
 				0AF4670228E6CB6500CD4C33 /* TabBarC.swift in Sources */,
 				0AF466F928E6CB6500CD4C33 /* WaterfallVC-LoadData.swift in Sources */,
 				0AF4671728E6CB6500CD4C33 /* SocialLoginVC-Alipay.swift in Sources */,
@@ -862,6 +881,7 @@
 				0AF466F428E6CB6400CD4C33 /* WaterfallVC-Config.swift in Sources */,
 				0A021E2A28F592F600DAF4E2 /* NoteDetailVC-Like.swift in Sources */,
 				0AF4671028E6CB6500CD4C33 /* MeVC.swift in Sources */,
+				474F6A012A95EC600089048D /* MeVC-Config.swift in Sources */,
 				47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */,
 				1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */,
 				0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */,

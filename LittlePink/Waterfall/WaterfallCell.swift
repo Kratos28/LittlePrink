@@ -78,8 +78,6 @@ class WaterfallCell: UICollectionViewCell {
             //防止暴力点击
             NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(likeBtnTappedWhenLogin), object: nil);
             perform(#selector(likeBtnTappedWhenLogin), with: nil, afterDelay: 1);
-            
-        
         }
         else
         {

@@ -248,6 +248,11 @@ extension UIViewController{
         hud.detailsLabel.text = subTitle
         hud.hide(animated: true, afterDelay: 2)
     }
+    
+    func showLoginHUD(){
+        showTextHUD("请先登录");
+    }
+    
     //用于在本vc调用,让他显示到别的vc(如父vc)里去
     func showTextHUD(_ title: String, in view: UIView, _ subTitle: String? = nil){
         let hud = MBProgressHUD.showAdded(to: view, animated: true)
@@ -256,6 +261,9 @@ extension UIViewController{
         hud.detailsLabel.text = subTitle
         hud.hide(animated: true, afterDelay: 2)
     }
+    
+    
+    
     
     // MARK: 点击空白处收起键盘
     func hideKeyboardWhenTappedAround(){
@@ -353,4 +361,18 @@ extension FileManager{
         
         return fileURL
     }
+}
+
+
+extension UserDefaults
+{
+    static func inCrease(_ key:String, by val:Int = 1){
+        standard.set(standard.integer(forKey:key) + val, forKey: key);
+    }
+    
+    static func deCrease(_ key:String, by val:Int = 1){
+        standard.set(standard.integer(forKey:key) - val, forKey: key);
+
+    }
+
 }

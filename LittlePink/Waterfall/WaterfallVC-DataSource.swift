@@ -42,6 +42,7 @@ extension WaterfallVC{
             appDelegate.saveBackgroundContext()
             //数据2:内存中的
             self.draftNotes.remove(at: index)
+            UserDefaults.deCrease(kDraftNoteCount);
             
             //UI
             DispatchQueue.main.async {

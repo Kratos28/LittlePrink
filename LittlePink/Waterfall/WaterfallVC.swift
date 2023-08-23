@@ -24,7 +24,7 @@ class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDele
     
     //首页相关数据
     var notes: [LCObject] = []
-    
+    var hasDraft = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()

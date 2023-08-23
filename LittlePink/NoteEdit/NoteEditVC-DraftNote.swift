@@ -17,9 +17,9 @@ extension NoteEditVC{
             //图片
             self.handlePhotos(draftNote)
             
-            draftNote.isVideo = self.isVideo
-            self.handleOthers(draftNote)
-            
+            draftNote.isVideo = self.isVideo;
+            self.handleOthers(draftNote);
+            UserDefaults.inCrease(kDraftNoteCount);
             DispatchQueue.main.async {
                 self.showTextHUD("保存草稿成功",false)
             }

@@ -8,30 +8,25 @@
 import UIKit
 import LeanCloud
 import SegementSlide
-import SwiftUI
+
+
 class MeVC: SegementSlideDefaultViewController {
-    
     
     var user : LCUser
     var isFromNote = false;
+    var isMySelf =  false;
+    
     init?(coder:NSCoder,user:LCUser){
         self.user = user;
         super.init(coder: coder);
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     override func viewDidLoad() {
-        super.viewDidLoad()
- 
-        //iOS14之前去掉返回按钮文本的话需:
-        //1.sb上:上一个vc(MeVC)的navigationitem中修改为空格字符串串
-        //2.代码:上一个vc(此页)navigationItem.backButtonTitle = ""
-        navigationItem.backButtonDisplayMode = .minimal
+        super.viewDidLoad();
+        config();
         setUI();
-        defaultSelectedIndex = 0;
-        reloadData();
     }
     
     
@@ -41,21 +36,8 @@ class MeVC: SegementSlideDefaultViewController {
     }
     
     override func segementSlideHeaderView() -> UIView? {
-        
-        let headerView = Bundle.loadView(fromNib: "MeHeadView", with:MeHeaderView.self);
-
-        headerView.translatesAutoresizingMaskIntoConstraints = false;
-        headerView.heightAnchor.constraint(equalToConstant: headerView.rootStackView.frame.height  + 16).isActive =
-        true;
-        headerView.user = user;
-
-        if isFromNote
-        {
-            headerView.backOrSlideBtn.setImage(largeIcon("chevron.left"), for: .normal);
-            
-        }
-        headerView.backOrSlideBtn.addTarget(self, action: #selector(backOrDrawer), for: .touchUpInside);
-        return headerView;
+        return setHeaderView();
+     
     }
     
     
@@ -73,8 +55,12 @@ class MeVC: SegementSlideDefaultViewController {
     }
     
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
+        let hasDraft = ((index == 0) && isMySelf && UserDefaults.standard.integer(forKey: kDraftNoteCount) >  0)
+        
         let vc = storyboard!.instantiateViewController(withIdentifier: kWaterfallVCID) as! WaterfallVC;
+        vc.hasDraft = hasDraft;
         return vc;
+        
     }
     
     

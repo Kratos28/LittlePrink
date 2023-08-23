@@ -83,7 +83,8 @@ extension NoteDetailVC:UITableViewDelegate{
             }
         }else
         {
-            showTextHUD("请先登录");
+            showLoginHUD();
+
         }
     }
 
@@ -133,7 +134,7 @@ extension NoteDetailVC{
             }
         }else
         {
-            showTextHUD("请先登录");
+            showLoginHUD();
         }
     }
 }

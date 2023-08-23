@@ -16,15 +16,12 @@ extension NoteDetailVC
     {
         if let user = LCApplication.default.currentUser{
             isLike ? (likeCount += 1) : (likeCount -= 1);
-            
             //防止暴力点击
             NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(likeBtnTappedWhenLogin), object: nil);
             perform(#selector(likeBtnTappedWhenLogin), with: nil, afterDelay: 1);
-
-        
         }else
         {
-            showTextHUD("请先登录");
+            showLoginHUD();
         }
     }
     @objc func likeBtnTappedWhenLogin()
