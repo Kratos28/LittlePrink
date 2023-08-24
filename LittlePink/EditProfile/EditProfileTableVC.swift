@@ -7,19 +7,34 @@
 
 import UIKit
 
-class EditProfileTableVC: UITableViewController {
 
+class EditProfileTableVC: UITableViewController {
+    
+    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet weak var brithLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    var avatar : UIImage?{
+        didSet{
+            DispatchQueue.main.async
+            {
+                self.avatarImageView.image =  self.avatar;
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
+    
+    
+    @IBAction func back(_ sender: Any) {
+        
+    }
+    
+    
+ 
 
-    // MARK: - Table view data source
-
-
+  
 }

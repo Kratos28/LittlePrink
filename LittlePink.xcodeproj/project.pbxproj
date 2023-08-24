@@ -97,6 +97,8 @@
 		474F6A122A962AA00089048D /* WaterfallVC-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */; };
 		479742072A9700C000591F34 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742062A9700C000591F34 /* IntroVC.swift */; };
 		4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742092A9738CB00591F34 /* EditProfileTableVC.swift */; };
+		4797420C2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */; };
+		4797420E2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */; };
 		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
@@ -294,6 +296,8 @@
 		474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Layout.swift"; sourceTree = "<group>"; };
 		479742062A9700C000591F34 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		479742092A9738CB00591F34 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
+		4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-Delegate.swift"; sourceTree = "<group>"; };
+		4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-PHPickerVCDelegate.swift"; sourceTree = "<group>"; };
 		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
@@ -639,6 +643,8 @@
 			children = (
 				479742062A9700C000591F34 /* IntroVC.swift */,
 				479742092A9738CB00591F34 /* EditProfileTableVC.swift */,
+				4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */,
+				4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -875,10 +881,12 @@
 				65DF4EAD29813E9500B36902 /* NoteDetailVC-LoadData.swift in Sources */,
 				0AF4670B28E6CB6500CD4C33 /* Login-Extensions.swift in Sources */,
 				0AF4672B28E6CB6500CD4C33 /* PhotoFooter.swift in Sources */,
+				4797420E2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */,
 				65D049722A67FB020031AE5E /* MeVC-UI.swift in Sources */,
 				65DF4EAF29817D5E00B36902 /* NoteDetailVC-DelComment.swift in Sources */,
 				0AF4671E28E6CB6500CD4C33 /* PhotoCell.swift in Sources */,
 				1B2B503429B86C6B00F84026 /* NoteDetailVC-DelReply.swift in Sources */,
+				4797420C2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift in Sources */,
 				0AF4672428E6CB6500CD4C33 /* NoteEditVC-Note.swift in Sources */,
 				1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */,
 				0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */,

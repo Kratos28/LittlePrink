@@ -17,7 +17,8 @@ extension MeVC
         }else
         {
             if let _ = LCApplication.default.currentUser{
-                print("关注和取消关注功能");
+    
+                showTextHUD("关注和取消关注功能");
             }else {
                 showLoginHUD();
             }
