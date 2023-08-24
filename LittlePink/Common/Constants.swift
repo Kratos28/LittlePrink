@@ -20,7 +20,8 @@ let kLoginVCID = "LoginVCID"
 let kMeVCID = "MeVCID"
 let kDraftNotesNaviID = "DraftNotesNaviID"
 let kNoteDetailVCID = "NoteDetailVCID"
-
+let kIntroVCID = "IntroVCID"
+let kEditProfileNaviID = "editProfileNaviID"
 //Cell相关ID
 let kWaterfallCellID = "WaterfallCellID"
 let kPhotoCellID = "PhotoCellID"
@@ -71,6 +72,10 @@ let kSpacingBetweenItems: CGFloat = 2
 let kMaxNoteTitleCount = 20
 let kMaxNoteTextCount = 1000
 let  kNoteCommetPH = "精彩评论被优先展示哦";
+
+let kIntroPH = "填写个人简介更容易获得关注哦";
+
+let kMaxIntroCount = 100;
 //话题
 let kAllSubChannels = [
     ["穿神马是神马", "就快瘦到50斤啦", "花5个小时修的靓图", "网红店入坑记"],

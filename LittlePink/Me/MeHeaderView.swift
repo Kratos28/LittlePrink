@@ -40,7 +40,7 @@ class MeHeaderView: UIView {
             genderLabel.textColor =  gender ? blueColor: mainColor;
             idLabel.text = "\(user.getExactIntVal(kIDCol))";
             let intro = user.getExactStringVal(kIntroCol);
-            introLabel.text = user.getExactStringVal(kIntroCol).isEmpty ? "填写个人简介更容易获得关注哦":intro;
+            introLabel.text = user.getExactStringVal(kIntroCol).isEmpty ? kIntroPH:intro;
             guard let userObjectid =  user.objectId?.stringValue else {return}
             let query = LCQuery(className: kUserInfoTable);
             query.getFirst{ res in

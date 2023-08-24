@@ -95,6 +95,8 @@
 		474F6A0E2A96092C0089048D /* MyDraftNoteWaterfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474F6A0C2A96092C0089048D /* MyDraftNoteWaterfallCell.xib */; };
 		474F6A102A960C040089048D /* MyDraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */; };
 		474F6A122A962AA00089048D /* WaterfallVC-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */; };
+		479742072A9700C000591F34 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742062A9700C000591F34 /* IntroVC.swift */; };
+		4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742092A9738CB00591F34 /* EditProfileTableVC.swift */; };
 		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
@@ -290,6 +292,8 @@
 		474F6A0C2A96092C0089048D /* MyDraftNoteWaterfallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDraftNoteWaterfallCell.xib; sourceTree = "<group>"; };
 		474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Layout.swift"; sourceTree = "<group>"; };
+		479742062A9700C000591F34 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		479742092A9738CB00591F34 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
 		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
@@ -448,6 +452,7 @@
 				0AF466C828E6CB6400CD4C33 /* Me */,
 				0AF466CB28E6CB6400CD4C33 /* LittlePink.entitlements */,
 				0AF466CC28E6CB6400CD4C33 /* AppDelegate.swift */,
+				479742082A97382500591F34 /* EditProfile */,
 				0AF466CD28E6CB6400CD4C33 /* Login */,
 				0AF466D428E6CB6400CD4C33 /* Info.plist */,
 				0AF466D528E6CB6400CD4C33 /* SceneDelegate.swift */,
@@ -627,6 +632,15 @@
 				1B2B502529B732CD00F84026 /* ExpandableReplies.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		479742082A97382500591F34 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				479742062A9700C000591F34 /* IntroVC.swift */,
+				479742092A9738CB00591F34 /* EditProfileTableVC.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
@@ -845,8 +859,10 @@
 				0AF466F128E6CB6400CD4C33 /* DiscoveryVC.swift in Sources */,
 				0AF4670E28E6CB6500CD4C33 /* Protocols.swift in Sources */,
 				0AF4670428E6CB6500CD4C33 /* NoteDetailVC-UI.swift in Sources */,
+				479742072A9700C000591F34 /* IntroVC.swift in Sources */,
 				0AF4672928E6CB6500CD4C33 /* NoteEditVC.swift in Sources */,
 				0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */,
+				4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */,
 				0AF466F728E6CB6500CD4C33 /* DraftNoteWaterfallCell.swift in Sources */,
 				0AF4671228E6CB6500CD4C33 /* SocialLoginVC-Apple.swift in Sources */,
 				474F6A032A95ED1C0089048D /* MeVC-HeaderView.swift in Sources */,
@@ -953,6 +969,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 /* End PBXVariantGroup section */
 

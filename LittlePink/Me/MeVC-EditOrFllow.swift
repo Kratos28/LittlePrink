@@ -11,7 +11,9 @@ extension MeVC
     @objc func editOrFllow(){
         if isMySelf
         {
-            
+            let navi = storyboard!.instantiateViewController(withIdentifier: kEditProfileNaviID) as! UINavigationController;
+            navi.modalPresentationStyle = .fullScreen;
+            present(navi, animated: false);
         }else
         {
             if let _ = LCApplication.default.currentUser{

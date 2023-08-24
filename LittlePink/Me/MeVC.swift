@@ -15,7 +15,7 @@ class MeVC: SegementSlideDefaultViewController {
     var user : LCUser
     var isFromNote = false;
     var isMySelf =  false;
-    
+    lazy var  meHeaderView = Bundle.loadView(fromNib: "MeHeadView", with:MeHeaderView.self);
     init?(coder:NSCoder,user:LCUser){
         self.user = user;
         super.init(coder: coder);
