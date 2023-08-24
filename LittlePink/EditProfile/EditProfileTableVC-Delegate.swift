@@ -21,6 +21,9 @@ extension EditProfileTableVC
             present(vc, animated: true, completion: nil);
         case 1:
             showTextHUD("修改昵称和修改简介一样");
+            
+        case 2:
+            textField.becomeFirstResponder();
         default:
             break;
         }
