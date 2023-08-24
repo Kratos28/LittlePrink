@@ -35,8 +35,10 @@ extension WaterfallVC{
             return cell;
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell;
+            cell.isMyselfLike = isMyselfLike;
             let offset = isMyDraft ? 1:0;
             cell.note = notes[indexPath.item - offset];
+            
             return cell;
         }
     }

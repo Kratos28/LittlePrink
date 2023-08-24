@@ -87,6 +87,16 @@ extension WaterfallVC{
     
     @objc func getMyFavNotes()
     {
+        getFavOrLike(kUserFavTable);
+    }
+    
+    @objc func getMyLikeNotes()
+    {
+        getFavOrLike(kUserFavTable);
+    }
+    
+    private func getFavOrLike(_ className: String)
+    {
         let query = LCQuery(className: kUserFavTable)
         query.whereKey(kUserCol, .equalTo(user!))//条件查询
         query.whereKey(kNoteCol, .selected);
@@ -95,12 +105,13 @@ extension WaterfallVC{
         query.whereKey(kUpdatedAtCol, .descending)//排序
         query.limit = kNotesOffset;
         query.find { res in
-            if case let .success(objects:userFavs) = res {
-                self.notes =  userFavs.compactMap{$0.get(kNoteCol) as? LCObject}
+            if case let .success(objects:getFavOrLike) = res {
+                self.notes =  getFavOrLike.compactMap{$0.get(kNoteCol) as? LCObject}
                 DispatchQueue.main.async {
                     self.collectionView.reloadData();
                 }
             }
+            
             DispatchQueue.main.async {
                 self.header.endRefreshing();
             }

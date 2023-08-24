@@ -23,6 +23,7 @@ class NoteDetailVC: UIViewController {
     var replies : [ExpandableReplies] = [];
     var replyToUser:LCUser?
     
+    
     var isFromMeVC = false;
     var formMeVCUser: LCUser?
     //上方bar

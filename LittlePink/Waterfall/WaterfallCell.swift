@@ -15,6 +15,9 @@ class WaterfallCell: UICollectionViewCell {
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var likebtn: UIButton!
+    
+    var isMyselfLike = false;
+    
     var likeCount = 0
     {
         didSet{
@@ -44,28 +47,32 @@ class WaterfallCell: UICollectionViewCell {
             likeCount = note.getExactIntVal(kLikeCountCol);
             currentLikeCount = likeCount;
             //待做:点赞功能+判断是否已点赞
-            
-            if let user = LCApplication.default.currentUser
+            if isMyselfLike{
+                    likebtn.isSelected = true;
+            }else
             {
-                let query = LCQuery(className: kUserLikeTable);
-                try? query.where(kUserCol,.equalTo(user));
-                try? query.where(kNoteCol,.equalTo(note));
-                query.getFirst { res in
-                    if case  .success = res{
-                        DispatchQueue.main.async {
-                            self.likebtn.isSelected = true;
+                if let user = LCApplication.default.currentUser
+                {
+                    let query = LCQuery(className: kUserLikeTable);
+                    try? query.where(kUserCol,.equalTo(user));
+                    try? query.where(kNoteCol,.equalTo(note));
+                    query.getFirst { res in
+                        if case  .success = res{
+                            DispatchQueue.main.async {
+                                self.likebtn.isSelected = true;
 
+                            }
                         }
                     }
                 }
             }
+        
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib();
         let icon = UIImage(systemName: "heart.fill")?.withTintColor(mainColor,renderingMode: .alwaysOriginal);
-        
         likebtn.setImage(icon, for: .selected);
     }
     

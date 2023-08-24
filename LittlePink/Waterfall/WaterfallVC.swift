@@ -23,7 +23,9 @@ class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDele
     var user: LCUser?
     var isMyNote = false;
     var isMyFav = false;
-
+    var isMyselfLike = false;
+    var isFromMeVC = false;
+    var formMeVCUser: LCUser?
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
@@ -38,7 +40,8 @@ class WaterfallVC: UICollectionViewController,SegementSlideContentScrollViewDele
 
             }else
             {
-                
+                header.setRefreshingTarget(self, refreshingAction: #selector(getMyLikeNotes));
+
             }
             header.beginRefreshing();
         }else if isDraft
