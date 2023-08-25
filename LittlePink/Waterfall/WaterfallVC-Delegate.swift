@@ -1,9 +1,4 @@
-//
-//  WaterfallVC-Delegate.swift
-//  LittlePink
-//
-//  Created by 刘军 on 2021/1/5.
-//
+
 
 import Foundation
 

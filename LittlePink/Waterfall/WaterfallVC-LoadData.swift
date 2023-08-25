@@ -1,9 +1,4 @@
-//
-//  WaterfallVC-LoadData.swift
-//  LittlePink
-//
-//  Created by 刘军 on 2021/1/3.
-//
+
 
 import CoreData
 import LeanCloud

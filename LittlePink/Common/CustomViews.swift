@@ -1,9 +1,4 @@
-//
-//  CustomViews.swift
-//  LittlePink
-//
-//  Created by 刘军 on 2021/2/18.
-//
+
 
 import Foundation
 
@@ -37,7 +32,6 @@ class BigButton: UIButton{
         backgroundColor = .secondarySystemBackground
         tintColor = .placeholderText
         setTitleColor(.placeholderText, for: .normal)
-        
         contentHorizontalAlignment = .leading
         contentEdgeInsets = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
     }

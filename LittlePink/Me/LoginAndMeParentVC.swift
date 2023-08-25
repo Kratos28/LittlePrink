@@ -1,9 +1,4 @@
-//
-//  LoginAndMeParentVC.swift
-//  LittlePink
-//
-//  Created by 刘军 on 2021/2/6.
-//
+
 
 import UIKit
 import LeanCloud
