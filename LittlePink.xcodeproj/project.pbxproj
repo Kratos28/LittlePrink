@@ -96,6 +96,7 @@
 		474F6A102A960C040089048D /* MyDraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */; };
 		474F6A122A962AA00089048D /* WaterfallVC-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */; };
 		476D894E2A988ED700AFDA50 /* MeVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476D894D2A988ED700AFDA50 /* MeVC-Delegate.swift */; };
+		476D89542A98A77A00AFDA50 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476D89532A98A77A00AFDA50 /* SettingTableVC.swift */; };
 		479742072A9700C000591F34 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742062A9700C000591F34 /* IntroVC.swift */; };
 		4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742092A9738CB00591F34 /* EditProfileTableVC.swift */; };
 		4797420C2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */; };
@@ -297,6 +298,7 @@
 		474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Layout.swift"; sourceTree = "<group>"; };
 		476D894D2A988ED700AFDA50 /* MeVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-Delegate.swift"; sourceTree = "<group>"; };
+		476D89532A98A77A00AFDA50 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		479742062A9700C000591F34 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		479742092A9738CB00591F34 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
 		4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-Delegate.swift"; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 		0AF4669228E6CB6300CD4C33 /* LittlePink */ = {
 			isa = PBXGroup;
 			children = (
+				476D894F2A98A6E800AFDA50 /* Setting */,
 				0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */,
 				0AF4669528E6CB6400CD4C33 /* Main.strings */,
 				0AF4669728E6CB6400CD4C33 /* Home */,
@@ -641,6 +644,14 @@
 				1B2B502529B732CD00F84026 /* ExpandableReplies.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		476D894F2A98A6E800AFDA50 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				476D89532A98A77A00AFDA50 /* SettingTableVC.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		479742082A97382500591F34 /* EditProfile */ = {
@@ -873,6 +884,7 @@
 				0AF4670E28E6CB6500CD4C33 /* Protocols.swift in Sources */,
 				0AF4670428E6CB6500CD4C33 /* NoteDetailVC-UI.swift in Sources */,
 				479742072A9700C000591F34 /* IntroVC.swift in Sources */,
+				476D89542A98A77A00AFDA50 /* SettingTableVC.swift in Sources */,
 				0AF4672928E6CB6500CD4C33 /* NoteEditVC.swift in Sources */,
 				0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */,
 				4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */,
