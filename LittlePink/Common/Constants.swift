@@ -75,9 +75,10 @@ let kMaxNoteTitleCount = 20
 let kMaxNoteTextCount = 1000
 let  kNoteCommetPH = "精彩评论被优先展示哦";
 
-let kIntroPH = "填写个人简介更容易获得关注哦";
-
+let kIntroPH = "填写个人简介更容易获得关注哦,点击此处填写";
 let kMaxIntroCount = 100;
+let kNoCachePH = "无缓存"
+
 //话题
 let kAllSubChannels = [
     ["穿神马是神马", "就快瘦到50斤啦", "花5个小时修的靓图", "网红店入坑记"],

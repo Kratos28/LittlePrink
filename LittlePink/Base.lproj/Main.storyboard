@@ -2072,16 +2072,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清除缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-qQ-u06">
-                                                    <rect key="frame" x="20" y="13" width="61.5" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="MOq-TS-HHq">
+                                                    <rect key="frame" x="20" y="13" width="315.5" height="18"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清除缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-qQ-u06">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无缓存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJG-It-kDB">
+                                                            <rect key="frame" x="269.5" y="0.0" width="46" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qU4-qQ-u06" firstAttribute="centerY" secondItem="mTK-Y8-XWz" secondAttribute="centerY" id="jaS-gv-0Ry"/>
-                                                <constraint firstItem="qU4-qQ-u06" firstAttribute="leading" secondItem="mTK-Y8-XWz" secondAttribute="leadingMargin" id="xCs-8a-2Nj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MOq-TS-HHq" secondAttribute="trailing" id="4kD-fF-O7L"/>
+                                                <constraint firstItem="MOq-TS-HHq" firstAttribute="leading" secondItem="mTK-Y8-XWz" secondAttribute="leadingMargin" id="MMG-w2-JNI"/>
+                                                <constraint firstItem="MOq-TS-HHq" firstAttribute="centerY" secondItem="mTK-Y8-XWz" secondAttribute="centerY" id="tFp-WG-WjE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2145,7 +2157,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退出账户" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfX-tD-dqe">
-                                                    <rect key="frame" x="141" y="13" width="62" height="18"/>
+                                                    <rect key="frame" x="141" y="13" width="61.5" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -2165,6 +2177,9 @@
                             <outlet property="delegate" destination="bUP-48-cu5" id="2MI-8b-Sga"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="cacheSizeLabel" destination="pJG-It-kDB" id="XQ2-KU-0uB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGM-AM-MrF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

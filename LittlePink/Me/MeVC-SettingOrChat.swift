@@ -11,7 +11,8 @@ extension MeVC{
     {
         if isMySelf
         {
-            
+            let settingTableVC = storyboard!.instantiateViewController(withIdentifier: kSettingTableVCID);
+            present(settingTableVC, animated: true);
         }else{
             if let _ = LCApplication.default.currentUser{
                 print("私信功能");
