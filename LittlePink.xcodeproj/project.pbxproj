@@ -95,10 +95,12 @@
 		474F6A0E2A96092C0089048D /* MyDraftNoteWaterfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474F6A0C2A96092C0089048D /* MyDraftNoteWaterfallCell.xib */; };
 		474F6A102A960C040089048D /* MyDraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */; };
 		474F6A122A962AA00089048D /* WaterfallVC-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */; };
+		476D894E2A988ED700AFDA50 /* MeVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476D894D2A988ED700AFDA50 /* MeVC-Delegate.swift */; };
 		479742072A9700C000591F34 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742062A9700C000591F34 /* IntroVC.swift */; };
 		4797420A2A9738CB00591F34 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479742092A9738CB00591F34 /* EditProfileTableVC.swift */; };
 		4797420C2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */; };
 		4797420E2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */; };
+		479742102A97833600591F34 /* EditProfileTableVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420F2A97833600591F34 /* EditProfileTableVC-UI.swift */; };
 		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
@@ -294,10 +296,12 @@
 		474F6A0C2A96092C0089048D /* MyDraftNoteWaterfallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDraftNoteWaterfallCell.xib; sourceTree = "<group>"; };
 		474F6A0F2A960C040089048D /* MyDraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
 		474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Layout.swift"; sourceTree = "<group>"; };
+		476D894D2A988ED700AFDA50 /* MeVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-Delegate.swift"; sourceTree = "<group>"; };
 		479742062A9700C000591F34 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		479742092A9738CB00591F34 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
 		4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-Delegate.swift"; sourceTree = "<group>"; };
 		4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-PHPickerVCDelegate.swift"; sourceTree = "<group>"; };
+		4797420F2A97833600591F34 /* EditProfileTableVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-UI.swift"; sourceTree = "<group>"; };
 		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
@@ -489,9 +493,9 @@
 				0AF4669D28E6CB6400CD4C33 /* WaterfallVC-Config.swift */,
 				0AF466A328E6CB6400CD4C33 /* WaterfallVC-DataSource.swift */,
 				0AF466A128E6CB6400CD4C33 /* WaterfallVC-Delegate.swift */,
+				474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */,
 				0AF466A228E6CB6400CD4C33 /* WaterfallVC-LoadData.swift */,
 				0AF4669F28E6CB6400CD4C33 /* WaterfallVC.swift */,
-				474F6A112A962AA00089048D /* WaterfallVC-Layout.swift */,
 			);
 			path = Waterfall;
 			sourceTree = "<group>";
@@ -553,10 +557,10 @@
 			isa = PBXGroup;
 			children = (
 				0AF466C028E6CB6400CD4C33 /* Constants.swift */,
+				47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */,
 				0AF466C128E6CB6400CD4C33 /* CustomViews.swift */,
 				0AF466C228E6CB6400CD4C33 /* Extensions */,
 				0AF466C728E6CB6400CD4C33 /* Protocols.swift */,
-				47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -581,6 +585,7 @@
 				65832BCF2A6B89C200B16875 /* MeHeaderView.xib */,
 				47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */,
 				474F6A002A95EC600089048D /* MeVC-Config.swift */,
+				476D894D2A988ED700AFDA50 /* MeVC-Delegate.swift */,
 				474F6A042A95F2670089048D /* MeVC-EditIntro.swift */,
 				474F6A062A95F3BE0089048D /* MeVC-EditOrFllow.swift */,
 				474F6A022A95ED1C0089048D /* MeVC-HeaderView.swift */,
@@ -641,10 +646,11 @@
 		479742082A97382500591F34 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
-				479742062A9700C000591F34 /* IntroVC.swift */,
-				479742092A9738CB00591F34 /* EditProfileTableVC.swift */,
 				4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */,
 				4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */,
+				4797420F2A97833600591F34 /* EditProfileTableVC-UI.swift */,
+				479742092A9738CB00591F34 /* EditProfileTableVC.swift */,
+				479742062A9700C000591F34 /* IntroVC.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -842,6 +848,7 @@
 				474F6A102A960C040089048D /* MyDraftNoteWaterfallCell.swift in Sources */,
 				0AF4670F28E6CB6500CD4C33 /* LoginAndMeParentVC.swift in Sources */,
 				0AF4671F28E6CB6500CD4C33 /* NoteEditVC-Helper.swift in Sources */,
+				476D894E2A988ED700AFDA50 /* MeVC-Delegate.swift in Sources */,
 				0AF4672328E6CB6500CD4C33 /* ChannelTableVC.swift in Sources */,
 				0AF4671D28E6CB6500CD4C33 /* ChannelVC.swift in Sources */,
 				0AF4670D28E6CB6500CD4C33 /* LC-Extensions.swift in Sources */,
@@ -900,6 +907,7 @@
 				1BD09B972968376600A638F1 /* NoteDetailVC-TVDelegate.swift in Sources */,
 				474F6A122A962AA00089048D /* WaterfallVC-Layout.swift in Sources */,
 				0AF4672028E6CB6500CD4C33 /* POIVC-Location.swift in Sources */,
+				479742102A97833600591F34 /* EditProfileTableVC-UI.swift in Sources */,
 				0AF4670128E6CB6500CD4C33 /* PostVC.swift in Sources */,
 				65EA5CA4295DE2140023885E /* NoteDetailVC-Fav.swift in Sources */,
 				6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */,

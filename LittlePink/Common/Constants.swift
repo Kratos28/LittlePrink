@@ -137,6 +137,7 @@ let kUserInfoTable =  "UserInfo";
 
 
 
+
 let kReplyToUserCol = "ReplyToUserCol"
 //UserInfo 表
 let kUserObjectIDCol = "userObjectId";
@@ -146,7 +147,7 @@ let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
-
+let kBrithCol = "brith"
 
 //Note表
 let kCoverPhotoCol = "coverPhoto"

@@ -13,7 +13,11 @@ extension MeVC
         {
             let navi = storyboard!.instantiateViewController(withIdentifier: kEditProfileNaviID) as! UINavigationController;
             navi.modalPresentationStyle = .fullScreen;
+           let editProfileTableVC = navi.topViewController as! EditProfileTableVC
+            editProfileTableVC.user = user;
+            editProfileTableVC.delegate = self;
             present(navi, animated: false);
+            
         }else
         {
             if let _ = LCApplication.default.currentUser{

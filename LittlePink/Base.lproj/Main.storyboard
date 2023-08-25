@@ -2467,7 +2467,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="avatarImageView" destination="2Db-Pt-YbS" id="wxj-jl-7vF"/>
-                        <outlet property="brithLabel" destination="gO4-1R-GS9" id="IkI-uI-t6z"/>
+                        <outlet property="birthLabel" destination="gO4-1R-GS9" id="IkI-uI-t6z"/>
                         <outlet property="genderLabel" destination="OLZ-Q1-FPt" id="acl-Qj-H7s"/>
                         <outlet property="introLabel" destination="4KZ-64-W36" id="j3V-eL-a57"/>
                         <outlet property="nickNameLabel" destination="h8o-Jj-vqb" id="FAk-gB-syO"/>
@@ -2503,8 +2503,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" width="128" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
