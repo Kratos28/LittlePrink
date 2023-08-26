@@ -14,6 +14,7 @@
 		0A60956A28BF421600A29A98 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A60951A28BF421600A29A98 /* libssl.a */; };
 		0A65280E2A990238000DD911 /* SettingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65280D2A990238000DD911 /* SettingTableVC.swift */; };
 		0A6528102A990290000DD911 /* SettingTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A65280F2A990290000DD911 /* SettingTableVC-Delegate.swift */; };
+		0A9B6CB72A99B8A300B96B3B /* NotificationTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B6CB62A99B8A300B96B3B /* NotificationTableVC.swift */; };
 		0ACA247A29DC7D3600C57107 /* Other-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACA247929DC7D3600C57107 /* Other-Extension.swift */; };
 		0AF466EE28E6CB6400CD4C33 /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669328E6CB6300CD4C33 /* LaunchScreen.strings */; };
 		0AF466EF28E6CB6400CD4C33 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AF4669528E6CB6400CD4C33 /* Main.strings */; };
@@ -205,6 +206,7 @@
 		0A60956628BF421600A29A98 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
 		0A65280D2A990238000DD911 /* SettingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableVC.swift; sourceTree = "<group>"; };
 		0A65280F2A990290000DD911 /* SettingTableVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingTableVC-Delegate.swift"; sourceTree = "<group>"; };
+		0A9B6CB62A99B8A300B96B3B /* NotificationTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableVC.swift; sourceTree = "<group>"; };
 		0ACA247929DC7D3600C57107 /* Other-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other-Extension.swift"; sourceTree = "<group>"; };
 		0AF4669428E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0AF4669628E6CB6400CD4C33 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -653,6 +655,7 @@
 			children = (
 				0A65280D2A990238000DD911 /* SettingTableVC.swift */,
 				0A65280F2A990290000DD911 /* SettingTableVC-Delegate.swift */,
+				0A9B6CB62A99B8A300B96B3B /* NotificationTableVC.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -861,6 +864,7 @@
 				0AF4671A28E6CB6500CD4C33 /* NoteEditVC-DragDrop.swift in Sources */,
 				474F6A102A960C040089048D /* MyDraftNoteWaterfallCell.swift in Sources */,
 				0AF4670F28E6CB6500CD4C33 /* LoginAndMeParentVC.swift in Sources */,
+				0A9B6CB72A99B8A300B96B3B /* NotificationTableVC.swift in Sources */,
 				0AF4671F28E6CB6500CD4C33 /* NoteEditVC-Helper.swift in Sources */,
 				476D894E2A988ED700AFDA50 /* MeVC-Delegate.swift in Sources */,
 				0AF4672328E6CB6500CD4C33 /* ChannelTableVC.swift in Sources */,
