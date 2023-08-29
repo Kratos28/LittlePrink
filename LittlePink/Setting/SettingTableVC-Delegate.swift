@@ -13,7 +13,11 @@ extension SettingTableVC
         tableView.deselectRow(at: indexPath, animated: true);
         let section = indexPath.section;
         let row = indexPath.row;
-        if section == 1, row == 1{
+        
+        
+        if section == 0,row == 0{
+            
+        }else if section == 1, row == 1{
             ImageCache.default.clearCache{
                 self.showTextHUD("清楚缓存成功");
                 self.cacheSizeLabel.text = kNoCachePH;

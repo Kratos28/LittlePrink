@@ -7,9 +7,9 @@
 
 import UIKit
 import Kingfisher
-
+import LeanCloud
 class SettingTableVC: UITableViewController {
-
+    var user:LCUser!
     var cacheSizeStr =  kNoCachePH {
         didSet{
             DispatchQueue.main.async {
@@ -17,6 +17,8 @@ class SettingTableVC: UITableViewController {
             }
         }
     }
+    
+    
     
     @IBOutlet weak var cacheSizeLabel : UILabel!
     override func viewDidLoad() {
@@ -42,16 +44,12 @@ class SettingTableVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let accountTableVC  = segue.destination as? AccountTableVC
+        {
+            accountTableVC.user = user;
+        }
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
    
-
+    
 }

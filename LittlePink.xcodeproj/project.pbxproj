@@ -104,6 +104,7 @@
 		4797420C2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */; };
 		4797420E2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */; };
 		479742102A97833600591F34 /* EditProfileTableVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797420F2A97833600591F34 /* EditProfileTableVC-UI.swift */; };
+		479AD52B2A9E17A000C42714 /* AccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479AD52A2A9E17A000C42714 /* AccountTableVC.swift */; };
 		47C7C0DB2A949DF50072ED14 /* CustomClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
@@ -308,6 +309,7 @@
 		4797420B2A974E5B00591F34 /* EditProfileTableVC-Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-Delegate.swift"; sourceTree = "<group>"; };
 		4797420D2A9750D900591F34 /* EditProfileTableVC-PHPickerVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-PHPickerVCDelegate.swift"; sourceTree = "<group>"; };
 		4797420F2A97833600591F34 /* EditProfileTableVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditProfileTableVC-UI.swift"; sourceTree = "<group>"; };
+		479AD52A2A9E17A000C42714 /* AccountTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableVC.swift; sourceTree = "<group>"; };
 		47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomClasses.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
@@ -653,6 +655,7 @@
 		476D894F2A98A6E800AFDA50 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				479AD52C2A9E17BF00C42714 /* Account */,
 				0A65280D2A990238000DD911 /* SettingTableVC.swift */,
 				0A65280F2A990290000DD911 /* SettingTableVC-Delegate.swift */,
 				0A9B6CB62A99B8A300B96B3B /* NotificationTableVC.swift */,
@@ -670,6 +673,14 @@
 				479742062A9700C000591F34 /* IntroVC.swift */,
 			);
 			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		479AD52C2A9E17BF00C42714 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				479AD52A2A9E17A000C42714 /* AccountTableVC.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		4D4E89BB37BB8129E3429C84 /* Frameworks */ = {
@@ -917,6 +928,7 @@
 				1BD09B992968387200A638F1 /* NoteDetailVC-TVDataSource.swift in Sources */,
 				0AF4672828E6CB6500CD4C33 /* TextViewIAView.swift in Sources */,
 				0AF466F328E6CB6400CD4C33 /* HomeVC.swift in Sources */,
+				479AD52B2A9E17A000C42714 /* AccountTableVC.swift in Sources */,
 				474F6A052A95F2670089048D /* MeVC-EditIntro.swift in Sources */,
 				0AF4670228E6CB6500CD4C33 /* TabBarC.swift in Sources */,
 				0AF466F928E6CB6500CD4C33 /* WaterfallVC-LoadData.swift in Sources */,

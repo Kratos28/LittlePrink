@@ -11,7 +11,8 @@ extension MeVC{
     {
         if isMySelf
         {
-            let settingTableVC = storyboard!.instantiateViewController(withIdentifier: kSettingTableVCID);
+            let settingTableVC = storyboard!.instantiateViewController(withIdentifier: kSettingTableVCID) as! SettingTableVC;
+            settingTableVC.user = user;
             present(settingTableVC, animated: true);
         }else{
             if let _ = LCApplication.default.currentUser{
