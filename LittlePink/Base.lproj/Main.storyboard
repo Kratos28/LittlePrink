@@ -1474,23 +1474,23 @@
                                                         <constraint firstAttribute="height" constant="1" id="EKM-Yn-rI6"/>
                                                     </constraints>
                                                 </view>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-gI-QdW">
-                                                    <rect key="frame" x="0.0" y="154.5" width="84" height="16"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6tV-gI-QdW">
+                                                    <rect key="frame" x="0.0" y="154.5" width="126" height="16"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFH-78-UKP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="13.5" height="16"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="328" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiT-FY-oNb">
-                                                            <rect key="frame" x="16.5" y="0.0" width="24.5" height="16"/>
+                                                            <rect key="frame" x="43" y="0.0" width="40" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="条评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWR-wf-Xjp">
-                                                            <rect key="frame" x="44" y="0.0" width="40" height="16"/>
+                                                            <rect key="frame" x="86" y="0.0" width="40" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
@@ -2409,11 +2409,113 @@
                         <outlet property="appleIDLabel" destination="IAA-Qq-BxG" id="Ljq-CW-yCk"/>
                         <outlet property="passwordLabel" destination="YF8-eD-fib" id="hnz-Gc-Ngy"/>
                         <outlet property="phoneNumLabel" destination="F17-j3-vn1" id="oLR-WX-wfd"/>
+                        <segue destination="lbl-xX-ZNN" kind="presentation" identifier="showPasswordTableVC" id="SPg-uw-ZSX"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FaN-h9-cji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-467" y="1381"/>
+            <point key="canvasLocation" x="-628" y="1362"/>
+        </scene>
+        <!--Password TableVC-->
+        <scene sceneID="9no-FC-ihf">
+            <objects>
+                <tableViewController id="lbl-xX-ZNN" customClass="PasswordTableVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="KCh-ij-9Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="b7L-Nb-oaU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYD-Si-OK9">
+                                    <rect key="frame" x="345" y="3" width="53" height="38"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="完成">
+                                        <color key="titleColor" name="main"/>
+                                    </state>
+                                    <state key="disabled">
+                                        <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="done:" destination="lbl-xX-ZNN" eventType="touchUpInside" id="pxt-f0-mN7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="MYD-Si-OK9" secondAttribute="trailing" constant="16" id="jvI-84-AVS"/>
+                                <constraint firstItem="MYD-Si-OK9" firstAttribute="centerY" secondItem="b7L-Nb-oaU" secondAttribute="centerY" id="nG3-8y-G1B"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection footerTitle="6-16位密码" id="9MK-VR-F9V">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SFD-ii-wML">
+                                        <rect key="frame" x="20" y="62" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFD-ii-wML" id="Bc9-EH-Sdu">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入新的密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0X-jD-Cl9">
+                                                    <rect key="frame" x="20" y="12" width="334" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
+                                                    <connections>
+                                                        <action selector="TFEditChange:" destination="lbl-xX-ZNN" eventType="editingChanged" id="zys-ZV-3Zp"/>
+                                                        <outlet property="delegate" destination="lbl-xX-ZNN" id="yjd-bp-aPd"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="I0X-jD-Cl9" firstAttribute="centerY" secondItem="Bc9-EH-Sdu" secondAttribute="centerY" id="bq1-qJ-Swy"/>
+                                                <constraint firstItem="I0X-jD-Cl9" firstAttribute="leading" secondItem="Bc9-EH-Sdu" secondAttribute="leadingMargin" id="fJ9-gN-aj6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="I0X-jD-Cl9" secondAttribute="trailing" id="oJc-L3-eLc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QXJ-IM-Ubq">
+                                        <rect key="frame" x="20" y="105.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QXJ-IM-Ubq" id="IGK-K6-9aS">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9o-R2-vWM">
+                                                    <rect key="frame" x="20" y="12" width="334" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
+                                                    <connections>
+                                                        <action selector="TFEditChange:" destination="lbl-xX-ZNN" eventType="editingChanged" id="zSj-d9-hrd"/>
+                                                        <outlet property="delegate" destination="KCh-ij-9Ie" id="5zr-rj-Bkv"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="M9o-R2-vWM" secondAttribute="trailing" id="XXW-oe-aeK"/>
+                                                <constraint firstItem="M9o-R2-vWM" firstAttribute="leading" secondItem="IGK-K6-9aS" secondAttribute="leadingMargin" id="eMC-1e-Kjb"/>
+                                                <constraint firstItem="M9o-R2-vWM" firstAttribute="centerY" secondItem="IGK-K6-9aS" secondAttribute="centerY" id="v8y-6n-yTA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lbl-xX-ZNN" id="KYj-bt-KPE"/>
+                            <outlet property="delegate" destination="lbl-xX-ZNN" id="WdI-Sp-rpC"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="cofirmPasswordTF" destination="M9o-R2-vWM" id="FUV-Ma-4Wr"/>
+                        <outlet property="doneBtn" destination="MYD-Si-OK9" id="haL-PJ-G0i"/>
+                        <outlet property="passwordTF" destination="I0X-jD-Cl9" id="FDf-ME-yRo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFe-dc-8cA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="1361"/>
         </scene>
         <!--MeVC-->
         <scene sceneID="s6e-v6-ZLg">
@@ -2452,7 +2554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiJ-h4-aCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96" y="1381"/>
+            <point key="canvasLocation" x="594" y="1619"/>
         </scene>
         <!--我-->
         <scene sceneID="Q4O-Ee-PiV">
@@ -2962,8 +3064,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" width="128" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
