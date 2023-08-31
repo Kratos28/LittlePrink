@@ -2451,7 +2451,7 @@
                         <sections>
                             <tableViewSection footerTitle="6-16位密码" id="9MK-VR-F9V">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SFD-ii-wML">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="SFD-ii-wML">
                                         <rect key="frame" x="20" y="62" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFD-ii-wML" id="Bc9-EH-Sdu">
@@ -2475,7 +2475,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QXJ-IM-Ubq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="QXJ-IM-Ubq">
                                         <rect key="frame" x="20" y="105.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QXJ-IM-Ubq" id="IGK-K6-9aS">
@@ -2485,7 +2485,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9o-R2-vWM">
                                                     <rect key="frame" x="20" y="12" width="334" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                                                     <connections>
                                                         <action selector="TFEditChange:" destination="lbl-xX-ZNN" eventType="editingChanged" id="zSj-d9-hrd"/>
                                                         <outlet property="delegate" destination="KCh-ij-9Ie" id="5zr-rj-Bkv"/>
@@ -2508,7 +2508,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cofirmPasswordTF" destination="M9o-R2-vWM" id="FUV-Ma-4Wr"/>
+                        <outlet property="confirmPasswordTF" destination="M9o-R2-vWM" id="FUV-Ma-4Wr"/>
                         <outlet property="doneBtn" destination="MYD-Si-OK9" id="haL-PJ-G0i"/>
                         <outlet property="passwordTF" destination="I0X-jD-Cl9" id="FDf-ME-yRo"/>
                     </connections>
@@ -3040,11 +3040,14 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="8is-Wy-YaT">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
         <designable name="SOk-cE-s64">
-            <size key="intrinsicContentSize" width="97" height="30"/>
+            <size key="intrinsicContentSize" width="113" height="18"/>
         </designable>
         <designable name="g87-mB-ifF">
-            <size key="intrinsicContentSize" width="94.5" height="22"/>
+            <size key="intrinsicContentSize" width="110.5" height="22"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -3064,8 +3067,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart" width="128" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
