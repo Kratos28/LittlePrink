@@ -26,6 +26,7 @@ class SViewController: UIViewController {
         }
         let ss =  stackView.subviews.first as! UIButton;
         self.imageVIEW.image = UIImage(named: "2选角色1_slices_组 9");
+        self.imageVIEW?.contentMode = .scaleToFill;
         self.bbf(ss);
         kaishibbbb.snp.remakeConstraints { make in
             make.width.equalTo(850.rpx);

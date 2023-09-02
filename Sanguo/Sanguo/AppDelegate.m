@@ -19,9 +19,12 @@
     
     
     
-    [[VersionUpdateTool sharedInstance]isReview:^(NSError *error, BOOL isReview) {
-        NSLog(@"isss %d",isReview);
-    }];
+//    [[VersionUpdateTool sharedInstance]isReview:^(NSError *error, BOOL isReview) {
+//        NSLog(@"isss %d",isReview);
+//    }];
+    
+    
+    
 #if DEBUG
 
    #endif
