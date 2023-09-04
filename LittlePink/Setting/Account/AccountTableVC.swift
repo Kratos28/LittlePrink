@@ -27,6 +27,12 @@ class AccountTableVC: UITableViewController {
             phoneNumLabel.setToLight("已设置");
 
         }
+        if let authData =  user.authData?.value{
+            let keys = authData.keys;
+            if keys.contains("lc_apple"){
+                appleIDLabel.setToLight(user.getExactStringVal(kNickNameCol));
+            }
+        }
         
     }
     

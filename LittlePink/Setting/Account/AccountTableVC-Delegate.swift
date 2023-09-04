@@ -23,6 +23,20 @@ extension AccountTableVC{
                     showTextHUD("绑定手机")
                 }
             }
+        }else if section == 1{
+            switch row{
+            case 0:
+                showTextHUD("绑定或解绑微信账号");
+            
+            case 1:
+                showTextHUD("绑定或解绑微博账号");
+            case 2:
+                showTextHUD("绑定或解绑QQ账号");
+            case 3:
+                showTextHUD("绑定或解绑apple账号");
+            default:
+                break;
+            }
         }
     }
 }

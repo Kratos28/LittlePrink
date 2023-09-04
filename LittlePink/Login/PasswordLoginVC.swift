@@ -43,15 +43,18 @@ class PasswordLoginVC: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         view.endEditing(true);
-        showLoginHUD();
         
         LCUser.logIn(mobilePhoneNumber: phoneNumStr, password: passwordStr) { result in
             self.hideLoadHUD();
             switch result {
             case .success(object: let user):
-                    
+            self.dismissAndShowMeVC(user);
             case .failure(error: let error):
-                    print(error);
+                self.showLoginHUD();
+
+                DispatchQueue.main.async {
+                    self.showTextHUD("登录失败",true,error.reason);
+                }
                 
             }
         };
