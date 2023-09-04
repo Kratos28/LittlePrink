@@ -110,6 +110,7 @@
 		47E34C712A9F63C4007D8416 /* PasswordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E34C702A9F63C4007D8416 /* PasswordTableVC.swift */; };
 		47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */; };
 		47F869912AA5AFFF00477C3F /* DarkModeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F869902AA5AFFF00477C3F /* DarkModeTableVC.swift */; };
+		47F869932AA5DF4900477C3F /* AppDelegate-Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F869922AA5DF4900477C3F /* AppDelegate-Push.swift */; };
 		6569C10A29A90A8B00684C3C /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6569C10929A90A8B00684C3C /* ReplyCell.swift */; };
 		65832BCE2A6B89A500B16875 /* MeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65832BCD2A6B89A500B16875 /* MeHeaderView.swift */; };
 		65832BD02A6B89C200B16875 /* MeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65832BCF2A6B89C200B16875 /* MeHeaderView.xib */; };
@@ -318,6 +319,7 @@
 		47E34C702A9F63C4007D8416 /* PasswordTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTableVC.swift; sourceTree = "<group>"; };
 		47EC2F402A8F663A008F925E /* CommentSectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSectionFooterView.swift; sourceTree = "<group>"; };
 		47F869902AA5AFFF00477C3F /* DarkModeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeTableVC.swift; sourceTree = "<group>"; };
+		47F869922AA5DF4900477C3F /* AppDelegate-Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate-Push.swift"; sourceTree = "<group>"; };
 		4D172F6721621EA095639AF7 /* Pods-LittlePrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.release.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.release.xcconfig"; sourceTree = "<group>"; };
 		5455937FB0A8BB3304110E6B /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
 		65399075282AB3DE002EB0E8 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -475,6 +477,7 @@
 				0AF466C828E6CB6400CD4C33 /* Me */,
 				0AF466CB28E6CB6400CD4C33 /* LittlePink.entitlements */,
 				0AF466CC28E6CB6400CD4C33 /* AppDelegate.swift */,
+				47F869922AA5DF4900477C3F /* AppDelegate-Push.swift */,
 				479742082A97382500591F34 /* EditProfile */,
 				0AF466CD28E6CB6400CD4C33 /* Login */,
 				0AF466D428E6CB6400CD4C33 /* Info.plist */,
@@ -906,6 +909,7 @@
 				0AF4670C28E6CB6500CD4C33 /* System-Extensions.swift in Sources */,
 				0AF466F628E6CB6400CD4C33 /* WaterfallVC.swift in Sources */,
 				0AF4672A28E6CB6500CD4C33 /* NoteEditVC-UI.swift in Sources */,
+				47F869932AA5DF4900477C3F /* AppDelegate-Push.swift in Sources */,
 				0A60956828BF421600A29A98 /* openssl_wrapper.m in Sources */,
 				0AF4671928E6CB6500CD4C33 /* SceneDelegate.swift in Sources */,
 				0AF466F128E6CB6400CD4C33 /* DiscoveryVC.swift in Sources */,

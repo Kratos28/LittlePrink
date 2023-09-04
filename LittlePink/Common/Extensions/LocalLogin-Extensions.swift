@@ -1,9 +1,4 @@
-//
-//  LoginVC-LocalLogin.swift
-//  LittlePink
-//
-//  Created by 刘军 on 2021/1/12.
-//
+
 
 import Foundation
 import Alamofire
@@ -11,7 +6,6 @@ import Alamofire
 extension UIViewController{
     
     func localLogin(){
-        
         showLoadHUD()
         let config = JVAuthConfig()
         config.appKey = kJAppKey
@@ -35,6 +29,7 @@ extension UIViewController{
                 self.presentCodeLoginVC()
             }
         }
+        
         JVERIFICATIONService.setup(with: config)
     }
     
@@ -44,7 +39,6 @@ extension UIViewController{
             if let result = result, let loginToken = result["loginToken"] as? String {
                 //一键登录成功
                 JVERIFICATIONService.clearPreLoginCache()
-                
                 print("loginToken: \(loginToken)")
                 // MARK: 发送token到我们自己的服务器
                 //1.服务器收到后携带此token并调用运营商接口（参考极光REST API）--可用postman模拟发送（注意鉴权和body中发参数）

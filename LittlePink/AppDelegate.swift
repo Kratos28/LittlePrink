@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
         config()
         return true
     }
@@ -89,18 +88,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+ 
 
 }
 
 
 extension AppDelegate{
     private func config(){
+        //UI
+        UINavigationBar.appearance().tintColor = .label //设置所有的navigationItem的返回按钮颜色
         //高德
         AMapServices.shared().enableHTTPS = true
         AMapServices.shared().apiKey = kAMapApiKey
         
-        //UI
-        UINavigationBar.appearance().tintColor = .label //设置所有的navigationItem的返回按钮颜色
+
         
         //初始化LeanCloud
         //LCApplication.logLevel = .debug
@@ -112,6 +113,7 @@ extension AppDelegate{
         } catch {
             print(error)
         }
-       
+        UIApplication.shared.registerForRemoteNotifications();
+    
     }
 }
