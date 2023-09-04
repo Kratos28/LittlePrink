@@ -11,6 +11,9 @@ class PasswordTableVC: UITableViewController {
     
     var user:LCUser!
     var setPasswordFinshed:(()->())?
+    
+    
+    
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!

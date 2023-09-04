@@ -10,7 +10,7 @@ import LeanCloud
 class AccountTableVC: UITableViewController {
 
     var user: LCUser! 
-    var phoneNum : String?{
+    var phoneNumStr : String?{
         user.mobilePhoneNumber?.value
     }
     var isSetPassword: Bool? {user.get(kIsSetPasswordCol)?.boolValue}
@@ -20,7 +20,7 @@ class AccountTableVC: UITableViewController {
     @IBOutlet weak var appleIDLabel : UILabel!;
     override func viewDidLoad() {
         super.viewDidLoad();
-        if let phoneNum = phoneNum{
+        if let phoneNum = phoneNumStr{
             phoneNumLabel.setToLight(phoneNum);
         }
         if let _ = isSetPassword{

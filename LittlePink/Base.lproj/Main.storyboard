@@ -729,7 +729,11 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vaG-8H-liC">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" textContentType="tel"/>
+                                                <connections>
+                                                    <action selector="TFEditChanged:" destination="6e4-Fi-jld" eventType="editingChanged" id="DNF-pj-6Tr"/>
+                                                    <outlet property="delegate" destination="6e4-Fi-jld" id="J8g-I6-Kdg"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCo-5U-it4">
                                                 <rect key="frame" x="0.0" y="42" width="334" height="1"/>
@@ -749,7 +753,11 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oE6-Hb-yIt">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="TFEditChanged:" destination="6e4-Fi-jld" eventType="editingChanged" id="B5m-cP-VMY"/>
+                                                    <outlet property="delegate" destination="6e4-Fi-jld" id="J69-v9-P8D"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxt-yj-KD6">
                                                 <rect key="frame" x="0.0" y="42" width="334" height="1"/>
@@ -786,6 +794,9 @@
                                         <real key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login:" destination="6e4-Fi-jld" eventType="touchUpInside" id="xS6-bQ-cux"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ0-b4-HOK">
                                 <rect key="frame" x="160.5" y="435.5" width="93" height="29"/>
@@ -827,6 +838,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wia-DJ-dny"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="aly-Jo-cMa" id="zst-RE-VrQ"/>
+                        <outlet property="passwordTF" destination="oE6-Hb-yIt" id="OqC-HN-MOB"/>
+                        <outlet property="phoneNumTF" destination="vaG-8H-liC" id="Cg7-DD-AI6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyp-JM-v8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3067,8 +3083,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" width="128" height="128"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart" width="128" height="128"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>

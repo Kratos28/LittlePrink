@@ -17,7 +17,7 @@ extension AccountTableVC{
             {
                 showTextHUD("绑定,解绑,换绑手机号");
             }else if row == 1{
-                if let _ = phoneNum{
+                if let _ = phoneNumStr{
                     performSegue(withIdentifier: "showPasswordTableVC", sender: nil);
                 }else{
                     showTextHUD("绑定手机")
