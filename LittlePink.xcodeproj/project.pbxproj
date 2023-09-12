@@ -89,6 +89,9 @@
 		1BF10A21298BE75200ABF0CF /* NoteDetailVC-PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A20298BE75200ABF0CF /* NoteDetailVC-PostComment.swift */; };
 		1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF10A22298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift */; };
 		4700C1982AB0405000D62006 /* Global-Funcations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700C1972AB0405000D62006 /* Global-Funcations.swift */; };
+		4700C19A2AB0624E00D62006 /* Basic-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700C1992AB0624E00D62006 /* Basic-Extensions.swift */; };
+		4700C19C2AB062AE00D62006 /* VC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700C19B2AB062AE00D62006 /* VC-Extensions.swift */; };
+		4700C19E2AB0630000D62006 /* UIView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700C19D2AB0630000D62006 /* UIView-Extensions.swift */; };
 		47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */; };
 		47409E962A93960C00D709D4 /* MeVC-BackorDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */; };
 		474F6A012A95EC600089048D /* MeVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474F6A002A95EC600089048D /* MeVC-Config.swift */; };
@@ -299,6 +302,9 @@
 		1F0428180353BB82DCF7E145 /* Pods-LittlePrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePrink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePrink/Pods-LittlePrink.debug.xcconfig"; sourceTree = "<group>"; };
 		2A0536C735BA78DE8AC8F7A4 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 		4700C1972AB0405000D62006 /* Global-Funcations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global-Funcations.swift"; sourceTree = "<group>"; };
+		4700C1992AB0624E00D62006 /* Basic-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic-Extensions.swift"; sourceTree = "<group>"; };
+		4700C19B2AB062AE00D62006 /* VC-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC-Extensions.swift"; sourceTree = "<group>"; };
+		4700C19D2AB0630000D62006 /* UIView-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extensions.swift"; sourceTree = "<group>"; };
 		47409E932A93904900D709D4 /* NoteDetailVC-MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-MeVC.swift"; sourceTree = "<group>"; };
 		47409E952A93960C00D709D4 /* MeVC-BackorDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-BackorDrawer.swift"; sourceTree = "<group>"; };
 		474F6A002A95EC600089048D /* MeVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeVC-Config.swift"; sourceTree = "<group>"; };
@@ -475,6 +481,7 @@
 				0AF466BA28E6CB6400CD4C33 /* LittlePink-Bridging-Header.h */,
 				0AF466BB28E6CB6400CD4C33 /* LaunchScreen.storyboard */,
 				0AF466BD28E6CB6400CD4C33 /* Main.storyboard */,
+				0AF466C228E6CB6400CD4C33 /* Extensions */,
 				0AF466BF28E6CB6400CD4C33 /* Common */,
 				0AF466C828E6CB6400CD4C33 /* Me */,
 				0AF466CB28E6CB6400CD4C33 /* LittlePink.entitlements */,
@@ -580,7 +587,6 @@
 				4700C1972AB0405000D62006 /* Global-Funcations.swift */,
 				47C7C0DA2A949DF50072ED14 /* CustomClasses.swift */,
 				0AF466C128E6CB6400CD4C33 /* CustomViews.swift */,
-				0AF466C228E6CB6400CD4C33 /* Extensions */,
 				0AF466C728E6CB6400CD4C33 /* Protocols.swift */,
 			);
 			path = Common;
@@ -594,6 +600,9 @@
 				0AF466C528E6CB6400CD4C33 /* System-Extensions.swift */,
 				0AF466C628E6CB6400CD4C33 /* LC-Extensions.swift */,
 				0ACA247929DC7D3600C57107 /* Other-Extension.swift */,
+				4700C1992AB0624E00D62006 /* Basic-Extensions.swift */,
+				4700C19B2AB062AE00D62006 /* VC-Extensions.swift */,
+				4700C19D2AB0630000D62006 /* UIView-Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -968,7 +977,9 @@
 				47409E942A93904900D709D4 /* NoteDetailVC-MeVC.swift in Sources */,
 				0AF4671628E6CB6500CD4C33 /* SocialLoginVC.swift in Sources */,
 				0AF4672128E6CB6500CD4C33 /* POIVC.swift in Sources */,
+				4700C19C2AB062AE00D62006 /* VC-Extensions.swift in Sources */,
 				0AF4671428E6CB6500CD4C33 /* CodeLoginVC.swift in Sources */,
+				4700C19E2AB0630000D62006 /* UIView-Extensions.swift in Sources */,
 				65BDACC3295F461E00CCD7CF /* NoteDetailVC-DelNote.swift in Sources */,
 				65BA949029601F2D008C5F65 /* NoteDetailVC-Helper.swift in Sources */,
 				1BD09B9029680B3D00A638F1 /* CommentView.swift in Sources */,
@@ -980,6 +991,7 @@
 				474F6A012A95EC600089048D /* MeVC-Config.swift in Sources */,
 				47EC2F412A8F663A008F925E /* CommentSectionFooterView.swift in Sources */,
 				1BF10A23298BE8DA00ABF0CF /* NoteDetailVC-PostReply.swift in Sources */,
+				4700C19A2AB0624E00D62006 /* Basic-Extensions.swift in Sources */,
 				0AF4670028E6CB6500CD4C33 /* LocalizationTableVCDemo.swift in Sources */,
 				0AF466FA28E6CB6500CD4C33 /* WaterfallVC-DataSource.swift in Sources */,
 				0AF466F828E6CB6500CD4C33 /* WaterfallVC-Delegate.swift in Sources */,
