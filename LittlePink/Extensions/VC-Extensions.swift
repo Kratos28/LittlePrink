@@ -21,6 +21,17 @@ extension UIViewController{
         }
     }
     
+    static func showGlobalLoadHud(_ title :String? = nil)
+    {
+        let hud = MBProgressHUD.showAdded(to: UIApplication.shared.windows.last!, animated: true)
+        hud.label.text = title;
+        
+    }
+    static func hideGlobalHUD(){
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: UIApplication.shared.windows.last!, animated: true);
+        }
+    }
     
     // MARK: 提示框--自动隐藏
     func showTextHUD(_ title: String, _ inCurrentView: Bool = true, _ subTitle: String? = nil){

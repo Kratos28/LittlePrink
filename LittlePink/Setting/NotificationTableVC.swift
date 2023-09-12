@@ -29,8 +29,11 @@ class NotificationTableVC: UITableViewController {
                     {
                         self.setSwitch(false);
                     }
+                    
+
                 }
                 isNotDetermined = false;
+            
             }else{
             jumpToSetting();
         }

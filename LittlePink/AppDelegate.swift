@@ -106,14 +106,22 @@ extension AppDelegate{
         //初始化LeanCloud
         //LCApplication.logLevel = .debug
         do {
+            let environment : LCApplication.Environment = [.pushDevelopment]
+            let configuration = LCApplication.Configuration(environment:environment);
+            
             try LCApplication.default.set(
                 id: kLCAppID,
                 key: kLCAppKey,
-                serverURL: kLCServerURL)
+                serverURL: kLCServerURL,
+                configuration:configuration
+            )
         } catch {
             print(error)
         }
+        
+      
         UIApplication.shared.registerForRemoteNotifications();
+        UNUserNotificationCenter.current().delegate = self;
     
     }
 }

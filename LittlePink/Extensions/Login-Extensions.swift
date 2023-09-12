@@ -46,6 +46,9 @@ extension UIViewController{
     
     func dismissAndShowMeVC(_ user: LCUser){
         hideLoadHUD()
+        let installation  = LCApplication.default.currentInstallation;
+        try? installation.set(kUserCol, value: user);
+        installation.save{_ in}
         DispatchQueue.main.async {
             let mainSB = UIStoryboard(name: "Main", bundle: nil)
             let meVC =  mainSB.instantiateViewController(identifier: kMeVCID){ coder in
