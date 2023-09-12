@@ -106,16 +106,20 @@ extension NoteEditVC{
                     UNUserNotificationCenter.current().getNotificationSettings { setting in
                         switch setting.authorizationStatus
                         {
-                        case .denied:
-                            let alert = UIAlertController(title: #""小红书"想给你发送通知\#(setting)"#, message: "收到评论后第一时间就知道", preferredStyle: .alert);
-                            let notAllowAction = UIAlertAction(title: "不允许", style: .cancel);
-                            let allowAction = UIAlertAction(title: "允许", style: .default){_ in
-                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!);
-                                
+                            
+                            case .denied:
+                            DispatchQueue.main.async {
+                                let alert = UIAlertController(title: #""小红书"想给你发送通知\#(setting)"#, message: "收到评论后第一时间就知道", preferredStyle: .alert);
+                                let notAllowAction = UIAlertAction(title: "不允许", style: .cancel);
+                                let allowAction = UIAlertAction(title: "允许", style: .default){_ in
+                                    jumpToSetting();
+                                }
+                                alert.addAction(notAllowAction)
+                                alert.addAction(allowAction);
+                                self.view.window?.rootViewController?.present(alert, animated: true);
                             }
-                            alert.addAction(notAllowAction)
-                            alert.addAction(allowAction);
-                            self.present(alert, animated: true);
+                            
+                            
                         default:
                                 break;
                         }

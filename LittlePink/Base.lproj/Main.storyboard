@@ -3033,6 +3033,9 @@
                                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RMf-uQ-GTq">
                                                             <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                                             <color key="onTintColor" name="main"/>
+                                                            <connections>
+                                                                <action selector="toggleAllowNotification:" destination="Pru-x1-55L" eventType="valueChanged" id="uzQ-PA-GpD"/>
+                                                            </connections>
                                                         </switch>
                                                     </subviews>
                                                 </stackView>
@@ -3052,6 +3055,9 @@
                             <outlet property="delegate" destination="Pru-x1-55L" id="Sub-pD-rBQ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="toggleAllowNotificationSwitch" destination="RMf-uQ-GTq" id="qtd-jd-VVB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGM-ja-e87" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3157,11 +3163,14 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="8is-Wy-YaT">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
         <designable name="SOk-cE-s64">
-            <size key="intrinsicContentSize" width="97" height="30"/>
+            <size key="intrinsicContentSize" width="113" height="18"/>
         </designable>
         <designable name="g87-mB-ifF">
-            <size key="intrinsicContentSize" width="94.5" height="22"/>
+            <size key="intrinsicContentSize" width="110.5" height="22"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -3181,8 +3190,8 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart" width="128" height="128"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
