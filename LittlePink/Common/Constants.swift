@@ -156,6 +156,7 @@ let kGenderCol = "gender"
 let kIntroCol = "intro"
 let kBrithCol = "brith"
 let kIsSetPasswordCol = "isSetPassword";
+let kNoteCountCol = "noteCount";
 
 //Note表
 let kCoverPhotoCol = "coverPhoto"

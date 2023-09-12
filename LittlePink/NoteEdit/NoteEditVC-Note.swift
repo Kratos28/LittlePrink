@@ -82,8 +82,9 @@ extension NoteEditVC{
             try note.set(kFavCountCol, value: 0)
             try note.set(kCommentCountCol, value: 0)
             
+            let author = LCApplication.default.currentUser!
             //笔记的作者
-            try note.set(kAuthorCol, value: LCApplication.default.currentUser!)
+            try note.set(kAuthorCol, value: author)
             
             noteGroup.enter()
             note.save { _ in
@@ -93,8 +94,37 @@ extension NoteEditVC{
             
             
             noteGroup.notify(queue: .main) {
+                
                 //print("笔记内容全部存储结束")
-                self.showTextHUD("发布笔记成功", false)
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge]) { generated, error in
+                    if let error = error {
+                        print("请求通知授权出错 \(error)");
+                    }
+                }
+                let noteCount = author.getExactIntVal(kNoteCountCol);
+                if noteCount != 0, noteCount  % 3 == 0{
+                    UNUserNotificationCenter.current().getNotificationSettings { setting in
+                        switch setting.authorizationStatus
+                        {
+                        case .denied:
+                            let alert = UIAlertController(title: #""小红书"想给你发送通知\#(setting)"#, message: "收到评论后第一时间就知道", preferredStyle: .alert);
+                            let notAllowAction = UIAlertAction(title: "不允许", style: .cancel);
+                            let allowAction = UIAlertAction(title: "允许", style: .default){_ in
+                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!);
+                                
+                            }
+                            alert.addAction(notAllowAction)
+                            alert.addAction(allowAction);
+                            self.present(alert, animated: true);
+                        default:
+                                break;
+                        }
+                    }
+                }
+                try? author.increase(kNoteCountCol);
+                author.save{ _ in }
+                self.showTextHUD("发布笔记成功", false);
+
             }
             
             if draftNote != nil{
