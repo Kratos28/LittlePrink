@@ -98,7 +98,6 @@ extension NoteDetailVC
             switch pan.state
             {
                 case .began:
-                
                 backToCell();
                 case .changed:
                     Hero.shared.update(progress);
