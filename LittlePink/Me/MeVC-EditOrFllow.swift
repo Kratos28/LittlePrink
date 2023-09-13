@@ -13,6 +13,7 @@ extension MeVC
         {
             let navi = storyboard!.instantiateViewController(withIdentifier: kEditProfileNaviID) as! UINavigationController;
             navi.modalPresentationStyle = .fullScreen;
+            navi.heroModalAnimationType =  .selectBy(presenting: .push(direction: .left), dismissing: .pull(direction: .right));
            let editProfileTableVC = navi.topViewController as! EditProfileTableVC
             editProfileTableVC.user = user;
             editProfileTableVC.delegate = self;

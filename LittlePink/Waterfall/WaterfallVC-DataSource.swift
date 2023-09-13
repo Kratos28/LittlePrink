@@ -38,6 +38,7 @@ extension WaterfallVC{
             cell.isMyselfLike = isMyselfLike;
             let offset = isMyDraft ? 1:0;
             cell.note = notes[indexPath.item - offset];
+            cell.hero.id = "noteHeroID\(indexPath.item)";
             
             return cell;
         }

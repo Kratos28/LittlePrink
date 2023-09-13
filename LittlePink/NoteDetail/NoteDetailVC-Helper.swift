@@ -62,4 +62,13 @@ extension NoteDetailVC
     }
 
     
+    func backToCell()
+    {
+        if let cellItem = cellItem
+        {
+            delegate?.updateLikeBtn(cellItem: cellItem, isLike: isLike, likeCount: likeCount)
+        }
+        dismiss(animated: true);
+    }
+    
 }

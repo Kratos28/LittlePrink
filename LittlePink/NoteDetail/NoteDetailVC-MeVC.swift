@@ -7,6 +7,7 @@
 
 import Foundation
 import LeanCloud
+import Hero
 extension NoteDetailVC{
     func noteToMeVC(_ user :LCUser?){
         guard let user = user else{return}
@@ -19,6 +20,8 @@ extension NoteDetailVC{
             }
             meVC.isFromNote = true;
             meVC.modalPresentationStyle = .fullScreen;
+            meVC.heroModalAnimationType = .selectBy(presenting: .push(direction: .left), dismissing: .pull(direction: .right))
+            
             present(meVC, animated: false);
         }
       

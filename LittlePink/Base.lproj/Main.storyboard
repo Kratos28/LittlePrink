@@ -1864,6 +1864,9 @@
                             <constraint firstItem="nJg-dP-M46" firstAttribute="leading" secondItem="9Vm-5f-Tl7" secondAttribute="leading" id="tH7-Yk-PL3"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="authorAvatarBtn" destination="Wdc-Gz-Q5Q" id="MHT-p9-PNB"/>
                         <outlet property="authorNickNameBtn" destination="3kH-60-t0h" id="Rur-r0-a8i"/>
@@ -2570,10 +2573,13 @@
                             <constraint firstItem="Ylj-TM-cRe" firstAttribute="centerX" secondItem="3sq-eX-kLk" secondAttribute="centerX" id="UFB-cn-MkD"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiJ-h4-aCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="594" y="1619"/>
+            <point key="canvasLocation" x="914" y="1815"/>
         </scene>
         <!--我-->
         <scene sceneID="Q4O-Ee-PiV">

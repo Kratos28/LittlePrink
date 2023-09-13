@@ -49,6 +49,9 @@ extension WaterfallVC{
             {
                 detailVC.isLikeFormWaterfallCell = cell.isLike;
             }
+            detailVC.modalPresentationStyle = .fullScreen
+            detailVC.delegate = self;
+
             detailVC.delNoteFinished = {
                 self.notes.remove(at: item);
                 collectionView.performBatchUpdates {
@@ -58,8 +61,7 @@ extension WaterfallVC{
             detailVC.fromMeVCUser = fromMeVCUser;
             detailVC.isFromMeVC = isFromMeVC;
             detailVC.cellItem = indexPath.item;
-            detailVC.modalPresentationStyle = .fullScreen
-            detailVC.delegate = self;
+            detailVC.noteHeroID = "noteHeroID\(indexPath.item)"
             present(detailVC, animated: true)
         }
     }

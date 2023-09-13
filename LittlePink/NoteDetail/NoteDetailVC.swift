@@ -30,6 +30,8 @@ class NoteDetailVC: UIViewController {
     var isFormPush = false;
     var delegate: NoteDetailVCDelegate?
     var cellItem:Int?
+    var noteHeroID: String?
+    
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
@@ -124,11 +126,7 @@ class NoteDetailVC: UIViewController {
     
 
     @IBAction func back(_ sender: Any) {
-        if let cellItem = cellItem
-        {
-            delegate?.updateLikeBtn(cellItem: cellItem, isLike: isLike, likeCount: likeCount)
-        }
-        dismiss(animated: true);
+        backToCell();
         
     }
     @IBAction func shareOrMore(_ sender: UIButton) {
