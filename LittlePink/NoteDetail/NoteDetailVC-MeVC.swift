@@ -10,7 +10,7 @@ import LeanCloud
 extension NoteDetailVC{
     func noteToMeVC(_ user :LCUser?){
         guard let user = user else{return}
-        if isFromMeVC,let formMeVCUser = formMeVCUser , formMeVCUser == user{
+        if isFromMeVC,let formMeVCUser = fromMeVCUser , formMeVCUser == user{
             dismiss(animated:  true);
         }else{
             let meVC = storyboard!.instantiateViewController(identifier: kMeVCID){

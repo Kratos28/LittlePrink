@@ -78,14 +78,13 @@ extension NoteDetailVC{
             let avatarURL = user.getImageURL(from: kAvatarCol, .avatar)
             avatarImageView.kf.setImage(with: avatarURL)
         }
-        
         //底部bar的点赞数,收藏数,评论数
         likeCount = note.getExactIntVal(kLikeCountCol)
         currentLikeCount = likeCount;
         favCount = note.getExactIntVal(kFavCountCol)
         currentFavCount = favCount;
-
         commentCount = note.getExactIntVal(kCommentCountCol)
+        
     }
     
     private func showLike(){
@@ -104,8 +103,8 @@ extension NoteDetailVC{
                 }
             }
         }else{
+            
             self.likeBtn.setSelected(selected: isLikeFormWaterfallCell, animated: false);
-
         }
     }
 }

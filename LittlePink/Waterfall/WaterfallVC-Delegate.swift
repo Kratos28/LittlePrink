@@ -55,9 +55,22 @@ extension WaterfallVC{
                     collectionView.deleteItems(at: [indexPath]);
                 }
             }
+            detailVC.fromMeVCUser = fromMeVCUser;
             detailVC.isFromMeVC = isFromMeVC;
+            detailVC.cellItem = indexPath.item;
             detailVC.modalPresentationStyle = .fullScreen
+            detailVC.delegate = self;
             present(detailVC, animated: true)
+        }
+    }
+}
+extension WaterfallVC : NoteDetailVCDelegate
+{
+    func updateLikeBtn(cellItem: Int, isLike: Bool, likeCount: Int) {
+        if let cell =   collectionView.cellForItem(at: IndexPath(item: cellItem, section:0)) as? WaterfallCell{
+            cell.likebtn.isSelected = isLike;
+            cell.likeCount = likeCount;
+            cell.currentLikeCount = likeCount;
         }
     }
 }

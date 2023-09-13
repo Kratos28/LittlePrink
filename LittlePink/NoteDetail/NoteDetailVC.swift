@@ -25,9 +25,11 @@ class NoteDetailVC: UIViewController {
     
     
     var isFromMeVC = false;
-    var formMeVCUser: LCUser?
+    var fromMeVCUser: LCUser?
     
     var isFormPush = false;
+    var delegate: NoteDetailVCDelegate?
+    var cellItem:Int?
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
@@ -122,7 +124,12 @@ class NoteDetailVC: UIViewController {
     
 
     @IBAction func back(_ sender: Any) {
+        if let cellItem = cellItem
+        {
+            delegate?.updateLikeBtn(cellItem: cellItem, isLike: isLike, likeCount: likeCount)
+        }
         dismiss(animated: true);
+        
     }
     @IBAction func shareOrMore(_ sender: UIButton) {
         shareOrMore();
@@ -141,10 +148,7 @@ class NoteDetailVC: UIViewController {
     @IBAction func postCommentOrReply(_ sender: Any) {
       if  !textView.isBlank{
           if isReply{
-              
-              self.postComment();
-              
-        
+              self.postComment();              
           }else
           {
               self.postReply();
