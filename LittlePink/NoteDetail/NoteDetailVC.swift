@@ -26,16 +26,15 @@ class NoteDetailVC: UIViewController {
     
     var isFromMeVC = false;
     var formMeVCUser: LCUser?
+    
+    var isFormPush = false;
     //上方bar
     @IBOutlet weak var authorAvatarBtn: UIButton!
     @IBOutlet weak var authorNickNameBtn: UIButton!
     @IBOutlet weak var followBtn: UIButton!
     @IBOutlet weak var shareBtnOrMoreBtn: UIButton!
-    
-    
-    
-    
-    
+
+        
     //tableHeaderView
     @IBOutlet weak var tableHeaderView: UIView!
     @IBOutlet weak var imageSlideshow: ImageSlideshow!

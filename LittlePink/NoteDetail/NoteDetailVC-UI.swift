@@ -89,6 +89,23 @@ extension NoteDetailVC{
     }
     
     private func showLike(){
-        self.likeBtn.setSelected(selected: isLikeFormWaterfallCell, animated: false);
+        if isFormPush{
+            if let user = LCApplication.default.currentUser
+            {
+                let query = LCQuery(className: kUserLikeTable);
+                try? query.where(kUserCol,.equalTo(user));
+                try? query.where(kNoteCol,.equalTo(note));
+                query.getFirst { res in
+                    if case  .success = res{
+                        DispatchQueue.main.async {
+                            self.likeBtn.setSelected(selected: true, animated: true);
+                        }
+                    }
+                }
+            }
+        }else{
+            self.likeBtn.setSelected(selected: isLikeFormWaterfallCell, animated: false);
+
+        }
     }
 }

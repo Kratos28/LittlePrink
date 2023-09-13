@@ -41,7 +41,10 @@ extension AppDelegate : UNUserNotificationCenterDelegate
                    let storyboard =  UIStoryboard(name: "Main", bundle: nil);
                     let detailVC = storyboard.instantiateViewController(identifier: kNoteDetailVCID) { coder in
                         NoteDetailVC(coder: coder, note: note);
+                        
                     }
+                    detailVC.modalPresentationStyle = .fullScreen;
+                    detailVC.isFormPush = true;
                     rootVC.selectedViewController?.present(detailVC, animated: true);
                     
                 }
