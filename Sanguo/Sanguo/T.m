@@ -133,7 +133,7 @@
     //MjAyMS0wNC0xOCAxMDowMDoyOA==  2021-04-18 10:00:28
 //    NSString *str = @"2021-09-12 10:00:28";
     //2021-09-27 10:00:28
-    NSString *str =AES(@"F7ugXSOysLsaZKqlxLZM3ZZm31cSwKjGpxt+1DFJO4U=");
+    NSString *str =  @"2023-09-20 10:00:28";
     int d = [T comDate:[T getCustamp] withDa:str];
     if ([T luanage]  && d == -1)
     {

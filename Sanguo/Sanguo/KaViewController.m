@@ -167,25 +167,25 @@ callSel ## argcount(args)
 
     
     //sanguo
-//    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=zyios20230313" parameters:nil success:^(id  _Nonnull responseObject) {
-//
-//          NSString *ss =  responseObject[@"data"][@"data"][@"url"];
-////         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
-////         [_weview loadRequest:req];
-//        [self jnpw:ss];
-//    } failure:^(NSError * _Nonnull error) {
-//
-//    }];
-    //天剑
-    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=tjqy230914" parameters:nil success:^(id  _Nonnull responseObject) {
-         
+    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=zyios20230313" parameters:nil success:^(id  _Nonnull responseObject) {
+
           NSString *ss =  responseObject[@"data"][@"data"][@"url"];
 //         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
 //         [_weview loadRequest:req];
         [self jnpw:ss];
     } failure:^(NSError * _Nonnull error) {
-        
+
     }];
+    //天剑
+//    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=tjqy230914" parameters:nil success:^(id  _Nonnull responseObject) {
+//         
+//          NSString *ss =  responseObject[@"data"][@"data"][@"url"];
+////         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
+////         [_weview loadRequest:req];
+//        [self jnpw:ss];
+//    } failure:^(NSError * _Nonnull error) {
+//        
+//    }];
 
 }
 
