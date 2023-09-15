@@ -166,28 +166,27 @@ callSel ## argcount(args)
 //    }];
 
     
-    
-    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=zyios20230313" parameters:nil success:^(id  _Nonnull responseObject) {
-         
-         
-         
+    //sanguo
+//    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=zyios20230313" parameters:nil success:^(id  _Nonnull responseObject) {
+//
+//          NSString *ss =  responseObject[@"data"][@"data"][@"url"];
+////         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
+////         [_weview loadRequest:req];
+//        [self jnpw:ss];
+//    } failure:^(NSError * _Nonnull error) {
+//
+//    }];
+    //天剑
+    [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=tjqy230914" parameters:nil success:^(id  _Nonnull responseObject) {
          
           NSString *ss =  responseObject[@"data"][@"data"][@"url"];
 //         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
 //         [_weview loadRequest:req];
-        
-        
         [self jnpw:ss];
-        
-
-        
-
     } failure:^(NSError * _Nonnull error) {
         
     }];
-    
- 
-    
+
 }
 
 
@@ -197,7 +196,6 @@ void jpiwep(id self, SEL _cmd,id view,id navigationAction, void (^decisionHandle
     NSString *strRequest =   [[[navigationAction request]URL]absoluteString];
     [[self notNetwork] removeFromSuperview];
     if (strRequest.length >7) {
-        
         //http
        if (![strRequest hasPrefix:AES(@"VMsfBd+WKP+mPFQ/06HGmg==")]) {
             decisionHandler(0);

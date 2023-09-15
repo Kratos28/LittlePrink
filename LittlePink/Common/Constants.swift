@@ -118,8 +118,6 @@ let kPasswordRegEx = "^[0-9a-zA-Z]{6,16}$"
 
 //云端
 let kNotesOffset = 10
-
-
 let kCommentOffSet = 10;
 
 
@@ -127,7 +125,9 @@ let kCommentOffSet = 10;
 //配置相关
 let kLCAppID = "KhBhnnGp6hqVn4K85HyhpqPJ-gzGzoHsz"
 let kLCAppKey = "DTqthcpzPIkVTwlFwIyj4mLQ"
-let kLCServerURL = "https://khbhnngp.lc-cn-n1-shared.com"
+let kLCServerURL = "https://littlepinkbook.rongcosme.com"
+
+
 
 //通用字段
 let kCreatedAtCol = "createdAt"

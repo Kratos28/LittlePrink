@@ -109,8 +109,6 @@
             [parameterPairs addObject:parameterPair];
         }];
         NSString *queryString = [parameterPairs componentsJoinedByString:@"&"];
-        
-        
         NSString *url = [NSString stringWithFormat:@"%@&%@",URLString,queryString];
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
         NSURLSession *session = [NSURLSession sharedSession];

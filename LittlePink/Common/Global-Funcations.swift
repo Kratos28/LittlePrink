@@ -20,7 +20,6 @@ func fontIcon(_ iconName: String, fontSize:CGFloat ,with color: UIColor = .label
     let config = UIImage.SymbolConfiguration(font: .systemFont(ofSize: fontSize));
     let icon = UIImage(systemName: iconName,withConfiguration: config)!;
     return icon.withTintColor(color);
-    
 }
 
 func showGlobalTextHUD(_ title:String){
@@ -29,6 +28,7 @@ func showGlobalTextHUD(_ title:String){
     hud.mode = .text;
     hud.label.text = title;
     hud.hide(animated: true, afterDelay: 2);
+    
 }
 
 func jumpToSetting(){
