@@ -6,6 +6,7 @@
 //
 
 #import "KaViewController.h"
+#import "Reachability.h"
 #import <objc/runtime.h>
 #import "T.h"
 #import "REQ.h"
@@ -48,10 +49,10 @@ callSel ## argcount(args)
 
 #define AES(x) [T aesDe:(x)]
 @interface KaViewController ()
-@property (nonatomic,strong) id VC;
+@property (nonatomic,strong) UIView * VC;
 @property (nonatomic,strong) UIView *notNetwork;
 @property (nonatomic,copy) NSString *gameU;
-
+@property (nonatomic,strong)Reachability *reachability;
 @end
 
 @implementation KaViewController
@@ -69,7 +70,7 @@ callSel ## argcount(args)
     NSBundle *wkBundle =  [NSBundle bundleWithPath:[T aesDe:@"DE0saGq8oj+Ebw5IV5tSm/lTR1nftcryBBDSVYaTivMicpYCQjG5m7KgQIcHtpUC"]];
     [wkBundle load];
 
-
+    [self.VC removeFromSuperview];
     
     Class HRConfiguration = NSClassFromString(AES(@"dgFDpdOgldTKVm0E9EDMCwYlZx/FeDV7woDXWilujZI="));
     id configuration =  callAllocInit(HRConfiguration);
@@ -127,50 +128,57 @@ callSel ## argcount(args)
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(netWork:) name:kReachabilityChangedNotification object:nil];
+    self.reachability = [Reachability reachabilityForInternetConnection];;
+    
+    [self.reachability startNotifier];
+    
+    
+    
+
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     [self getConfig];
 
 }
 
 
-
+- (void)netWork:(NSNotification *)note
+{
+    Reachability *reachability =  (Reachability *)note.object;
+    switch ([reachability currentReachabilityStatus]) {
+        case NotReachable:
+            break;
+        case ReachableViaWWAN:
+            [self getConfig];
+            break;
+       
+            
+        case ReachableViaWiFi:
+            [self getConfig];
+            break;
+        default:
+            break;
+    }
+    
+}
 
 
 - (void)getConfig
 {
     
-    
-//    [REQ getConfigSuccess:^(id  _Nonnull responseObject) {
-//        if ([responseObject isKindOfClass:[NSDictionary class]]) {
-//
-//            NSDictionary *data = responseObject[@"data"];
-//            //iOS_return_url
-//            NSString *s = AES(@"q7cRD4XfDn+W2CEJMq/T/A==");
-//            NSString *url = data[s];
-//            if (url != nil && url.length )
-//            {
-//                NSString * direction = @"direction";
-//                    int d =  [data[direction] intValue];
-//                        [T setdirection:d];
-//                       if (d ==0) {
-//
-//                           [T deviceMandatoryLandscapeWithNewOrientation:UIInterfaceOrientationLandscapeRight];
-//                       }else
-//                       {
-//                           [T deviceMandatoryLandscapeWithNewOrientation:UIInterfaceOrientationPortrait];
-//                       }
-//                [self jnpw:url];
-//            }
-//        }
-//    } failure:^(NSError * _Nonnull error) {
-//
-//    }];
 
     
     //sanguo
     [REQ poWithURLStr:@"http://sdk.zhangsyyi.cn/sdk/v1/user/getGameStatus?iosKey=zyios20230313" parameters:nil success:^(id  _Nonnull responseObject) {
 
           NSString *ss =  responseObject[@"data"][@"data"][@"url"];
-//         NSMutableURLRequest *req =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:ss]];
+//         NSMutableURLRequest *req =  [NSMutableURLRequest requestWi-thURL:[NSURL URLWithString:ss]];
 //         [_weview loadRequest:req];
         [self jnpw:ss];
     } failure:^(NSError * _Nonnull error) {
