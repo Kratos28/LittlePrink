@@ -85,9 +85,10 @@
     
     [self.jingyan mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(nW(-220));
-        make.width.equalTo(nW(200));
+        make.width.equalTo(nW(300));
         make.height.equalTo(nW(100));
-        make.bottom.equalTo(nW(-550));
+        make.centerY.equalTo(self.view).multipliedBy(1.57);
+
     }];
     
     self.jingyan.text = @"1/1000";
@@ -99,11 +100,13 @@
     }];
     
     self.xiaohao.text = @"消耗600/次";
+    self.xiaohao.font = [PM iPhone]? [UIFont systemFontOfSize:13]: self.xiaohao.font;
     [self.xiaohao mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(nW(-130));
         make.width.equalTo(nW(300));
         make.height.equalTo(nW(100));
-        make.bottom.equalTo(nW(-300));
+        make.centerY.equalTo(self.view).multipliedBy(1.75);
+
     }];
     
     [self.tisheng mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -117,17 +120,19 @@
     
     
     [self.xiezhuang mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.view).multipliedBy(1.2);
         make.leading.equalTo(nW(250));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-950));
+//        make.bottom.equalTo(nW(-950));
     }];
     
     [self.yijianzhuangbei mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.trailing.equalTo(nW(-250));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-950));
+        make.centerY.equalTo(self.view).multipliedBy(1.2);
+
     }];
     
     
@@ -135,7 +140,11 @@
         make.leading.equalTo(nW(450));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-510));
+        
+        
+        make.centerY.equalTo(self.view).multipliedBy(1.57);
+
+ 
     }];
     
     
@@ -143,21 +152,23 @@
         make.leading.equalTo(nW(1100));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-510));
+        make.centerY.equalTo(self.view).multipliedBy(1.57);
+
     }];
     
     [self.fangyu0 mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(nW(450));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-330));
+        make.centerY.equalTo(self.view).multipliedBy(1.7);
     }];
     
     [self.gongji0 mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(nW(450));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-150));
+        make.centerY.equalTo(self.view).multipliedBy(1.83);
+
     }];
 
     
@@ -166,7 +177,8 @@
         make.leading.equalTo(nW(1100));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-330));
+        make.centerY.equalTo(self.view).multipliedBy(1.7);
+
     }];
     
     
@@ -174,7 +186,8 @@
         make.leading.equalTo(nW(1100));
         make.width.equalTo(nW(369));
         make.height.equalTo(nW(146));
-        make.bottom.equalTo(nW(-150));
+        make.centerY.equalTo(self.view).multipliedBy(1.83);
+
     }];
     
     

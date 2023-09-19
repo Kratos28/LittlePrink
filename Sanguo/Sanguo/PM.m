@@ -10,6 +10,17 @@
 #import "AppDelegate.h"
 @implementation PM
 
++ (bool)iPhone{
+    BOOL isiPhone = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone);
+    if (isiPhone) {
+        
+        return  YES;
+        
+    } else {
+        return  NO;
+    }
+}
+
 + (NSArray *)setupshop
 {
     Shop *shop0 = [NSEntityDescription insertNewObjectForEntityForName:@"Shop" inManagedObjectContext:CoreDatacontext];

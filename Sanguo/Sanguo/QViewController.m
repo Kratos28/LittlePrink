@@ -39,7 +39,7 @@ NSString * WebViewJavascriptBridge_js();
     
     NSArray<SIgn *> *array = [PM getData:@"SIgn"];
     
-    static CGFloat const margin = 20;
+     CGFloat margin = W(50);
     for (int i = 0; i < array.count; i++) {
         int row=i/corlmax;//所在行
         int col=i%corlmax;//所在列

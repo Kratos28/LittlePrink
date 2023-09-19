@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)setupP;
 + (P*)getP;
 + (NSArray *)getData:(NSString *)entityName;
-
++ (bool)iPhone;
 
 @end
 

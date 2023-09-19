@@ -38,6 +38,9 @@
     UIButton *ss = self.sview.subviews.firstObject;
     [self click:ss];
     
+    
+    self.sview.spacing = [PM iPhone] ? W(40): W(300);
+    
     [self.kaishibbbb mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(W(850)));
         make.height.equalTo(@(W(260)));

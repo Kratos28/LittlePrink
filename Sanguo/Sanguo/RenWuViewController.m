@@ -50,9 +50,9 @@
         int startX = W(1400);
         int startY = H(650);
         int mariginX = W(0);
-        int mariginH = H(230);
+        int mariginH = H(260);
+        CGFloat  margin = W(40);
 
-        static CGFloat const margin = 20;
         for (int i = 0; i < 5; i++) {
             int row=i/corlmax;//所在行
             int col=i%corlmax;//所在列
@@ -77,20 +77,21 @@
     
     {
         int corlmax = 1;
-        int itemW = W(500);
+        int itemW = W(800);
         int itemH = H(100);
         int startX = W(600);
         int startY = H(610);
         int mariginX = W(0);
-        int mariginH = H(260);
+        int mariginH = [PM iPhone]? W(380): W(260);
         NSArray *ass = @[@"通过第五关:     0/5",@"通过第十关:     0/5",@"通过第十五关:     0/5",@"通过第二十关:     0/5",@"通过第二十五关:     0/5"];
-        static CGFloat const margin = 20;
+        CGFloat  margin = W(40);
+
         for (int i = 0; i < ass.count; i++) {
             int row=i/corlmax;//所在行
             int col=i%corlmax;//所在列
             //创建按钮
             UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];
- 
+            btn.titleLabel.textAlignment = NSTextAlignmentRight;
             [btn setTitle:ass[i] forState:0];
             [btn setTintColor:[UIColor grayColor]];
             CGFloat x= startX + ((itemW+margin)*col + (col * mariginX));
@@ -112,9 +113,10 @@
         int startX = W(1580);
         int startY = H(500);
         int mariginX = W(0);
-        int mariginH = H(260);
-        NSArray *ass = @[@"通过第五关:     0/5",@"通过第十关:     0/5",@"通过第十五关:     0/5",@"通过第二十关:     0/5",@"通过第二十五关:     0/5"];
-        static CGFloat const margin = 20;
+        int mariginH = H(290);
+
+        CGFloat  margin = W(40);
+
         for (int i = 0; i < 5; i++) {
             int row=i/corlmax;//所在行
             int col=i%corlmax;//所在列

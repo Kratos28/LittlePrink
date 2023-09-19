@@ -99,8 +99,7 @@ NSString * JavascriptBridge_js() {
     
     NSArray<Shop *> *array = [PM getData:@"Shop"];
     self.productArray = [NSMutableArray array];
-    static CGFloat const margin = 20;
-    
+    CGFloat margin = W(40);
     self.data = [NSMutableArray array];
     UIButton *btn= [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setBackgroundImage:[UIImage imageNamed:@"充值_11_"] forState:UIControlStateNormal];

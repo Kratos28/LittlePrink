@@ -44,9 +44,8 @@
     [self.collviewView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.view.mas_leading).offset(W(50));
         make.trailing.equalTo(self.view.mas_trailing).offset(X(-50));
-        make.bottom.equalTo(nW(-750
-                               ));
         make.height.equalTo(nW(400));
+        make.centerY.equalTo(self.view).multipliedBy(1.3);
     }];
     
     [self.qingkong mas_remakeConstraints:^(MASConstraintMaker *make) {
